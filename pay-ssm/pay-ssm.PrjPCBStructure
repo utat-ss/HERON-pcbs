@@ -1,0 +1,3 @@
+Record=TopLevelDocument|FileName=pay-ssm.SchDoc
+Record=SheetSymbol|SourceDocument=pay-ssm.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=CAN|SymbolType=Normal|RawFileName=CAN|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=pay-ssm.SchDoc|Designator=U|SchDesignator=U|FileName=ATMega32M1|SymbolType=Normal|RawFileName=ATMega32M1|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
