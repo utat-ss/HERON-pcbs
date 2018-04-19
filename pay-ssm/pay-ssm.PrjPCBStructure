@@ -1,3 +1,3 @@
 Record=TopLevelDocument|FileName=pay-ssm.SchDoc
-Record=SheetSymbol|SourceDocument=pay-ssm.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=CAN|SymbolType=Normal|RawFileName=CAN|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=pay-ssm.SchDoc|Designator=U|SchDesignator=U|FileName=ATMega32M1|SymbolType=Normal|RawFileName=ATMega32M1|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=pay-ssm.SchDoc|Designator=CAN|SchDesignator=CAN|FileName=can_transciever.SchDoc|SymbolType=Normal|RawFileName=can_transciever.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=pay-ssm.SchDoc|Designator=U|SchDesignator=U|FileName=ATmega32M1.SchDoc|SymbolType=Normal|RawFileName=ATmega32M1.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
