@@ -55,57 +55,6 @@ GenerateClassCluster=0
 DocumentUniqueId=KSDGLNHE
 
 [Document2]
-DocumentPath=motor_control.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=5
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=XVEMOJRQ
-
-[Document3]
-DocumentPath=heater_control.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=4
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LICXPRCO
-
-[Document4]
-DocumentPath=sensors.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=6
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=YEOJMCRV
-
-[Document5]
 DocumentPath=pay-ssm.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +71,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TFKPADYI
 
-[Document6]
+[Document3]
 DocumentPath=..\libraries\ICs.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +88,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQIUWKYB
 
-[Document7]
+[Document4]
 DocumentPath=..\libraries\ICs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,41 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ADCQNHHK
 
-[Document8]
-DocumentPath=can_transciever.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=SMAGLYCI
-
-[Document9]
-DocumentPath=ATmega32M1.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RVBFBGTE
-
-[Document10]
+[Document5]
 DocumentPath=..\libraries\CONNs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IJPSHKKP
 
-[Document11]
+[Document6]
 DocumentPath=..\libraries\PAY.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LXOGGXYL
 
-[Document12]
+[Document7]
 DocumentPath=..\libraries\PAY.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,7 +156,41 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document8]
+DocumentPath=32m1-ssm.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=can-transceiver.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document10]
 DocumentPath=dac-layout.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -257,6 +206,57 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IQJJESIS
+
+[Document11]
+DocumentPath=heater-control.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document12]
+DocumentPath=motor-control.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document13]
+DocumentPath=sensors-ssm.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [GeneratedDocument1]
 DocumentPath=Database Messages.txt
@@ -1017,6 +1017,11 @@ Type108=1
 Type109=1
 Type110=1
 Type111=1
+Type112=1
+Type113=1
+Type114=1
+Type115=1
+Type116=1
 
 [Difference Levels]
 Type1=1
@@ -1081,6 +1086,9 @@ Type59=1
 Type60=1
 Type61=1
 Type62=1
+Type63=1
+Type64=1
+Type65=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1204,6 +1212,7 @@ Type118=3
 Type119=3
 MultiChannelAlternate=2
 AlternateItemFail=3
+Type122=2
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW

@@ -55,23 +55,6 @@ GenerateClassCluster=0
 DocumentUniqueId=FWMNPCOJ
 
 [Document2]
-DocumentPath=amplifier-chain.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=AVCGMDSP
-
-[Document3]
 DocumentPath=..\libraries\CONNs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -88,7 +71,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document4]
+[Document3]
 DocumentPath=..\libraries\EPS.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -105,7 +88,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document4]
 DocumentPath=..\libraries\EPS.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UWHQSVID
 
-[Document6]
+[Document5]
 DocumentPath=..\libraries\ICs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=..\libraries\ICs.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQIUWKYB
 
-[Document8]
+[Document7]
 DocumentPath=..\libraries\PAY.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=..\libraries\PAY.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LXOGGXYL
 
-[Document10]
+[Document9]
 DocumentPath=filtering-optical.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,8 +190,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JCVPSQRE
 
-[Document11]
-DocumentPath=power-optical.SchDoc
+[Document10]
+DocumentPath=3V-power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -222,7 +205,58 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=CJBJATSQ
+DocumentUniqueId=
+
+[Document11]
+DocumentPath=dac-layout.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document12]
+DocumentPath=transimpedance-amp.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AVCGMDSP
+
+[Document13]
+DocumentPath=alternative-amp.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IOKPXGYL
 
 [Configuration1]
 Name=Sources
@@ -961,6 +995,11 @@ Type108=1
 Type109=1
 Type110=1
 Type111=1
+Type112=1
+Type113=1
+Type114=1
+Type115=1
+Type116=1
 
 [Difference Levels]
 Type1=1
@@ -1025,6 +1064,9 @@ Type59=1
 Type60=1
 Type61=1
 Type62=1
+Type63=1
+Type64=1
+Type65=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1148,6 +1190,7 @@ Type118=3
 Type119=3
 MultiChannelAlternate=2
 AlternateItemFail=3
+Type122=2
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
