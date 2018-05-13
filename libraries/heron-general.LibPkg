@@ -89,6 +89,23 @@ GenerateClassCluster=0
 DocumentUniqueId=HMGIWNQX
 
 [Document4]
+DocumentPath=CONNs..SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PITSNFHV
+
+[Document5]
 DocumentPath=EPS.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -105,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UWHQSVID
 
-[Document5]
+[Document6]
 DocumentPath=CONNs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IJPSHKKP
 
-[Document6]
+[Document7]
 DocumentPath=PAY.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YBDJXKAI
 
-[Document7]
+[Document8]
 DocumentPath=PAY.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -256,42 +273,17 @@ OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=SIMetrixNetlist
-OutputName20=SIMetrix
+OutputType20=PADSNetlist
+OutputName20=PADS ASCII Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
-OutputType21=SIMPLISNetlist
-OutputName21=SIMPLIS
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-OutputType22=XSpiceNetlist
-OutputName22=XSpice Netlist
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AdvSimNetlist
-OutputName1=Mixed Sim
-OutputDocumentPath1=
-OutputVariantName1=
-OutputDefault1=0
-OutputType2=SIMetrixSimulation
-OutputName2=SIMetrix
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
