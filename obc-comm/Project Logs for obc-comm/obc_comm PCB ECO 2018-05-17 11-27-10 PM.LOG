@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=+PACK Pin=R13-1
+Removed Pin From Net: NetName=+PACK Pin=R23-2
+Removed Pin From Net: NetName=+PACK Pin=U13-4
+Change component parameters: Designator = "R13"; Footprint = "J1-0603"; UniqueID = "\DSWLEJFJ\BIXCCULC\RSOVPUKC"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10m"; VariantName = "[No Variations]"
+Added Component: Designator=*(TO254P1435X464-3N)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+PACK Pin=*-1
+Added Pin To Net: NetName=+PACK Pin=*-2
+Added Member To Class: ClassName=U_eps_batt Member=Component * SM74611
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
+Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
+Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR
+Added Room: Name=U_eps_batt
+Added Room: Name=U_eps_bt1
+Added Room: Name=U_eps_bt2
