@@ -1,4 +1,5 @@
 Record=TopLevelDocument|FileName=bus-main.SchDoc
+Record=SheetSymbol|SourceDocument=eps_6.0.SchDoc|Designator=U_eps_batt|SchDesignator=U_eps_batt|FileName=eps_batt.SchDoc|SymbolType=Normal|RawFileName=eps_batt.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=eps_6.0.SchDoc|Designator=U_eps_bb1|SchDesignator=U_eps_bb1|FileName=eps_bb1.SchDoc|SymbolType=Normal|RawFileName=eps_bb1.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=eps_6.0.SchDoc|Designator=U_eps_bb2|SchDesignator=U_eps_bb2|FileName=eps_bb2.SchDoc|SymbolType=Normal|RawFileName=eps_bb2.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=eps_6.0.SchDoc|Designator=U_eps_bt1|SchDesignator=U_eps_bt1|FileName=eps_bt1.SchDoc|SymbolType=Normal|RawFileName=eps_bt1.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
