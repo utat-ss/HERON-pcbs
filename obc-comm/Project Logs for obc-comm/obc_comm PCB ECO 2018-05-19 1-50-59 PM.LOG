@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=+3V3 Pin=C28-2
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
+Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
+Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR
