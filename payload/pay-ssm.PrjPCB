@@ -39,7 +39,7 @@ PrefsRevisionGUID=
 
 [Document1]
 DocumentPath=pay-ssm.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -158,7 +158,7 @@ DocumentUniqueId=YBDJXKAI
 
 [Document8]
 DocumentPath=dac-layout.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -175,7 +175,7 @@ DocumentUniqueId=IQJJESIS
 
 [Document9]
 DocumentPath=ATmega32M1.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -192,7 +192,7 @@ DocumentUniqueId=RVBFBGTE
 
 [Document10]
 DocumentPath=can_transciever.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -209,7 +209,7 @@ DocumentUniqueId=SMAGLYCI
 
 [Document11]
 DocumentPath=heater_control.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -243,7 +243,7 @@ DocumentUniqueId=XVEMOJRQ
 
 [Document13]
 DocumentPath=sensors.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -260,7 +260,7 @@ DocumentUniqueId=YEOJMCRV
 
 [Document14]
 DocumentPath=portExpander.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -277,7 +277,7 @@ DocumentUniqueId=NKOKIXIE
 
 [Document15]
 DocumentPath=thermistorADC.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -294,7 +294,7 @@ DocumentUniqueId=QDRWXSEB
 
 [Document16]
 DocumentPath=power2V5.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -311,7 +311,7 @@ DocumentUniqueId=HRKBFTWT
 
 [Document17]
 DocumentPath=positioningAndThermistor.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
