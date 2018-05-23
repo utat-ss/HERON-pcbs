@@ -1,0 +1,5 @@
+Change Component Parameter Footprint in C22 Old=0402 New=1608[0603]
+Change Component Parameter Footprint in C23 Old=0402 New=1608[0603]
+Change Component Parameter Footprint in C24 Old=0402 New=1608[0603]
+Change Component Parameter Footprint in R12 Old=0402 New=J1-0603
+Change Component Parameter Footprint in R13 Old=0402 New=J1-0603
