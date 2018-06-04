@@ -1,0 +1,10 @@
+Added Member To Class: ClassName=MUX_LED4 Member=Component C45_MUX_LED4 (C45) 10uF
+Added Member To Class: ClassName=AC14 Member=Component D1_AC14 (D1) LED2
+Added Member To Class: ClassName=AC33 Member=Component D1_AC33 (D1) LED2
+Added Member To Class: ClassName=AC44 Member=Component D1_AC44 (D1) LED2
+Added Member To Class: ClassName=AC53 Member=Component D1_AC53 (D1) LED2
+Added Member To Class: ClassName=AC54 Member=Component D1_AC54 (D1) LED2
+Added Member To Class: ClassName=AC64 Member=Component D1_AC64 (D1) LED2
+Added Member To Class: ClassName=AC74 Member=Component D1_AC74 (D1) LED2
+Added Member To Class: ClassName=U_amplifier-special Member=Component R38 1m
+Added Member To Class: ClassName=SD4 Member=Component U6_SD4 (U6) ADA2200
