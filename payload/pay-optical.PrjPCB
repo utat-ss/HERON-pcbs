@@ -264,23 +264,6 @@ GenerateClassCluster=0
 DocumentUniqueId=ISUSBMQL
 
 [Document14]
-DocumentPath=microcontrollerOptical.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=4
-DoLibraryUpdate=0
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TFVVVRDD
-
-[Document15]
 DocumentPath=pay-optical.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -297,7 +280,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=pay-optical.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -314,7 +297,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TROWSHNX
 
-[Document17]
+[Document16]
 DocumentPath=pay-optical.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -331,7 +314,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=..\libraries\MISC.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -348,7 +331,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document18]
 DocumentPath=filtering-optical-special.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -365,7 +348,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RHCFMPLT
 
-[Document20]
+[Document19]
 DocumentPath=amplifier-special.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
