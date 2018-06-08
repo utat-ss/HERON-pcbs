@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=3V Pin=C12-2
+Added Pin To Net: NetName=3V Pin=U15-5
+Added Member To Class: ClassName=pay-optical Member=Component C? 0.47uF
