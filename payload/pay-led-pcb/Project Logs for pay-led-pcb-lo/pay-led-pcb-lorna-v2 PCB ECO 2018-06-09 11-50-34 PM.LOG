@@ -1,0 +1,29 @@
+Added Component: Designator=M1(SOP65P780X200-28N)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=CH1 Pin=M1-1
+Added Pin To Net: NetName=CH2 Pin=M1-2
+Added Pin To Net: NetName=CH3 Pin=M1-3
+Added Pin To Net: NetName=CH4 Pin=M1-4
+Added Pin To Net: NetName=CH5 Pin=M1-5
+Added Pin To Net: NetName=CH6 Pin=M1-6
+Added Pin To Net: NetName=CH7 Pin=M1-7
+Added Pin To Net: NetName=CH8 Pin=M1-8
+Added Pin To Net: NetName=3V3 Pin=M1-9
+Added Pin To Net: NetName=GND Pin=M1-10
+Added Pin To Net: NetName=PEX_C\S\ Pin=M1-11
+Added Pin To Net: NetName=SCK Pin=M1-12
+Added Pin To Net: NetName=MOSI Pin=M1-13
+Added Pin To Net: NetName=MISO Pin=M1-14
+Added Pin To Net: NetName=NetM1_15 Pin=M1-15
+Added Pin To Net: NetName=NetM1_16 Pin=M1-16
+Added Pin To Net: NetName=NetM1_17 Pin=M1-17
+Added Pin To Net: NetName=PEX_RST Pin=M1-18
+Added Pin To Net: NetName=CH9 Pin=M1-21
+Added Pin To Net: NetName=CH10 Pin=M1-22
+Added Pin To Net: NetName=CH11 Pin=M1-23
+Added Pin To Net: NetName=CH12 Pin=M1-24
+Added Pin To Net: NetName=CH13 Pin=M1-25
+Added Pin To Net: NetName=CH14 Pin=M1-26
+Added Pin To Net: NetName=CH15 Pin=M1-27
+Added Pin To Net: NetName=CH16 Pin=M1-28
+Added Member To Class: ClassName=pay-led-pcb-lorna-v2 Member=Component M1 MCP23S17
