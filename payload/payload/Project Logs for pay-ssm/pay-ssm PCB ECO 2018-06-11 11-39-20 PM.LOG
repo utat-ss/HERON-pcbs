@@ -1,0 +1,4 @@
+Change Component Library : Designator=U17 Old Library=heron-general.IntLib New Library=EPS.SchLib
+Change component parameters: Designator = "U17"; UniqueID = "\UPNQJGYB\UTRJODJQ\VCWXUIAV"
+Change component parameters. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=U17-33

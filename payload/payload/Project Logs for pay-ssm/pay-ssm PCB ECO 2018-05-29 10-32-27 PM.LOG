@@ -1,0 +1,129 @@
+Change Component Designator: OldDesignator=C1 NewDesignator=C62
+Change Component Designator: OldDesignator=C2 NewDesignator=C63
+Change Component Designator: OldDesignator=C3 NewDesignator=C64
+Change Component Designator: OldDesignator=R3 NewDesignator=R46
+Change Component Designator: OldDesignator=R4 NewDesignator=R47
+Change Component Designator: OldDesignator=U1 NewDesignator=U19
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=3V3 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=3V3 Pin=C5-2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Pin To Net: NetName=NetD5_1 Pin=D5-1
+Added Pin To Net: NetName=NetD5_2 Pin=D5-2
+Added Pin To Net: NetName=MISO_A Pin=P9-1
+Added Pin To Net: NetName=3V3 Pin=P9-2
+Added Pin To Net: NetName=NetP9_3 Pin=P9-3
+Added Pin To Net: NetName=MOSI_A Pin=P9-4
+Added Pin To Net: NetName=NetP9_5 Pin=P9-5
+Added Pin To Net: NetName=GND Pin=P9-6
+Added Pin To Net: NetName=RXLIN Pin=P10-1
+Added Pin To Net: NetName=MOSI_A Pin=P10-2
+Added Pin To Net: NetName=RXLIN Pin=P10-3
+Added Pin To Net: NetName=MOSI_A Pin=P10-4
+Added Pin To Net: NetName=R\S\T\ Pin=R5-1
+Added Pin To Net: NetName=3V3 Pin=R5-2
+Added Pin To Net: NetName=3V3 Pin=R6-1
+Added Pin To Net: NetName=NetD1_1 Pin=R6-2
+Added Pin To Net: NetName=3V3 Pin=R7-1
+Added Pin To Net: NetName=NetD2_1 Pin=R7-2
+Added Pin To Net: NetName=3V3 Pin=R8-1
+Added Pin To Net: NetName=NetD3_1 Pin=R8-2
+Added Pin To Net: NetName=3V3 Pin=R9-1
+Added Pin To Net: NetName=NetD4_1 Pin=R9-2
+Added Pin To Net: NetName=3V3 Pin=R10-1
+Added Pin To Net: NetName=NetD5_1 Pin=R10-2
+Added Pin To Net: NetName=NetP9_3 Pin=S1-1
+Added Pin To Net: NetName=SCK_A Pin=S1-2
+Added Pin To Net: NetName=RXLIN Pin=S1-3
+Added Pin To Net: NetName=NetP9_5 Pin=S1-4
+Added Pin To Net: NetName=R\S\T\ Pin=S1-5
+Added Pin To Net: NetName=NetS1_6 Pin=S1-6
+Added Pin To Net: NetName=NetS1_6 Pin=S2-1
+Added Pin To Net: NetName=GND Pin=S2-2
+Added Pin To Net: NetName=MISO_A Pin=U2-1
+Added Pin To Net: NetName=MOSI_A Pin=U2-2
+Added Pin To Net: NetName=STEP Pin=U2-3
+Added Pin To Net: NetName=3V3 Pin=U2-4
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=TXCAN Pin=U2-6
+Added Pin To Net: NetName=RXCAN Pin=U2-7
+Added Pin To Net: NetName=MISO Pin=U2-8
+Added Pin To Net: NetName=MOSI Pin=U2-9
+Added Pin To Net: NetName=NetC8_2 Pin=U2-10
+Added Pin To Net: NetName=NetC7_2 Pin=U2-11
+Added Pin To Net: NetName=SCK_A Pin=U2-12
+Added Pin To Net: NetName=PEX_C\S\ Pin=U2-13
+Added Pin To Net: NetName=PEX_R\S\T\ Pin=U2-14
+Added Pin To Net: NetName=NetU2_15 Pin=U2-15
+Added Pin To Net: NetName=DATA_RDY Pin=U2-16
+Added Pin To Net: NetName=HM_C\S\ Pin=U2-17
+Added Pin To Net: NetName=TM_C\S\ Pin=U2-18
+Added Pin To Net: NetName=3V3 Pin=U2-19
+Added Pin To Net: NetName=GND Pin=U2-20
+Added Pin To Net: NetName=NetC6_1 Pin=U2-21
+Added Pin To Net: NetName=PR_C\S\ Pin=U2-22
+Added Pin To Net: NetName=SENS_C\S\ Pin=U2-23
+Added Pin To Net: NetName=SENS_R\S\T\ Pin=U2-24
+Added Pin To Net: NetName=THM_DIS Pin=U2-25
+Added Pin To Net: NetName=INTA Pin=U2-26
+Added Pin To Net: NetName=ADC_C\S\ Pin=U2-27
+Added Pin To Net: NetName=SCK Pin=U2-28
+Added Pin To Net: NetName=DAC_C\S\ Pin=U2-29
+Added Pin To Net: NetName=LBK Pin=U2-30
+Added Pin To Net: NetName=R\S\T\ Pin=U2-31
+Added Pin To Net: NetName=DAC_C\L\R\ Pin=U2-32
+Added Pin To Net: NetName=MOSI_A Pin=U3-1
+Added Pin To Net: NetName=NetD1_2 Pin=U3-2
+Added Pin To Net: NetName=RXLIN Pin=U3-3
+Added Pin To Net: NetName=NetD2_2 Pin=U3-4
+Added Pin To Net: NetName=TXCAN Pin=U3-5
+Added Pin To Net: NetName=NetD3_2 Pin=U3-6
+Added Pin To Net: NetName=GND Pin=U3-7
+Added Pin To Net: NetName=NetD4_2 Pin=U3-8
+Added Pin To Net: NetName=RXCAN Pin=U3-9
+Added Pin To Net: NetName=NetD5_2 Pin=U3-10
+Added Pin To Net: NetName=R\S\T\ Pin=U3-11
+Added Pin To Net: NetName=GND Pin=U3-13
+Added Pin To Net: NetName=3V3 Pin=U3-14
+Added Pin To Net: NetName=NetC7_2 Pin=Y1-1
+Added Pin To Net: NetName=NetC8_2 Pin=Y1-2
+Change Net Name : Old Net Name=NetC3_1 New Net Name=NetC64_1
+Change Net Name : Old Net Name=NetU1_1 New Net Name=NetU5_4
+Change Net Name : Old Net Name=NetU1_2 New Net Name=NetU7_4
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component C4 0.1uF
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component C5 0.1uF
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component C6 0.1uF
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component C7 15pF 1%
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component C8 15pF 1%
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component D1 LED2
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component D2 LED2
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component D3 LED2
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component D4 LED2
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component D5 LED2
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component P9 PROG
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component P10 UART
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R5 30K
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R6 330
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R7 330
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R8 330
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R9 330
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R10 330
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component S1 MODE SELECT
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component S2 RST PUSH
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component U2 ATMega32M1
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component U3 SN74LV07A
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component Y1 8MHz

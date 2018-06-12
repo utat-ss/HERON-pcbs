@@ -1,0 +1,18 @@
+Change Component Parameter Comment in C46 Old= New=0.1uF
+Change Component Parameter Footprint in C46 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C47 Old= New=10uF
+Change Component Parameter Footprint in C47 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C48 Old= New=0.47uF
+Change Component Parameter Footprint in C48 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C49 Old= New=0.47uF
+Change Component Parameter Footprint in C49 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in R33 Old= New=10K
+Change Component Parameter Comment in R34 Old= New=100
+Change Component Parameter Comment in R35 Old= New=100
+Change Component Parameter Comment in R36 Old= New=100
+Change Component Parameter Comment in R37 Old= New=100
+Change Component Parameter Comment in R38 Old= New=10k
+Change Component Parameter Comment in R41 Old= New=100
+Change Component Parameter Comment in R42 Old= New=100
+Added Parameter Value=100 Quad to Part R39
+Added Parameter Value=100 Quad to Part R40

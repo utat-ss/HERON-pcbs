@@ -1,0 +1,170 @@
+Removed Pin From Net: NetName=GND Pin=C37-1
+Removed Pin From Net: NetName=3V3 Pin=C37-2
+Removed Pin From Net: NetName=GND Pin=C38-1
+Removed Pin From Net: NetName=3V3 Pin=C38-2
+Removed Pin From Net: NetName=GND Pin=C39-2
+Removed Pin From Net: NetName=GND Pin=C40-1
+Removed Pin From Net: NetName=3V3 Pin=C40-2
+Removed Pin From Net: NetName=GND Pin=C41-1
+Removed Pin From Net: NetName=3V3 Pin=C41-2
+Removed Pin From Net: NetName=GND Pin=C42-1
+Removed Pin From Net: NetName=GND Pin=C43-1
+Removed Pin From Net: NetName=GND Pin=C46-1
+Removed Pin From Net: NetName=GND Pin=C47-1
+Removed Pin From Net: NetName=GND Pin=C48-1
+Removed Pin From Net: NetName=3V Pin=C48-2
+Removed Pin From Net: NetName=GND Pin=C49-1
+Removed Pin From Net: NetName=3V3 Pin=C49-2
+Removed Pin From Net: NetName=GND Pin=D3-2
+Removed Pin From Net: NetName=GND Pin=D4-2
+Removed Pin From Net: NetName=GND Pin=D5-2
+Removed Pin From Net: NetName=GND Pin=D6-2
+Removed Pin From Net: NetName=GND Pin=D7-2
+Removed Pin From Net: NetName=GND Pin=D8-2
+Removed Pin From Net: NetName=GND Pin=D9-2
+Removed Pin From Net: NetName=GND Pin=D10-2
+Removed Pin From Net: NetName=3V3 Pin=P1-2
+Removed Pin From Net: NetName=GND Pin=P1-6
+Removed Pin From Net: NetName=3V3 Pin=P3-1
+Removed Pin From Net: NetName=GND Pin=P3-2
+Removed Pin From Net: NetName=GND Pin=P3-9
+Removed Pin From Net: NetName=3V3 Pin=P3-10
+Removed Pin From Net: NetName=3V3 Pin=P4-1
+Removed Pin From Net: NetName=GND Pin=P4-2
+Removed Pin From Net: NetName=GND Pin=P4-9
+Removed Pin From Net: NetName=3V3 Pin=P4-10
+Removed Pin From Net: NetName=3V3 Pin=R20-2
+Removed Pin From Net: NetName=3V3 Pin=R21-1
+Removed Pin From Net: NetName=3V3 Pin=R22-2
+Removed Pin From Net: NetName=GND Pin=R23-2
+Removed Pin From Net: NetName=3V3 Pin=R24-2
+Removed Pin From Net: NetName=GND Pin=R28-1
+Removed Pin From Net: NetName=GND Pin=R30-1
+Removed Pin From Net: NetName=GND Pin=S1-3
+Removed Pin From Net: NetName=3V3 Pin=U10-4
+Removed Pin From Net: NetName=GND Pin=U10-5
+Removed Pin From Net: NetName=3V3 Pin=U10-19
+Removed Pin From Net: NetName=GND Pin=U10-20
+Removed Pin From Net: NetName=GND Pin=U11-10
+Removed Pin From Net: NetName=E\N\ Pin=U11-11
+Removed Pin From Net: NetName=A0 Pin=U11-13
+Removed Pin From Net: NetName=A1 Pin=U11-15
+Removed Pin From Net: NetName=A2 Pin=U11-17
+Removed Pin From Net: NetName=3V3 Pin=U11-20
+Removed Pin From Net: NetName=NetR14_SD1_2 Pin=U13-5
+Removed Pin From Net: NetName=GND Pin=U13-10
+Removed Pin From Net: NetName=MUX_E\N\ Pin=U13-14
+Removed Pin From Net: NetName=SCK Pin=U13-16
+Removed Pin From Net: NetName=MISO Pin=U13-17
+Removed Pin From Net: NetName=MOSI Pin=U13-18
+Removed Pin From Net: NetName=3V Pin=U14-1
+Removed Pin From Net: NetName=GND Pin=U14-3
+Removed Pin From Net: NetName=GND Pin=U14-4
+Removed Pin From Net: NetName=3V3 Pin=U14-6
+Removed Pin From Net: NetName=GND Pin=U14-7
+Removed Member From Class: ClassName=pay-optical Member=C46
+Removed Member From Class: ClassName=pay-optical Member=C47
+Removed Member From Class: ClassName=pay-optical Member=C48
+Removed Member From Class: ClassName=pay-optical Member=C49
+Removed Member From Class: ClassName=pay-optical Member=P3
+Removed Member From Class: ClassName=pay-optical Member=P4
+Removed Member From Class: ClassName=pay-optical Member=R28
+Removed Member From Class: ClassName=pay-optical Member=R29
+Removed Member From Class: ClassName=pay-optical Member=R30
+Removed Member From Class: ClassName=pay-optical Member=R31
+Removed Member From Class: ClassName=pay-optical Member=R32
+Removed Member From Class: ClassName=pay-optical Member=U13
+Removed Member From Class: ClassName=pay-optical Member=U14
+Added Component: Designator=C?(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.47uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.47uF"; VariantName = "[No Variations]"
+Added Component: Designator=P?(CON20_2X10_DUA00)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=U?(DFN220X250X80-7N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-44695-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=3V3 Pin=C?-2
+Added Pin To Net: NetName=3V Pin=C?-2
+Added Pin To Net: NetName=3V3 Pin=P?-1
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=MISO Pin=P?-4
+Added Pin To Net: NetName=MOSI Pin=P?-6
+Added Pin To Net: NetName=SCK Pin=P?-8
+Added Pin To Net: NetName=MUX_E\N\ Pin=P?-10
+Added Pin To Net: NetName=NetR14_SD1_2 Pin=P?-18
+Added Pin To Net: NetName=GND Pin=P?-19
+Added Pin To Net: NetName=3V3 Pin=P?-20
+Added Pin To Net: NetName=3V Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=GND Pin=U?-4
+Added Pin To Net: NetName=3V3 Pin=U?-6
+Change Net Name : Old Net Name=MUX_E\N\ New Net Name=MUX_5_EN_1
+Change Net Name : Old Net Name=NetR14_SD1_2 New Net Name=CLKIN_1
+Added Pin To Net: NetName=ADC_C\S\_1 Pin=P?-14
+Added Pin To Net: NetName=ADC_C\S\_1 Pin=R3-1
+Added Pin To Net: NetName=ADC_C\S\_1 Pin=U1-32
+Added Net: Name=ADC_C\S\_1
+Added Pin To Net: NetName=ADC_S\Y\N\C\_1 Pin=P?-16
+Added Pin To Net: NetName=ADC_S\Y\N\C\_1 Pin=R4-1
+Added Pin To Net: NetName=ADC_S\Y\N\C\_1 Pin=U1-25
+Added Net: Name=ADC_S\Y\N\C\_1
+Added Pin To Net: NetName=DAC_C\S\_1 Pin=P?-12
+Added Pin To Net: NetName=DAC_C\S\_1 Pin=R46-1
+Added Pin To Net: NetName=DAC_C\S\_1 Pin=U19-6
+Added Net: Name=DAC_C\S\_1
+Added Pin To Net: NetName=SD1_C\S\_1 Pin=P?-9
+Added Pin To Net: NetName=SD1_C\S\_1 Pin=R15_SD1-1
+Added Pin To Net: NetName=SD1_C\S\_1 Pin=U6_SD1-3
+Added Net: Name=SD1_C\S\_1
+Added Pin To Net: NetName=SD2_C\S\_1 Pin=P?-7
+Added Pin To Net: NetName=SD2_C\S\_1 Pin=R15_SD2-1
+Added Pin To Net: NetName=SD2_C\S\_1 Pin=U6_SD2-3
+Added Net: Name=SD2_C\S\_1
+Added Pin To Net: NetName=SD3_C\S\_1 Pin=P?-5
+Added Pin To Net: NetName=SD3_C\S\_1 Pin=R15_SD3-1
+Added Pin To Net: NetName=SD3_C\S\_1 Pin=U6_SD3-3
+Added Net: Name=SD3_C\S\_1
+Added Pin To Net: NetName=SD4_C\S\_1 Pin=P?-3
+Added Pin To Net: NetName=SD4_C\S\_1 Pin=R15_SD4-1
+Added Pin To Net: NetName=SD4_C\S\_1 Pin=U6_SD4-3
+Added Net: Name=SD4_C\S\_1
+Added Pin To Net: NetName=SYNCO1_1 Pin=P?-17
+Added Pin To Net: NetName=SYNCO1_1 Pin=U6_SD1-2
+Added Net: Name=SYNCO1_1
+Added Pin To Net: NetName=SYNCO2_1 Pin=P?-15
+Added Pin To Net: NetName=SYNCO2_1 Pin=U6_SD2-2
+Added Net: Name=SYNCO2_1
+Added Pin To Net: NetName=SYNCO3_1 Pin=P?-13
+Added Pin To Net: NetName=SYNCO3_1 Pin=U6_SD3-2
+Added Net: Name=SYNCO3_1
+Added Pin To Net: NetName=SYNCO4_1 Pin=P?-11
+Added Pin To Net: NetName=SYNCO4_1 Pin=U6_SD4-2
+Added Net: Name=SYNCO4_1
+Added Member To Class: ClassName=pay-optical Member=Component C? 0.47uF
+Added Member To Class: ClassName=pay-optical Member=Component C? 0.47uF
+Added Member To Class: ClassName=AC43 Member=Component D2_AC43 (D2) VBPW34SR
+Added Member To Class: ClassName=pay-optical Member=Component P? Header 10X2
+Added Member To Class: ClassName=pay-optical Member=Component U? LP5900

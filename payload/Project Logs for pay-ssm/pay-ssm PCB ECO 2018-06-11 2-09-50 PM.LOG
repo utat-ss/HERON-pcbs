@@ -1,0 +1,15 @@
+Added Component: Designator=P16(DF14-10P-1.25H(55))
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=P16-1
+Added Pin To Net: NetName=GND Pin=P16-2
+Added Pin To Net: NetName=MISO_32M1 Pin=P16-3
+Added Pin To Net: NetName=MOSI_32M1 Pin=P16-4
+Added Pin To Net: NetName=SCK_32M1 Pin=P16-5
+Added Pin To Net: NetName=LED_CLK Pin=P16-7
+Added Pin To Net: NetName=GND Pin=P16-9
+Added Pin To Net: NetName=3V3 Pin=P16-10
+Added Member To Class: ClassName=U_sensors-digital Member=Component P16 OUTGOING

@@ -1,0 +1,126 @@
+Change Component Footprint: Designator=D1 Old Footprint=3.2X1.6X1.1 New Footprint=0603-LED
+Change Component Footprint: Designator=D2 Old Footprint=3.2X1.6X1.1 New Footprint=0603-LED
+Change Component Footprint: Designator=D3 Old Footprint=3.2X1.6X1.1 New Footprint=0603-LED
+Change Component Footprint: Designator=D4 Old Footprint=3.2X1.6X1.1 New Footprint=0603-LED
+Change Component Footprint: Designator=D5 Old Footprint=3.2X1.6X1.1 New Footprint=0603-LED
+Change Component Footprint: Designator=C4 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C5 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C6 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C10 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C11 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C12 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C13 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C14 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C15 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C17_MC1 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C17_MC2 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C19 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C20 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C21 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C23 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C28 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C29 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C30 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C35 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=Q1 Old Footprint=E3 New Footprint=SOT23-6_N
+Change Component Footprint: Designator=Q2 Old Footprint=E3 New Footprint=SOT23-6_N
+Change Component Footprint: Designator=Q3 Old Footprint=E3 New Footprint=SOT23-6_N
+Change Component Footprint: Designator=P5 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P6 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P7 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P8 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P11 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P12 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P13 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P14 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P15 Old Footprint=HDR1X2 New Footprint=DF14-2P-1.25H(55)
+Change Component Footprint: Designator=P16_MC1 Old Footprint=HDR1X4 New Footprint=DF14-4P-1.25H(55)
+Change Component Footprint: Designator=P16_MC2 Old Footprint=HDR1X4 New Footprint=DF14-4P-1.25H(55)
+Change Component Footprint: Designator=P1 Old Footprint=HDR1X10 New Footprint=DF14-10P-1.25H(55)
+Change Component Footprint: Designator=P2 Old Footprint=HDR1X10 New Footprint=DF14-10P-1.25H(55)
+Change Component Footprint: Designator=P3 Old Footprint=HDR1X10 New Footprint=DF14-10P-1.25H(55)
+Change Component Footprint: Designator=P4 Old Footprint=HDR1X10 New Footprint=DF14-10P-1.25H(55)
+Change Component Footprint: Designator=S1 Old Footprint=PCBComponent_1 New Footprint=DPST_32m1_switch
+Change Component Footprint: Designator=Y1 Old Footprint=R38 New Footprint=OSCSC500X320X110-4N
+Change Component Footprint: Designator=S2 Old Footprint=SPST-2 New Footprint=Pushbutton
+Change component parameters: Designator = "Q1"; Footprint = "SOT23-6_N"; UniqueID = "\XIDGNYLG\FCWUHFEI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.6mm; Lead Dia. 0.5 mm (max)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "E3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "1995/1996"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number"; Value = "FDC637BNZCT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q2"; Footprint = "SOT23-6_N"; UniqueID = "\XIDGNYLG\MNUCQPXW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.6mm; Lead Dia. 0.5 mm (max)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "E3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "1995/1996"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number"; Value = "FDC637BNZCT-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q3"; Footprint = "SOT23-6_N"; UniqueID = "\XIDGNYLG\BTKBOKOY"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.6mm; Lead Dia. 0.5 mm (max)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "E3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "1995/1996"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number"; Value = "FDC637BNZCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R41(ResQuad-320X150)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K 1% Quad"; VariantName = "[No Variations]"
+Added Component: Designator=R42(ResQuad-320X150)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K 1% Quad"; VariantName = "[No Variations]"
+Added Component: Designator=R43(ResQuad-320X150)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K 1% Quad"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=R41-1
+Added Pin To Net: NetName=GND Pin=R41-2
+Added Pin To Net: NetName=GND Pin=R41-3
+Added Pin To Net: NetName=GND Pin=R41-4
+Added Pin To Net: NetName=NetP3_8 Pin=R41-5
+Added Pin To Net: NetName=NetP3_6 Pin=R41-6
+Added Pin To Net: NetName=THM_3 Pin=R41-7
+Added Pin To Net: NetName=THM_1 Pin=R41-8
+Added Pin To Net: NetName=GND Pin=R42-1
+Added Pin To Net: NetName=GND Pin=R42-2
+Added Pin To Net: NetName=GND Pin=R42-3
+Added Pin To Net: NetName=GND Pin=R42-4
+Added Pin To Net: NetName=NetP4_6 Pin=R42-5
+Added Pin To Net: NetName=NetP4_4 Pin=R42-6
+Added Pin To Net: NetName=THM_2 Pin=R42-7
+Added Pin To Net: NetName=NetP3_10 Pin=R42-8
+Added Pin To Net: NetName=GND Pin=R43-1
+Added Pin To Net: NetName=GND Pin=R43-2
+Added Pin To Net: NetName=GND Pin=R43-3
+Added Pin To Net: NetName=GND Pin=R43-4
+Added Pin To Net: NetName=NetP4_10 Pin=R43-5
+Added Pin To Net: NetName=NetP4_8 Pin=R43-6
+Added Pin To Net: NetName=NetR43_7 Pin=R43-7
+Added Pin To Net: NetName=NetR43_7 Pin=R43-8
+Added Pin To Net: NetName=NetP9_3 Pin=S1-1
+Added Pin To Net: NetName=SCK_A Pin=S1-2
+Added Pin To Net: NetName=RXLIN Pin=S1-3
+Added Pin To Net: NetName=NetP9_5 Pin=S1-4
+Added Pin To Net: NetName=R\S\T\ Pin=S1-5
+Added Pin To Net: NetName=NetS1_6 Pin=S1-6
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=R8-2
+Added Net: Name=NetD3_1
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R41 10K 1% Quad
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R42 10K 1% Quad
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R43 10K 1% Quad

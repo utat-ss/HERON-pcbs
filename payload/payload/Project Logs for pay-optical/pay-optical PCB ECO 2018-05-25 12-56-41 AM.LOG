@@ -1,0 +1,12 @@
+Added Pin To Net: NetName=NetU6_SD1_16 Pin=C26_SD1-1
+Added Pin To Net: NetName=NetU6_SD2_16 Pin=C26_SD2-1
+Added Pin To Net: NetName=NetU6_SD3_16 Pin=C26_SD3-1
+Added Pin To Net: NetName=NetU6_SD4_16 Pin=C26_SD4-1
+Added Pin To Net: NetName=NetU6_SD5_16 Pin=C26_SD5-1
+Change Net Name : Old Net Name=NetU6_SD1_16 New Net Name=NetC26_SD1_1
+Change Net Name : Old Net Name=NetU6_SD2_16 New Net Name=NetC26_SD2_1
+Change Net Name : Old Net Name=NetU6_SD3_16 New Net Name=NetC26_SD3_1
+Change Net Name : Old Net Name=NetU6_SD4_16 New Net Name=NetC26_SD4_1
+Change Net Name : Old Net Name=NetU6_SD5_16 New Net Name=NetC26_SD5_1
+Added Member To Class: ClassName=SD2 Member=Component U6_SD2 (U6) ADA2200
+Added Member To Class: ClassName=SD2 Member=Component U7_SD2 (U7) AD8227

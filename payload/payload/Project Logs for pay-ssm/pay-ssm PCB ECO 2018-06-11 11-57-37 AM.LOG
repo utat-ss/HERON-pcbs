@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=MISO_32M1 Pin=U11-4
+Removed Pin From Net: NetName=MOSI_32M1 Pin=U11-6
+Change Component Footprint: Designator=C1 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C37 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C38 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C39 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=C40 Old Footprint=0402 New Footprint=1608[0603]
+Change Component Footprint: Designator=R3 Old Footprint=0402 New Footprint=J1-0603
+Change Component Footprint: Designator=R20 Old Footprint=0402 New Footprint=J1-0603
+Change Component Footprint: Designator=R21 Old Footprint=0402 New Footprint=J1-0603
+Change Component Footprint: Designator=R22 Old Footprint=0402 New Footprint=J1-0603
+Change Component Footprint: Designator=R23 Old Footprint=0402 New Footprint=J1-0603
+Change Component Footprint: Designator=R24 Old Footprint=0402 New Footprint=J1-0603
+Change Component Footprint: Designator=R51 Old Footprint=0402 New Footprint=J1-0603
+Change Component Footprint: Designator=D3 Old Footprint=1608[0603] New Footprint=0603-LED
+Change Component Footprint: Designator=D4 Old Footprint=1608[0603] New Footprint=0603-LED
+Change Component Footprint: Designator=D5 Old Footprint=1608[0603] New Footprint=0603-LED
+Change Component Footprint: Designator=D6 Old Footprint=1608[0603] New Footprint=0603-LED
+Change Component Footprint: Designator=D7 Old Footprint=1608[0603] New Footprint=0603-LED
+Change Component Footprint: Designator=D8 Old Footprint=1608[0603] New Footprint=0603-LED
+Change Component Footprint: Designator=D9 Old Footprint=1608[0603] New Footprint=0603-LED
+Change Component Footprint: Designator=D10 Old Footprint=1608[0603] New Footprint=0603-LED
+Added Pin To Net: NetName=GND Pin=U11-6
+Added Pin To Net: NetName=MISO_32M1 Pin=U11-11
+Added Pin To Net: NetName=MOSI_32M1 Pin=U11-13
+Added Pin To Net: NetName=GND Pin=U11-15
+Added Pin To Net: NetName=GND Pin=U11-17

@@ -1,0 +1,48 @@
+Removed Member From Class: ClassName=U_sensors Member=R46
+Removed Member From Class: ClassName=U_sensors Member=R47
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=C? NewDesignator=C2
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=P? NewDesignator=P17
+Change Component Designator: OldDesignator=P? NewDesignator=P18
+Change Component Designator: OldDesignator=R46 NewDesignator=R54
+Change Component Designator: OldDesignator=R47 NewDesignator=R55
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Change Component Designator: OldDesignator=R? NewDesignator=R51
+Change Component Designator: OldDesignator=R? NewDesignator=R52
+Change Component Designator: OldDesignator=R? NewDesignator=R53
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Change Net Name : Old Net Name=NetP?_5 New Net Name=NetP1_5
+Change Net Name : Old Net Name=NetR?_1 New Net Name=NetR52_1
+Change Net Name : Old Net Name=NetR?_2 New Net Name=NetR3_2
+Change Net Name : Old Net Name=NetR?_3 New Net Name=NetR52_3
+Change Net Name : Old Net Name=NetR?_4 New Net Name=NetR52_4
+Change Net Name : Old Net Name=NetU10_6 New Net Name=NetU1_6
+Change Net Name : Old Net Name=NetU10_24 New Net Name=NetU1_8
+Change Net Name : Old Net Name=NetU10_25 New Net Name=NetU1_13
+Change Net Name : Old Net Name=NetU10_27 New Net Name=NetU1_11
+Added Pin To Net: NetName=NetR52_2 Pin=R52-2
+Added Pin To Net: NetName=NetR52_2 Pin=U10-16
+Added Net: Name=NetR52_2
+Added Pin To Net: NetName=NetR53_1 Pin=R53-1
+Added Pin To Net: NetName=NetR53_1 Pin=U10-7
+Added Net: Name=NetR53_1
+Added Pin To Net: NetName=NetR53_2 Pin=R53-2
+Added Pin To Net: NetName=NetR53_2 Pin=U10-17
+Added Net: Name=NetR53_2
+Added Pin To Net: NetName=NetR53_3 Pin=R53-3
+Added Pin To Net: NetName=NetR53_3 Pin=U10-18
+Added Net: Name=NetR53_3
+Added Pin To Net: NetName=NetR53_4 Pin=R53-4
+Added Pin To Net: NetName=NetR53_4 Pin=U10-22
+Added Net: Name=NetR53_4
+Added Member To Class: ClassName=U_sensors-digital Member=Component C2 10uF
+Added Member To Class: ClassName=U_sensors-digital Member=Component P17 Header 10X2
+Added Member To Class: ClassName=U_sensors-digital Member=Component P18 OUTGOING
+Added Member To Class: ClassName=U_sensors-digital Member=Component R3 10K
+Added Member To Class: ClassName=U_sensors-digital Member=Component R4 100 Quad
+Added Member To Class: ClassName=U_sensors-digital Member=Component R52 100 Quad
+Added Member To Class: ClassName=U_sensors-digital Member=Component R53 100 Quad
+Added Member To Class: ClassName=U_sensors Member=Component R54 10K
+Added Member To Class: ClassName=U_sensors Member=Component R55 10K

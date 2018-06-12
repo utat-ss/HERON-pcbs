@@ -1,0 +1,3 @@
+Removed Member From Class: ClassName=U_sensors-digital Member=P?
+Change Component Designator: OldDesignator=P? NewDesignator=P2
+Added Pin To Net: NetName=MISO_A Pin=P2-6

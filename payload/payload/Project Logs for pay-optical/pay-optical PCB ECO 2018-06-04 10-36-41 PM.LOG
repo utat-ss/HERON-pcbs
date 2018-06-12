@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=C62 Old Footprint=1608[0603] New Footprint=0402
+Change Component Footprint: Designator=C63 Old Footprint=1608[0603] New Footprint=0402
+Change Component Footprint: Designator=C64 Old Footprint=1608[0603] New Footprint=0402
+Change Component Footprint: Designator=R46 Old Footprint=J1-0603 New Footprint=0402
+Change Component Footprint: Designator=R47 Old Footprint=J1-0603 New Footprint=0402
+Added Member To Class: ClassName=pay-optical Member=Component C? 0.47uF

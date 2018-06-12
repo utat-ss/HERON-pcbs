@@ -1,0 +1,39 @@
+Change Component Parameter Comment in C1 Old= New=10uF
+Change Component Parameter Footprint in C1 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C2 Old= New=10uF
+Change Component Parameter Footprint in C2 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C3 Old= New=10uF
+Change Component Parameter Footprint in C3 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C4 Old= New=10uF
+Change Component Parameter Footprint in C4 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C5 Old= New=10uF
+Change Component Parameter Footprint in C5 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C6 Old= New=10uF
+Change Component Parameter Footprint in C6 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C7 Old= New=10uF
+Change Component Parameter Footprint in C7 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C8 Old= New=10uF
+Change Component Parameter Footprint in C8 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C9 Old= New=0.1uF
+Change Component Parameter Footprint in C9 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C10 Old= New=10uF
+Change Component Parameter Footprint in C10 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C11 Old= New=0.1uF
+Change Component Parameter Footprint in C11 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C12 Old= New=10uF
+Change Component Parameter Footprint in C12 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C13 Old= New=10uF
+Change Component Parameter Footprint in C13 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C14 Old= New=10uF
+Change Component Parameter Footprint in C14 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C15 Old= New=0.1uF
+Change Component Parameter Footprint in C15 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in C16 Old= New=4.7uF
+Change Component Parameter Footprint in C16 Old=C1206 New=1608[0603]
+Change Component Parameter Comment in R3 Old= New=10K
+Change Component Parameter Comment in R4 Old= New=10K
+Change Component Parameter Comment in R6 Old= New=1K
+Change Component Parameter Comment in R7 Old= New=1K
+Added Parameter Value=1K Quad to Part R2
+Added Parameter Value=1K Quad to Part R5
+Added Parameter Value=10K Quad to Part R1
