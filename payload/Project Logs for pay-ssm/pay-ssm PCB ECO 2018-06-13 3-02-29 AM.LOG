@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetD13_2 Pin=D13-2
+Removed Pin From Net: NetName=NetD14_2 Pin=D14-2
+Removed Pin From Net: NetName=+5 Pin=R66-2
+Removed Pin From Net: NetName=+5 Pin=R67-2
+Removed Member From Class: ClassName=U_heater_control Member=D13
+Removed Member From Class: ClassName=U_heater_control Member=D14
+Removed Member From Class: ClassName=U_heater_control Member=R66
+Removed Member From Class: ClassName=U_heater_control Member=R67
+Change Net Name : Old Net Name=NetD13_2 New Net Name=NetD15_2
+Change Net Name : Old Net Name=NetD14_2 New Net Name=NetD16_2

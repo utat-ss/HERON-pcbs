@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=R\S\T\_OPTICAL Pin=P19-5
+Added Pin To Net: NetName=R\S\T\_OPTICAL Pin=P22-5
+Added Pin To Net: NetName=R\S\T\_OPTICAL Pin=R24-1
+Added Pin To Net: NetName=R\S\T\_OPTICAL Pin=S3-1
+Added Pin To Net: NetName=R\S\T\_OPTICAL Pin=U2-24
+Added Pin To Net: NetName=R\S\T\_OPTICAL Pin=U20-31
+Added Pin To Net: NetName=R\S\T\_OPTICAL Pin=U21-5
+Added Net: Name=R\S\T\_OPTICAL
+Added Member To Class: ClassName=optical_micro Member=Component U20 ATMega32M1
+Added Member To Class: ClassName=optical_micro Member=Component U21 SN74LV07A

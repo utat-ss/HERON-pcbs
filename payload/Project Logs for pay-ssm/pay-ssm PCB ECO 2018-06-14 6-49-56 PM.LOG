@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=LED_CLK Pin=P22-7
+Removed Pin From Net: NetName=RXLIN_OPTICAL Pin=P22-8
+Removed Pin From Net: NetName=SENS_CLK Pin=P22-9
+Removed Pin From Net: NetName=LED_CLK Pin=P22-10
+Added Pin To Net: NetName=LED_CLK Pin=P22-6
+Added Pin To Net: NetName=SENS_CLK Pin=P22-7
+Added Pin To Net: NetName=MISO_A Pin=P22-8
+Added Pin To Net: NetName=LED_CLK Pin=P22-9
+Added Pin To Net: NetName=RXLIN_OPTICAL Pin=P22-10
+Added Room: Name=MC2
+Added Room: Name=optical_micro
+Added Room: Name=pay-ssm
+Added Room: Name=U_ATmega32M1
+Added Room: Name=U_heater_control
+Added Room: Name=U_portExpander
+Added Room: Name=U_positioningAndThermistor
+Added Room: Name=U_sensors
