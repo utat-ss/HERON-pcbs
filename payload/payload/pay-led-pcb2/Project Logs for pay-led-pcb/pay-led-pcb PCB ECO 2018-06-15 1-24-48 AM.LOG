@@ -1,0 +1,9 @@
+Added Component: Designator=SN17(SOT-23-5_95P290X160-5N)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=LED_CLK Pin=SN17-1
+Added Pin To Net: NetName=CH1 Pin=SN17-2
+Added Pin To Net: NetName=GND Pin=SN17-3
+Added Pin To Net: NetName=NetR19_2 Pin=SN17-4
+Added Pin To Net: NetName=3V3 Pin=SN17-5
+Added Member To Class: ClassName=pay-led-pcb Member=Component SN17 SN74AHC1G08
+Added Room: Name=pay-led-pcb

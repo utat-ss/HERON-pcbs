@@ -1,9 +1,15 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [pay-ssm.PrjPCB]
+Source PCB Design pay-panel.PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [pay-ssm.PrjPCB]
+   Generated File[pay-panel.TXT]
+   Generated File[pay-panel-BoardEdgeRout.TXT]
+   Generated File[pay-panel.LDP]
+   Generated File[pay-panel.DRR]
 
 
-Files Generated   : 0
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 5:05:09 PM On 2018-04-14
+Finished Output Generation At 5:43:05 PM On 2018-06-15
