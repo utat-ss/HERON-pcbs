@@ -1,0 +1,410 @@
+Removed Pin From Net: NetName=+5V Pin=*2-15
+Removed Pin From Net: NetName=GND Pin=*2-33
+Removed Pin From Net: NetName=GND Pin=*3-2
+Removed Pin From Net: NetName=GND Pin=*4-2
+Removed Pin From Net: NetName=+3V3 Pin=20-1
+Removed Pin From Net: NetName=NetR33_U_obc_flash3_1 Pin=20-2
+Removed Pin From Net: NetName=NetR33_U_obc_flash1_1 Pin=22-1
+Removed Pin From Net: NetName=+3V3 Pin=22-2
+Removed Pin From Net: NetName=+5V Pin=C12-1
+Removed Pin From Net: NetName=NetR29_1 Pin=C34-2
+Removed Pin From Net: NetName=GND Pin=DEP. SWITCH / RBF PIN1-1
+Removed Pin From Net: NetName=Net-BATT1_1 Pin=DEP. SWITCH / RBF PIN1-4
+Removed Pin From Net: NetName=RST Pin=R1-1
+Removed Pin From Net: NetName=RST_EPS Pin=R14-1
+Removed Pin From Net: NetName=+3V3 Pin=R33-2
+Removed Pin From Net: NetName=EPS_MISO_A Pin=U5-3
+Removed Member From Class: ClassName=U_eps_pv Member=*1
+Removed Member From Class: ClassName=U_eps_pv Member=*2
+Removed Member From Class: ClassName=U_eps_pv Member=*5
+Removed Member From Class: ClassName=U_eps_pv Member=*6
+Removed Member From Class: ClassName=U_eps_adc Member=*8
+Removed Member From Class: ClassName=U_eps_adc Member=*11
+Removed Member From Class: ClassName=U_eps_32m1 Member=*25
+Removed Member From Class: ClassName=U_obc_32m1 Member=*27
+Removed Member From Class: ClassName=U_eps_pv Member=*30
+Removed Member From Class: ClassName=U_eps_bt2 Member=1
+Removed Member From Class: ClassName=U_eps_bt2 Member=2
+Removed Member From Class: ClassName=U_eps_bt2 Member=3
+Removed Member From Class: ClassName=U_eps_bt2 Member=4
+Removed Member From Class: ClassName=U_eps_bt2 Member=5
+Removed Member From Class: ClassName=U_eps_bt2 Member=7
+Removed Member From Class: ClassName=U_eps_bt2 Member=10
+Removed Member From Class: ClassName=U_eps_bt1 Member=13
+Removed Member From Class: ClassName=U_eps_bt1 Member=18
+Removed Member From Class: ClassName=U_eps_bt1 Member=BT2
+Removed Member From Class: ClassName=U_eps_32m1 Member=C17
+Removed Member From Class: ClassName=U_eps_bb1 Member=C17
+Removed Member From Class: ClassName=U_eps_pex Member=C17
+Removed Member From Class: ClassName=U_obc_can_transceiver Member=C23
+Removed Member From Class: ClassName=U_eps_bb2 Member=C24
+Removed Member From Class: ClassName=U_obc_can_transceiver Member=C25
+Removed Member From Class: ClassName=U_eps_bt1 Member=C34
+Removed Member From Class: ClassName=U_eps_can_transceiver Member=C34
+Removed Member From Class: ClassName=U_obc_flash2 Member=C35
+Removed Member From Class: ClassName=U_obc_flash3 Member=C35
+Removed Member From Class: ClassName=U_eps_bb1 Member=C40
+Removed Member From Class: ClassName=U_obc_32m1 Member=C40
+Removed Member From Class: ClassName=U_obc_32m1 Member=C42
+Removed Member From Class: ClassName=U_eps_32m1 Member=C43
+Removed Member From Class: ClassName=U_obc_32m1 Member=C44
+Removed Member From Class: ClassName=U_eps_bt1 Member=Ccomp2
+Removed Member From Class: ClassName=U_eps_bt1 Member=Cin1
+Removed Member From Class: ClassName=U_eps_bt2 Member=Cin1
+Removed Member From Class: ClassName=U_eps_bt1 Member=CinA2
+Removed Member From Class: ClassName=U_eps_bt2 Member=CvccA1
+Removed Member From Class: ClassName=U_eps_batt Member=DEP. SWITCH / RBF PIN1
+Removed Member From Class: ClassName=bus-main Member=EPS
+Removed Member From Class: ClassName=U_eps_pv Member=EPS
+Removed Member From Class: ClassName=bus-main Member=P9
+Removed Member From Class: ClassName=U_eps_32m1 Member=P10
+Removed Member From Class: ClassName=U_obc_32m1 Member=P10
+Removed Member From Class: ClassName=U_obc_32m1 Member=P11
+Removed Member From Class: ClassName=U_eps_32m1 Member=R1
+Removed Member From Class: ClassName=U_eps_32m1 Member=R8
+Removed Member From Class: ClassName=U_eps_bb2 Member=R9
+Removed Member From Class: ClassName=U_eps_pex Member=R9
+Removed Member From Class: ClassName=U_eps_bb1 Member=R14
+Removed Member From Class: ClassName=U_eps_32m1 Member=R22
+Removed Member From Class: ClassName=U_eps_batt Member=R28
+Removed Member From Class: ClassName=U_eps_bb1 Member=R31
+Removed Member From Class: ClassName=U_eps_digital Member=R31
+Removed Member From Class: ClassName=U_obc_can_transceiver Member=R37
+Removed Member From Class: ClassName=U_obc_can_transceiver Member=R38
+Removed Member From Class: ClassName=U_obc_32m1 Member=R40
+Removed Member From Class: ClassName=U_obc_32m1 Member=R41
+Removed Member From Class: ClassName=U_obc_32m1 Member=R42
+Removed Member From Class: ClassName=U_eps_pex Member=R44
+Removed Member From Class: ClassName=U_eps_pex Member=R45
+Removed Member From Class: ClassName=U_obc_32m1 Member=R49
+Removed Member From Class: ClassName=U_eps_bt1 Member=RcompA2
+Removed Member From Class: ClassName=U_eps_bt2 Member=RlimA1
+Removed Member From Class: ClassName=U_obc_32m1 Member=U11
+Change Component Footprint: Designator=L1 Old Footprint=541-1082-1-ND New Footprint=1608[0603]
+Change Component Footprint: Designator=L2 Old Footprint=541-1082-1-ND New Footprint=1608[0603]
+Change Component Footprint: Designator=LA1 Old Footprint=541-1082-1-ND New Footprint=1608[0603]
+Change Component Footprint: Designator=LA2 Old Footprint=541-1082-1-ND New Footprint=1608[0603]
+Change Component Designator: OldDesignator= NewDesignator=D12
+Change Component Designator: OldDesignator= NewDesignator=R2
+Change Component Designator: OldDesignator= NewDesignator=R3
+Change Component Designator: OldDesignator= NewDesignator=R4
+Change Component Designator: OldDesignator= NewDesignator=R5
+Change Component Designator: OldDesignator= NewDesignator=R6
+Change Component Designator: OldDesignator= NewDesignator=R7
+Change Component Designator: OldDesignator= NewDesignator=R15
+Change Component Designator: OldDesignator= NewDesignator=R16
+Change Component Designator: OldDesignator= NewDesignator=R17
+Change Component Designator: OldDesignator= NewDesignator=R18
+Change Component Designator: OldDesignator= NewDesignator=R19
+Change Component Designator: OldDesignator=3V3 NewDesignator=D6
+Change Component Designator: OldDesignator=5V NewDesignator=R20
+Change Component Designator: OldDesignator=C35 NewDesignator=C35_U_obc_flash1
+Change Component Designator: OldDesignator=C35 NewDesignator=C35_U_obc_flash2
+Change Component Designator: OldDesignator=C35 NewDesignator=C35_U_obc_flash3
+Change Component Designator: OldDesignator=EPS NewDesignator=P6
+Change Component Designator: OldDesignator=EPS NewDesignator=S3
+Change Component Designator: OldDesignator=EPS NewDesignator=S4
+Change Component Designator: OldDesignator=EPS NewDesignator=U4
+Change Component Designator: OldDesignator=EPS CAN NewDesignator=U8
+Change Component Designator: OldDesignator=EPS MEM NewDesignator=U9
+Change Component Designator: OldDesignator=EPS PEX NewDesignator=U3
+Change Component Designator: OldDesignator=EPS RST NewDesignator=D7
+Change Component Designator: OldDesignator=EPS RX NewDesignator=D10
+Change Component Designator: OldDesignator=EPS RXCAN NewDesignator=D8
+Change Component Designator: OldDesignator=EPS TX NewDesignator=D11
+Change Component Designator: OldDesignator=EPS TXCAN NewDesignator=D9
+Change Component Designator: OldDesignator=OBC 32M1 NewDesignator=U1
+Change Component Designator: OldDesignator=OBC NewDesignator=P1
+Change Component Designator: OldDesignator=OBC NewDesignator=S1
+Change Component Designator: OldDesignator=OBC-MEM1 NewDesignator=U7_U_obc_flash1
+Change Component Designator: OldDesignator=OBC-MEM2 NewDesignator=U7_U_obc_flash2
+Change Component Designator: OldDesignator=OBC-MEM3 NewDesignator=U7_U_obc_flash3
+Change Component Designator: OldDesignator=OBC CAN NewDesignator=U6
+Change Component Designator: OldDesignator=OBC RST NewDesignator=D1
+Change Component Designator: OldDesignator=OBC RX NewDesignator=D4
+Change Component Designator: OldDesignator=OBC RXCAN NewDesignator=D2
+Change Component Designator: OldDesignator=OBC TX NewDesignator=D5
+Change Component Designator: OldDesignator=OBC TX NewDesignator=P4
+Change Component Designator: OldDesignator=OBC TXCAN NewDesignator=D3
+Change Component Designator: OldDesignator=R33 NewDesignator=R33_U_obc_flash2
+Change Component Designator: OldDesignator=Real Time Clock NewDesignator=U10
+Change Component Designator: OldDesignator=RESET OBC NewDesignator=S2
+Change component parameters: Designator = "L1"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\VGTQAUIA\FUTXESGD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Code_IEC"; Value = "1005"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Code_JEITA"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Inductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "0402-A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1.0µH"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\YELPORYY\WKAYUYNG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Code_IEC"; Value = "1005"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Code_JEITA"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Inductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "0402-A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1.0µH"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R23"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\VGTQAUIA\CWCVHOJR"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10mO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R24"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\YELPORYY\PUQXMHVG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10mO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R40"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\XKCAFRLQ\BXGRJPJK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10mO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R41"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\XKCAFRLQ\LNMFWASW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10mO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R42"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\XKCAFRLQ\URFUUFCB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10mO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R43"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\XKCAFRLQ\WEXKSDJY"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10mO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rfbb1"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\VGTQAUIA\IWNLGELJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "180kO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rfbb2"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\YELPORYY\QPFOBURV"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "180kO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rfbt1"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\VGTQAUIA\YFNHUGJT"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "562kO"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Rfbt2"; Footprint = "1608[0603]"; UniqueID = "\DSWLEJFJ\YELPORYY\QATSMRER"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "562kO"; VariantName = "[No Variations]"
+Added Component: Designator=C16(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "150pF"; VariantName = "[No Variations]"
+Added Component: Designator=C45(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "C_small"; VariantName = "[No Variations]"
+Added Component: Designator=R33_U_obc_flash1(J1-0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "30K"; VariantName = "[No Variations]"
+Added Component: Designator=R33_U_obc_flash3(J1-0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "30K"; VariantName = "[No Variations]"
+Added Component: Designator=RBF PIN/DEP SWITCH(CUI_SJ1-3544)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*2_15 Pin=*2-15
+Added Pin To Net: NetName=Net*2_15 Pin=C12-1
+Added Pin To Net: NetName=-PACK Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C16-2
+Added Pin To Net: NetName=GND Pin=C45-1
+Added Pin To Net: NetName=Net*2_8 Pin=C45-2
+Added Pin To Net: NetName=NetR33_U_obc_flash1_1 Pin=R33_U_obc_flash1-1
+Added Pin To Net: NetName=GND Pin=R33_U_obc_flash1-2
+Added Pin To Net: NetName=GND Pin=R33_U_obc_flash2-2
+Added Pin To Net: NetName=NetR33_U_obc_flash3_1 Pin=R33_U_obc_flash3-1
+Added Pin To Net: NetName=GND Pin=R33_U_obc_flash3-2
+Added Pin To Net: NetName=Net-BATT1_1 Pin=RBF PIN/DEP SWITCH-2
+Added Pin To Net: NetName=GND Pin=RBF PIN/DEP SWITCH-4
+Added Pin To Net: NetName=EPS_RX Pin=U5-3
+Added Member To Class: ClassName=U_eps_adc Member=Component *1 REF5025
+Added Member To Class: ClassName=U_eps_adc Member=Component *2 ADS7952
+Added Member To Class: ClassName=U_obc_32m1 Member=Component *3 ABM3B-8.000MHz
+Added Member To Class: ClassName=U_eps_32m1 Member=Component *4 ABM3B-8.000MHz
+Added Member To Class: ClassName=U_eps_pv Member=Component *7 INA214
+Added Member To Class: ClassName=U_eps_pv Member=Component *12 SM74611
+Added Member To Class: ClassName=U_eps_pv Member=Component *17 SM74611
+Added Member To Class: ClassName=U_eps_pv Member=Component *20 SM74611
+Added Member To Class: ClassName=U_eps_pv Member=Component *26 SM74611
+Added Member To Class: ClassName=U_eps_pv Member=Component *27 SM74611
+Added Member To Class: ClassName=U_eps_bt1 Member=Component 1 R17
+Added Member To Class: ClassName=U_eps_bt1 Member=Component 3 CbstA1
+Added Member To Class: ClassName=U_eps_bt2 Member=Component 11 RtA1
+Added Member To Class: ClassName=U_eps_bt2 Member=Component 12 CbstA1
+Added Member To Class: ClassName=U_eps_bt2 Member=Component 13 RfbtA1
+Added Member To Class: ClassName=U_eps_bt2 Member=Component 14 R19
+Added Member To Class: ClassName=U_eps_bt2 Member=Component 15 CssA1
+Added Member To Class: ClassName=U_eps_bt2 Member=Component 16 CoutA1
+Added Member To Class: ClassName=U_eps_bt2 Member=Component 17 RfbbA1
+Added Member To Class: ClassName=U_eps_bt1 Member=Component BT1 TPS61088
+Added Member To Class: ClassName=U_eps_adc Member=Component C10 Cap Semi
+Added Member To Class: ClassName=U_eps_adc Member=Component C16 Cap Semi
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C18 Cap Semi
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C19 Cap Semi
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C21 1%
+Added Member To Class: ClassName=U_eps_pex Member=Component C22 Cap Semi
+Added Member To Class: ClassName=U_eps_32m1 Member=Component C23 Cap Semi
+Added Member To Class: ClassName=U_eps_32m1 Member=Component C25 Cap Semi
+Added Member To Class: ClassName=U_eps_bb1 Member=Component C28 Cap
+Added Member To Class: ClassName=U_eps_bb1 Member=Component C29 Cap Semi
+Added Member To Class: ClassName=U_eps_bb2 Member=Component C30 Cap Semi
+Added Member To Class: ClassName=U_obc_can_transceiver Member=Component C31 Cap Semi
+Added Member To Class: ClassName=U_obc_can_transceiver Member=Component C32 Cap Semi
+Added Member To Class: ClassName=U_obc_flash2 Member=Component C35_U_obc_flash2 (C35) Cap Semi
+Added Member To Class: ClassName=U_obc_flash3 Member=Component C35_U_obc_flash3 (C35) Cap Semi
+Added Member To Class: ClassName=U_eps_can_transceiver Member=Component C37 Cap Semi
+Added Member To Class: ClassName=U_eps_bt1 Member=Component C41 Cap Semi
+Added Member To Class: ClassName=U_eps_batt Member=Component C45 Cap Semi
+Added Member To Class: ClassName=U_eps_bt1 Member=Component Ccomp1 
+Added Member To Class: ClassName=U_eps_bt1 Member=Component Cin3 
+Added Member To Class: ClassName=U_eps_bt2 Member=Component Cin4 
+Added Member To Class: ClassName=U_eps_bt1 Member=Component CinA1 
+Added Member To Class: ClassName=U_eps_bt2 Member=Component CvccA2 
+Added Member To Class: ClassName=U_eps_32m1 Member=Component D12 LED2
+Added Member To Class: ClassName=bus-main Member=Component J1 D Connector 25
+Added Member To Class: ClassName=U_eps_bt1 Member=Component LA1 
+Added Member To Class: ClassName=U_eps_bt2 Member=Component LA2 
+Added Member To Class: ClassName=U_obc_32m1 Member=Component P2 2x2 Female
+Added Member To Class: ClassName=bus-main Member=Component P3 UHF UART
+Added Member To Class: ClassName=bus-main Member=Component P4 UHF PWR
+Added Member To Class: ClassName=U_eps_32m1 Member=Component P7 2x2 Female
+Added Member To Class: ClassName=U_eps_pv Member=Component P8 Header 5
+Added Member To Class: ClassName=U_obc_32m1 Member=Component R2 Res3
+Added Member To Class: ClassName=U_obc_32m1 Member=Component R3 Res3
+Added Member To Class: ClassName=U_obc_32m1 Member=Component R4 Res3
+Added Member To Class: ClassName=U_obc_32m1 Member=Component R5 Res3
+Added Member To Class: ClassName=U_obc_32m1 Member=Component R6 Res3
+Added Member To Class: ClassName=U_obc_32m1 Member=Component R7 Res3
+Added Member To Class: ClassName=U_eps_pex Member=Component R10 Res3
+Added Member To Class: ClassName=U_eps_pex Member=Component R12 Res3
+Added Member To Class: ClassName=U_eps_pex Member=Component R13 Res3
+Added Member To Class: ClassName=U_eps_32m1 Member=Component R15 Res3
+Added Member To Class: ClassName=U_eps_32m1 Member=Component R16 Res3
+Added Member To Class: ClassName=U_eps_32m1 Member=Component R17 Res3
+Added Member To Class: ClassName=U_eps_32m1 Member=Component R18 Res3
+Added Member To Class: ClassName=U_eps_32m1 Member=Component R19 Res3
+Added Member To Class: ClassName=U_eps_32m1 Member=Component R20 Res3
+Added Member To Class: ClassName=U_eps_bb1 Member=Component R21 Res1
+Added Member To Class: ClassName=U_eps_bb1 Member=Component R23 Res1
+Added Member To Class: ClassName=U_eps_bb2 Member=Component R24 Res1
+Added Member To Class: ClassName=U_eps_digital Member=Component R25 Res3
+Added Member To Class: ClassName=U_eps_digital Member=Component R26 Res3
+Added Member To Class: ClassName=U_obc_can_transceiver Member=Component R27 
+Added Member To Class: ClassName=U_obc_can_transceiver Member=Component R29 
+Added Member To Class: ClassName=U_obc_can_transceiver Member=Component R30 100
+Added Member To Class: ClassName=U_obc_flash1 Member=Component R33_U_obc_flash1 (R33) 
+Added Member To Class: ClassName=U_obc_flash3 Member=Component R33_U_obc_flash3 (R33) 
+Added Member To Class: ClassName=U_eps_can_transceiver Member=Component R35 0603
+Added Member To Class: ClassName=U_eps_can_transceiver Member=Component R36 
+Added Member To Class: ClassName=U_eps_can_transceiver Member=Component R39 
+Added Member To Class: ClassName=U_eps_pv Member=Component R40 Res1
+Added Member To Class: ClassName=U_eps_pv Member=Component R43 Res1
+Added Member To Class: ClassName=U_eps_batt Member=Component R44 Res3
+Added Member To Class: ClassName=U_eps_batt Member=Component R46 Res3
+Added Member To Class: ClassName=U_eps_batt Member=Component R47 Res3
+Added Member To Class: ClassName=U_eps_batt Member=Component R48 Res3
+Added Member To Class: ClassName=U_eps_batt Member=Component RBF PIN/DEP SWITCH SJ1-3544
+Added Member To Class: ClassName=U_eps_bt1 Member=Component RcompA1 
+Added Member To Class: ClassName=U_eps_bt2 Member=Component RlimA2 
+Added Member To Class: ClassName=U_obc_32m1 Member=Component S1 SW-DPDT
+Added Member To Class: ClassName=U_eps_32m1 Member=Component S3 SW-DPDT
+Added Member To Class: ClassName=U_eps_32m1 Member=Component S4 SW-PB
+Added Member To Class: ClassName=U_obc_32m1 Member=Component U2 SN54LV07A
+Added Member To Class: ClassName=U_eps_32m1 Member=Component U4 ATMega32M1
+Added Room: Name=bus-main
+Added Room: Name=U_eps_32m1
+Added Room: Name=U_eps_adc
+Added Room: Name=U_eps_batt
+Added Room: Name=U_eps_bb1
+Added Room: Name=U_eps_bb2
+Added Room: Name=U_eps_bt1
+Added Room: Name=U_eps_bt2
+Added Room: Name=U_eps_can_transceiver
+Added Room: Name=U_eps_digital
+Added Room: Name=U_eps_flash
+Added Room: Name=U_eps_pex
+Added Room: Name=U_eps_pv
+Added Room: Name=U_obc_32m1
+Added Room: Name=U_obc_can_transceiver
+Added Room: Name=U_obc_flash1
+Added Room: Name=U_obc_flash2
+Added Room: Name=U_obc_flash3
+Added Room: Name=U_obc_main_3
+Added Room: Name=U_obc_rtc

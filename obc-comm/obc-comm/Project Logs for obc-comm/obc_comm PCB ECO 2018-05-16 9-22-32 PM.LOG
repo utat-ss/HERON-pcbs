@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=C2 Old Footprint=C1206 New Footprint=1608[0603]
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
+Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
+Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR

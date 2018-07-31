@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=NetR10_2 Pin=EPS 32M1-24
+Added Pin To Net: NetName=NetR10_2 Pin=EPS 32M1-32
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
+Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR
+Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
+Added Room: Name=U_eps_32m1
+Added Room: Name=U_eps_adc
+Added Room: Name=U_eps_batt
+Added Room: Name=U_eps_bb1
+Added Room: Name=U_eps_bt1
+Added Room: Name=U_eps_bt2
+Added Room: Name=U_eps_can_transceiver
+Added Room: Name=U_eps_digital
+Added Room: Name=U_eps_flash
+Added Room: Name=U_eps_pex
+Added Room: Name=U_eps_pv
+Added Room: Name=U_obc_32m1
+Added Room: Name=U_obc_flash1
+Added Room: Name=U_obc_flash2
+Added Room: Name=U_obc_flash3
+Added Room: Name=U_obc_rtc

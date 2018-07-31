@@ -1,0 +1,42 @@
+Added Component: Designator=U6(SOIC127P500X600-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SN65HVD233D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-8 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "2.39 USD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SN65HVD233D/Texas%20Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-14639-5-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U8(SOIC127P500X600-8N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SN65HVD233D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-8 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "2.39 USD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SN65HVD233D/Texas%20Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "296-14639-5-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR35_1 Pin=U6-1
+Added Pin To Net: NetName=GND Pin=U6-2
+Added Pin To Net: NetName=+3V3 Pin=U6-3
+Added Pin To Net: NetName=NetR33_1 Pin=U6-4
+Added Pin To Net: NetName=NetR36_1 Pin=U6-5
+Added Pin To Net: NetName=CANL Pin=U6-6
+Added Pin To Net: NetName=CANH Pin=U6-7
+Added Pin To Net: NetName=NetR38_2 Pin=U6-8
+Added Pin To Net: NetName=NetR41_1 Pin=U8-1
+Added Pin To Net: NetName=GND Pin=U8-2
+Added Pin To Net: NetName=+3V3 Pin=U8-3
+Added Pin To Net: NetName=NetR39_1 Pin=U8-4
+Added Pin To Net: NetName=NetR42_1 Pin=U8-5
+Added Pin To Net: NetName=CANL Pin=U8-6
+Added Pin To Net: NetName=CANH Pin=U8-7
+Added Pin To Net: NetName=NetR44_2 Pin=U8-8
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
+Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
+Added Member To Class: ClassName=U_obc_can_transceiver Member=Component U6 SN65HVD233D
+Added Member To Class: ClassName=U_eps_can_transceiver Member=Component U8 SN65HVD233D

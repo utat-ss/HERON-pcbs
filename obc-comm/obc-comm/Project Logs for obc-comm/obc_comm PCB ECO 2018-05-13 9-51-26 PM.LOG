@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=EPS_MISO_A Pin=P1-1
+Added Pin To Net: NetName=EPS_MISO_A Pin=U1-1
+Added Member To Class: ClassName=U_eps_pv Member=Component *18 SM74611
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
+Added Member To Class: ClassName=bus-main Member=Component P? UHF UART

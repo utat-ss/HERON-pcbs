@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=NetS?_2 Pin=R39-2
+Added Pin To Net: NetName=NetR41_2 Pin=EPS 32M1-6
+Added Pin To Net: NetName=NetR41_2 Pin=EPS BUFFER-5
+Change Net Name : Old Net Name=NetS?_2 New Net Name=NetR39_2
+Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
+Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
+Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR
