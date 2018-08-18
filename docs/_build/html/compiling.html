@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Handling Errors at Compile Time &mdash; utat-ss-pcbs 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Started" href="getting-started.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> utat-ss-pcbs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started with Altium</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Handling Errors at Compile Time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#showing-suppressed-messages">Showing Suppressed Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-generic-no-erc">The Generic No ERC</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">utat-ss-pcbs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Handling Errors at Compile Time</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/compiling.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="handling-errors-at-compile-time">
+<h1>Handling Errors at Compile Time<a class="headerlink" href="#handling-errors-at-compile-time" title="Permalink to this headline">¶</a></h1>
+<p>Sometimes, for some reason or another, you need to do something in your schematic that raises an error at compilation time. The most common case you’ll run into is when you need to connect an input or output pin to a bidirectional pin (say, a pin coming from a microcontroller). This will return an error in Altium, because you’ve potentially created a situation either where you have two outputs driving the same line (bad) or two inputs with no driving source which are left floating (less bad, but bad).</p>
+<p>From a practical point of view, neither of these are situations you actually want in your real circuit. But, perhaps you know that you’ll only be operating your microcontroller GPIO pin in input mode, so connecting it to an output makes sense. This is still dangerous (make sure your software person knows it can only be an input), and in some cases it might make sense to throw a current limiting resistor in series as a failsafe, like in the image below. This will remove the error in Altium and would be the correct way to deal with this problem. For the two inputs case, consider connecting a pull-up or pull-down resistor to the line to define a default state.</p>
+<p>In either case, the fact that Altium is giving you an error is <em>telling you something important</em> about your circuit, and you would do well to understand how you would fix that error under normal circumstances. That said, there are still cases where you might understand that there’s an error, but are OK with it and just want to move ahead</p>
+<div class="section" id="showing-suppressed-messages">
+<h2>Showing Suppressed Messages<a class="headerlink" href="#showing-suppressed-messages" title="Permalink to this headline">¶</a></h2>
+<p>Under <strong>Project &gt; Project Options &gt; Error Reporting</strong> go ahead and enable the “Report Suppressed Violations in Messages Panel” checkbox at the bottom of the window. This will allow you to see the messages at compile time that you’ve suppressed, and give anyone checking over your work the chance to catch any potential errors before sending out the design.</p>
+</div>
+<div class="section" id="the-generic-no-erc">
+<h2>The Generic No ERC<a class="headerlink" href="#the-generic-no-erc" title="Permalink to this headline">¶</a></h2>
+<p>The Generic No ERC (third from the right in the schematic toolbar, shown as a red “X”) is your go-to for handling compilation errors you want to suppress on a case-by-case basis. This will prevent you from bulk suppressing any errors unknowingly. Either select the Generic No ERC tool from the toolbar, or right click on a message in the message panel and select “Place specific No ERC for this violation…”. Then, place the red “X” on the net or line that’s giving you the error.</p>
+<p>This will suppress any and all errors on this net by default, which might have unintended consequences. I would recommend going into the “Properties” panel for that ERC and selecting “Specific Violations” from the “Suppressed Violations” tab. This will give you the option to only suppress the violations you want to waive, and still warn you if other, real errors occur on that net later on.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="getting-started.html" class="btn btn-neutral" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Dylan Vogel.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
