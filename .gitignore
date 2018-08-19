@@ -2,4 +2,4 @@
 **/__Previews/**
 *.SchDocPreview
 *.SchDocPreview
-**/Project Logs**
+**.LOG
