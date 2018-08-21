@@ -1,1 +1,0 @@
-Solar Panels folder
