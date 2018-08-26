@@ -1,3 +1,10 @@
 [submodule "libraries/celestial-library"]
 	path = libraries/celestial-library
 	url = https://github.com/issus/altium-library.git
+[submodule "pcbs-common"]
+
+	path = pcbs-common
+
+	url = https://github.com/heronmkii/pcbs-common
+
+	branch = master
