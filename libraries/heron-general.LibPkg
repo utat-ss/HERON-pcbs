@@ -52,7 +52,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PITSNFHV
 
 [Document2]
 DocumentPath=Schematic Libraries\Crystals.SchLib
@@ -69,7 +69,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=VSQSDHWQ
 
 [Document3]
 DocumentPath=Schematic Libraries\EPS.SchLib
@@ -86,7 +86,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UWHQSVID
 
 [Document4]
 DocumentPath=Schematic Libraries\ICs.SchLib
@@ -103,7 +103,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AQIUWKYB
 
 [Document5]
 DocumentPath=Schematic Libraries\PAY.SchLib
@@ -120,7 +120,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LXOGGXYL
 
 [Document6]
 DocumentPath=Schematic Libraries\SwitchesButtons.SchLib
@@ -137,7 +137,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JLQIHBMR
 
 [Document7]
 DocumentPath=Footprint Libraries\CONNs.PcbLib
@@ -188,7 +188,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HMGIWNQX
 
 [Document10]
 DocumentPath=Footprint Libraries\ICs.PcbLib
@@ -205,7 +205,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=ADCQNHHK
 
 [Document11]
 DocumentPath=Footprint Libraries\MISC.PcbLib
@@ -222,7 +222,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OWVXRUTS
 
 [Document12]
 DocumentPath=Footprint Libraries\PAY.PcbLib
@@ -239,7 +239,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=YBDJXKAI
 
 [Document13]
 DocumentPath=Footprint Libraries\SwitchesButtons.PcbLib
@@ -257,6 +257,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document14]
+DocumentPath=Footprint Libraries\SMDComponents.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AOHEKEWY
 
 [OutputGroup1]
 Name=Netlist Outputs
