@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=VCC Pin=C1-2
+Removed Pin From Net: NetName=VCC Pin=C2-2
+Removed Pin From Net: NetName=VCC Pin=U1-20
+Added Pin To Net: NetName=3V3 Pin=C1-2
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Pin To Net: NetName=3V3 Pin=U1-20
+Added Member To Class: ClassName=U_sensors-digital Member=Component U1 (U19) SN74LVC244A
+Added Member To Class: ClassName=optical_micro Member=Component U20 ATMega32M1

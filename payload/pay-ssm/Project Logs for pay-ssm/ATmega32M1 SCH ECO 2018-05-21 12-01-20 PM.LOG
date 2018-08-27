@@ -1,0 +1,18 @@
+Change Component Parameter Comment in C4 Old= New=0.1uF
+Change Component Parameter Comment in C5 Old= New=0.1uF
+Change Component Parameter Comment in C6 Old= New=0.1uF
+Change Component Parameter Comment in C7 Old= New=14pF 1%
+Change Value of Parameter Value in Part C7 Old=14pF New=14pF 1%
+Change Component Parameter Comment in C8 Old= New=14pF 1%
+Change Value of Parameter Value in Part C8 Old=14pF New=14pF 1%
+Change Component Parameter Comment in P9 Old= New=PROG
+Change Component Parameter Comment in P10 Old= New=UART
+Change Component Parameter Comment in R5 Old= New=30K
+Change Component Parameter Comment in R6 Old= New=330
+Change Component Parameter Comment in R7 Old= New=330
+Change Component Parameter Comment in R8 Old= New=330
+Change Component Parameter Comment in R9 Old= New=330
+Change Component Parameter Comment in R10 Old= New=330
+Change Component Parameter Comment in S1 Old= New=MODE SELECT
+Change Component Parameter Comment in S2 Old= New=RST PUSH
+Change Component Parameter Comment in Y1 Old= New=8MHz

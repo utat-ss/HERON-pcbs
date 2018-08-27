@@ -1,0 +1,10 @@
+Change Component Parameter Comment in C20 Old= New=0.1uF
+Change Component Parameter Comment in C21 Old= New=0.1uF
+Change Component Parameter Comment in R40 Old= New=1K
+Change Component Parameter Comment in R41 Old= New=10K 1% Quad
+Change Component Parameter Comment in R42 Old= New=10K 1% Quad
+Change Component Parameter Comment in R43 Old= New=10K 1% Quad
+Change Component Parameter Comment in R44 Old= New=1K
+Added Parameter Value=10K 1% Quad to Part R41
+Added Parameter Value=10K 1% Quad to Part R42
+Added Parameter Value=10K 1% Quad to Part R43

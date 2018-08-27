@@ -1,0 +1,5 @@
+Change Value of Parameter Supplier Part Number in Part C4 Old=587-3807-1-ND New=311-1341-1-ND 
+Change Value of Parameter Supplier Part Number in Part C5 Old=587-3807-1-ND New=311-1341-1-ND 
+Change Value of Parameter Supplier Part Number in Part C6 Old=587-3807-1-ND New=311-1341-1-ND 
+Change Component Parameter Comment in C42 Old= New=0.1uF
+Added Parameter Supplier Part Number=311-1341-1-ND  to Part C42

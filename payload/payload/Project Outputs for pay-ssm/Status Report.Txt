@@ -1,9 +1,0 @@
-Output: Bill of Materials
-Type  : BOM
-From  : Variant [[No Variations]] of Project [pay-ssm.PrjPCB]
-
-
-Files Generated   : 0
-Documents Printed : 0
-
-Finished Output Generation At 5:05:09 PM On 2018-04-14

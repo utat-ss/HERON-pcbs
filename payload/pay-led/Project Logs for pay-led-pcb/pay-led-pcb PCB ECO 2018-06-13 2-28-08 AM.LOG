@@ -1,0 +1,3 @@
+Change Class Name : Old Net Name=pay-led-pcb-lorna-v2 New Net Name=pay-led-pcb
+Change Room Name: Old Name=RoomDefinition_8 New Name=pay-led-pcb
+Change Room Scope: Old Scope=False New Scope=InComponentClass('pay-led-pcb')

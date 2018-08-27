@@ -1,8 +1,0 @@
-Change Component Footprint: Designator=P? Old Footprint=CON20_2X10_DUA00 New Footprint=CON20_2X10_Female
-Added Member To Class: ClassName=U_sensors-digital Member=Component C? 10uF
-Added Member To Class: ClassName=U_sensors-digital Member=Component P? OUTGOING
-Added Member To Class: ClassName=U_sensors-digital Member=Component P? OUTGOING
-Added Member To Class: ClassName=U_sensors-digital Member=Component R? 10k
-Added Member To Class: ClassName=U_sensors-digital Member=Component R? 100 Quad
-Added Member To Class: ClassName=U_sensors-digital Member=Component R? 100 Quad
-Added Member To Class: ClassName=U_sensors-digital Member=Component R? 100 Quad

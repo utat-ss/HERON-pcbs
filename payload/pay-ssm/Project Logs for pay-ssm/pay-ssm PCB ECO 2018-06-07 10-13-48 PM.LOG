@@ -1,0 +1,197 @@
+Removed Pin From Net: NetName=3V3 Pin=P17-1
+Removed Pin From Net: NetName=GND Pin=P17-2
+Removed Pin From Net: NetName=SD4_C\S\ Pin=P17-3
+Removed Pin From Net: NetName=MISO_IN Pin=P17-4
+Removed Pin From Net: NetName=SD3_C\S\ Pin=P17-5
+Removed Pin From Net: NetName=MOSI_IN Pin=P17-6
+Removed Pin From Net: NetName=SD2_C\S\ Pin=P17-7
+Removed Pin From Net: NetName=SCK_IN Pin=P17-8
+Removed Pin From Net: NetName=SD1_C\S\ Pin=P17-9
+Removed Pin From Net: NetName=MUX_5_EN Pin=P17-10
+Removed Pin From Net: NetName=SYNCO4 Pin=P17-11
+Removed Pin From Net: NetName=SYNCO3 Pin=P17-13
+Removed Pin From Net: NetName=SYNCO2 Pin=P17-15
+Removed Pin From Net: NetName=ADC_S\Y\N\C\ Pin=P17-16
+Removed Pin From Net: NetName=SYNCO1 Pin=P17-17
+Removed Pin From Net: NetName=CLKIN Pin=P17-18
+Removed Pin From Net: NetName=GND Pin=P17-19
+Removed Pin From Net: NetName=3V3 Pin=P17-20
+Removed Member From Class: ClassName=U_positioningAndThermistor Member=C1
+Removed Member From Class: ClassName=U_portExpander Member=C2
+Removed Member From Class: ClassName=U_can_transciever Member=C5
+Removed Member From Class: ClassName=U_power2V5 Member=C5
+Removed Member From Class: ClassName=U_heater_control Member=C8
+Removed Member From Class: ClassName=optical_micro Member=C10
+Removed Member From Class: ClassName=U_sensors-digital Member=C14
+Removed Member From Class: ClassName=optical_micro Member=C17_MC1
+Removed Member From Class: ClassName=optical_micro Member=C17_MC2
+Removed Member From Class: ClassName=U_can_transciever Member=C17_MC2
+Removed Member From Class: ClassName=U_thermistorADC Member=C17_MC2
+Removed Member From Class: ClassName=optical_micro Member=C18_MC1
+Removed Member From Class: ClassName=U_can_transciever Member=C18_MC2
+Removed Member From Class: ClassName=U_thermistorADC Member=C26
+Removed Member From Class: ClassName=U_heater_control Member=C29
+Removed Member From Class: ClassName=U_ATmega32M1 Member=C30
+Removed Member From Class: ClassName=optical_micro Member=C36
+Removed Member From Class: ClassName=U_heater_control Member=P2
+Removed Member From Class: ClassName=optical_micro Member=P3
+Removed Member From Class: ClassName=U_heater_control Member=P3
+Removed Member From Class: ClassName=U_sensors-digital Member=P5
+Removed Member From Class: ClassName=pay-ssm Member=P9
+Removed Member From Class: ClassName=U_heater_control Member=P9
+Removed Member From Class: ClassName=pay-ssm Member=P10
+Removed Member From Class: ClassName=U_sensors-digital Member=P10
+Removed Member From Class: ClassName=pay-ssm Member=P11
+Removed Member From Class: ClassName=pay-ssm Member=P16_MC2
+Removed Member From Class: ClassName=U_positioningAndThermistor Member=R12
+Removed Member From Class: ClassName=U_positioningAndThermistor Member=R15
+Removed Member From Class: ClassName=U_positioningAndThermistor Member=R16
+Removed Member From Class: ClassName=pay-ssm Member=R18
+Removed Member From Class: ClassName=U_dac-layout Member=R18
+Removed Member From Class: ClassName=U_can_transciever Member=R20_MC1
+Removed Member From Class: ClassName=U_positioningAndThermistor Member=R20_MC1
+Removed Member From Class: ClassName=U_sensors Member=R20_MC1
+Removed Member From Class: ClassName=optical_micro Member=R20_MC2
+Removed Member From Class: ClassName=optical_micro Member=R21_MC2
+Removed Member From Class: ClassName=U_sensors-digital Member=R22_MC1
+Removed Member From Class: ClassName=U_ATmega32M1 Member=R22_MC2
+Removed Member From Class: ClassName=optical_micro Member=R25_MC1
+Removed Member From Class: ClassName=U_sensors Member=R25_MC1
+Removed Member From Class: ClassName=U_ATmega32M1 Member=R25_MC2
+Removed Member From Class: ClassName=U_heater_control Member=R27_MC2
+Removed Member From Class: ClassName=U_sensors-digital Member=R27_MC2
+Removed Member From Class: ClassName=optical_micro Member=R28_MC2
+Removed Member From Class: ClassName=optical_micro Member=R29_MC2
+Removed Member From Class: ClassName=optical_micro Member=R30_MC2
+Removed Member From Class: ClassName=U_ATmega32M1 Member=R31_MC1
+Removed Member From Class: ClassName=U_dac-layout Member=R31_MC1
+Removed Member From Class: ClassName=U_sensors-digital Member=R31_MC1
+Removed Member From Class: ClassName=pay-ssm Member=R46
+Removed Member From Class: ClassName=U_heater_control Member=R46
+Removed Member From Class: ClassName=optical_micro Member=R52
+Removed Member From Class: ClassName=U_sensors Member=R52
+Removed Member From Class: ClassName=U_positioningAndThermistor Member=R53
+Removed Member From Class: ClassName=U_sensors Member=U4
+Removed Member From Class: ClassName=U_sensors-digital Member=U5
+Removed Member From Class: ClassName=U_ATmega32M1 Member=U6
+Removed Member From Class: ClassName=U_portExpander Member=U6
+Removed Member From Class: ClassName=U_dac-layout Member=U8_MC1
+Removed Member From Class: ClassName=U_thermistorADC Member=U8_MC1
+Removed Member From Class: ClassName=U_can_transciever Member=U8_MC2
+Removed Member From Class: ClassName=optical_micro Member=U9
+Removed Member From Class: ClassName=U_positioningAndThermistor Member=U9
+Removed Member From Class: ClassName=U_ATmega32M1 Member=U12
+Removed Member From Class: ClassName=U_heater_control Member=U12
+Removed Member From Class: ClassName=U_sensors Member=U12
+Removed Member From Class: ClassName=optical_micro Member=U14
+Added Component: Designator=P?(CON20_2X10_Female)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=P?-1
+Added Pin To Net: NetName=3V3 Pin=P?-2
+Added Pin To Net: NetName=MISO_IN Pin=P?-3
+Added Pin To Net: NetName=SD4_C\S\ Pin=P?-4
+Added Pin To Net: NetName=MOSI_IN Pin=P?-5
+Added Pin To Net: NetName=SD3_C\S\ Pin=P?-6
+Added Pin To Net: NetName=SCK_IN Pin=P?-7
+Added Pin To Net: NetName=SD2_C\S\ Pin=P?-8
+Added Pin To Net: NetName=MUX_5_EN Pin=P?-9
+Added Pin To Net: NetName=SD1_C\S\ Pin=P?-10
+Added Pin To Net: NetName=SYNCO4 Pin=P?-12
+Added Pin To Net: NetName=SYNCO3 Pin=P?-14
+Added Pin To Net: NetName=ADC_S\Y\N\C\ Pin=P?-15
+Added Pin To Net: NetName=SYNCO2 Pin=P?-16
+Added Pin To Net: NetName=CLKIN Pin=P?-17
+Added Pin To Net: NetName=SYNCO1 Pin=P?-18
+Added Pin To Net: NetName=3V3 Pin=P?-19
+Added Pin To Net: NetName=GND Pin=P?-20
+Added Member To Class: ClassName=U_sensors-digital Member=Component C2 10uF
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component C6 (C5) 0.1uF
+Added Member To Class: ClassName=U_can_transciever Member=Component C9 10uF
+Added Member To Class: ClassName=U_can_transciever Member=Component C11 47pF
+Added Member To Class: ClassName=U_can_transciever Member=Component C12 0.1uF
+Added Member To Class: ClassName=U_heater_control Member=Component C14 0.1uF
+Added Member To Class: ClassName=U_heater_control Member=Component C15 100pF
+Added Member To Class: ClassName=U_portExpander Member=Component C19 0.1uF
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component C20 0.1uF
+Added Member To Class: ClassName=U_power2V5 Member=Component C22 10uF
+Added Member To Class: ClassName=U_power2V5 Member=Component C23 0.1uF
+Added Member To Class: ClassName=U_power2V5 Member=Component C24 10uF
+Added Member To Class: ClassName=U_power2V5 Member=Component C25 1uF
+Added Member To Class: ClassName=U_sensors Member=Component C27 0.22uF
+Added Member To Class: ClassName=U_sensors Member=Component C28 0.1uF
+Added Member To Class: ClassName=U_sensors Member=Component C30 0.1uF
+Added Member To Class: ClassName=U_thermistorADC Member=Component C32 10uF
+Added Member To Class: ClassName=U_thermistorADC Member=Component C33 1uF
+Added Member To Class: ClassName=U_thermistorADC Member=Component C34 10uF
+Added Member To Class: ClassName=U_thermistorADC Member=Component C35 0.1uF
+Added Member To Class: ClassName=optical_micro Member=Component C37 0.1uF
+Added Member To Class: ClassName=optical_micro Member=Component C38 0.1uF
+Added Member To Class: ClassName=optical_micro Member=Component C40 0.1uF
+Added Member To Class: ClassName=optical_micro Member=Component C41 10uF
+Added Member To Class: ClassName=optical_micro Member=Component C42 14pF1%
+Added Member To Class: ClassName=optical_micro Member=Component C43 14pF1%
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component D1 LED2
+Added Member To Class: ClassName=optical_micro Member=Component D6 LED2
+Added Member To Class: ClassName=optical_micro Member=Component P1 (P19) Header 3X2
+Added Member To Class: ClassName=optical_micro Member=Component P2 (P20) Header 2X2
+Added Member To Class: ClassName=pay-ssm Member=Component P2 INCOMING FROM OBC
+Added Member To Class: ClassName=pay-ssm Member=Component P4 THERMISTORS 6-10
+Added Member To Class: ClassName=pay-ssm Member=Component P6 IR_LED_1
+Added Member To Class: ClassName=pay-ssm Member=Component P7 PHT_TRANS_2
+Added Member To Class: ClassName=pay-ssm Member=Component P8 IR_LED_2
+Added Member To Class: ClassName=U_heater_control Member=Component P11 HEAT1
+Added Member To Class: ClassName=U_heater_control Member=Component P12 HEAT2
+Added Member To Class: ClassName=U_heater_control Member=Component P13 HEAT3
+Added Member To Class: ClassName=U_heater_control Member=Component P14 HEAT4
+Added Member To Class: ClassName=U_heater_control Member=Component P15 HEAT5
+Added Member To Class: ClassName=U_sensors-digital Member=Component P18 OUTGOING
+Added Member To Class: ClassName=U_sensors-digital Member=Component P? Header 10X2
+Added Member To Class: ClassName=pay-ssm Member=Component R1 330
+Added Member To Class: ClassName=pay-ssm Member=Component R2 330
+Added Member To Class: ClassName=U_sensors-digital Member=Component R3 10K
+Added Member To Class: ClassName=U_sensors-digital Member=Component R4 100 Quad
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R5 30K
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R6 330
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R9 330
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component R10 330
+Added Member To Class: ClassName=U_can_transciever Member=Component R14 100
+Added Member To Class: ClassName=U_heater_control Member=Component R17 1K
+Added Member To Class: ClassName=U_heater_control Member=Component R19 1K
+Added Member To Class: ClassName=optical_micro Member=Component R20 (R56) 20K
+Added Member To Class: ClassName=optical_micro Member=Component R21 (R57) 10K
+Added Member To Class: ClassName=optical_micro Member=Component R22 (R58) 20K
+Added Member To Class: ClassName=optical_micro Member=Component R23 (R59) 10K
+Added Member To Class: ClassName=optical_micro Member=Component R24 (R60) 30K
+Added Member To Class: ClassName=optical_micro Member=Component R25 (R61) 330 Quad
+Added Member To Class: ClassName=optical_micro Member=Component R26 (R62) 330 Quad
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R40 1K
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R41 10K 1% Quad
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R42 10K 1% Quad
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R43 10K 1% Quad
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component R44 1K
+Added Member To Class: ClassName=U_sensors Member=Component R45 10K
+Added Member To Class: ClassName=U_dac-layout Member=Component R46 10K
+Added Member To Class: ClassName=U_dac-layout Member=Component R47 10K
+Added Member To Class: ClassName=U_sensors Member=Component R48 10K
+Added Member To Class: ClassName=U_sensors-digital Member=Component R51 10k
+Added Member To Class: ClassName=U_sensors Member=Component R54 10K
+Added Member To Class: ClassName=U_sensors Member=Component R55 10K
+Added Member To Class: ClassName=U_sensors-digital Member=Component U1 SN74LVC244A
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component U2 ATMega32M1
+Added Member To Class: ClassName=U_ATmega32M1 Member=Component U3 SN74LV07A
+Added Member To Class: ClassName=U_can_transciever Member=Component U4 SN65HVD233D
+Added Member To Class: ClassName=U_heater_control Member=Component U7 MCP6546
+Added Member To Class: ClassName=U_portExpander Member=Component U9 MCP23S17
+Added Member To Class: ClassName=optical_micro Member=Component U10 (U20) ATMega32M1
+Added Member To Class: ClassName=optical_micro Member=Component U11 (U21) SN74LVC244A
+Added Member To Class: ClassName=U_positioningAndThermistor Member=Component U11 AD8613
+Added Member To Class: ClassName=U_power2V5 Member=Component U13 REF5025
+Added Member To Class: ClassName=U_sensors Member=Component U14 HIH7131
+Added Member To Class: ClassName=U_sensors Member=Component U15 LM95071
+Added Member To Class: ClassName=U_sensors Member=Component U16 MS5803-05BA
+Added Member To Class: ClassName=U_thermistorADC Member=Component U17 ADS7952
+Added Member To Class: ClassName=U_thermistorADC Member=Component U18 AD8613
+Added Member To Class: ClassName=U_dac-layout Member=Component U19 DAC7562

@@ -1,0 +1,524 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2018-06-15</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4:19:29 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc" class="file"><acronym title="C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc">C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">60</td></tr>
+</table>
+</td>
+</table><a name="IDPQRG5YSPGDKGEM4NRMJM1LDA4J2HRTOBJ3PTUGHR1ZFARHH2G5TN"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYEYRNMGWBHISEOTNBXKBV3LRGJPMSVO1XK2YXUDPYEGYAZRDMDCL">Clearance Constraint (Gap=0.127mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2WN2VAM3JWSDFSYCAKI5SGLXNGCKHGAFHTEDM3I5TPL005PWEFDO">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVZIL3CA5IXE5LVBVAKG4NXOYDNSELIG4LPVDYMCK12LC5XCGGFTK">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3QNJILIAGTQ4KH1ARFHNK0YDAH355AMEFH4PTVMOYPFZUTYCE4DH">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3U2CXCQJZN4VBEV4TPVIS3FRXEK3WXL3GGSQ4YMQBOXVKFEAVJEK">Width Constraint (Min=0.152mm) (Max=254mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCWFZ4DOHZ2ACBWNNZ3LVQFGKKMH03R4POJ5ORGFN1TI3EGFIGMPD">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWYMUMFPGDZESO5LFEJHLEALFSKVEJHUN03L0MRDU10ELH1BT5UOD">Minimum Annular Ring (Minimum=0.127mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2BAXTJHZJGAZI0PLH35PAEPZPG4GKUAWM3QXMYDEQUUN0JVWH2BE">Hole Size Constraint (Min=0.203mm) (Max=6.35mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOFIQIUFQCWMEFIGA3BXF2ABR2GE1VI4EBHLTWBOZNKDDVL3TA2M">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPFFTROZOFU0YJA110MNLFYMTDCC5OVMZZNXFVODTOLTO3T1PDSPG">Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)</a></td>
+<td class="column2">59</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDY0XQKJ5IBYGFCANDS1IT1UB4BHZTHGQBI0UAYKBBGMTHYCTCDWJ">Silk To Solder Mask (Clearance=0.076mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0ZBS0ENK422RNWWCBKBKO10NRJIEGK0M4FLKGZLYP2FZSVLLX53O">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWG21N4LNHQAYE0YMTUE530H3UB1PG4SSK3RAYQCHYGJMXIKFPUUO">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQTPDFEE41NEDE2YJMH2CYFLJVJX0I4UIGETWAIF5HQGYRTFS0KII">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0QUBALANIYUKFCNRXIHLHTED2JTT3NJMZN2RERHAYUECNCSY0JOC">Board Clearance Constraint (Gap=0mm) (OnLayer('VCC') or OnLayer('GND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4KP0BFNXUQE5D5OFBDRD25AP3NM1A005T1NTKXIWBDYG5DITDQBB">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">60</td>
+</tr>
+</table><br><a name="IDPFFTROZOFU0YJA110MNLFYMTDCC5OVMZZNXFVODTOLTO3T1PDSPG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2398.95mil|Location2.X=2404.2mil|Location1.Y=543.918mil|Location2.Y=549.168mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2398.95mil|Location2.X=2404.2mil|Location1.Y=543.918mil|Location2.Y=549.168mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-1(61.165mm,14.15mm) on Top copper And Via (61mm,13.5mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2430.076mil|Location2.X=2439.445mil|Location1.Y=563.629mil|Location2.Y=570.454mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2430.076mil|Location2.X=2439.445mil|Location1.Y=563.629mil|Location2.Y=570.454mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.015mm &lt; 0.102mm) Between Pad *-1(61.165mm,14.15mm) on Top copper And Via (62mm,14.75mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.015mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2593.832mil|Location2.X=2599.082mil|Location1.Y=340.375mil|Location2.Y=345.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2593.832mil|Location2.X=2599.082mil|Location1.Y=340.375mil|Location2.Y=345.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.062mm &lt; 0.102mm) Between Pad *-14(65.95mm,9.365mm) on Top copper And Via (65.95mm,8.3mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.062mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.674mil|Location2.X=2633.924mil|Location1.Y=462.643mil|Location2.Y=467.893mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.674mil|Location2.X=2633.924mil|Location1.Y=462.643mil|Location2.Y=467.893mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-17(66.835mm,11.55mm) on Top copper And Via (66.835mm,12.2mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.674mil|Location2.X=2633.924mil|Location1.Y=492.737mil|Location2.Y=497.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2628.674mil|Location2.X=2633.924mil|Location1.Y=492.737mil|Location2.Y=497.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-19(66.835mm,12.85mm) on Top copper And Via (66.835mm,12.2mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2418.635mil|Location2.X=2423.885mil|Location1.Y=516.851mil|Location2.Y=522.101mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2418.635mil|Location2.X=2423.885mil|Location1.Y=516.851mil|Location2.Y=522.101mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.077mm &lt; 0.102mm) Between Pad *-2(61.165mm,13.5mm) on Top copper And Via (61.5mm,12.775mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.077mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.697mil|Location2.X=2612.283mil|Location1.Y=565.589mil|Location2.Y=572.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.697mil|Location2.X=2612.283mil|Location1.Y=565.589mil|Location2.Y=572.566mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.041mm &lt; 0.102mm) Between Pad *-21(66.835mm,14.15mm) on Top copper And Via (65.95mm,14.746mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.041mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2583.288mil|Location2.X=2588.538mil|Location1.Y=599.737mil|Location2.Y=604.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2583.288mil|Location2.X=2588.538mil|Location1.Y=599.737mil|Location2.Y=604.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-22(65.95mm,15.035mm) on Top copper And Via (65.3mm,15.3mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2557.698mil|Location2.X=2562.948mil|Location1.Y=578.084mil|Location2.Y=583.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2557.698mil|Location2.X=2562.948mil|Location1.Y=578.084mil|Location2.Y=583.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-23(65.3mm,15.035mm) on Top copper And Via (64.65mm,14.75mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2578.784mil|Location2.X=2584.034mil|Location1.Y=577.942mil|Location2.Y=583.192mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2578.784mil|Location2.X=2584.034mil|Location1.Y=577.942mil|Location2.Y=583.192mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-23(65.3mm,15.035mm) on Top copper And Via (65.95mm,14.746mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2532.105mil|Location2.X=2537.355mil|Location1.Y=597.768mil|Location2.Y=603.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2532.105mil|Location2.X=2537.355mil|Location1.Y=597.768mil|Location2.Y=603.018mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.003mm &lt; 0.102mm) Between Pad *-24(64.65mm,15.035mm) on Top copper And Via (64mm,15.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.003mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2553.194mil|Location2.X=2558.444mil|Location1.Y=599.737mil|Location2.Y=604.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2553.194mil|Location2.X=2558.444mil|Location1.Y=599.737mil|Location2.Y=604.987mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-24(64.65mm,15.035mm) on Top copper And Via (65.3mm,15.3mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2527.603mil|Location2.X=2532.853mil|Location1.Y=578.084mil|Location2.Y=583.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2527.603mil|Location2.X=2532.853mil|Location1.Y=578.084mil|Location2.Y=583.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-25(64mm,15.035mm) on Top copper And Via (64.65mm,14.75mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2480.713mil|Location2.X=2485.963mil|Location1.Y=597.768mil|Location2.Y=603.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2480.713mil|Location2.X=2485.963mil|Location1.Y=597.768mil|Location2.Y=603.018mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.013mm &lt; 0.102mm) Between Pad *-26(63.35mm,15.035mm) on Top copper And Via (62.689mm,15.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.013mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2502.01mil|Location2.X=2507.26mil|Location1.Y=597.768mil|Location2.Y=603.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2502.01mil|Location2.X=2507.26mil|Location1.Y=597.768mil|Location2.Y=603.018mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-26(63.35mm,15.035mm) on Top copper And Via (64mm,15.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2454.351mil|Location2.X=2459.601mil|Location1.Y=578.084mil|Location2.Y=583.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2454.351mil|Location2.X=2459.601mil|Location1.Y=578.084mil|Location2.Y=583.334mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.052mm &lt; 0.102mm) Between Pad *-27(62.7mm,15.035mm) on Top copper And Via (62mm,14.75mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.052mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2476.914mil|Location2.X=2482.164mil|Location1.Y=580.052mil|Location2.Y=585.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2476.914mil|Location2.X=2482.164mil|Location1.Y=580.052mil|Location2.Y=585.302mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.027mm &lt; 0.102mm) Between Pad *-27(62.7mm,15.035mm) on Top copper And Via (63.375mm,14.8mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.027mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2398.95mil|Location2.X=2404.2mil|Location1.Y=513.824mil|Location2.Y=519.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2398.95mil|Location2.X=2404.2mil|Location1.Y=513.824mil|Location2.Y=519.074mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.002mm &lt; 0.102mm) Between Pad *-3(61.165mm,12.85mm) on Top copper And Via (61mm,13.5mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2398.95mil|Location2.X=2404.2mil|Location1.Y=463.627mil|Location2.Y=468.877mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2398.95mil|Location2.X=2404.2mil|Location1.Y=463.627mil|Location2.Y=468.877mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.052mm &lt; 0.102mm) Between Pad *-5(61.165mm,11.55mm) on Top copper And Via (61mm,12.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.052mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4546.588mil|Location2.X=4551.838mil|Location1.Y=259.764mil|Location2.Y=265.014mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4546.588mil|Location2.X=4551.838mil|Location1.Y=259.764mil|Location2.Y=265.014mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.102mm) Between Pad D1-2(115.6mm,7.125mm) on Top copper And Via (115.55mm,6.275mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2702.099mil|Location2.X=2707.349mil|Location1.Y=628.465mil|Location2.Y=633.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2702.099mil|Location2.X=2707.349mil|Location1.Y=628.465mil|Location2.Y=633.715mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.071mm &lt; 0.102mm) Between Pad D15-2(68.65mm,15.542mm) on Top copper And Via (68.7mm,16.446mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.071mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=845.8mil|Location2.X=851.05mil|Location1.Y=261.24mil|Location2.Y=266.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=845.8mil|Location2.X=851.05mil|Location1.Y=261.24mil|Location2.Y=266.49mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.042mm &lt; 0.102mm) Between Pad D3-2(21.6mm,7.175mm) on Top copper And Via (21.55mm,6.3mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.042mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1082.021mil|Location2.X=1087.271mil|Location1.Y=261.241mil|Location2.Y=266.491mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1082.021mil|Location2.X=1087.271mil|Location1.Y=261.241mil|Location2.Y=266.491mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.042mm &lt; 0.102mm) Between Pad D4-2(27.6mm,7.175mm) on Top copper And Via (27.55mm,6.3mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.042mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.926mil|Location2.X=3843.176mil|Location1.Y=258.288mil|Location2.Y=263.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.926mil|Location2.X=3843.176mil|Location1.Y=258.288mil|Location2.Y=263.538mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.092mm &lt; 0.102mm) Between Pad D8-2(97.6mm,7.125mm) on Top copper And Via (97.55mm,6.2mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.092mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3186.351mil|Location2.X=3191.601mil|Location1.Y=101.127mil|Location2.Y=106.377mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3186.351mil|Location2.X=3191.601mil|Location1.Y=101.127mil|Location2.Y=106.377mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad P1-3(81mm,1.6mm) on Top copper And Via (81mm,3.05mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3235.564mil|Location2.X=3240.814mil|Location1.Y=101.127mil|Location2.Y=106.377mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3235.564mil|Location2.X=3240.814mil|Location1.Y=101.127mil|Location2.Y=106.377mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad P1-4(82.25mm,1.6mm) on Top copper And Via (82.25mm,3.05mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3284.777mil|Location2.X=3290.027mil|Location1.Y=101.127mil|Location2.Y=106.377mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3284.777mil|Location2.X=3290.027mil|Location1.Y=101.127mil|Location2.Y=106.377mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad P1-5(83.5mm,1.6mm) on Top copper And Via (83.5mm,3.05mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3540.682mil|Location2.X=3545.932mil|Location1.Y=434.503mil|Location2.Y=439.753mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3540.682mil|Location2.X=3545.932mil|Location1.Y=434.503mil|Location2.Y=439.753mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.091mm &lt; 0.102mm) Between Pad R11-1(90mm,11.7mm) on Top copper And Via (90mm,9.775mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.091mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2818.82mil|Location2.X=2824.07mil|Location1.Y=95.8mil|Location2.Y=101.05mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2818.82mil|Location2.X=2824.07mil|Location1.Y=95.8mil|Location2.Y=101.05mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad R1-2(72.25mm,2.75mm) on Top copper And Via (71.25mm,2.5mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2129.843mil|Location2.X=2135.093mil|Location1.Y=553.712mil|Location2.Y=558.962mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2129.843mil|Location2.X=2135.093mil|Location1.Y=553.712mil|Location2.Y=558.962mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad R18-2(54.75mm,14.417mm) on Top copper And Via (53.75mm,14.131mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2894.434mil|Location2.X=2899.684mil|Location1.Y=611.549mil|Location2.Y=616.799mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2894.434mil|Location2.X=2899.684mil|Location1.Y=611.549mil|Location2.Y=616.799mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad R20-1(73mm,15.75mm) on Top copper And Via (74mm,15.6mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.879mil|Location2.X=3971.129mil|Location1.Y=408.387mil|Location2.Y=413.637mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3965.879mil|Location2.X=3971.129mil|Location1.Y=408.387mil|Location2.Y=413.637mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.102mm) Between Pad SN10-3(100.8mm,10.85mm) on Top copper And Via (100.8mm,10.05mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1924.54mil|Location2.X=1929.79mil|Location1.Y=404.45mil|Location2.Y=409.7mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1924.54mil|Location2.X=1929.79mil|Location1.Y=404.45mil|Location2.Y=409.7mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.102mm) Between Pad SN11-3(48.95mm,10.75mm) on Top copper And Via (48.95mm,9.95mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4190.288mil|Location2.X=4195.538mil|Location1.Y=405.434mil|Location2.Y=410.684mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4190.288mil|Location2.X=4195.538mil|Location1.Y=405.434mil|Location2.Y=410.684mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad SN12-3(106.5mm,10.8mm) on Top copper And Via (106.5mm,9.95mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2215.282mil|Location2.X=2220.532mil|Location1.Y=427.679mil|Location2.Y=432.929mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2215.282mil|Location2.X=2220.532mil|Location1.Y=427.679mil|Location2.Y=432.929mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.097mm &lt; 0.102mm) Between Pad SN13-1(56.764mm,11.38mm) on Top copper And Via (56.335mm,10.5mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.097mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2113.517mil|Location2.X=2118.767mil|Location1.Y=537.367mil|Location2.Y=542.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2113.517mil|Location2.X=2118.767mil|Location1.Y=537.367mil|Location2.Y=542.617mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.068mm &lt; 0.102mm) Between Pad SN13-4(53.964mm,13.28mm) on Top copper And Via (53.75mm,14.131mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.068mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2096.042mil|Location2.X=2101.292mil|Location1.Y=463.004mil|Location2.Y=468.254mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2096.042mil|Location2.X=2101.292mil|Location1.Y=463.004mil|Location2.Y=468.254mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.091mm &lt; 0.102mm) Between Pad SN13-5(53.964mm,11.38mm) on Top copper And Via (53.25mm,12.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.091mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2919.976mil|Location2.X=2925.226mil|Location1.Y=494.721mil|Location2.Y=499.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2919.976mil|Location2.X=2925.226mil|Location1.Y=494.721mil|Location2.Y=499.971mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.065mm &lt; 0.102mm) Between Pad SN14-2(73.55mm,12.3mm) on Top copper And Via (74.648mm,12.633mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.065mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3253.281mil|Location2.X=3258.531mil|Location1.Y=489.095mil|Location2.Y=494.345mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3253.281mil|Location2.X=3258.531mil|Location1.Y=489.095mil|Location2.Y=494.345mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.017mm &lt; 0.102mm) Between Pad SN16-3(82.7mm,12.9mm) on Top copper And Via (82.7mm,12.1mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.017mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3363.517mil|Location2.X=3368.767mil|Location1.Y=562.749mil|Location2.Y=567.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3363.517mil|Location2.X=3368.767mil|Location1.Y=562.749mil|Location2.Y=567.999mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.076mm &lt; 0.102mm) Between Pad SN16-5(85.5mm,14.8mm) on Top copper And Via (85.5mm,13.942mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.076mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=595.8mil|Location2.X=601.05mil|Location1.Y=485.158mil|Location2.Y=490.408mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=595.8mil|Location2.X=601.05mil|Location1.Y=485.158mil|Location2.Y=490.408mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad SN2-5(15.2mm,12.825mm) on Top copper And Via (15.2mm,11.975mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1080.052mil|Location2.X=1085.302mil|Location1.Y=488.111mil|Location2.Y=493.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1080.052mil|Location2.X=1085.302mil|Location1.Y=488.111mil|Location2.Y=493.361mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad SN4-5(27.5mm,12.9mm) on Top copper And Via (27.5mm,12.05mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1316.273mil|Location2.X=1321.523mil|Location1.Y=480.237mil|Location2.Y=485.487mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1316.273mil|Location2.X=1321.523mil|Location1.Y=480.237mil|Location2.Y=485.487mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad SN5-5(33.5mm,12.7mm) on Top copper And Via (33.5mm,11.85mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3491.47mil|Location2.X=3496.72mil|Location1.Y=490.572mil|Location2.Y=495.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3491.47mil|Location2.X=3496.72mil|Location1.Y=490.572mil|Location2.Y=495.822mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.092mm &lt; 0.102mm) Between Pad SN6-3(88.95mm,12.975mm) on Top copper And Via (88.75mm,12.1mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.092mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3609.58mil|Location2.X=3614.83mil|Location1.Y=565.375mil|Location2.Y=570.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3609.58mil|Location2.X=3614.83mil|Location1.Y=565.375mil|Location2.Y=570.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.092mm &lt; 0.102mm) Between Pad SN6-5(91.75mm,14.875mm) on Top copper And Via (91.75mm,14mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.092mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1544.619mil|Location2.X=1549.869mil|Location1.Y=478.269mil|Location2.Y=483.519mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1544.619mil|Location2.X=1549.869mil|Location1.Y=478.269mil|Location2.Y=483.519mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad SN7-5(39.3mm,12.65mm) on Top copper And Via (39.3mm,11.8mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3835.958mil|Location2.X=3841.208mil|Location1.Y=484.666mil|Location2.Y=489.916mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3835.958mil|Location2.X=3841.208mil|Location1.Y=484.666mil|Location2.Y=489.916mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.092mm &lt; 0.102mm) Between Pad SN8-5(97.5mm,12.825mm) on Top copper And Via (97.5mm,11.95mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.092mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1680.446mil|Location2.X=1685.696mil|Location1.Y=405.926mil|Location2.Y=411.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1680.446mil|Location2.X=1685.696mil|Location1.Y=405.926mil|Location2.Y=411.176mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.042mm &lt; 0.102mm) Between Pad SN9-3(42.75mm,10.8mm) on Top copper And Via (42.75mm,9.975mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.042mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1790.682mil|Location2.X=1795.932mil|Location1.Y=480.237mil|Location2.Y=485.487mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1790.682mil|Location2.X=1795.932mil|Location1.Y=480.237mil|Location2.Y=485.487mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.067mm &lt; 0.102mm) Between Pad SN9-5(45.55mm,12.7mm) on Top copper And Via (45.55mm,11.85mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.067mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4752.584mil|Location2.X=4759.394mil|Location1.Y=573.26mil|Location2.Y=583.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4752.584mil|Location2.X=4759.394mil|Location1.Y=573.26mil|Location2.Y=583.543mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.063mm &lt; 0.102mm) Between Via (120.4mm,14.6mm) from Top copper to Bottom copper And Via (122mm,15.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.063mm] / [Bottom Solder] Mask Sliver [0.063mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2198.848mil|Location2.X=2204.098mil|Location1.Y=410.761mil|Location2.Y=416.011mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2198.848mil|Location2.X=2204.098mil|Location1.Y=410.761mil|Location2.Y=416.011mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.073mm &lt; 0.102mm) Between Via (55.5mm,10.5mm) from Top copper to Bottom copper And Via (56.335mm,10.5mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.073mm] / [Bottom Solder] Mask Sliver [0.073mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2403.869mil|Location2.X=2414.423mil|Location1.Y=542.197mil|Location2.Y=548.884mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2403.869mil|Location2.X=2414.423mil|Location1.Y=542.197mil|Location2.Y=548.884mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.029mm &lt; 0.102mm) Between Via (61.25mm,14.25mm) from Top copper to Bottom copper And Via (61mm,13.5mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2451.887mil|Location2.X=2458.832mil|Location1.Y=584.251mil|Location2.Y=593.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2451.887mil|Location2.X=2458.832mil|Location1.Y=584.251mil|Location2.Y=593.176mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.089mm &lt; 0.102mm) Between Via (62.689mm,15.25mm) from Top copper to Bottom copper And Via (62mm,14.75mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.089mm] / [Bottom Solder] Mask Sliver [0.089mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2478.953mil|Location2.X=2485.786mil|Location1.Y=588.91mil|Location2.Y=598.207mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2478.953mil|Location2.X=2485.786mil|Location1.Y=588.91mil|Location2.Y=598.207mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.058mm &lt; 0.102mm) Between Via (62.689mm,15.25mm) from Top copper to Bottom copper And Via (63.375mm,14.8mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.058mm] / [Bottom Solder] Mask Sliver [0.058mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2504.754mil|Location2.X=2511.698mil|Location1.Y=585.211mil|Location2.Y=594.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2504.754mil|Location2.X=2511.698mil|Location1.Y=585.211mil|Location2.Y=594.16mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.008mm &lt; 0.102mm) Between Via (63.375mm,14.8mm) from Top copper to Bottom copper And Via (64mm,15.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.008mm] / [Bottom Solder] Mask Sliver [0.008mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2529.853mil|Location2.X=2536.738mil|Location1.Y=587.926mil|Location2.Y=596.71mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2529.853mil|Location2.X=2536.738mil|Location1.Y=587.926mil|Location2.Y=596.71mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.058mm &lt; 0.102mm) Between Via (64.65mm,14.75mm) from Top copper to Bottom copper And Via (64mm,15.25mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.058mm] / [Bottom Solder] Mask Sliver [0.058mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2555.446mil|Location2.X=2562.442mil|Location1.Y=585.793mil|Location2.Y=594.16mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2555.446mil|Location2.X=2562.442mil|Location1.Y=585.793mil|Location2.Y=594.16mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.089mm &lt; 0.102mm) Between Via (64.65mm,14.75mm) from Top copper to Bottom copper And Via (65.3mm,15.3mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.089mm] / [Bottom Solder] Mask Sliver [0.089mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2581.036mil|Location2.X=2587.983mil|Location1.Y=588.839mil|Location2.Y=597.246mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2581.036mil|Location2.X=2587.983mil|Location1.Y=588.839mil|Location2.Y=597.246mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.092mm &lt; 0.102mm) Between Via (65.3mm,15.3mm) from Top copper to Bottom copper And Via (65.95mm,14.746mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.092mm] / [Bottom Solder] Mask Sliver [0.092mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2787.729mil|Location2.X=2794.511mil|Location1.Y=85.607mil|Location2.Y=96.129mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2787.729mil|Location2.X=2794.511mil|Location1.Y=85.607mil|Location2.Y=96.129mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.029mm &lt; 0.102mm) Between Via (70.5mm,2.25mm) from Top copper to Bottom copper And Via (71.25mm,2.5mm) from Top copper to Bottom copper [Top Solder] Mask Sliver [0.029mm] / [Bottom Solder] Mask Sliver [0.029mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQTPDFEE41NEDE2YJMH2CYFLJVJX0I4UIGETWAIF5HQGYRTFS0KII"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3086.718mil|Location2.X=3094.385mil|Location1.Y=-9.05mil|Location2.Y=-1.383mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\payload\payload\pay-led-pcb2\pay-led-pcb.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3086.718mil|Location2.X=3094.385mil|Location1.Y=-9.05mil|Location2.Y=-1.383mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.254mm) Between Arc (78.5mm,0.076mm) on Top Overlay And Board Edge </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

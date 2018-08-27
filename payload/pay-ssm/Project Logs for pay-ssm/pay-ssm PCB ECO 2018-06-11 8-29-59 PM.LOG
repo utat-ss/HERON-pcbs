@@ -1,0 +1,19 @@
+Change Net Name : Old Net Name=MISO_A New Net Name=SENS_MISO_A
+Added Pin To Net: NetName=LED_PEX_C\S\ Pin=P16-6
+Added Pin To Net: NetName=LED_PEX_C\S\ Pin=P18-6
+Added Pin To Net: NetName=LED_PEX_C\S\ Pin=U20-13
+Added Net: Name=LED_PEX_C\S\
+Added Pin To Net: NetName=LED_PEX_R\S\T\ Pin=P16-8
+Added Pin To Net: NetName=LED_PEX_R\S\T\ Pin=P18-8
+Added Pin To Net: NetName=LED_PEX_R\S\T\ Pin=U20-15
+Added Net: Name=LED_PEX_R\S\T\
+Added Pin To Net: NetName=MISO_A Pin=P19-1
+Added Pin To Net: NetName=MISO_A Pin=R4-8
+Added Pin To Net: NetName=MISO_A Pin=U20-1
+Added Net: Name=MISO_A
+Added Pin To Net: NetName=SENS_ADC_C\S\ Pin=P17-13
+Added Pin To Net: NetName=SENS_ADC_C\S\ Pin=U1-9
+Added Net: Name=SENS_ADC_C\S\
+Added Pin To Net: NetName=SENS_DAC_C\S\ Pin=P17-11
+Added Pin To Net: NetName=SENS_DAC_C\S\ Pin=U1-12
+Added Net: Name=SENS_DAC_C\S\

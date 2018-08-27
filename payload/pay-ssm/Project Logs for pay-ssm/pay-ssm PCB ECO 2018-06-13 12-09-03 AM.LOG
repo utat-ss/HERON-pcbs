@@ -1,0 +1,20 @@
+Added Pin To Net: NetName=3V3 Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=NetP15_2 Pin=Q3-1
+Added Pin To Net: NetName=NetP15_2 Pin=Q3-2
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=GND Pin=Q3-4
+Added Pin To Net: NetName=NetP15_2 Pin=Q3-5
+Added Pin To Net: NetName=NetP15_2 Pin=Q3-6
+Added Pin To Net: NetName=NetQ3_3 Pin=R19-1
+Added Pin To Net: NetName=+5 Pin=R19-2
+Added Pin To Net: NetName=NetQ3_3 Pin=U7-1
+Added Pin To Net: NetName=GND Pin=U7-2
+Added Pin To Net: NetName=THM_3 Pin=U7-3
+Added Pin To Net: NetName=DAC_B Pin=U7-4
+Added Pin To Net: NetName=3V3 Pin=U7-5
+Added Member To Class: ClassName=U_heater_control Member=Component C14 0.1uF
+Added Member To Class: ClassName=pay-ssm Member=Component P2 INCOMING FROM OBC
+Added Member To Class: ClassName=U_heater_control Member=Component Q3 N-MOS
+Added Member To Class: ClassName=U_heater_control Member=Component R19 1K
+Added Member To Class: ClassName=U_heater_control Member=Component U7 MCP6546
