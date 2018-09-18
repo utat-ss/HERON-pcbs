@@ -16,29 +16,26 @@ This repository houses circuits and PCB design for the Heron MK II cubesatellite
 - Controls motors, heaters, thermistors
 - Interfaces with EPS/OBC on the CAN bus
 - 10-pin DF-14 connector to EPS
-
-
 - **Programming headers - for both, the notch on the connector must face DOWN**
     - Board orientation is determined by the UTAT logo
 - 2x2 header on right side between long debugging header and programming header - top 2 pins are MCU's TX (prints), bottom 2 pins are MCU's RX (laptop commands)
 - Careful of different 5V and 3V3 headers!!
-
-
-- Contains two microcontrollers:
-    - pay (right side)
-        - Controls SSM functions
-        - Need to set switch to PROG when uploading programs, and RUN when executing programs
-        - Switch must be in RUN mode for SSM_RST button and UART to work
-        - Can leave microcontroller's RX pin connected when uploading a program (commands from a laptop)
-    - pay-optical (left side)
-        - Controls optical sensor setup
-        - Should be on the PAY-Optical board, but is on the SSM board due to space constraints
-        - UART headers (from MCU's perspective):
-            - TX - DI
-            - RX - CLK
-        - Need to disconnect RX (CLK) pin when uploading a program
-- The two microcontrollers are connected to each other over SPI, where pay functions as the master and pay-optical functions as the slave
 - 5V supply required if using motors and heaters
+- Contains two microcontrollers
+- pay MCU (right side)
+    - Controls SSM functions
+    - Need to set switch to PROG when uploading programs, and RUN when executing programs
+    - Switch must be in RUN mode for SSM_RST button and UART to work
+    - Can leave microcontroller's RX pin connected when uploading a program (commands from a laptop)
+- pay-optical MCU (left side)
+    - Controls optical sensor setup
+    - Should be on the PAY-Optical board, but is on the SSM board due to space constraints
+    - UART headers (from MCU's perspective):
+        - TX - DI (prints, more common)
+        - RX - CLK (commands, less common)
+    - Need to disconnect RX (CLK) pin when uploading a program
+- The two microcontrollers are connected to each other over SPI, where pay functions as the master and pay-optical functions as the slave
+- If the pay-optical MCU doesn't program properly, the pay MCU might be interfering by sending SPI messages to it - either upload an empty program to the pay MCU or hold down the SSM_RST button when programming the pay-optical MCU
 - Disconnected (desoldered) CONFIG pin on both motor drivers so they use phase/enable mode
 
 
