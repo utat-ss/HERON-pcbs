@@ -1,4 +1,0 @@
-Added Pin To Net: NetName=Net*5_4 Pin=*?-2
-Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
-Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
-Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR
