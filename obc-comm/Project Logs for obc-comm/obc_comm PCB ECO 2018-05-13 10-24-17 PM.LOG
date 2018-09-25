@@ -1,4 +1,0 @@
-Change Component Footprint: Designator=*1 Old Footprint=SOIC127P500X600-8N New Footprint=DGK8-M
-Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
-Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
-Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR

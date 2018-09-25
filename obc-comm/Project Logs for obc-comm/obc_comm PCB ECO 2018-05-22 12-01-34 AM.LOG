@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=NetU3_11 Pin=EPS 32M1-26
-Added Pin To Net: NetName=NetU3_11 Pin=EPS 32M1-3
-Added Member To Class: ClassName=U_obc_32m1 Member=Component C? 1%
-Added Member To Class: ClassName=bus-main Member=Component P? UHF UART
-Added Member To Class: ClassName=bus-main Member=Component P? UHF PWR
