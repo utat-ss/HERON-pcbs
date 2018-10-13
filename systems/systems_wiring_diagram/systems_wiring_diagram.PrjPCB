@@ -55,7 +55,7 @@ GenerateClassCluster=0
 DocumentUniqueId=XFBPKBSG
 
 [Document2]
-DocumentPath=eps.SchDoc
+DocumentPath=bus.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -72,23 +72,6 @@ GenerateClassCluster=0
 DocumentUniqueId=LRGUJQVX
 
 [Document3]
-DocumentPath=obc.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MBWNFQKY
-
-[Document4]
 DocumentPath=pay.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
