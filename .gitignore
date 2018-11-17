@@ -3,3 +3,5 @@
 *.SchDocPreview
 *.SchDocPreview
 **.LOG
+
+.DS_Store
