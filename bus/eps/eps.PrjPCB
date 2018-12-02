@@ -55,23 +55,6 @@ GenerateClassCluster=0
 DocumentUniqueId=QQTIYHKH
 
 [Document2]
-DocumentPath=bt_current_monitor.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=2
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=GUYQFPVT
-
-[Document3]
 DocumentPath=bus-main.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -87,6 +70,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TBYBBDDM
+
+[Document3]
+DocumentPath=bt_current_monitor.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=2
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GUYQFPVT
 
 [Document4]
 DocumentPath=eps.SchDoc
@@ -106,13 +106,13 @@ GenerateClassCluster=0
 DocumentUniqueId=XILOEQRN
 
 [Document5]
-DocumentPath=eps_bb1.SchDoc
+DocumentPath=eps_bt.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=9
+AnnotateOrder=24
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -120,7 +120,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JGPNJEHP
+DocumentUniqueId=QMHSFLLX
 
 [Document6]
 DocumentPath=eps_batt.SchDoc
@@ -140,6 +140,23 @@ GenerateClassCluster=0
 DocumentUniqueId=UBASXLKW
 
 [Document7]
+DocumentPath=eps_bb.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=23
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VKGCLILK
+
+[Document8]
 DocumentPath=eps_pv.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -155,23 +172,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GBHXTNTO
-
-[Document8]
-DocumentPath=eps_bt1.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=10
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=QMHSFLLX
 
 [Document9]
 DocumentPath=..\obc-comm\eps_imu.SchDoc
