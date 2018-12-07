@@ -55,7 +55,7 @@ GenerateClassCluster=0
 DocumentUniqueId=TOBBNBQJ
 
 [Document2]
-DocumentPath=syspcb.SchDoc
+DocumentPath=..\..\..\Desktop\UTAT SS\sys_debug_pcb_v2.0\syspcb.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -123,23 +123,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document6]
-DocumentPath=system_debug_pcb.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document7]
 DocumentPath=syspcb.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,8 +139,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
-DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\SwitchesButtons.SchLib
+[Document7]
+DocumentPath=..\..\libraries\Heron General\Schematic Libraries\SwitchesButtons.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -173,8 +156,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JLQIHBMR
 
-[Document9]
-DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\SwitchesButtons.PcbLib
+[Document8]
+DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SwitchesButtons.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -189,10 +172,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XKVJPNNS
-
-[GeneratedDocument1]
-DocumentPath=Project Outputs for syspcb\Design Rule Check - syspcb.html
-DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
