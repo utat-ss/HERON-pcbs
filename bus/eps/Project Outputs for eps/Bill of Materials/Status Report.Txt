@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 13:34:15 On 2018-12-08
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of BOM Document [eps.BomDoc]
+   Generated File[Bill of Materials-eps.csv]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 13:34:18 On 2018-12-08

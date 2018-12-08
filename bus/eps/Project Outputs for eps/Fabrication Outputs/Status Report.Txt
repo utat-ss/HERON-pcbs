@@ -1,0 +1,14 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [eps.PcbDoc]
+   Generated File[eps-Plated.TXT]
+   Generated File[eps-NonPlated.TXT]
+   Generated File[eps.DRL]
+   Generated File[eps.LDP]
+   Generated File[eps.DRR]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 13:24:59 On 2018-12-08
