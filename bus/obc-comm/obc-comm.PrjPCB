@@ -208,7 +208,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MSRPGGPM
 
 [Document11]
-DocumentPath=obc-comm.PcbDoc
+DocumentPath=obc_comm.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -222,10 +222,14 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=KCMBWAPR
+DocumentUniqueId=MLTYMSBK
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for obc-comm\Design Rule Check - obc-comm.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for obc-comm\Design Rule Check - obc_comm.html
 DItemRevisionGUID=
 
 [Configuration1]
