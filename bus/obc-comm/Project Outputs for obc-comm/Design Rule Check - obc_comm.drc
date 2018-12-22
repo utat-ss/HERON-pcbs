@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Owner\Documents\GitHub\pcbs\bus\obc-comm\obc_comm.PcbDoc
 Date     : 12/20/2018
-Time     : 8:49:37 PM
+Time     : 9:11:59 PM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -54,7 +54,7 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.102mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.003mm < 0.102mm) Between Pad U3-32(38.602mm,18.778mm) on Top Layer And Via (39.158mm,17.669mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.003mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.054mm < 0.102mm) Between Pad U3-8(37.102mm,11.678mm) on Top Layer And Via (36.322mm,10.922mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.054mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.029mm < 0.102mm) Between Pad U3-9(38.602mm,10.178mm) on Top Layer And Via (37.871mm,10.287mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.029mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.032mm < 0.102mm) Between Pad U5-16(24.511mm,16.334mm) on Top Layer And Via (25.044mm,17.755mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.032mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.077mm < 0.102mm) Between Pad U5-16(24.511mm,16.334mm) on Top Layer And Via (25.119mm,17.764mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.077mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.025mm < 0.102mm) Between Pad U6-1(43.434mm,27.508mm) on Bottom Layer And Pad U6-2(43.434mm,27.153mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.025mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.025mm < 0.102mm) Between Pad U6-2(43.434mm,27.153mm) on Bottom Layer And Pad U6-3(43.434mm,26.797mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.025mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.025mm < 0.102mm) Between Pad U6-3(43.434mm,26.797mm) on Bottom Layer And Pad U6-4(43.434mm,26.441mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.025mm]
@@ -219,4 +219,4 @@ Rule Violations :0
 
 Violations Detected : 135
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:04
