@@ -145,7 +145,7 @@ Value=6
 
 [Parameter2]
 Name=ProjectRevision
-Value=v0.9
+Value=v0.9.1
 
 [Parameter3]
 Name=ProjectDrawnBy
