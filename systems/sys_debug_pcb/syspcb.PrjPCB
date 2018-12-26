@@ -38,7 +38,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=..\..\..\Desktop\UTAT SS\sys_debug_pcb_v2.0\syspcb.PcbDoc
+DocumentPath=syspcb.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -55,7 +55,7 @@ GenerateClassCluster=0
 DocumentUniqueId=TOBBNBQJ
 
 [Document2]
-DocumentPath=..\..\..\Desktop\UTAT SS\sys_debug_pcb_v2.0\syspcb.SchDoc
+DocumentPath=syspcb.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -120,10 +120,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KTJKEXJA
 
 [Document6]
-DocumentPath=syspcb.OutJob
+DocumentPath=system_debug_pcb.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -140,7 +140,24 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document7]
-DocumentPath=..\..\libraries\Heron General\Schematic Libraries\SwitchesButtons.SchLib
+DocumentPath=syspcb.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document8]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\SwitchesButtons.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -156,8 +173,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JLQIHBMR
 
-[Document8]
-DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SwitchesButtons.PcbLib
+[Document9]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\SwitchesButtons.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -172,6 +189,265 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XKVJPNNS
+
+[Document10]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\CONNs.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PITSNFHV
+
+[Document11]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\Crystals.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VSQSDHWQ
+
+[Document12]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\EPS.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UWHQSVID
+
+[Document13]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\ICs.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AQIUWKYB
+
+[Document14]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\PAY.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LXOGGXYL
+
+[Document15]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Schematic Libraries\SMDComponents.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GKXHAWAK
+
+[Document16]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\CONNs.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document17]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\Crystals.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document18]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\EPS.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document19]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\ICs.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document20]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\MISC.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document21]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\PAY.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document22]
+DocumentPath=..\..\..\pcbs\libraries\Heron General\Footprint Libraries\SMDComponents.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AOHEKEWY
+
+[Document23]
+DocumentPath=Conn_Molex_39-30-1020\parts\Conn_Molex_39-30-1020_eec.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SGFLKJQQ
+
+[Document24]
+DocumentPath=Conn_Molex_39-30-1020\parts\Conn_Molex_39-30-1020_eec_0.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for syspcb\Design Rule Check - syspcb.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -393,6 +669,8 @@ OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
 PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration9_Name1=OutputConfigurationParameter1
+Configuration9_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0
 OutputType10=SimView Print
 OutputName10=SimView Prints
 OutputDocumentPath10=
@@ -1164,6 +1442,66 @@ NetClassSeparateForBusSections=0
 SelectedOnly=0
 UpdateVariants=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=CUSTOM.SchLib
+ComponentDesignItemID0=SN74LV07A
+ComponentSymbolReference0=SN74LV07A
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=Miscellaneous Connectors.IntLib
+ComponentDesignItemID1=D Connector 25
+ComponentSymbolReference1=D Connector 25
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=Miscellaneous Connectors.IntLib
+ComponentDesignItemID2=Header 10X2A
+ComponentSymbolReference2=Header 10X2A
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=Miscellaneous Connectors.IntLib
+ComponentDesignItemID3=Header 2
+ComponentSymbolReference3=Header 2
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=Miscellaneous Connectors.IntLib
+ComponentDesignItemID4=Header 4X2A
+ComponentSymbolReference4=Header 4X2A
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=Miscellaneous Connectors.IntLib
+ComponentDesignItemID5=MHDR2X3
+ComponentSymbolReference5=MHDR2X3
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=Miscellaneous Devices.IntLib
+ComponentDesignItemID6=LED2
+ComponentSymbolReference6=LED2
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=Miscellaneous Devices.IntLib
+ComponentDesignItemID7=Res2
+ComponentSymbolReference7=Res2
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=Miscellaneous Devices.IntLib
+ComponentDesignItemID8=SW-PB
+ComponentSymbolReference8=SW-PB
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=SwitchesButtons.SchLib
+ComponentDesignItemID9=DPDT Switch
+ComponentSymbolReference9=DPDT Switch
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1177,6 +1515,101 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Comment
+ParameterUpdate0=1
+ParameterName1=Component Kind
+ParameterUpdate1=1
+ParameterName2=DatasheetDocument
+ParameterUpdate2=1
+ParameterName3=Description
+ParameterUpdate3=1
+ParameterName4=Gender
+ParameterUpdate4=1
+ParameterName5=LatestRevisionDate
+ParameterUpdate5=1
+ParameterName6=LatestRevisionNote
+ParameterUpdate6=1
+ParameterName7=Library Reference
+ParameterUpdate7=1
+ParameterName8=Orientation
+ParameterUpdate8=1
+ParameterName9=PackageDescription
+ParameterUpdate9=1
+ParameterName10=PackageDocument
+ParameterUpdate10=1
+ParameterName11=PackageReference
+ParameterUpdate11=1
+ParameterName12=PackageVersion
+ParameterUpdate12=1
+ParameterName13=Positions
+ParameterUpdate13=1
+ParameterName14=Published
+ParameterUpdate14=1
+ParameterName15=Publisher
+ParameterUpdate15=1
+ParameterName16=Supplier 1
+ParameterUpdate16=1
+ParameterName17=Supplier Part Number 1
+ParameterUpdate17=1
+ParameterName18=Value
+ParameterUpdate18=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=0603-LED
+ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=3.2X1.6X1.1
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=AXIAL-0.4
+ModelUpdate2=1
+ModelType3=PCBLIB
+ModelName3=DSUB1.385-2H25A
+ModelUpdate3=1
+ModelType4=PCBLIB
+ModelName4=HDR1X2
+ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=HDR2X10_CEN
+ModelUpdate5=1
+ModelType6=PCBLIB
+ModelName6=HDR2X3
+ModelUpdate6=1
+ModelType7=PCBLIB
+ModelName7=HDR2X4_CEN
+ModelUpdate7=1
+ModelType8=PCBLIB
+ModelName8=J1-0603
+ModelUpdate8=1
+ModelType9=PCBLIB
+ModelName9=JS202011AQN - Slide Switch
+ModelUpdate9=1
+ModelType10=PCBLIB
+ModelName10=SOIC127P600X175-14N
+ModelUpdate10=1
+ModelType11=PCBLIB
+ModelName11=SPST-2
+ModelUpdate11=1
+ModelType12=PCBLIB
+ModelName12=SW_5-1437565-0
+ModelUpdate12=1
+ModelTypeGroup1=SI
+ModelTypeUpdate1=1
+ModelType13=SI
+ModelName13=Connector
+ModelUpdate13=1
+ModelType14=SI
+ModelName14=Res
+ModelUpdate14=1
+ModelTypeGroup2=SIM
+ModelTypeUpdate2=1
+ModelType15=SIM
+ModelName15=LED2
+ModelUpdate15=1
+ModelType16=SIM
+ModelName16=RESISTOR
+ModelUpdate16=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
@@ -1238,7 +1671,7 @@ ComponentUpdate8=1
 ComponentIsDeviceSheet8=0
 
 [Comparison Options]
-ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
+ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=0|UseName=-1|InclAllRules=0
 ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
