@@ -1,20 +1,49 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Jaden Reimer\Documents\GitHub\pcbs\bus\eps\eps.PcbDoc
-Date     : 2018-12-29
-Time     : 10:09:17 PM
+PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps.PcbDoc
+Date     : 2018-12-30
+Time     : 2:17:17 AM
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: GND In net GND On Top Layer
+   Polygon named: +VBATT
+   Polygon named: BT_OUT
+   Polygon named: GND On Top Layer
 
 Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
-   Violation between Clearance Constraint: (172129.947mil < 6mil) Between Arc (2157.586mil,2063.093mil) on GND And Via (2157.586mil,2063.093mil) from Top Layer to Bottom Layer 
-Rule Violations :1
+   Violation between Clearance Constraint: (168643.666mil < 6mil) Between Arc (2157.586mil,2063.093mil) on GND And Via (2157.586mil,2063.093mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Polygon Region (0 hole(s)) Top Layer And Track (2817.559mil,2300mil)(2818.115mil,2300mil) on Top Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2818.115mil,2236.393mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2818.115mil,2268.125mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2818.115mil,2300mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2853.381mil,2236.393mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2853.381mil,2268.125mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2853.381mil,2300mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2888.658mil,2236.393mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2888.658mil,2268.125mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Region (0 hole(s)) Bottom Layer And Via (2888.658mil,2300mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Track (2817.559mil,2300mil)(2818.115mil,2300mil) on Top Layer And Via (2818.115mil,2300mil) from Top Layer to Bottom Layer 
+   Violation between Clearance Constraint: (Collision < 6mil) Between Track (2818.115mil,2300mil)(2820mil,2298.115mil) on Bottom Layer And Via (2818.115mil,2300mil) from Top Layer to Bottom Layer 
+Rule Violations :13
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
+   Violation between Short-Circuit Constraint: Between Polygon Region (0 hole(s)) Top Layer And Track (2817.559mil,2300mil)(2818.115mil,2300mil) on Top Layer Location : [X = 2817.837mil][Y = 2300mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2818.115mil,2236.393mil) from Top Layer to Bottom Layer Location : [X = 2818.115mil][Y = 2236.393mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2818.115mil,2268.125mil) from Top Layer to Bottom Layer Location : [X = 2818.115mil][Y = 2268.125mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2818.115mil,2300mil) from Top Layer to Bottom Layer Location : [X = 2818.115mil][Y = 2300mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2853.381mil,2236.393mil) from Top Layer to Bottom Layer Location : [X = 2853.381mil][Y = 2236.393mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2853.381mil,2268.125mil) from Top Layer to Bottom Layer Location : [X = 2853.381mil][Y = 2268.125mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2853.381mil,2300mil) from Top Layer to Bottom Layer Location : [X = 2853.381mil][Y = 2300mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2888.658mil,2236.393mil) from Top Layer to Bottom Layer Location : [X = 2888.658mil][Y = 2236.393mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2888.658mil,2268.125mil) from Top Layer to Bottom Layer Location : [X = 2888.658mil][Y = 2268.125mil]
+   Violation between Short-Circuit Constraint: Between Region (0 hole(s)) Bottom Layer And Via (2888.658mil,2300mil) from Top Layer to Bottom Layer Location : [X = 2888.658mil][Y = 2300mil]
+   Violation between Short-Circuit Constraint: Between Track (2817.559mil,2300mil)(2818.115mil,2300mil) on Top Layer And Via (2818.115mil,2300mil) from Top Layer to Bottom Layer Location : [X = 2817.837mil][Y = 2300mil]
+   Violation between Short-Circuit Constraint: Between Track (2818.115mil,2300mil)(2820mil,2298.115mil) on Bottom Layer And Via (2818.115mil,2300mil) from Top Layer to Bottom Layer Location : [X = 2819.058mil][Y = 2299.058mil]
+Rule Violations :12
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
    Violation between Un-Routed Net Constraint: Net I2C_SDA Between Pad B1-3(1738.582mil,1147.244mil) on Top Layer And Pad B1-3(1738.582mil,1440.944mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net I2C_SCL Between Pad B1-4(1838.582mil,1147.244mil) on Top Layer And Pad B1-4(1838.582mil,1440.944mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net +5V Between Track (1938.582mil,1115.468mil)(1976.378mil,1077.672mil) on Top Layer And Pad B1-5(1938.582mil,1440.944mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net +5V Between Via (968.504mil,1870.079mil) from Top Layer to Bottom Layer And Pad B1-5(1938.582mil,1440.944mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +5V Between Track (1938.582mil,1137.095mil)(1997.99mil,1077.687mil) on Top Layer And Pad B1-5(1938.582mil,1440.944mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net OBC_MOSI_A/TX Between Pad B2-1(1038.582mil,734.646mil) on Top Layer And Track (1038.582mil,1034.645mil)(1090.551mil,1086.614mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net OBC_SCK_A/RX Between Pad B2-2(1138.582mil,734.646mil) on Top Layer And Track (1138.582mil,1036.22mil)(1181.1mil,1078.738mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net CANH Between Pad B2-3(1238.582mil,734.646mil) on Top Layer And Pad B2-3(1238.582mil,1028.346mil) on Top Layer 
@@ -23,22 +52,29 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
    Violation between Un-Routed Net Constraint: Net GND Between Pad B3-1(1038.582mil,1147.244mil) on Top Layer And Via (1038.582mil,1378.741mil) from Top Layer to Bottom Layer 
    Violation between Un-Routed Net Constraint: Net RST_PAY Between Pad B3-4(1338.582mil,1147.244mil) on Top Layer And Via (1338.582mil,1375.056mil) from Top Layer to Bottom Layer 
    Violation between Un-Routed Net Constraint: Net MISO_A Between Pad B3-5(1438.582mil,1147.244mil) on Top Layer And Pad B3-5(1438.582mil,1440.944mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net EN_UHF_OPT Between Pad B4-2(1638.582mil,734.646mil) on Top Layer And Track (1638.245mil,882.225mil)(1638.582mil,881.888mil) on Bottom Layer 
    Violation between Un-Routed Net Constraint: Net EN_UHF Between Pad B4-3(1738.582mil,734.646mil) on Top Layer And Pad B4-3(1738.582mil,1028.346mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net RTC_VBATT Between Pad RTC BATT1-1(1826.771mil,1102.362mil) on Bottom Layer And Pad B4-4(1838.582mil,1028.346mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net GND Between Via (1938.582mil,797.639mil) from Top Layer to Bottom Layer And Pad B4-5(1938.582mil,1028.346mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net GND Between Pad BT1-13(2988.252mil,2338.19mil) on Top Layer And Pad BT1-21(3037.464mil,2404.528mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad BT1-21(3037.464mil,2404.528mil) on Top Layer And Pad BT1-20(3123.488mil,2375mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C27-1(912.434mil,2776.668mil) on Top Layer And Pad C28-1(962.949mil,2776.668mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +3V3 Between Pad C27-2(912.434mil,2831.786mil) on Top Layer And Pad C28-2(962.949mil,2831.786mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +3V3 Between Pad R49-2(863.22mil,2775.472mil) on Top Layer And Pad C27-2(912.434mil,2831.786mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C28-1(962.949mil,2776.668mil) on Top Layer And Pad C29-1(1015mil,2776.668mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +3V3 Between Pad U15-9(944.37mil,2898.772mil) on Top Layer And Pad C28-2(962.949mil,2831.786mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +PACK Between Pad R16-1(2085mil,2508.482mil) on Bottom Layer And Pad Cinbb1-2(2107.053mil,2517.998mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U18-2(3198.48mil,2040.282mil) on Top Layer And Pad Rfbb_bt1-1(3206.694mil,2127.399mil) on Top Layer 
    Violation between Un-Routed Net Constraint: Net RTC_VBATT Between Pad RTC BATT1-1(818.897mil,1102.362mil) on Bottom Layer And Pad RTC BATT1-1(1826.771mil,1102.362mil) on Bottom Layer 
    Violation between Un-Routed Net Constraint: Net RST_OBC Between Track (1137.642mil,1148.184mil)(1138.582mil,1147.244mil) on Top Layer And Track (1138.582mil,1396.851mil)(1318.842mil,1216.591mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net RST_EPS Between Track (1238.582mil,1113.39mil)(1238.582mil,1147.244mil) on Top Layer And Via (1238.582mil,1380.284mil) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net EN_UHF_OPT Between Track (1638.245mil,882.225mil)(1638.582mil,881.888mil) on Bottom Layer And Track (1638.245mil,1028.009mil)(1638.582mil,1028.346mil) on Top Layer 
-Rule Violations :24
+   Violation between Un-Routed Net Constraint: Net EN_UHF_OPT Between Track (1638.245mil,1028.009mil)(1638.582mil,1028.346mil) on Top Layer And Track (1638.582mil,734.646mil)(1638.582mil,757.734mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net I_X- Between Track (2818.115mil,2300mil)(2820mil,2298.115mil) on Bottom Layer And Track (2817.559mil,2300mil)(2818.115mil,2300mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net RST_EPS Between Via (1175mil,950mil) from Top Layer to Bottom Layer And Via (1238.582mil,1380.284mil) from Top Layer to Bottom Layer 
+Rule Violations :26
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
-Rule Violations :0
+   Violation between Modified Polygon: Polygon Not Repour After Edit  (+VBATT) on Top Layer 
+   Violation between Modified Polygon: Polygon Not Repour After Edit  (BT_OUT) on Top Layer 
+   Violation between Modified Polygon: Polygon Not Repour After Edit  (GND) on GND 
+   Violation between Modified Polygon: Polygon Not Repour After Edit  (GND) on Top Layer 
+Rule Violations :4
 
 Processing Rule : Width Constraint (Min=6mil) (Max=100mil) (Preferred=10mil) (All)
 Rule Violations :0
@@ -53,8 +89,8 @@ Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
 Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mil) (All)
-   Violation between Net Antennae: Track (1638.245mil,882.225mil)(1638.582mil,881.888mil) on Bottom Layer 
-   Violation between Net Antennae: Track (1638.245mil,882.225mil)(1638.582mil,881.888mil) on Bottom Layer 
+   Violation between Net Antennae: Track (2817.559mil,2300mil)(2818.115mil,2300mil) on Top Layer 
+   Violation between Net Antennae: Track (2817.559mil,2300mil)(2818.115mil,2300mil) on Top Layer 
 Rule Violations :2
 
 Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
@@ -88,18 +124,17 @@ Rule Violations :0
 
 Processing Rule : Component Clearance Constraint ( Horizontal Gap = 10mil, Vertical Gap = 10mil ) (All),(All) 
    Violation between Component Clearance Constraint: (Collision < 10mil) Between Component D1-SM74611 (1301.924mil,2894.249mil) on Bottom Layer And SMT SIP Component PX+1-Header 4 (1125.468mil,3401.575mil) on Bottom Layer 
-   Violation between Component Clearance Constraint: (Collision < 10mil) Between Component D2-SM74611 (2937.008mil,2862.205mil) on Bottom Layer And SOIC Component U6-BQ297xx (3209.584mil,2900.969mil) on Bottom Layer 
    Violation between Component Clearance Constraint: (Collision < 10mil) Between Component D3-SM74611 (830.588mil,2894.25mil) on Bottom Layer And SMT SIP Component PY+1-Header 4 (664.402mil,3401.577mil) on Bottom Layer 
    Violation between Component Clearance Constraint: (Collision < 10mil) Between Component D4-SM74611 (1760.827mil,2894.684mil) on Bottom Layer And SMT SIP Component PY-1-Header 4 (1585.661mil,3401.577mil) on Bottom Layer 
    Violation between Component Clearance Constraint: (Collision < 10mil) Between DIP Component H1-ESQ-126-23-G-D (200mil,550.394mil) on Top Layer And DIP Component H2-ESQ-126-23-G-D (394.882mil,550.394mil) on Top Layer 
    Violation between Component Clearance Constraint: (Collision < 10mil) Between SOIC Component B1-X-, Y+ (1509.055mil,1098.032mil) on Top Layer And SOIC Component B3-X-, Y- (1009.055mil,1098.032mil) on Top Layer 
    Violation between Component Clearance Constraint: (Collision < 10mil) Between SOIC Component B2-X+, Y+ (1009.055mil,685.433mil) on Top Layer And SOIC Component B4-X+, Y- (1509.055mil,685.433mil) on Top Layer 
-Rule Violations :7
+Rule Violations :6
 
 Processing Rule : Height Constraint (Min=0mil) (Max=590.551mil) (Prefered=500mil) (All)
 Rule Violations :0
 
 
-Violations Detected : 57
+Violations Detected : 86
 Waived Violations : 0
-Time Elapsed        : 00:00:06
+Time Elapsed        : 00:00:03
