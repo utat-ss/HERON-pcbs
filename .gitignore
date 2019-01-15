@@ -1,8 +1,16 @@
+# This .gitignore is meant to be used in any PCBs/electronics repository
+
+# Unnecessary Altium files
 **/History/**
 **/__Previews/**
 *.SchDocPreview
-*.SchDocPreview
 **.LOG
 
-.DS_Store
+# Our unusable files
 pcbs-common_DO NOT USE/
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
