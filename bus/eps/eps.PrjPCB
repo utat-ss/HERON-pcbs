@@ -712,42 +712,17 @@ OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=SIMetrixNetlist
-OutputName20=SIMetrix
+OutputType20=PADSNetlist
+OutputName20=PADS ASCII Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
-OutputType21=SIMPLISNetlist
-OutputName21=SIMPLIS
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-OutputType22=XSpiceNetlist
-OutputName22=XSpice Netlist
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AdvSimNetlist
-OutputName1=Mixed Sim
-OutputDocumentPath1=
-OutputVariantName1=
-OutputDefault1=0
-OutputType2=SIMetrixSimulation
-OutputName2=SIMetrix
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -916,34 +891,54 @@ Name=Report Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=BOM_PartType
-OutputName1=Bill of Materials
+OutputType1=Script
+OutputName1=Script Output
 OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
-PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType2=ComponentCrossReference
-OutputName2=Component Cross Reference Report
+OutputType2=SimpleBOM
+OutputName2=Simple BOM
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
-OutputType3=ReportHierarchy
-OutputName3=Report Project Hierarchy
+OutputType3=SinglePinNetReporter
+OutputName3=Report Single Pin Nets
 OutputDocumentPath3=
 OutputVariantName3=[No Variations]
 OutputDefault3=0
-OutputType4=Script
-OutputName4=Script Output
+OutputType4=BOM_PartType
+OutputName4=Bill of Materials
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
-OutputType5=SimpleBOM
-OutputName5=Simple BOM
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration4_Name1=ColumnNameFormat
+Configuration4_Item1=CaptionAsName
+Configuration4_Name2=Filter
+Configuration4_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
+Configuration4_Name3=ForceUpdateSettings
+Configuration4_Item3=False
+Configuration4_Name4=General
+Configuration4_Item4=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePCBData=False|IncludeVaultData=False|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=C:\Users\Public\Documents\Altium\AD18\Templates\BOM Variant Template.XLT|BatchMode=5|FormWidth=1187|FormHeight=816|SupplierProdQty=1|SupplierAutoQty=True|SupplierUseCachedPricing=False|SupplierCurrency=CAD|ViewType=1
+Configuration4_Name5=GroupOrder
+Configuration4_Item5=
+Configuration4_Name6=SortOrder
+Configuration4_Item6=Manufacturer Part Number 1=Up
+Configuration4_Name7=VisibleOrder
+Configuration4_Item7=Line #=70|Comment=69|Description=95|Designator=94|Manufacturer 1=114|Manufacturer Part Number 1=179|Manufacturer Lifecycle 1=158|Supplier 1=133|Supplier Part Number 1=154|Supplier Unit Price 1=138|Supplier Subtotal 1=132|Supplier 2=89|Supplier Part Number 2=155|Supplier Unit Price 2=139|Supplier Subtotal 2=133|Supplier 3=89|Supplier Part Number 3=155|Supplier Unit Price 3=139|Supplier Subtotal 3=133|Manufacturer 4=116|Manufacturer Part Number 4=183|Manufacturer Lifecycle 4=159|Supplier 4=89|Supplier Part Number 4=155|Supplier Unit Price 4=139|Supplier Subtotal 4=133|Supplier 5=89|Supplier Part Number 5=155|Supplier Unit Price 5=139|Supplier Subtotal 5=133|Supplier 6=89|Supplier Part Number 6=155|Supplier Unit Price 6=139|Supplier Subtotal 6=133|Manufacturer 7=116|Manufacturer Part Number 7=183|Manufacturer Lifecycle 7=159|Supplier 7=89|Supplier Part Number 7=155|Supplier Unit Price 7=139|Supplier Subtotal 7=133|Supplier 8=89|Supplier Part Number 8=155|Supplier Unit Price 8=139|Supplier Subtotal 8=133|Supplier 9=89|Supplier Part Number 9=155|Supplier Unit Price 9=139|Supplier Subtotal 9=133
+Configuration4_Name8=VisibleOrder_Base
+Configuration4_Item8=Line #=69|Comment=69|Description=89|Designator=91|Quantity=81|Library Reference=124|Manufacturer 1=114|Manufacturer Part Number 1=179|Manufacturer Lifecycle 1=217|Supplier 1=133|Supplier Part Number 1=154|Supplier Unit Price 1=138|Supplier Subtotal 1=132|Supplier 2=89|Supplier Part Number 2=155|Supplier Unit Price 2=139|Supplier Subtotal 2=133|Supplier 3=89|Supplier Part Number 3=155|Supplier Unit Price 3=139|Supplier Subtotal 3=133|Manufacturer 4=116|Manufacturer Part Number 4=183|Manufacturer Lifecycle 4=159|Supplier 4=89|Supplier Part Number 4=155|Supplier Unit Price 4=139|Supplier Subtotal 4=133|Supplier 5=89|Supplier Part Number 5=155|Supplier Unit Price 5=139|Supplier Subtotal 5=133|Supplier 6=89|Supplier Part Number 6=155|Supplier Unit Price 6=139|Supplier Subtotal 6=133|Manufacturer 7=116|Manufacturer Part Number 7=183|Manufacturer Lifecycle 7=159|Supplier 7=89|Supplier Part Number 7=155|Supplier Unit Price 7=139|Supplier Subtotal 7=133|Supplier 8=89|Supplier Part Number 8=155|Supplier Unit Price 8=139|Supplier Subtotal 8=133|Supplier 9=89|Supplier Part Number 9=155|Supplier Unit Price 9=139|Supplier Subtotal 9=133
+Configuration4_Name9=VisibleOrder_Consolidated
+Configuration4_Item9=Line #=69|Comment=69|Description=95|Designator=93|Quantity=81|Manufacturer 1=114|Manufacturer Part Number 1=179|Manufacturer Lifecycle 1=158|Supplier 1=133|Supplier Part Number 1=154|Supplier Unit Price 1=138|Supplier Subtotal 1=132|Supplier 2=100|Supplier Part Number 2=100|Supplier Unit Price 2=100|Supplier Subtotal 2=100|Supplier 3=100|Supplier Part Number 3=100|Supplier Unit Price 3=100|Supplier Subtotal 3=100|Manufacturer 4=100|Manufacturer Part Number 4=100|Manufacturer Lifecycle 4=100|Supplier 4=100|Supplier Part Number 4=100|Supplier Unit Price 4=100|Supplier Subtotal 4=100|Supplier 5=100|Supplier Part Number 5=100|Supplier Unit Price 5=100|Supplier Subtotal 5=100|Supplier 6=100|Supplier Part Number 6=100|Supplier Unit Price 6=100|Supplier Subtotal 6=100|Manufacturer 7=100|Manufacturer Part Number 7=100|Manufacturer Lifecycle 7=100|Supplier 7=100|Supplier Part Number 7=100|Supplier Unit Price 7=100|Supplier Subtotal 7=100|Supplier 8=100|Supplier Part Number 8=100|Supplier Unit Price 8=100|Supplier Subtotal 8=100|Supplier 9=100|Supplier Part Number 9=100|Supplier Unit Price 9=100|Supplier Subtotal 9=100
+Configuration4_Name10=VisibleOrder_Flat
+Configuration4_Item10=Line #=70|Comment=69|Description=95|Designator=94|Manufacturer 1=114|Manufacturer Part Number 1=179|Manufacturer Lifecycle 1=158|Supplier 1=133|Supplier Part Number 1=154|Supplier Unit Price 1=138|Supplier Subtotal 1=132|Supplier 2=89|Supplier Part Number 2=155|Supplier Unit Price 2=139|Supplier Subtotal 2=133|Supplier 3=89|Supplier Part Number 3=155|Supplier Unit Price 3=139|Supplier Subtotal 3=133|Manufacturer 4=116|Manufacturer Part Number 4=183|Manufacturer Lifecycle 4=159|Supplier 4=89|Supplier Part Number 4=155|Supplier Unit Price 4=139|Supplier Subtotal 4=133|Supplier 5=89|Supplier Part Number 5=155|Supplier Unit Price 5=139|Supplier Subtotal 5=133|Supplier 6=89|Supplier Part Number 6=155|Supplier Unit Price 6=139|Supplier Subtotal 6=133|Manufacturer 7=116|Manufacturer Part Number 7=183|Manufacturer Lifecycle 7=159|Supplier 7=89|Supplier Part Number 7=155|Supplier Unit Price 7=139|Supplier Subtotal 7=133|Supplier 8=89|Supplier Part Number 8=155|Supplier Unit Price 8=139|Supplier Subtotal 8=133|Supplier 9=89|Supplier Part Number 9=155|Supplier Unit Price 9=139|Supplier Subtotal 9=133
+OutputType5=ComponentCrossReference
+OutputName5=Component Cross Reference Report
 OutputDocumentPath5=
 OutputVariantName5=[No Variations]
 OutputDefault5=0
-OutputType6=SinglePinNetReporter
-OutputName6=Report Single Pin Nets
+OutputType6=ReportHierarchy
+OutputName6=Report Project Hierarchy
 OutputDocumentPath6=
 OutputVariantName6=[No Variations]
 OutputDefault6=0
