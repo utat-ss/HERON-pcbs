@@ -101,7 +101,7 @@ Connecting PAY-SSM PCB to PAY-Optical PCB (if using 20-pin cable for debugging i
 - Connects to EPS board with DSUB-25 connector
 - Will allow us to plug in the single DSUB-25 cable to the satellite, program and view UART from any board/MCU, and monitor high-level debugging signals
 - The following picture shows the v1 (on the left) and v2 (on the right) Systems Debug PCB. V2 has all the components soldered on and is ready to be used. Potential issues and changes are documented in Issue [#70](https://github.com/HeronMkII/pcbs/issues/70)
-![github-small]()
+![](readme-images/sys-debug-pcb.jpg)
 
 
 
