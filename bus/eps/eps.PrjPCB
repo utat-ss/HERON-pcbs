@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=1
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for eps
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -157,23 +157,6 @@ GenerateClassCluster=0
 DocumentUniqueId=GBHXTNTO
 
 [Document8]
-DocumentPath=..\obc-comm\eps_imu.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=20
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TQUREUCJ
-
-[Document9]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\pex-MCP23S17.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NKOKIXIE
 
-[Document10]
+[Document9]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\dac-DAC7562.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YXIBNNWA
 
-[Document11]
+[Document10]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\heater-control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LWJAXOKY
 
-[Document12]
+[Document11]
 DocumentPath=eps_digital.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CWLQDMWT
 
-[Document13]
+[Document12]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-ADS7952.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -258,7 +241,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QDRWXSEB
 
-[Document14]
+[Document13]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-circit-ADS7952.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -275,7 +258,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PRCLEAIR
 
-[Document15]
+[Document14]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\can-SN65HVD233.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +275,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SMAGLYCI
 
-[Document16]
+[Document15]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -309,7 +292,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WFGXPWAJ
 
-[Document17]
+[Document16]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-ATMEGA32M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -326,7 +309,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RVBFBGTE
 
-[Document18]
+[Document17]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-circuit-ATMEGA32M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -343,7 +326,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSUPJEUS
 
-[Document19]
+[Document18]
 DocumentPath=eps.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -360,7 +343,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document19]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\EPS.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -377,7 +360,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HMGIWNQX
 
-[Document21]
+[Document20]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\CONNs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -394,7 +377,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IJPSHKKP
 
-[Document22]
+[Document21]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\ICs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -411,7 +394,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SMDComponents.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -428,7 +411,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document23]
 DocumentPath=..\..\libraries\heron-general-pads-vias.PvLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -445,7 +428,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document24]
 DocumentPath=eps.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -462,7 +445,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document25]
 DocumentPath=eps.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -478,6 +461,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document26]
+DocumentPath=eps_imu.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TQUREUCJ
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for eps\Bill of Materials\Bill of Materials-eps.csv
@@ -610,7 +610,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for eps
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -712,17 +712,42 @@ OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=PADSNetlist
-OutputName20=PADS ASCII Netlist
+OutputType20=SIMetrixNetlist
+OutputName20=SIMetrix
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
+OutputType21=SIMPLISNetlist
+OutputName21=SIMPLIS
+OutputDocumentPath21=
+OutputVariantName21=
+OutputDefault21=0
+OutputType22=XSpiceNetlist
+OutputName22=XSpice Netlist
+OutputDocumentPath22=
+OutputVariantName22=
+OutputDefault22=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputType1=AdvSimNetlist
+OutputName1=Mixed Sim
+OutputDocumentPath1=
+OutputVariantName1=
+OutputDefault1=0
+OutputType2=SIMetrixSimulation
+OutputName2=SIMetrix
+OutputDocumentPath2=
+OutputVariantName2=
+OutputDefault2=0
+OutputType3=SIMPLISSimulation
+OutputName3=SIMPLIS
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
