@@ -1,18 +1,21 @@
-.PHONY: help reset-common update-common
+.PHONY: help reset-common pcbs-common update-submodules
 
 help:
 	@echo "usage: make [help | reset-common | update-common]"
 	@echo "Running make without any arguments is equivalent to running make help."
 	@echo "help           display this help message"
-	@echo "reset-common   reset all local changes to files in the pcbs-common folder (only in the submodule)"
-	@echo "update-common  fetch the latest commit of pcbs-common"
+	@echo "pcbs-common  fetch the latest commit of pcbs-common"
+	@echo "update-submodules fetch the latest submodules"
 
 # According to https://stackoverflow.com/questions/1789594/how-do-i-write-the-cd-command-in-a-makefile,
 # need to add "&& \" to join commands together in the same subprocess
-reset-common:
+pcbs-common:
+	@echo "Fetching latest version of pcbs-common..."
+	git submodule update --remote pcbs-common
 	cd pcbs-common && \
 	git reset --hard && \
 	cd ..
 
-update-common:
-	git submodule update --remote
+update-submodules:
+		@echo "Fetching latest version of submodules..."
+		git submodule update --remote
