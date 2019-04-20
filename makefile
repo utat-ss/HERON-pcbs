@@ -11,10 +11,7 @@ help:
 # need to add "&& \" to join commands together in the same subprocess
 pcbs-common:
 	@echo "Fetching latest version of pcbs-common..."
-	git submodule update --remote pcbs-common
-	cd pcbs-common && \
-	git reset --hard && \
-	cd ..
+	git submodule update --remote --force pcbs-common
 
 update-submodules:
 		@echo "Fetching latest version of submodules..."
