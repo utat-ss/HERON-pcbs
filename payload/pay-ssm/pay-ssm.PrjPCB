@@ -55,23 +55,6 @@ GenerateClassCluster=0
 DocumentUniqueId=KSDGLNHE
 
 [Document2]
-DocumentPath=pay-ssm.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TFKPADYI
-
-[Document3]
 DocumentPath=ATmega32M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -88,7 +71,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RVBFBGTE
 
-[Document4]
+[Document3]
 DocumentPath=can_transciever.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -105,7 +88,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SMAGLYCI
 
-[Document5]
+[Document4]
 DocumentPath=heater_control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LICXPRCO
 
-[Document6]
+[Document5]
 DocumentPath=motor_control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XVEMOJRQ
 
-[Document7]
+[Document6]
 DocumentPath=sensors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YEOJMCRV
 
-[Document8]
+[Document7]
 DocumentPath=portExpander.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NKOKIXIE
 
-[Document9]
+[Document8]
 DocumentPath=thermistorADC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QDRWXSEB
 
-[Document10]
+[Document9]
 DocumentPath=power2V5.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HRKBFTWT
 
-[Document11]
+[Document10]
 DocumentPath=positioningAndThermistor.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LAQEOPWF
 
-[Document12]
+[Document11]
 DocumentPath=pay-ssm.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document12]
 DocumentPath=sensors-digital.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -258,7 +241,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PASVJVNC
 
-[Document14]
+[Document13]
 DocumentPath=pay-ssm.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -275,7 +258,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=pay-ssm.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +275,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=dac-converter.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -309,7 +292,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HVHHPDTO
 
-[Document17]
+[Document16]
 DocumentPath=microcontrollerOptical.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -326,7 +309,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TFVVVRDD
 
-[Document18]
+[Document17]
 DocumentPath=..\pay-optical\dac-ic.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -343,7 +326,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document18]
 DocumentPath=thermistor-heater.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -589,11 +572,16 @@ OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
+OutputType20=PADSNetlist
+OutputName20=PADS ASCII Netlist
+OutputDocumentPath20=
+OutputVariantName20=
+OutputDefault20=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Adobe PDF
+TargetPrinter=Canon MX490 series FAX WS
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -1079,6 +1067,21 @@ OutputName6=Specctra Design PCB
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
+OutputType7=AutoCAD dwg/dxf PCB
+OutputName7=AutoCAD dwg/dxf File PCB
+OutputDocumentPath7=
+OutputVariantName7=
+OutputDefault7=0
+OutputType8=AutoCAD dwg/dxf Schematic
+OutputName8=AutoCAD dwg/dxf File Schematic
+OutputDocumentPath8=
+OutputVariantName8=
+OutputDefault8=0
+OutputType9=ExportIDF
+OutputName9=Export IDF
+OutputDocumentPath9=
+OutputVariantName9=
+OutputDefault9=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
