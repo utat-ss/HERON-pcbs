@@ -1,4 +1,6 @@
 Record=TopLevelDocument|FileName=TOP.SchDoc
+Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=LDO3V.SchDoc|SymbolType=Normal|RawFileName=LDO3V.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=ATMEGA8A.SchDoc|SymbolType=Normal|RawFileName=ATMEGA8A.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=TSL1|SchDesignator=Repeat(TSL,1,32)|FileName=TSL2591.SchDoc|SymbolType=Normal|RawFileName=TSL2591.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=TSL2|SchDesignator=Repeat(TSL,1,32)|FileName=TSL2591.SchDoc|SymbolType=Normal|RawFileName=TSL2591.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=TSL3|SchDesignator=Repeat(TSL,1,32)|FileName=TSL2591.SchDoc|SymbolType=Normal|RawFileName=TSL2591.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
