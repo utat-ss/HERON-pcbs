@@ -1,1 +1,3 @@
 Record=TopLevelDocument|FileName=dep-switches.SchDoc
+Record=SheetSymbol|SourceDocument=dep-switches.SchDoc|Designator=LD_SW1|SchDesignator=Repeat(LD_SW,1,2)|FileName=load-sw.SchDoc|SymbolType=Normal|RawFileName=load-sw.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=dep-switches.SchDoc|Designator=LD_SW2|SchDesignator=Repeat(LD_SW,1,2)|FileName=load-sw.SchDoc|SymbolType=Normal|RawFileName=load-sw.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
