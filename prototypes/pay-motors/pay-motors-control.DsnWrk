@@ -12,3 +12,5 @@ ProjectPath=..\..\payload\pay-ssm\pay-ssm.PrjPCB
 ProjectPath=..\..\payload\pay-led\pay-led-pcb.PrjPCB
 [Project6]
 ProjectPath=..\..\pcbs-common\general-designs\schematics\general-schematics.PrjPCB
+[Project7]
+ProjectPath=..\..\systems\sys_debug_pcb\syspcb.PrjPCB
