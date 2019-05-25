@@ -2,13 +2,3 @@
 Version=1.0
 [Project1]
 ProjectPath=pay-motors-control.PrjPCB
-[Project2]
-ProjectPath=..\..\payload\pay-boards.PrjMbd
-[Project3]
-ProjectPath=..\..\payload\pay-optical\pay-optical.PrjPCB
-[Project4]
-ProjectPath=..\..\payload\pay-ssm\pay-ssm.PrjPCB
-[Project5]
-ProjectPath=..\..\payload\pay-led\pay-led-pcb.PrjPCB
-[Project6]
-ProjectPath=..\..\pcbs-common\general-designs\schematics\general-schematics.PrjPCB

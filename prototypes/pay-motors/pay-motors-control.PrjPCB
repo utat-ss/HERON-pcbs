@@ -154,7 +154,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OWVXRUTS
 
 [Document8]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\PAY.PcbLib
@@ -188,7 +188,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AOHEKEWY
 
 [Document10]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SwitchesButtons.PcbLib
