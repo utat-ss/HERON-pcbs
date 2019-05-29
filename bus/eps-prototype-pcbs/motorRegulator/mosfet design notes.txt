@@ -1,0 +1,15 @@
+Vds max = 130 V (must be larger than Vout)
+Ids max = 8 A
+Rds max = 16.25 ohms
+"In most applications, a logic level MOSFET can be used"
+
+The critical parameters for selecting a MOSFET are:
+1. Minimum threshold voltage, VTH(MIN)
+2. On-resistance, RDS(ON)
+3. Total gate charge, Qg
+4. Reverse transfer capacitance, CRSS
+5. Maximum drain to source voltage, VDS(MAX)
+
+*The off-state voltage of the MOSFET is approximately equal to the output voltage*. Vds(max) must be greater
+than the output voltage. The power losses in the MOSFET can be categorized into conduction losses and
+switching losses
