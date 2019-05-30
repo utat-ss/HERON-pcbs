@@ -13,3 +13,6 @@ The critical parameters for selecting a MOSFET are:
 *The off-state voltage of the MOSFET is approximately equal to the output voltage*. Vds(max) must be greater
 than the output voltage. The power losses in the MOSFET can be categorized into conduction losses and
 switching losses
+
+"The voltage on the drive pin, VDR is equal to the input voltage when input voltage is less than 7.2 V. 
+VDR is equal to 7.2 V when the input voltage is greater than or equal to 7.2 V"
