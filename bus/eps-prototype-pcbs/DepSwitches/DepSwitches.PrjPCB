@@ -12,7 +12,7 @@ SeparateFolders=0
 TemplateLocationPath=
 PinSwapBy_Netlabel=1
 PinSwapBy_Pin=1
-AllowPortNetNames=0
+AllowPortNetNames=1
 AllowSheetEntryNetNames=1
 AppendSheetNumberToLocalNets=0
 NetlistSinglePinNets=0
@@ -125,6 +125,22 @@ DocumentUniqueId=
 [SearchPath1]
 Path=..\..\..\libraries\Heron General\Footprint Libraries\*.*
 IncludeSubFolders=1
+
+[Parameter1]
+Name=ProjectTitle
+Value=Deployment Switch Prototype PCB
+
+[Parameter2]
+Name=ProjectSheetTotal
+Value=2
+
+[Parameter3]
+Name=ProjectRevision
+Value=v1.0
+
+[Parameter4]
+Name=ProjectDrawnBy
+Value=Jaden Reimer
 
 [Configuration1]
 Name=Sources
