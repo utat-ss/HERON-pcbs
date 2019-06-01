@@ -239,7 +239,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AOHEKEWY
 
 [Document13]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\CONNs.PcbLib
