@@ -501,6 +501,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WAXEVVMJ
 
+[Document28]
+DocumentPath=test.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for eps\Bill of Materials\Bill of Materials-eps.csv
 DItemRevisionGUID=
@@ -526,67 +543,203 @@ DocumentPath=Project Outputs for eps\Fabrication Outputs\eps-Plated.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.DRL
+DocumentPath=Project Outputs for eps\fab_test\eps-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.DRR
+DocumentPath=Project Outputs for Free Documents\fab_test\eps-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.EXTREP
+DocumentPath=Project Outputs for eps\fab_test\eps-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.G1
+DocumentPath=Project Outputs for Free Documents\fab_test\eps-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.G2
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.DRL
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBL
+DocumentPath=Project Outputs for eps\fab_test\eps.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBO
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBP
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBS
+DocumentPath=Project Outputs for eps\fab_test\eps.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTL
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTO
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTP
+DocumentPath=Project Outputs for eps\fab_test\eps.G1
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTS
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.G1
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.LDP
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.G1
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.REP
+DocumentPath=Project Outputs for eps\fab_test\eps.G2
 DItemRevisionGUID=
 
 [GeneratedDocument22]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.G2
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.G2
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for eps\fab_test\eps.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for eps\fab_test\eps.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for eps\fab_test\eps.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for eps\fab_test\eps.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for eps\fab_test\eps.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for eps\fab_test\eps.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for eps\fab_test\eps.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=Project Outputs for eps\fab_test\eps.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=Project Outputs for eps\fab_test\eps.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument51]
+DocumentPath=Project Outputs for eps\fab_test\eps.REP
+DItemRevisionGUID=
+
+[GeneratedDocument52]
+DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.REP
+DItemRevisionGUID=
+
+[GeneratedDocument53]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.REP
+DItemRevisionGUID=
+
+[GeneratedDocument54]
+DocumentPath=Project Outputs for eps\fab_test\eps.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument55]
 DocumentPath=Project Outputs for eps\Fabrication Outputs\eps.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument56]
+DocumentPath=Project Outputs for Free Documents\fab_test\eps.RUL
 DItemRevisionGUID=
 
 [Configuration1]
