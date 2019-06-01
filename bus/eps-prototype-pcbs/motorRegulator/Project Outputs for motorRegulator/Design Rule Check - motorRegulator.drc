@@ -1,0 +1,89 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Owner\Documents\GitHub\pcbs\bus\eps-prototype-pcbs\motorRegulator\motorRegulator.PcbDoc
+Date     : 5/31/2019
+Time     : 7:27:15 PM
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Un-Connected Pin Constraint ( (All) )
+   Violation between Un-Connected Pin Constraint: Pad *-3(930.236mil,1115mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad *-4(930.236mil,1165mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad *-5(709.764mil,1165mil) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad *-6(709.764mil,1115mil) on Top Layer 
+Rule Violations :4
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=100mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1080mil,770.899mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1150mil,660mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1237.559mil,342.441mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1249.101mil,290.899mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1265mil,535mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1315mil,430.899mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (560.472mil,909.528mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (565.368mil,410.531mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (690mil,930mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (855mil,360.899mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (861.438mil,98.562mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (980mil,930mil) from Top Layer to GND (Annular Ring=5.906mil) On (Top Layer)
+Rule Violations :12
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (3.93mil < 4mil) Between Pad Cfilt-1(1237.559mil,380.899mil) on Top Layer And Via (1237.559mil,342.441mil) from Top Layer to GND [Top Solder] Mask Sliver [3.93mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.78mil < 4mil) Between Pad Cout1-1(1265mil,568.34mil) on Top Layer And Via (1265mil,535mil) from Top Layer to GND [Top Solder] Mask Sliver [0.78mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (3.983mil < 4mil) Between Pad Rfadj-1(1150mil,625.426mil) on Top Layer And Via (1150mil,660mil) from Top Layer to GND [Top Solder] Mask Sliver [3.983mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.59mil < 4mil) Between Pad U1-1(933.5mil,464.284mil) on Top Layer And Pad U1-2(933.5mil,438.694mil) on Top Layer [Top Solder] Mask Sliver [2.59mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.591mil < 4mil) Between Pad U1-2(933.5mil,438.694mil) on Top Layer And Pad U1-3(933.5mil,413.103mil) on Top Layer [Top Solder] Mask Sliver [2.591mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.59mil < 4mil) Between Pad U1-3(933.5mil,413.103mil) on Top Layer And Pad U1-4(933.5mil,387.513mil) on Top Layer [Top Solder] Mask Sliver [2.59mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.59mil < 4mil) Between Pad U1-5(1106.5mil,387.513mil) on Top Layer And Pad U1-6(1106.5mil,413.103mil) on Top Layer [Top Solder] Mask Sliver [2.59mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.591mil < 4mil) Between Pad U1-6(1106.5mil,413.103mil) on Top Layer And Pad U1-7(1106.5mil,438.694mil) on Top Layer [Top Solder] Mask Sliver [2.591mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.59mil < 4mil) Between Pad U1-7(1106.5mil,438.694mil) on Top Layer And Pad U1-8(1106.5mil,464.284mil) on Top Layer [Top Solder] Mask Sliver [2.59mil]
+Rule Violations :9
+
+Processing Rule : Silk To Solder Mask (Clearance=3mil) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (2.82mil < 3mil) Between Pad Ccomp-2(1013.149mil,243.09mil) on Top Layer And Text "Ccomp" (880mil,295.899mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [2.82mil]
+Rule Violations :1
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (OnLayer('VCC') or OnLayer('GND'))
+Rule Violations :0
+
+Processing Rule : Room 30V Output Design (Bounding Region = (80.236mil, 68.877mil, 1760.197mil, 1209.252mil) (InComponentClass('30V Output Design'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 26
+Waived Violations : 0
+Time Elapsed        : 00:00:01
