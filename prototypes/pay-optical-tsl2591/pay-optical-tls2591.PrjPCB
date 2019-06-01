@@ -256,7 +256,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IJPSHKKP
 
 [Document14]
 DocumentPath=pay-optical-tls2591.PcbDoc
@@ -404,57 +404,32 @@ OutputName16=SciCards Netlist
 OutputDocumentPath16=
 OutputVariantName16=
 OutputDefault16=0
-OutputType17=SIMetrixNetlist
-OutputName17=SIMetrix
+OutputType17=TangoNetlist
+OutputName17=Tango Netlist
 OutputDocumentPath17=
 OutputVariantName17=
 OutputDefault17=0
-OutputType18=SIMPLISNetlist
-OutputName18=SIMPLIS
+OutputType18=TelesisNetlist
+OutputName18=Telesis Netlist
 OutputDocumentPath18=
 OutputVariantName18=
 OutputDefault18=0
-OutputType19=TangoNetlist
-OutputName19=Tango Netlist
+OutputType19=WireListNetlist
+OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=TelesisNetlist
-OutputName20=Telesis Netlist
+OutputType20=PADSNetlist
+OutputName20=PADS ASCII Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
-OutputType21=WireListNetlist
-OutputName21=WireList Netlist
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-OutputType22=XSpiceNetlist
-OutputName22=XSpice Netlist
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=SHARP MX-3110N PCL6
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AdvSimNetlist
-OutputName1=Mixed Sim
-OutputDocumentPath1=
-OutputVariantName1=
-OutputDefault1=0
-OutputType2=SIMetrixSimulation
-OutputName2=SIMetrix
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
