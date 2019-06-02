@@ -44,7 +44,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=11
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -344,12 +344,16 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=PROJ_AUTHOR
-Value=Dylan Vogel
+Name=
+Value=
 
 [Parameter2]
 Name=PROJ_VERSION
-Value=1.0
+Value=1.1
+
+[Parameter3]
+Name=PROJ_AUTHOR
+Value=Dylan Vogel
 
 [Configuration1]
 Name=Sources
