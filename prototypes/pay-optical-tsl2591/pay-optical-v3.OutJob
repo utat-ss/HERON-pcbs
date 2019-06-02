@@ -49,9 +49,9 @@ Configuration1_Name1=OutputConfigurationParameter1
 Configuration1_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=True|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0
 
 [PublishSettings]
-OutputFilePath2=Project Outputs for Free Documents\Schematics\pay-optical-v3.PDF
+OutputFilePath2=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\prototypes\pay-optical-tsl2591\Project Outputs for pay-optical-tls2591\Schematics\pay-optical-v3.PDF
 ReleaseManaged2=1
-OutputBasePath2=Project Outputs for Free Documents
+OutputBasePath2=Project Outputs for pay-optical-tls2591
 OutputPathMedia2=Schematics
 OutputPathMediaValue2=Schematics
 OutputPathOutputer2=[Output Type]
@@ -78,7 +78,7 @@ PDFACompliance2=Disabled
 PDFVersion2=Default
 OutputFilePath3=
 ReleaseManaged3=1
-OutputBasePath3=
+OutputBasePath3=Project Outputs for pay-optical-tls2591
 OutputPathMedia3=
 OutputPathMediaValue3=
 OutputPathOutputer3=[Output Type]
@@ -91,7 +91,7 @@ OutputFileNameSpecial3=
 OpenOutput3=1
 OutputFilePath4=
 ReleaseManaged4=1
-OutputBasePath4=
+OutputBasePath4=Project Outputs for pay-optical-tls2591
 OutputPathMedia4=
 OutputPathMediaValue4=
 OutputPathOutputer4=[Output Type]
@@ -128,7 +128,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=Project Outputs for Free Documents\Schematics\pay-optical-v3.PDF
+RelativeOutputPath2=C:\Users\Dylan Vogel\Files\Coding Projects\pcbs\prototypes\pay-optical-tsl2591\Project Outputs for pay-optical-tls2591\Schematics\pay-optical-v3.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1

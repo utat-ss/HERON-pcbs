@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for pay-optical-tls2591
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -344,16 +344,12 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=
-Value=
+Name=PROJ_AUTHOR
+Value=Dylan Vogel
 
 [Parameter2]
 Name=PROJ_VERSION
 Value=1.1
-
-[Parameter3]
-Name=PROJ_AUTHOR
-Value=Dylan Vogel
 
 [Configuration1]
 Name=Sources
@@ -366,7 +362,7 @@ ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for pay-optical-tls2591
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -483,6 +479,11 @@ OutputName22=XSpice Netlist
 OutputDocumentPath22=
 OutputVariantName22=
 OutputDefault22=0
+OutputType23=PADSNetlist
+OutputName23=PADS ASCII Netlist
+OutputDocumentPath23=
+OutputVariantName23=
+OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
