@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\Jaden Reimer\Documents\GitHub\pcbs\releases\prototypes-June2019\2-layer.PcbDoc
+LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=2-layer-plated.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_NonPlated_Thru_Holes|DrillFile=2-layer-nonplated.txt|DrillLayers=gtl,gbl
