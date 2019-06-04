@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: 2-layer.GBR   2019-06-03  11:46:16 PM
+Gerber File Extension Report For: 4-layer.GBR   2019-06-03  11:47:59 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -10,9 +10,12 @@ Layer Extension     Layer Description
 .GTP                Top Paste                               
 .GTS                Top Solder                              
 .GTL                Top Layer                               
-.GBL                GND                                     
+.G1                 GND                                     
+.G2                 POWER                                   
+.GBL                Bottom Layer                            
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
+.GM1                Mechanical 1                            
 .GM6                Route Tool Path                         
 ------------------------------------------------------------------------------------------
