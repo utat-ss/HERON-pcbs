@@ -106,23 +106,6 @@ GenerateClassCluster=0
 DocumentUniqueId=DSEJFVCS
 
 [Document5]
-DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=2
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=WFGXPWAJ
-
-[Document6]
 DocumentPath=Port Expander.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BGWSYRRQ
 
-[Document7]
+[Document6]
 DocumentPath=port-expander.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document7]
 DocumentPath=Sensor Bank.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FMEUTCOU
 
-[Document9]
+[Document8]
 DocumentPath=I2C Mux.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DIHNTLNL
 
-[Document10]
+[Document9]
 DocumentPath=I2C Mux.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=Sensor Bank.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SMDComponents.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AOHEKEWY
 
-[Document13]
+[Document12]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\CONNs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -258,7 +241,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IJPSHKKP
 
-[Document14]
+[Document13]
 DocumentPath=pay-optical-tls2591.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -275,7 +258,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RXLHMNAL
 
-[Document15]
+[Document14]
 DocumentPath=..\..\libraries\heron-general-pads-vias.PvLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +275,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=Port Expander.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -309,7 +292,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=pay-optical-v3.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -326,7 +309,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=pay-optical-tls2591.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -343,13 +326,38 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Parameter1]
-Name=PROJ_VERSION
-Value=1.1
+[Document18]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-0402-SN74HC365PW.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=12
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=QTVDTBSU
 
-[Parameter2]
+[GeneratedDocument1]
+DocumentPath=Project Outputs for pay-optical-tls2591\Design Rule Check - pay-optical-tls2591.html
+DItemRevisionGUID=
+
+[Parameter1]
 Name=PROJ_AUTHOR
 Value=Dylan Vogel
+
+[Parameter2]
+Name=PROJ_ORG
+Value=UTAT SS
+
+[Parameter3]
+Name=PROJ_VERSION
+Value=1.1
 
 [Configuration1]
 Name=Sources
@@ -464,47 +472,17 @@ OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=SIMetrixNetlist
-OutputName20=SIMetrix
+OutputType20=PADSNetlist
+OutputName20=PADS ASCII Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
-OutputType21=SIMPLISNetlist
-OutputName21=SIMPLIS
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-OutputType22=XSpiceNetlist
-OutputName22=XSpice Netlist
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
-OutputType23=PADSNetlist
-OutputName23=PADS ASCII Netlist
-OutputDocumentPath23=
-OutputVariantName23=
-OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=SHARP MX-3110N PCL6
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AdvSimNetlist
-OutputName1=Mixed Sim
-OutputDocumentPath1=
-OutputVariantName1=
-OutputDefault1=0
-OutputType2=SIMetrixSimulation
-OutputName2=SIMetrix
-OutputDocumentPath2=
-OutputVariantName2=
-OutputDefault2=0
-OutputType3=SIMPLISSimulation
-OutputName3=SIMPLIS
-OutputDocumentPath3=
-OutputVariantName3=
-OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
