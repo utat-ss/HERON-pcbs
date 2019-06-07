@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: 4-layer.PcbDoc   2019-06-04  9:48:07 PM
+NCDrill File Report For: 4-layer.PcbDoc   2019-06-07  9:50:48 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -9,7 +9,7 @@ EIA File   : 4-layer.DRL
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             719       PTH        0.00mm (0.00inch)
+T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             767       PTH        0.00mm (0.00inch)
 T2      0.864mm (34mil)                                           Round             20        PTH        0.00mm (0.00inch)
 T3      0.889mm (35mil)                                           Round             6         PTH        0.00mm (0.00inch)
 T4      0.9mm (35mil)                                             Round             14        PTH        0.00mm (0.00inch)
@@ -18,27 +18,18 @@ T6      1.3mm (51mil)                                             Round         
 T7      3.6mm (142mil)                                            Round             8         PTH        0.00mm (0.00inch)
 T8      2.1mm (83mil)                                             Round             32        NPTH       0.00mm (0.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              817
-Layer Pair : Top Layer to GND
+Totals                                                                              865
+Layer Pair : Top Layer to POWER
 ASCII Plated RoundHoles File : 4-layer-Plated.TX1
 EIA File   : 4-layer.DR1
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             4         PTH        0.00mm (0.00inch)
+T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             1         PTH        0.00mm (0.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              4
-Layer Pair : Top Layer to POWER
-ASCII Plated RoundHoles File : 4-layer-Plated.TX2
-EIA File   : 4-layer.DR2
-
-Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+Totals                                                                              1
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             5         PTH        0.00mm (0.00inch)
-----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              5
-----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              826
+Totals                                                                              866
 ----------------------------------------------------------------------------------------------------------------------------------
 Backdrill Totals                                                                    0
 

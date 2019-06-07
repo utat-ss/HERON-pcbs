@@ -1,0 +1,16 @@
+Output: NC Drill Files-4
+Type  : NC Drill
+From  : PCB Document [4-layer.PcbDoc]
+   Generated File[4-layer-Plated.TXT]
+   Generated File[4-layer-NonPlated.TXT]
+   Generated File[4-layer.DRL]
+   Generated File[4-layer-Plated.TX1]
+   Generated File[4-layer.DR1]
+   Generated File[4-layer.LDP]
+   Generated File[4-layer.DRR]
+
+
+Files Generated   : 7
+Documents Printed : 0
+
+Finished Output Generation At 9:50:49 AM On 2019-06-07

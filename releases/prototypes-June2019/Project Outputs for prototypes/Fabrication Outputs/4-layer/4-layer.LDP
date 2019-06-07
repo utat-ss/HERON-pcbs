@@ -1,5 +1,4 @@
 Layer Pairs Export File for PCB: C:\Users\Jaden Reimer\Documents\GitHub\pcbs\releases\prototypes-June2019\4-layer.PcbDoc
 LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=4-layer-plated.txt|DrillLayers=gtl,g1,g2,gbl
 LayersSetName=Top_Bot_NonPlated_Thru_Holes|DrillFile=4-layer-nonplated.txt|DrillLayers=gtl,g1,g2,gbl
-LayersSetName=Top_GND_Blind_Vias|DrillFile=|DrillLayers=gtl,g1
 LayersSetName=Top_POWER_Blind_Vias|DrillFile=|DrillLayers=gtl,g1,g2
