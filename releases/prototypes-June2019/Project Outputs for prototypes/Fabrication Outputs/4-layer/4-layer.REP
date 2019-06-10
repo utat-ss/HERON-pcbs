@@ -2,6 +2,83 @@
 FileName = 4-layer.GBR
 AutoAperture = True
 *************************************************************
+Generating : Bottom Layer
+      File : 4-layer.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D16
+    D26
+    D29
+    D30
+    D34
+    D37
+    D40
+    D42
+    D43
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+*************************************************************
+
+*************************************************************
+Generating : POWER
+      File : 4-layer.G2
+
+    Adding Layer      : POWER
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D32
+    D35
+    D37
+    D47
+    D50
+    D51
+    D53
+*************************************************************
+
+*************************************************************
 Generating : GND
       File : 4-layer.G1
 
@@ -13,7 +90,7 @@ Generating : GND
 
 
 Used DCodes :
-    D36
+    D37
     D46
     D47
     D50
@@ -91,10 +168,10 @@ Generating : Top Overlay
 
 
 Used DCodes :
+    D29
     D30
     D34
-    D35
-    D36
+    D37
     D38
     D77
     D78
@@ -134,7 +211,7 @@ Used DCodes :
     D26
     D27
     D28
-    D36
+    D37
     D40
     D41
     D42
@@ -157,7 +234,7 @@ Generating : Top Solder
 
 
 Used DCodes :
-    D36
+    D37
     D40
     D42
     D43
@@ -208,7 +285,7 @@ Generating : Bottom Solder
 
 
 Used DCodes :
-    D36
+    D37
     D40
     D42
     D43
@@ -246,6 +323,7 @@ Used DCodes :
     D120
     D121
     D122
+    D123
 *************************************************************
 
 *************************************************************
@@ -266,7 +344,7 @@ Used DCodes :
     D14
     D16
     D26
-    D36
+    D37
     D40
     D42
     D43
@@ -290,7 +368,7 @@ Used DCodes :
     D74
     D75
     D76
-    D123
+    D124
 *************************************************************
 
 *************************************************************
@@ -303,13 +381,13 @@ Generating : Bottom Overlay
 
 
 Used DCodes :
+    D29
     D34
-    D35
-    D36
+    D37
     D38
     D77
     D78
-    D124
+    D125
 *************************************************************
 
 *************************************************************
@@ -322,83 +400,6 @@ Generating : Route Tool Path
 
 
 Used DCodes :
-    D36
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : 4-layer.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D13
-    D14
-    D16
-    D26
-    D30
-    D34
-    D35
-    D36
-    D40
-    D42
-    D43
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-*************************************************************
-
-*************************************************************
-Generating : POWER
-      File : 4-layer.G2
-
-    Adding Layer      : POWER
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D32
-    D36
     D37
-    D47
-    D50
-    D51
-    D53
 *************************************************************
 
