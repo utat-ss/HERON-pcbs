@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Project Outputs Generation Report
 ---------------------------------
 Start Output Generation At 11:05:02 AM On 6/17/2019
@@ -12,3 +13,14 @@ Files Generated   : 1
 Documents Printed : 0
 
 Finished Output Generation At 11:05:12 AM On 6/17/2019
+=======
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [pay-motors-control.PrjPCB]
+
+
+Files Generated   : 0
+Documents Printed : 0
+
+Finished Output Generation At 12:55:47 AM On 2019-06-17
+>>>>>>> 5e86eafba8c98bb7e6e7849bcd448957cd69fdf8
