@@ -1,14 +1,9 @@
-Project Outputs Generation Report
----------------------------------
-Start Output Generation At 2:37:46 PM On 6/17/2019
-
 Output: Bill of Materials
 Type  : BOM
-From  : Variant [[No Variations]] of BOM Document [pay-motors-control.BomDoc]
-   Generated File[Bill of Materials-pay-motors-control.xlsx]
+From  : Variant [[No Variations]] of Project [pay-motors-control.PrjPCB]
 
 
-Files Generated   : 1
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 2:37:56 PM On 6/17/2019
+Finished Output Generation At 8:51:50 AM On 2019-06-18
