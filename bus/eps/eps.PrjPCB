@@ -94,7 +94,7 @@ GenerateClassCluster=0
 DocumentUniqueId=XILOEQRN
 
 [Document4]
-DocumentPath=eps_bt.SchDoc
+DocumentPath=boost.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -111,7 +111,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QMHSFLLX
 
 [Document5]
-DocumentPath=eps_batt.SchDoc
+DocumentPath=batt.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -128,7 +128,7 @@ GenerateClassCluster=0
 DocumentUniqueId=UBASXLKW
 
 [Document6]
-DocumentPath=eps_bb.SchDoc
+DocumentPath=buck_boost.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -145,7 +145,7 @@ GenerateClassCluster=0
 DocumentUniqueId=VKGCLILK
 
 [Document7]
-DocumentPath=eps_pv.SchDoc
+DocumentPath=solar.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -264,23 +264,6 @@ GenerateClassCluster=0
 DocumentUniqueId=PRCLEAIR
 
 [Document14]
-DocumentPath=..\..\pcbs-common\general-designs\schematics\can-SN65HVD233.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=4
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=SMAGLYCI
-
-[Document15]
 DocumentPath=eps.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -297,7 +280,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\EPS.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -314,7 +297,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HMGIWNQX
 
-[Document17]
+[Document16]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\CONNs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -331,7 +314,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IJPSHKKP
 
-[Document18]
+[Document17]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\ICs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -348,7 +331,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document18]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SMDComponents.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -365,7 +348,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document19]
 DocumentPath=..\..\libraries\heron-general-pads-vias.PvLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -382,7 +365,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document20]
 DocumentPath=eps.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -399,7 +382,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document21]
 DocumentPath=eps.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -416,7 +399,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=eps_imu.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -433,7 +416,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TQUREUCJ
 
-[Document24]
+[Document23]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-circuit-ATMEGA32M1-0402.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -450,24 +433,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VULLYSJW
 
-[Document25]
-DocumentPath=..\..\pcbs-common\general-designs\schematics\can-SN65HVD233-0402.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=26
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=WTYTHVFM
-
-[Document26]
+[Document24]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW-0402.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -484,7 +450,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LTCLQQJP
 
-[Document27]
+[Document25]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-ATMEGA32M1-0402.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -500,6 +466,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WAXEVVMJ
+
+[Document26]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\can-SN65HVD233-0402.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=26
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=WTYTHVFM
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for eps\Bill of Materials\Bill of Materials-eps.csv
@@ -1258,36 +1241,6 @@ OutputName9=Specctra Design PCB
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=Ansoft Neutral
-OutputName10=Ansoft Neutral (AutoPCB)
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=HyperLynx
-OutputName11=HyperLynx (AutoPCB)
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-OutputType12=Orcad v7 Capture Design
-OutputName12=Orcad v7 Capture Design (AutoSCH)
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=P-CAD ASCII
-OutputName13=P-CAD ASCII (AutoPCB)
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=P-CAD V16 Schematic Design
-OutputName14=P-CAD V16 Schematic Design (AutoSCH)
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=SiSoft
-OutputName15=SiSoft (AutoPCB)
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
