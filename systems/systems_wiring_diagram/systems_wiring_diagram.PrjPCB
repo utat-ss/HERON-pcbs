@@ -174,16 +174,16 @@ GenerateClassCluster=0
 DocumentUniqueId=VYWLRQGP
 
 [Parameter1]
-Name=ProjectSheetTotal
-Value=8
+Name=ProjectDrawnBy
+Value=Jaden Reimer
 
 [Parameter2]
 Name=ProjectRevision
 Value=v1.0
 
 [Parameter3]
-Name=ProjectDrawnBy
-Value=Jaden Reimer
+Name=ProjectSheetTotal
+Value=8
 
 [Configuration1]
 Name=Sources
@@ -343,7 +343,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=EPSON WF-4730 Series
+TargetPrinter=NPIDC6332 (HP LaserJet MFP M130nw)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
