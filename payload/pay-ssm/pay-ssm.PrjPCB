@@ -360,6 +360,125 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TFKPADYI
 
+[Document20]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\heater-control.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document21]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-0402-SN74HC365PW.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document22]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document23]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-ATMEGA32M1.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document24]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-circuit-ATMEGA32M1.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document25]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\pex-MCP23S17.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document26]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\thermistor-input.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for pay-ssm\Design Rule Check - pay-ssm.html
 DItemRevisionGUID=
@@ -598,7 +717,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Canon MX490 series FAX WS
+TargetPrinter=Canon MX490 series Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -1048,6 +1167,11 @@ OutputName6=Footprint Comparison Report
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
+OutputType7=BOM_Violations
+OutputName7=BOM Checks Report
+OutputDocumentPath7=
+OutputVariantName7=
+OutputDefault7=0
 
 [OutputGroup9]
 Name=Export Outputs
@@ -1099,6 +1223,16 @@ OutputName9=Export IDF
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
+OutputType10=MBAExportPARASOLID
+OutputName10=Export PARASOLID
+OutputDocumentPath10=
+OutputVariantName10=
+OutputDefault10=0
+OutputType11=MBAExportSTEP
+OutputName11=Export STEP
+OutputDocumentPath11=
+OutputVariantName11=
+OutputDefault11=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1228,6 +1362,7 @@ Type113=1
 Type114=1
 Type115=1
 Type116=1
+Type117=1
 
 [Difference Levels]
 Type1=1
@@ -1295,6 +1430,7 @@ Type62=1
 Type63=1
 Type64=1
 Type65=1
+Type66=1
 
 [Electrical Rules Check]
 Type1=1
