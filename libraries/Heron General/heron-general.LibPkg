@@ -1718,7 +1718,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IJPSHKKP
 
 [Document100]
 DocumentPath=Footprints\DF13A-2P-1.25H(21).PcbLib
@@ -1735,7 +1735,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UTVQBFFA
 
 [Document101]
 DocumentPath=Footprints\DF13A-4P-1.25H(51).PcbLib
@@ -1752,7 +1752,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IJPSHKKP
 
 [Document102]
 DocumentPath=Footprints\DF13A-15P-1.25H(21).PcbLib
@@ -1769,7 +1769,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=YIGHGDCJ
 
 [Document103]
 DocumentPath=Footprints\DF14-2P-1.25H(55).PcbLib
@@ -3132,23 +3132,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document183]
-DocumentPath=Symbols\LT6118.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NNDMKPMC
-
-[Document184]
 DocumentPath=Footprints\WM7622CT-ND.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3165,7 +3148,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document185]
+[Document184]
 DocumentPath=Footprints\WM7628CT-ND.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3182,7 +3165,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document186]
+[Document185]
 DocumentPath=Footprints\WM7632CT-ND.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3199,7 +3182,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document187]
+[Document186]
 DocumentPath=Footprints\XAL4020-102ME.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3215,6 +3198,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document187]
+DocumentPath=Symbols\LT6118.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NNDMKPMC
 
 [Document188]
 DocumentPath=Symbols\RES0402.SchLib
@@ -3334,6 +3334,74 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IVEYYTQR
+
+[Document195]
+DocumentPath=Symbols\DF13-10P-1.25H(21).SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OHSBITDE
+
+[Document196]
+DocumentPath=Symbols\DF13A-2P-1.25H(21).SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BJRSKTOK
+
+[Document197]
+DocumentPath=Symbols\DF13A-15P-1.25H(21).SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JFOONMEV
+
+[Document198]
+DocumentPath=Symbols\DF13A-4P-1.25H(51).SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=XFHXNAES
 
 [Generic_EDE]
 OutputDir=..\..\libraries
