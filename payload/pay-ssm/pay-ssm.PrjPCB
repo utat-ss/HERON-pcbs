@@ -89,23 +89,6 @@ GenerateClassCluster=0
 DocumentUniqueId=YEOJMCRV
 
 [Document4]
-DocumentPath=positioningAndThermistor.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=9
-DoLibraryUpdate=0
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=YBSBJIJE
-
-[Document5]
 DocumentPath=pay-ssm.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -122,7 +105,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document6]
+[Document5]
 DocumentPath=pay-ssm.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -139,7 +122,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=pay-ssm.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document7]
 DocumentPath=dac-converter.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HVHHPDTO
 
-[Document9]
+[Document8]
 DocumentPath=..\pay-optical\dac-ic.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,24 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YXIBNNWA
 
-[Document10]
-DocumentPath=thermistor-heater.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LWJAXOKY
-
-[Document11]
+[Document9]
 DocumentPath=pay-ssm-v3.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TFKPADYI
 
-[Document12]
+[Document10]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\heater-control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JROCBNGT
 
-[Document13]
+[Document11]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-0402-SN74HC365PW.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -258,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QTVDTBSU
 
-[Document14]
+[Document12]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -275,7 +241,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WFGXPWAJ
 
-[Document15]
+[Document13]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-ATMEGA32M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +258,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RVBFBGTE
 
-[Document16]
+[Document14]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-circuit-ATMEGA32M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -309,7 +275,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSUPJEUS
 
-[Document17]
+[Document15]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\pex-MCP23S17.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -326,7 +292,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NKOKIXIE
 
-[Document18]
+[Document16]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\thermistor-input.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -343,7 +309,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LAQEOPWF
 
-[Document19]
+[Document17]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-ADS7952.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -360,7 +326,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OCDJCIWP
 
-[Document20]
+[Document18]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-circit-ADS7952.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -377,7 +343,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PRCLEAIR
 
-[Document21]
+[Document19]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\can-SN65HVD233.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -394,7 +360,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CCUBHTFU
 
-[Document22]
+[Document20]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\dac-DAC7562.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -411,7 +377,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YXIBNNWA
 
-[Document23]
+[Document21]
 DocumentPath=..\..\libraries\Heron General\Schematic Libraries\CONNs.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -428,7 +394,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PITSNFHV
 
-[Document24]
+[Document22]
 DocumentPath=..\..\libraries\Heron General\Schematic Libraries\Crystals.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -445,7 +411,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VSQSDHWQ
 
-[Document25]
+[Document23]
 DocumentPath=..\..\libraries\Heron General\Schematic Libraries\EPS.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -462,7 +428,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UWHQSVID
 
-[Document26]
+[Document24]
 DocumentPath=..\..\libraries\Heron General\Schematic Libraries\ICs.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -479,7 +445,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQIUWKYB
 
-[Document27]
+[Document25]
 DocumentPath=..\..\libraries\Heron General\Schematic Libraries\PAY.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -496,7 +462,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LXOGGXYL
 
-[Document28]
+[Document26]
 DocumentPath=..\..\libraries\Heron General\Schematic Libraries\SMDComponents.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -513,7 +479,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GKXHAWAK
 
-[Document29]
+[Document27]
 DocumentPath=..\..\libraries\Heron General\Schematic Libraries\SwitchesButtons.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -530,7 +496,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JLQIHBMR
 
-[Document30]
+[Document28]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\CoilcraftPCB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -547,7 +513,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document31]
+[Document29]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\CONNs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -564,7 +530,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document32]
+[Document30]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\Crystals.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -581,7 +547,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document33]
+[Document31]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\EPS.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -598,7 +564,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document34]
+[Document32]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\ICs.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -615,7 +581,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document35]
+[Document33]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\MISC.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -632,7 +598,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document36]
+[Document34]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\PAY.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -649,7 +615,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document37]
+[Document35]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SMDComponents.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -666,7 +632,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document38]
+[Document36]
 DocumentPath=..\..\libraries\Heron General\Footprint Libraries\SwitchesButtons.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -682,6 +648,40 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document37]
+DocumentPath=current-regulation.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OQOINLRC
+
+[Document38]
+DocumentPath=boost-converter.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=MSDLKDNV
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for pay-ssm\Design Rule Check - pay-ssm.html
