@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=TOP.SchDoc
+Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=LED1|SchDesignator=LED1|FileName=LED Bank.SchDoc|SymbolType=Normal|RawFileName=LED Bank.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=LED2|SchDesignator=LED2|FileName=LED Bank.SchDoc|SymbolType=Normal|RawFileName=LED Bank.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=PEX|SchDesignator=PEX|FileName=Port Expander.SchDoc|SymbolType=Normal|RawFileName=Port Expander.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=TOP.SchDoc|Designator=PWR|SchDesignator=PWR|FileName=Power.SchDoc|SymbolType=Normal|RawFileName=Power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
