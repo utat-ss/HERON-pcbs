@@ -1,6 +1,0 @@
-Added Pin To Net: NetName=RXLIN_OPTICAL Pin=P19-3
-Added Pin To Net: NetName=RXLIN_OPTICAL Pin=P22-8
-Added Pin To Net: NetName=RXLIN_OPTICAL Pin=R4-6
-Added Pin To Net: NetName=RXLIN_OPTICAL Pin=U20-12
-Added Pin To Net: NetName=RXLIN_OPTICAL Pin=U21-3
-Added Net: Name=RXLIN_OPTICAL

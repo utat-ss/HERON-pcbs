@@ -1,8 +1,0 @@
-Added Pin To Net: NetName=3V3 Pin=P5-1
-Added Pin To Net: NetName=3V3 Pin=P7-1
-Added Room: Name=optical_micro
-Added Room: Name=pay-ssm
-Added Room: Name=U_ATmega32M1
-Added Room: Name=U_portExpander
-Added Room: Name=U_positioningAndThermistor
-Added Room: Name=U_sensors
