@@ -450,6 +450,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CVIBLMKI
 
+[Document25]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-circuit-ADS7953.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=37
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PDGOQCRF
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for eps\Bill of Materials\Bill of Materials-eps.csv
 DItemRevisionGUID=
