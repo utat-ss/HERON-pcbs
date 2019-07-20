@@ -1293,7 +1293,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IJPSHKKP
 
 [Document75]
 DocumentPath=Footprints\70AAJ-5-M0-ND.PcbLib
@@ -1310,7 +1310,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HMGIWNQX
 
 [Document76]
 DocumentPath=Footprints\1888-1000-1-ND.PcbLib
@@ -3418,7 +3418,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=MPWAIVCP
+DocumentUniqueId=KKEYPVCY
 
 [Document200]
 DocumentPath=DF13A-12P-1.25H(51).PcbLib
@@ -3436,6 +3436,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JQUHGCOT
+
+[Document201]
+DocumentPath=Symbols\70AAJ-5-M0-ND.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SKTWMLXR
 
 [Generic_EDE]
 OutputDir=..\..\libraries
