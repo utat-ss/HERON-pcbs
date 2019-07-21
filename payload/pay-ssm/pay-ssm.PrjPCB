@@ -55,7 +55,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KSDGLNHE
 
 [Document2]
-DocumentPath=motor_control.SchDoc
+DocumentPath=motor-control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -3880,23 +3880,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document227]
-DocumentPath=power-filtering.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=FUKMCYDR
-
-[Document228]
 DocumentPath=..\..\libraries\Heron General\Symbols\RTL020P02FRATR.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3913,7 +3896,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NFERNVJS
 
-[Document229]
+[Document228]
 DocumentPath=..\..\libraries\Heron General\Symbols\DF13A-12P-1.25H(51).SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3930,7 +3913,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPWAIVCP
 
-[Document230]
+[Document229]
 DocumentPath=..\..\libraries\Heron General\Footprints\DF13A-12P-1.25H(51).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3946,6 +3929,40 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document230]
+DocumentPath=optical-connection.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=DOOFPTHW
+
+[Document231]
+DocumentPath=heater-LC-filtering.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FUKMCYDR
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for pay-ssm\Design Rule Check - pay-ssm.html
