@@ -3557,11 +3557,7 @@ GenerateClassCluster=0
 DocumentUniqueId=GYYNBKDA
 
 [Document208]
-<<<<<<< HEAD
 DocumentPath=Symbols\0836149012.SchLib
-=======
-DocumentPath=Symbols\ADA4891-1.SchLib
->>>>>>> f04fb4ab58fde57eed41bcb00fce0d55d19c782b
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -3575,17 +3571,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-<<<<<<< HEAD
 DocumentUniqueId=MPXKJKGH
 
 [Document209]
 DocumentPath=Footprints\0836149012.PcbLib
-=======
-DocumentUniqueId=KPMRJIVX
-
-[Document209]
-DocumentPath=Footprints\ADA4891-1.PcbLib
->>>>>>> f04fb4ab58fde57eed41bcb00fce0d55d19c782b
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -3599,17 +3588,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-<<<<<<< HEAD
-DocumentUniqueId=OCXPUMKR
+DocumentUniqueId=KPMRJIVX
 
 [Document210]
 DocumentPath=Symbols\SJ1-3544.SchLib
-=======
-DocumentUniqueId=SLONVJSV
-
-[Document210]
-DocumentPath=Symbols\TPS25982.SchLib
->>>>>>> f04fb4ab58fde57eed41bcb00fce0d55d19c782b
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -3623,11 +3605,27 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-<<<<<<< HEAD
 DocumentUniqueId=RQXRBSKM
 
 [Document211]
-DocumentPath=691102710002.SchLib
+DocumentPath=Symbols\TC7WB66CFKLF.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UVRDXQIW
+
+[Document212]
+DocumentPath=Symbols\691102710002.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -3642,9 +3640,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ACOUXGXN
-=======
-DocumentUniqueId=DOJDATAA
->>>>>>> f04fb4ab58fde57eed41bcb00fce0d55d19c782b
+
+[Document213]
+DocumentPath=Footprints\TC7WB66CFKLF.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=EBBRTFUJ
 
 [Generic_EDE]
 OutputDir=..\..\libraries
@@ -3761,11 +3773,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-<<<<<<< HEAD
-TargetPrinter=NPIDC6332 (HP LaserJet MFP M130nw)
-=======
 TargetPrinter=Microsoft Print to PDF
->>>>>>> f04fb4ab58fde57eed41bcb00fce0d55d19c782b
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
