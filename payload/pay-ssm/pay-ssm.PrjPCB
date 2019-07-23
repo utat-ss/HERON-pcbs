@@ -4015,83 +4015,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EDJOXDMJ
 
+[Document235]
+DocumentPath=heater-pwm-logic.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IKBNHHHV
+
 [GeneratedDocument1]
-DocumentPath=Project Outputs for pay-ssm\Design Rule Check - pay-ssm.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for pay-ssm\pay-panel-BoardEdgeRout.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.G1
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.G2
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GM2
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.REP
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs for pay-ssm\pay-panel.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument20]
 DocumentPath=pay-ssm 2018-06-07 9-05-17 PM.WAS
 DItemRevisionGUID=
 

@@ -140,23 +140,6 @@ GenerateClassCluster=0
 DocumentUniqueId=MSRPGGPM
 
 [Document7]
-DocumentPath=obc_comm.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=KUSTWXKO
-
-[Document8]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +156,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QTVDTBSU
 
-[Document9]
+[Document8]
 DocumentPath=obc-comm.Annotation
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -190,7 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document9]
 DocumentPath=OBC V2 BOM.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +190,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-ATMEGA64M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -224,7 +207,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TUFLFTKC
 
-[Document12]
+[Document11]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-circuit-ATMEGA64M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -241,7 +224,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSUPJEUS
 
-[Document13]
+[Document12]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\can-SN65HVD233.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
