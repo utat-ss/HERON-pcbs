@@ -3743,6 +3743,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UKMLRECM
 
+[Document219]
+DocumentPath=Symbols\MCP659-EML.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=RXBFEQAI
+
 [Generic_EDE]
 OutputDir=..\..\libraries
 
