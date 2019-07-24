@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for systems_wiring_diagram
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -174,16 +174,16 @@ GenerateClassCluster=0
 DocumentUniqueId=VYWLRQGP
 
 [Parameter1]
-Name=ProjectSheetTotal
-Value=8
+Name=ProjectDrawnBy
+Value=Jaden Reimer
 
 [Parameter2]
 Name=ProjectRevision
 Value=v1.5
 
 [Parameter3]
-Name=ProjectDrawnBy
-Value=Jaden Reimer
+Name=ProjectSheetTotal
+Value=8
 
 [Configuration1]
 Name=Sources
@@ -232,7 +232,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for systems_wiring_diagram
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
