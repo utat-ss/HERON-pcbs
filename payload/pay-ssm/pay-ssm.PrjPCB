@@ -4088,16 +4088,12 @@ DocumentPath=pay-ssm 2018-06-07 9-05-17 PM.WAS
 DItemRevisionGUID=
 
 [Parameter1]
-Name=
-Value=
+Name=PROJ_ORG
+Value=UTAT SS
 
 [Parameter2]
 Name=PROJ_REVISION
 Value=4.2
-
-[Parameter3]
-Name=PROJ_ORG
-Value=UTAT SS
 
 [Configuration1]
 Name=Sources
