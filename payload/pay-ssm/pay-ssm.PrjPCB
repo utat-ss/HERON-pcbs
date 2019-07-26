@@ -107,7 +107,7 @@ DocumentUniqueId=TFKPADYI
 
 [Document5]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\can-SN65HVD233.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -124,7 +124,7 @@ DocumentUniqueId=SMAGLYCI
 
 [Document6]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-ATMEGA64M1.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -141,7 +141,7 @@ DocumentUniqueId=TUFLFTKC
 
 [Document7]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-circuit-ATMEGA64M1.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -158,7 +158,7 @@ DocumentUniqueId=RSUPJEUS
 
 [Document8]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\thermistor-input-10k.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -175,7 +175,7 @@ DocumentUniqueId=LAQEOPWF
 
 [Document9]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\curr-mon-INA214-Q1.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -226,7 +226,7 @@ DocumentUniqueId=
 
 [Document12]
 DocumentPath=Port Expander Breakout.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -260,7 +260,7 @@ DocumentUniqueId=
 
 [Document14]
 DocumentPath=DRV8834.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -277,7 +277,7 @@ DocumentUniqueId=XVEMOJRQ
 
 [Document15]
 DocumentPath=Motors.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -294,7 +294,7 @@ DocumentUniqueId=RTNCRUTG
 
 [Document16]
 DocumentPath=TOP.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -328,7 +328,7 @@ DocumentUniqueId=
 
 [Document18]
 DocumentPath=motors-state-monitor.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -345,7 +345,7 @@ DocumentUniqueId=SRVPSBZN
 
 [Document19]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-circuit-ADS7952.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -362,7 +362,7 @@ DocumentUniqueId=VNCFDWAV
 
 [Document20]
 DocumentPath=Heater Control.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -379,7 +379,7 @@ DocumentUniqueId=THSIIQRD
 
 [Document21]
 DocumentPath=Heater Power.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -396,7 +396,7 @@ DocumentUniqueId=CWLCHEQU
 
 [Document22]
 DocumentPath=MF Thermistors.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -430,7 +430,7 @@ DocumentUniqueId=
 
 [Document24]
 DocumentPath=Sensors.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -447,7 +447,7 @@ DocumentUniqueId=YEOJMCRV
 
 [Document25]
 DocumentPath=boost-converter.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -481,7 +481,7 @@ DocumentUniqueId=
 
 [Document27]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\pex-MCP23S17.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -532,7 +532,7 @@ DocumentUniqueId=
 
 [Document30]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -566,7 +566,7 @@ DocumentUniqueId=QDRWXSEB
 
 [Document32]
 DocumentPath=ADC Breakout.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -586,12 +586,12 @@ DocumentPath=pay-ssm 2018-06-07 9-05-17 PM.WAS
 DItemRevisionGUID=
 
 [Parameter1]
-Name=PROJ_REVISION
-Value=4.2
-
-[Parameter2]
 Name=PROJ_ORG
 Value=UTAT SS
+
+[Parameter2]
+Name=PROJ_REVISION
+Value=4.2
 
 [Configuration1]
 Name=Sources
