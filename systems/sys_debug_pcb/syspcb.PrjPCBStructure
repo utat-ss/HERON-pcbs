@@ -1,3 +1,5 @@
 Record=TopLevelDocument|FileName=syspcb.SchDoc
+Record=SheetSymbol|SourceDocument=syspcb.SchDoc|Designator=U_buffered_leds_other|SchDesignator=U_buffered_leds_other|FileName=buffered_leds.SchDoc|SymbolType=Normal|RawFileName=buffered_leds.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=syspcb.SchDoc|Designator=U_buffered_leds_uart|SchDesignator=U_buffered_leds_uart|FileName=buffered_leds.SchDoc|SymbolType=Normal|RawFileName=buffered_leds.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=syspcb.SchDoc|Designator=U_eps_power|SchDesignator=U_eps_power|FileName=eps_power.SchDoc|SymbolType=Normal|RawFileName=eps_power.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=syspcb.SchDoc|Designator=U_programming|SchDesignator=U_programming|FileName=programming.SchDoc|SymbolType=Normal|RawFileName=programming.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
