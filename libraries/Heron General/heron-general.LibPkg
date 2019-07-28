@@ -1364,7 +1364,7 @@ GenerateClassCluster=0
 DocumentUniqueId=PFPOCADD
 
 [Document79]
-DocumentPath=Footprints\74439358022.PcbLib
+DocumentPath=Footprints\IND_74439358022.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1891,7 +1891,7 @@ GenerateClassCluster=0
 DocumentUniqueId=ADCQNHHK
 
 [Document110]
-DocumentPath=Footprints\IHLP-1212BZ.PcbLib
+DocumentPath=Footprints\IND_IHLP-1212BZ.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -3132,7 +3132,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document183]
-DocumentPath=Footprints\XAL4020-102ME.PcbLib
+DocumentPath=Footprints\IND_XAL4020-102ME.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -3727,23 +3727,6 @@ GenerateClassCluster=0
 DocumentUniqueId=WCPJONPY
 
 [Document218]
-DocumentPath=Symbols\IND.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=UKMLRECM
-
-[Document219]
 DocumentPath=Symbols\MCP659-EML.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3760,7 +3743,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RXBFEQAI
 
-[Document220]
+[Document219]
 DocumentPath=Footprints\QFN65P400X400X100-17N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3777,7 +3760,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VWEFPMKT
 
-[Document221]
+[Document220]
 DocumentPath=Footprints\TPS25982.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3794,7 +3777,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QYMXWFBG
 
-[Document222]
+[Document221]
 DocumentPath=Symbols\TPS25982.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3811,7 +3794,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OLSAINMQ
 
-[Document223]
+[Document222]
 DocumentPath=Symbols\CAP2220.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3828,7 +3811,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SVHBOAWA
 
-[Document224]
+[Document223]
 DocumentPath=Footprints\CAP2220.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3845,7 +3828,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document225]
+[Document224]
 DocumentPath=Symbols\DF13A-12P-1.25H(51).SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3862,7 +3845,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPWAIVCP
 
-[Document226]
+[Document225]
 DocumentPath=Footprints\DF13A-12P-1.25H(51).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3879,7 +3862,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JQUHGCOT
 
-[Document227]
+[Document226]
 DocumentPath=Symbols\TPS82140.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3896,7 +3879,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FQJEKPRB
 
-[Document228]
+[Document227]
 DocumentPath=Footprints\TPS82140-8MICROSIP.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3913,7 +3896,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SYDHLJYA
 
-[Document229]
+[Document228]
 DocumentPath=Symbols\XAL6020-112MEB.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3930,7 +3913,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ECCJORXN
 
-[Document230]
+[Document229]
 DocumentPath=Footprints\XAL6020-112MEB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3946,6 +3929,57 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IYUUTXPT
+
+[Document230]
+DocumentPath=Symbols\IND_74439358022.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=WGPDMVNF
+
+[Document231]
+DocumentPath=Symbols\IND_IHLP-1212BZ.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JCFLOJNM
+
+[Document232]
+DocumentPath=Symbols\IND_XAL4020-102ME.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=NKKWJUJO
 
 [Generic_EDE]
 OutputDir=..\..\libraries
@@ -4062,7 +4096,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=\\DC01\Xerox WC-7855-S
+TargetPrinter=NPIDC6332 (HP LaserJet MFP M130nw)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -4480,11 +4514,6 @@ OutputName6=Footprint Comparison Report
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
-OutputType7=BOM_Violations
-OutputName7=BOM Checks Report
-OutputDocumentPath7=
-OutputVariantName7=
-OutputDefault7=0
 
 [OutputGroup9]
 Name=Export Outputs
@@ -4536,16 +4565,6 @@ OutputName9=Specctra Design PCB
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=MBAExportPARASOLID
-OutputName10=Export PARASOLID
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=MBAExportSTEP
-OutputName11=Export STEP
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -4675,7 +4694,6 @@ Type113=1
 Type114=1
 Type115=1
 Type116=1
-Type117=1
 
 [Difference Levels]
 Type1=1
@@ -4743,7 +4761,6 @@ Type62=1
 Type63=1
 Type64=1
 Type65=1
-Type66=1
 
 [Electrical Rules Check]
 Type1=1
