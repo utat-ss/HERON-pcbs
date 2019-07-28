@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for syspcb
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -190,18 +190,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QTVDTBSU
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for syspcb\Design Rule Check - syspcb.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=syspcb 7-27-2019 11-46-24 AM.WAS
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=syspcb 7-27-2019 12-33-00 AM.WAS
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -249,7 +237,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for syspcb
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
