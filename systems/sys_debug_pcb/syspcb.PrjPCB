@@ -157,7 +157,24 @@ GenerateClassCluster=0
 DocumentUniqueId=CKPQYHPL
 
 [Document8]
-DocumentPath=buffered_leds.SchDoc
+DocumentPath=..\..\libraries\heron-general.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document9]
+DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -167,17 +184,21 @@ AnnotateOrder=3
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=VEWRDOHG
+DocumentUniqueId=QTVDTBSU
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for syspcb\Design Rule Check - syspcb.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
+DocumentPath=syspcb 7-27-2019 11-46-24 AM.WAS
+DItemRevisionGUID=
+
+[GeneratedDocument3]
 DocumentPath=syspcb 7-27-2019 12-33-00 AM.WAS
 DItemRevisionGUID=
 
