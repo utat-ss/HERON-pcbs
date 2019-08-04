@@ -4101,23 +4101,6 @@ GenerateClassCluster=0
 DocumentUniqueId=QMMELBDM
 
 [Document240]
-DocumentPath=Footprints\SLW-106-01-G-D.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=FQIODRXH
-
-[Document241]
 DocumentPath=Symbols\SLW-104-01-G-D.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4134,7 +4117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KZFUDWFV
 
-[Document242]
+[Document241]
 DocumentPath=Footprints\SLW-104-01-X-D.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4150,6 +4133,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KGLAQHKR
+
+[Document242]
+DocumentPath=Footprints\SLW-106-01-X-D.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [Generic_EDE]
 OutputDir=..\..\libraries
