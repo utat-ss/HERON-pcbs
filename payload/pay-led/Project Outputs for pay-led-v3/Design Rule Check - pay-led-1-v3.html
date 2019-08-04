@@ -1,0 +1,1012 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2019-08-03</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11:59:25 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc" class="file"><acronym title="C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc">C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">192</td></tr>
+</table>
+</td>
+</table><a name="IDMMEPPUKVFROPAVKNP41W42VKK52KRLBC3TLA1HBMFWNZZ5XG2XB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKMA3PASAWDH3FTXJXIXLG0TCOCF1CB3J1MFU4KH4BFKNSJ5YQ4RD">Clearance Constraint (Gap=0.152mm) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNKTE0GKJF0SUBZJLHQLB3O0Z4IURSZNVVR2NYGJBI4HZ4BQIJPQI">Clearance Constraint (Gap=0.254mm) (IsComponent),(IsComponent)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKOHFD51S22URGFGJ5HXCHHFK4FVA1F1MDCT30SLFFOGKUJDVNNBB">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4ZF2ATYHOG54GCONGVPISCS3VEABTTNZM32WHEGJXD0VQEUMLKKE">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">63</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXLHP23QIBRUMEEFIYI4Z333FRCTWBZRMD0XE5GISAE2P5VXIOG3L">Un-Connected Pin Constraint ( (All) )</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDV3PO5FF01GKTKOYZEEIA05NIHUBWPH4UGHFDWDD1MG2UP4X34AH">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRPRFQ1FNR5NIC3WF2B0G2TSQUGJVXNPWL0EQJ2BS2N3SQI1SJQXG">Width Constraint (Min=0.152mm) (Max=25.4mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWQJ02DSZDGN5OPR4IXLIFTAL2EUMBKMWWDJMAALEEKGFADNZLB0L">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAVPPFY5VYL2HIJN2HSLESTXDHOFTSLOY4RZHLTFHDMS1GQHXSWJH">Minimum Annular Ring (Minimum=0.15mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLO4MG1IG5LOXKC05WQFKWWAYWH03FTE0ECCD4YLFWHLLU2I5IKP">Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBMXROIYY23JQFP3KL2HNOY3RWHZ541S2LTRC3EO5O2IDA2L1OUGB">Hole To Hole Clearance (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ5CQ2N5X0TFBB0TMQUS2LBFREHVM3KK3CJKMH1IBQ4NJLIHMJQPH">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTEN01MBTHMXYPLFUHEQVN1L43KHGCJXRL521IDJQL2TEUWT3JRHG">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</a></td>
+<td class="column2">92</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKFD32VLHLYTOKXVB05PJZJLQFPTYT5D0GC3T0JDWUK5L2MJHILMD">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID13AIAYZB3XR5JEWNPR3S2MJR5O4M3OBGKYW44WM3IU0BBMQKONIJ">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBYKISDZ0R5WKEZ51VMK4NPV1COB55KGITAXDKXK5QKRZ2FKBV5MH">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">15</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFTHOKGQZSFQLCV1ISYWVI4ZEHXOWUPPYDQRJMOLAZPLNKKHB05K">Room LED32 (Bounding Region = (124.5mm, 24mm, 130.5mm, 29.5mm) (InComponentClass('LED32'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGZJAF3WD5SMYCNQBQE4PAAXBOEPHTL1EOPOWP1KGXBIOW0RIU5JE">Room LED31 (Bounding Region = (42.5mm, 24mm, 48.5mm, 29.5mm) (InComponentClass('LED31'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2TGCJRN0JJZVCRJEJYT14NSL4CKBRX1RLRBIGRBK25UPF52VFECK">Room LED42 (Bounding Region = (118.5mm, 24mm, 124.5mm, 29.5mm) (InComponentClass('LED42'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVX5XPIFWQU0VPBIYSYD4DS44OFITR3SYWOR3CWBWLWEJ1OAPPVME">Room LED41 (Bounding Region = (48.5mm, 24mm, 54.5mm, 29.5mm) (InComponentClass('LED41'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCLJELQ5E1IP5N2IMP22HPALDJLHES4MHVSNXAIND5BEISEW0SLCC">Room LED12 (Bounding Region = (138.75mm, 30.5mm, 144.25mm, 36.5mm) (InComponentClass('LED12'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYZFHXBGIMMGCFAYCSCUZYJER0NMTZCQTP5H1EOMLBRPHUJLTUGYO">Room LED11 (Bounding Region = (30.5mm, 24mm, 36.5mm, 29.5mm) (InComponentClass('LED11'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGH3P1QSP1PR0HLEM21OFLVRKPDNYKVF1RG3X20LLABFWGBE5CVNO">Room LED22 (Bounding Region = (130.5mm, 24mm, 136.5mm, 29.5mm) (InComponentClass('LED22'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXPA3QNRPWYJVP54VWD3JZICQOSVRND4F1PPEYPKMWSVDOJVWWNH">Room LED21 (Bounding Region = (36.5mm, 24mm, 42.5mm, 29.5mm) (InComponentClass('LED21'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOFVWJNVNSWPWLOKT30TRGDQTSMWO10K1FQNSQLHCY3HIWOTVCJHH">Room LED72 (Bounding Region = (100.5mm, 24mm, 106.5mm, 29.5mm) (InComponentClass('LED72'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBSNXMGUD0MOCCMLHBKDJAJHMHHR4VR2F4XFTQONKPTLE0WG2E4ZP">Room LED71 (Bounding Region = (66.5mm, 24mm, 72.5mm, 29.5mm) (InComponentClass('LED71'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1IREWG2I401CNKGWGJWZSXLGZIQ5BPZN4P4W0HDWC55DIKEP2GNM">Room LED82 (Bounding Region = (94.5mm, 24mm, 100.5mm, 29.5mm) (InComponentClass('LED82'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIAPYBXCRY1OSONIN5B2U20KLIDGUIARVJRZFFMGH1F0F0OFSUHH">Room LED81 (Bounding Region = (21.9mm, 30.75mm, 29.1mm, 36.25mm) (InComponentClass('LED81'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGJJGK0HS5C0WHDTS2AJTBT2JEBEEMLAP5XLTSYGJ1ALTRJTL2U3C">Room LED52 (Bounding Region = (112.5mm, 24mm, 118.5mm, 29.5mm) (InComponentClass('LED52'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFPWATTWWMIKGF32YVAINX2LGJDGYXJBLPZSS04GIXIDKKJ3ZBYVE">Room LED51 (Bounding Region = (54.5mm, 24mm, 60.5mm, 29.5mm) (InComponentClass('LED51'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEHOKPJ22RFRQS1LHCLQ5NDW2NX2S1CPY4KPY4JGDWY21R0M0OIC">Room LED62 (Bounding Region = (106.5mm, 24mm, 112.5mm, 29.5mm) (InComponentClass('LED62'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGX2OCTKN5IOSKE1YKIUX4DENQFWRQ5ZNR3L3YPKKI12GBDJKDPIG">Room LED61 (Bounding Region = (60.5mm, 24mm, 66.5mm, 29.5mm) (InComponentClass('LED61'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDY1XJ3O2OZZYOCHTBSJFRN5ASNKZJJVCRYQSXGQFQQPNWIIMHZAPN">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">192</td>
+</tr>
+</table><br><a name="IDKMA3PASAWDH3FTXJXIXLG0TCOCF1CB3J1MFU4KH4BFKNSJ5YQ4RD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.152mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=795.665mil|Location2.X=800.665mil|Location1.Y=1157.012mil|Location2.Y=1162.012mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=795.665mil|Location2.X=800.665mil|Location1.Y=1157.012mil|Location2.Y=1162.012mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.152mm) Between Pad U1-26(19.785mm,29.585mm) on Top Layer And Track (20.25mm,29.35mm)(21.152mm,30.252mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=796.092mil|Location2.X=803.957mil|Location1.Y=1180.01mil|Location2.Y=1189.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=796.092mil|Location2.X=803.957mil|Location1.Y=1180.01mil|Location2.Y=1189.998mil|Absolute=True">Clearance Constraint: (0.019mm &lt; 0.152mm) Between Pad U1-27(19.785mm,30.235mm) on Top Layer And Track (20.402mm,30mm)(21.006mm,30.605mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=633.327mil|Location2.X=638.327mil|Location1.Y=1264.626mil|Location2.Y=1269.626mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=633.327mil|Location2.X=638.327mil|Location1.Y=1264.626mil|Location2.Y=1269.626mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.152mm) Between Pad U1-5(16.3mm,31.77mm) on Top Layer And Track (16.065mm,32.185mm)(16.065mm,32.965mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=621.966mil|Location2.X=629.216mil|Location1.Y=1267.635mil|Location2.Y=1274.885mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=621.966mil|Location2.X=629.216mil|Location1.Y=1267.635mil|Location2.Y=1274.885mil|Absolute=True">Clearance Constraint: (0.15mm &lt; 0.152mm) Between Pad U1-6(15.65mm,31.77mm) on Top Layer And Track (16.065mm,32.185mm)(16.065mm,32.965mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDKOHFD51S22URGFGJ5HXCHHFK4FVA1F1MDCT30SLFFOGKUJDVNNBB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=791.793mil|Location2.X=801.967mil|Location1.Y=1155.724mil|Location2.Y=1165.898mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=791.793mil|Location2.X=801.967mil|Location1.Y=1155.724mil|Location2.Y=1165.898mil|Absolute=True">Short-Circuit Constraint: Between Pad U1-26(19.785mm,29.585mm) on Top Layer And Track (20.25mm,29.35mm)(21.152mm,30.252mm) on Top Layer Location : [X = 20.241mm][Y = 29.485mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=630.796mil|Location2.X=640.935mil|Location1.Y=1262.677mil|Location2.Y=1272.816mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=630.796mil|Location2.X=640.935mil|Location1.Y=1262.677mil|Location2.Y=1272.816mil|Absolute=True">Short-Circuit Constraint: Between Pad U1-5(16.3mm,31.77mm) on Top Layer And Track (16.065mm,32.185mm)(16.065mm,32.965mm) on Top Layer Location : [X = 16.151mm][Y = 32.201mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID4ZF2ATYHOG54GCONGVPISCS3VEABTTNZM32WHEGJXD0VQEUMLKKE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=438.976mil|Location2.X=575.787mil|Location1.Y=1287.402mil|Location2.Y=1344.988mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=438.976mil|Location2.X=575.787mil|Location1.Y=1287.402mil|Location2.Y=1344.988mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C2-1(11.55mm,33.513mm) on Top Layer And Pad C1-1(14.4mm,33mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=558.071mil|Location2.X=624.638mil|Location1.Y=1228.315mil|Location2.Y=1311.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=558.071mil|Location2.X=624.638mil|Location1.Y=1228.315mil|Location2.Y=1311.024mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C1-1(14.4mm,33mm) on Top Layer And Pad U1-6(15.65mm,31.77mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=513.78mil|Location2.X=615.157mil|Location1.Y=1287.402mil|Location2.Y=1344.988mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=513.78mil|Location2.X=615.157mil|Location1.Y=1287.402mil|Location2.Y=1344.988mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Pad C2-2(13.45mm,33.513mm) on Top Layer And Pad C1-2(15.4mm,33mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=597.441mil|Location2.X=650.228mil|Location1.Y=1228.315mil|Location2.Y=1311.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=597.441mil|Location2.X=650.228mil|Location1.Y=1228.315mil|Location2.Y=1311.024mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Pad C1-2(15.4mm,33mm) on Top Layer And Pad U1-5(16.3mm,31.77mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=438.976mil|Location2.X=470.472mil|Location1.Y=1064.961mil|Location2.Y=1344.988mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=438.976mil|Location2.X=470.472mil|Location1.Y=1064.961mil|Location2.Y=1344.988mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R13-1(11.5mm,27.25mm) on Top Layer And Pad C2-1(11.55mm,33.513mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=545.276mil|Location1.Y=1179.134mil|Location2.Y=1344.988mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=545.276mil|Location1.Y=1179.134mil|Location2.Y=1344.988mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Pad R10-2(11.5mm,30.15mm) on Top Layer And Pad C2-2(13.45mm,33.513mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=469.488mil|Location1.Y=866.142mil|Location2.Y=1049.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=469.488mil|Location1.Y=866.142mil|Location2.Y=1049.213mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Pad R9-2(11.5mm,26.45mm) on Top Layer And Pad C3-2(11.7mm,22.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1315.882mil|Location2.X=1587.661mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1315.882mil|Location2.X=1587.661mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED11-2(33.875mm,25.15mm) on Top Layer And Pad D1_LED21-2(39.875mm,25.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1053.087mil|Location2.X=1351.441mil|Location1.Y=976.315mil|Location2.Y=1351.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1053.087mil|Location2.X=1351.441mil|Location1.Y=976.315mil|Location2.Y=1351.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED81-2(27.1mm,33.875mm) on Top Layer And Pad D1_LED11-2(33.875mm,25.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5480.315mil|Location2.X=5521.717mil|Location1.Y=1250mil|Location2.Y=1321.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5480.315mil|Location2.X=5521.717mil|Location1.Y=1250mil|Location2.Y=1321.913mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED12_1 Between Pad R1_LED12-2(139.5mm,31.95mm) on Top Layer And Pad D1_LED12-1(139.9mm,33.125mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5223.362mil|Location2.X=5647.701mil|Location1.Y=1102.299mil|Location2.Y=1351.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5223.362mil|Location2.X=5647.701mil|Location1.Y=1102.299mil|Location2.Y=1351.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED22-2(133.125mm,28.35mm) on Top Layer And Pad D1_LED12-2(143.1mm,33.875mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1552.102mil|Location2.X=1823.882mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1552.102mil|Location2.X=1823.882mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED21-2(39.875mm,25.15mm) on Top Layer And Pad D1_LED31-2(45.875mm,25.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5252.889mil|Location2.X=5324.803mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5252.889mil|Location2.X=5324.803mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED22_1 Between Pad D1_LED22-1(133.875mm,25.15mm) on Top Layer And Pad R1_LED22-2(135.05mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4987.141mil|Location2.X=5258.921mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4987.141mil|Location2.X=5258.921mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED32-2(127.125mm,28.35mm) on Top Layer And Pad D1_LED22-2(133.125mm,28.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1788.323mil|Location2.X=2060.102mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1788.323mil|Location2.X=2060.102mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED31-2(45.875mm,25.15mm) on Top Layer And Pad D1_LED41-2(51.875mm,25.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.669mil|Location2.X=5088.582mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.669mil|Location2.X=5088.582mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED32_1 Between Pad D1_LED32-1(127.875mm,25.15mm) on Top Layer And Pad R1_LED32-2(129.05mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4750.921mil|Location2.X=5022.7mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4750.921mil|Location2.X=5022.7mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED42-2(121.125mm,28.35mm) on Top Layer And Pad D1_LED32-2(127.125mm,28.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2024.543mil|Location2.X=2296.323mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2024.543mil|Location2.X=2296.323mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED41-2(51.875mm,25.15mm) on Top Layer And Pad D1_LED51-2(57.875mm,25.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4780.449mil|Location2.X=4852.362mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4780.449mil|Location2.X=4852.362mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED42_1 Between Pad D1_LED42-1(121.875mm,25.15mm) on Top Layer And Pad R1_LED42-2(123.05mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4514.701mil|Location2.X=4786.48mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4514.701mil|Location2.X=4786.48mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED52-2(115.125mm,28.35mm) on Top Layer And Pad D1_LED42-2(121.125mm,28.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2260.764mil|Location2.X=2532.543mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2260.764mil|Location2.X=2532.543mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED51-2(57.875mm,25.15mm) on Top Layer And Pad D1_LED61-2(63.875mm,25.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4544.228mil|Location2.X=4616.142mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4544.228mil|Location2.X=4616.142mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED52_1 Between Pad D1_LED52-1(115.875mm,25.15mm) on Top Layer And Pad R1_LED52-2(117.05mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4278.48mil|Location2.X=4550.26mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4278.48mil|Location2.X=4550.26mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED62-2(109.125mm,28.35mm) on Top Layer And Pad D1_LED52-2(115.125mm,28.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2496.984mil|Location2.X=2768.763mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2496.984mil|Location2.X=2768.763mil|Location1.Y=976.315mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED61-2(63.875mm,25.15mm) on Top Layer And Pad D1_LED71-2(69.875mm,25.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4308.008mil|Location2.X=4379.921mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4308.008mil|Location2.X=4379.921mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED62_1 Between Pad D1_LED62-1(109.875mm,25.15mm) on Top Layer And Pad R1_LED62-2(111.05mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4042.26mil|Location2.X=4314.039mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4042.26mil|Location2.X=4314.039mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED72-2(103.125mm,28.35mm) on Top Layer And Pad D1_LED62-2(109.125mm,28.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2733.204mil|Location2.X=3841.598mil|Location1.Y=976.315mil|Location2.Y=1129.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2733.204mil|Location2.X=3841.598mil|Location1.Y=976.315mil|Location2.Y=1129.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED71-2(69.875mm,25.15mm) on Top Layer And Pad D1_LED82-2(97.125mm,28.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4071.787mil|Location2.X=4143.701mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4071.787mil|Location2.X=4143.701mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED72_1 Between Pad D1_LED72-1(103.875mm,25.15mm) on Top Layer And Pad R1_LED72-2(105.05mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.039mil|Location2.X=4077.819mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.039mil|Location2.X=4077.819mil|Location1.Y=1102.299mil|Location2.Y=1129.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad D1_LED82-2(97.125mm,28.35mm) on Top Layer And Pad D1_LED72-2(103.125mm,28.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=607.646mil|Location2.X=1080.772mil|Location1.Y=1228.315mil|Location2.Y=1351.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=607.646mil|Location2.X=1080.772mil|Location1.Y=1228.315mil|Location2.Y=1351.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad U1-6(15.65mm,31.77mm) on Top Layer And Pad D1_LED81-2(27.1mm,33.875mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3835.567mil|Location2.X=3907.48mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3835.567mil|Location2.X=3907.48mil|Location1.Y=962.598mil|Location2.Y=1004mil|Absolute=True">Un-Routed Net Constraint: Net NetD1_LED82_1 Between Pad D1_LED82-1(97.875mm,25.15mm) on Top Layer And Pad R1_LED82-2(99.05mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=509.874mil|Location1.Y=936.976mil|Location2.Y=1080.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=509.874mil|Location1.Y=936.976mil|Location2.Y=1080.709mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R13-1(11.5mm,27.25mm) on Top Layer And Pad D9-2(12.55mm,24.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=633.236mil|Location2.X=5503.937mil|Location1.Y=1005.087mil|Location2.Y=1230.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=633.236mil|Location2.X=5503.937mil|Location1.Y=1005.087mil|Location2.Y=1230.315mil|Absolute=True">Un-Routed Net Constraint: Net GPA0 Between Pad U1-17(16.3mm,26.1mm) on Top Layer And Pad R1_LED12-1(139.5mm,31.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=658.827mil|Location2.X=5360.236mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=658.827mil|Location2.X=5360.236mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True">Un-Routed Net Constraint: Net GPA1 Between Pad U1-18(16.95mm,26.1mm) on Top Layer And Pad R1_LED22-1(135.95mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=684.417mil|Location2.X=5124.015mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=684.417mil|Location2.X=5124.015mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True">Un-Routed Net Constraint: Net GPA2 Between Pad U1-19(17.6mm,26.1mm) on Top Layer And Pad R1_LED32-1(129.95mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=710.008mil|Location2.X=4887.795mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=710.008mil|Location2.X=4887.795mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True">Un-Routed Net Constraint: Net GPA3 Between Pad U1-20(18.25mm,26.1mm) on Top Layer And Pad R1_LED42-1(123.95mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=735.598mil|Location2.X=2208.661mil|Location1.Y=1131.89mil|Location2.Y=1273.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=735.598mil|Location2.X=2208.661mil|Location1.Y=1131.89mil|Location2.Y=1273.26mil|Absolute=True">Un-Routed Net Constraint: Net GPB4 Between Pad U1-1(18.9mm,31.77mm) on Top Layer And Pad R1_LED51-1(55.8mm,28.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=735.598mil|Location2.X=4651.575mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=735.598mil|Location2.X=4651.575mil|Location1.Y=962.598mil|Location2.Y=1050.032mil|Absolute=True">Un-Routed Net Constraint: Net GPA4 Between Pad U1-21(18.9mm,26.1mm) on Top Layer And Pad R1_LED52-1(117.95mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=710.008mil|Location2.X=2444.881mil|Location1.Y=1131.89mil|Location2.Y=1273.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=710.008mil|Location2.X=2444.881mil|Location1.Y=1131.89mil|Location2.Y=1273.26mil|Absolute=True">Un-Routed Net Constraint: Net GPB5 Between Pad U1-2(18.25mm,31.77mm) on Top Layer And Pad R1_LED61-1(61.8mm,28.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=756.465mil|Location2.X=4415.354mil|Location1.Y=962.598mil|Location2.Y=1070.898mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=756.465mil|Location2.X=4415.354mil|Location1.Y=962.598mil|Location2.Y=1070.898mil|Absolute=True">Un-Routed Net Constraint: Net GPA5 Between Pad U1-22(19.785mm,26.985mm) on Top Layer And Pad R1_LED62-1(111.95mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=684.417mil|Location2.X=2681.102mil|Location1.Y=1131.89mil|Location2.Y=1273.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=684.417mil|Location2.X=2681.102mil|Location1.Y=1131.89mil|Location2.Y=1273.26mil|Absolute=True">Un-Routed Net Constraint: Net GPB6 Between Pad U1-3(17.6mm,31.77mm) on Top Layer And Pad R1_LED71-1(67.8mm,28.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=756.465mil|Location2.X=4179.134mil|Location1.Y=962.598mil|Location2.Y=1096.488mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=756.465mil|Location2.X=4179.134mil|Location1.Y=962.598mil|Location2.Y=1096.488mil|Absolute=True">Un-Routed Net Constraint: Net GPA6 Between Pad U1-23(19.785mm,27.635mm) on Top Layer And Pad R1_LED72-1(105.95mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=756.465mil|Location2.X=3942.913mil|Location1.Y=962.598mil|Location2.Y=1122.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=756.465mil|Location2.X=3942.913mil|Location1.Y=962.598mil|Location2.Y=1122.079mil|Absolute=True">Un-Routed Net Constraint: Net GPA7 Between Pad U1-24(19.785mm,28.285mm) on Top Layer And Pad R1_LED82-1(99.95mm,24.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=409.449mil|Location2.X=464.567mil|Location1.Y=1179.134mil|Location2.Y=1194.882mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=409.449mil|Location2.X=464.567mil|Location1.Y=1179.134mil|Location2.Y=1194.882mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Pad R11-2(10.7mm,30.15mm) on Top Layer And Pad R10-2(11.5mm,30.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=464.567mil|Location1.Y=1033.465mil|Location2.Y=1194.882mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=464.567mil|Location1.Y=1033.465mil|Location2.Y=1194.882mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Pad R9-2(11.5mm,26.45mm) on Top Layer And Pad R10-2(11.5mm,30.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=409.449mil|Location2.X=433.071mil|Location1.Y=1122.047mil|Location2.Y=1159.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=409.449mil|Location2.X=433.071mil|Location1.Y=1122.047mil|Location2.Y=1159.449mil|Absolute=True">Un-Routed Net Constraint: Net A1 Between Via (10.7mm,28.8mm) from Top Layer to Bottom Layer And Pad R11-1(10.7mm,29.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.953mil|Location2.X=433.071mil|Location1.Y=1179.134mil|Location2.Y=1194.882mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.953mil|Location2.X=433.071mil|Location1.Y=1179.134mil|Location2.Y=1194.882mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Pad R12-2(9.9mm,30.15mm) on Top Layer And Pad R11-2(10.7mm,30.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=409.449mil|Location2.X=464.567mil|Location1.Y=1064.961mil|Location2.Y=1080.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=409.449mil|Location2.X=464.567mil|Location1.Y=1064.961mil|Location2.Y=1080.709mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R14-1(10.7mm,27.25mm) on Top Layer And Pad R13-1(11.5mm,27.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.953mil|Location2.X=433.071mil|Location1.Y=1064.961mil|Location2.Y=1080.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.953mil|Location2.X=433.071mil|Location1.Y=1064.961mil|Location2.Y=1080.709mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R15-1(9.9mm,27.25mm) on Top Layer And Pad R14-1(10.7mm,27.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=578.181mil|Location1.Y=998.032mil|Location2.Y=1070.898mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.945mil|Location2.X=578.181mil|Location1.Y=998.032mil|Location2.Y=1070.898mil|Absolute=True">Un-Routed Net Constraint: Net RST_N Between Pad R9-1(11.5mm,25.55mm) on Top Layer And Pad U1-14(14.115mm,26.985mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=420.866mil|Location2.X=655.709mil|Location1.Y=1055.512mil|Location2.Y=1239.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=420.866mil|Location2.X=655.709mil|Location1.Y=1055.512mil|Location2.Y=1239.173mil|Absolute=True">Un-Routed Net Constraint: Net A0 Between Track (11.7mm,29.35mm)(13.23mm,29.35mm) on Top Layer And Pad U1-11(14.115mm,28.935mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=466.225mil|Location2.X=578.181mil|Location1.Y=1105.087mil|Location2.Y=1143.793mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=466.225mil|Location2.X=578.181mil|Location1.Y=1105.087mil|Location2.Y=1143.793mil|Absolute=True">Un-Routed Net Constraint: Net A1 Between Via (12.142mm,28.752mm) from Top Layer to Bottom Layer And Pad U1-12(14.115mm,28.285mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=420.866mil|Location2.X=655.709mil|Location1.Y=1004.331mil|Location2.Y=1187.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=420.866mil|Location2.X=655.709mil|Location1.Y=1004.331mil|Location2.Y=1187.992mil|Absolute=True">Un-Routed Net Constraint: Net A2 Between Track (12.4mm,28.05mm)(13.23mm,28.05mm) on Top Layer And Pad U1-13(14.115mm,27.635mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=897.244mil|Location1.Y=1039.173mil|Location2.Y=1255.512mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=897.244mil|Location1.Y=1039.173mil|Location2.Y=1255.512mil|Absolute=True">Un-Routed Net Constraint: Net GPB0 Between Pad U1-25(19.785mm,28.935mm) on Top Layer And Track (20.25mm,29.35mm)(21.152mm,30.252mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=903.214mil|Location1.Y=1064.764mil|Location2.Y=1281.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=903.214mil|Location1.Y=1064.764mil|Location2.Y=1281.102mil|Absolute=True">Un-Routed Net Constraint: Net GPB1 Between Pad U1-26(19.785mm,29.585mm) on Top Layer And Track (20.402mm,30mm)(21.006mm,30.605mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=911.152mil|Location1.Y=1090.354mil|Location2.Y=1308.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=911.152mil|Location1.Y=1090.354mil|Location2.Y=1308.661mil|Absolute=True">Un-Routed Net Constraint: Net GPB2 Between Pad U1-27(19.785mm,30.235mm) on Top Layer And Track (20.603mm,30.7mm)(20.86mm,30.957mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=914.961mil|Location1.Y=1115.945mil|Location2.Y=1332.284mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=678.937mil|Location2.X=914.961mil|Location1.Y=1115.945mil|Location2.Y=1332.284mil|Absolute=True">Un-Routed Net Constraint: Net GPB3 Between Pad U1-28(19.785mm,30.885mm) on Top Layer And Track (20.7mm,31.3mm)(20.71mm,31.31mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=592.488mil|Location2.X=742.157mil|Location1.Y=1064.339mil|Location2.Y=1273.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=592.488mil|Location2.X=742.157mil|Location1.Y=1064.339mil|Location2.Y=1273.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad U1-6(15.65mm,31.77mm) on Top Layer And Pad U1-29(16.95mm,28.935mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.48mil|Location2.X=767.323mil|Location1.Y=1167.126mil|Location2.Y=1350.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.48mil|Location2.X=767.323mil|Location1.Y=1167.126mil|Location2.Y=1350.787mil|Absolute=True">Un-Routed Net Constraint: Net GPB7 Between Track (16.065mm,32.185mm)(16.065mm,32.965mm) on Top Layer And Pad U1-4(16.95mm,31.77mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=419.685mil|Location2.X=655.709mil|Location1.Y=1132.284mil|Location2.Y=1315.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=419.685mil|Location2.X=655.709mil|Location1.Y=1132.284mil|Location2.Y=1315.945mil|Absolute=True">Un-Routed Net Constraint: Net SCL Between Track (12.4mm,31.3mm)(13.2mm,31.3mm) on Top Layer And Pad U1-8(14.115mm,30.885mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=419.685mil|Location2.X=655.709mil|Location1.Y=1108.661mil|Location2.Y=1290.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=419.685mil|Location2.X=655.709mil|Location1.Y=1108.661mil|Location2.Y=1290.354mil|Absolute=True">Un-Routed Net Constraint: Net SDA Between Track (12.5mm,30.7mm)(13.2mm,30.7mm) on Top Layer And Pad U1-9(14.115mm,30.235mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=385.827mil|Location2.X=606.299mil|Location1.Y=807.087mil|Location2.Y=854.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=385.827mil|Location2.X=606.299mil|Location1.Y=807.087mil|Location2.Y=854.331mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Via (10.1mm,21.4mm) from Top Layer to Bottom Layer And Via (15.1mm,20.8mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=582.677mil|Location2.X=708.661mil|Location1.Y=807.087mil|Location2.Y=830.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=582.677mil|Location2.X=708.661mil|Location1.Y=807.087mil|Location2.Y=830.709mil|Absolute=True">Un-Routed Net Constraint: Net VCC3V3_S Between Via (15.1mm,20.8mm) from Top Layer to Bottom Layer And Via (17.7mm,20.8mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDXLHP23QIBRUMEEFIYI4Z333FRCTWBZRMD0XE5GISAE2P5VXIOG3L"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Connected Pin Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=358.72mil|Location2.X=450.335mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=358.72mil|Location2.X=450.335mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True">Un-Connected Pin Constraint: Pad J1-(10.275mm,26.844mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=691.398mil|Location2.X=783.012mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=691.398mil|Location2.X=783.012mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True">Un-Connected Pin Constraint: Pad J1-(18.725mm,26.844mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.736mil|Location2.X=578.681mil|Location1.Y=1141.792mil|Location2.Y=1187.736mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.736mil|Location2.X=578.681mil|Location1.Y=1141.792mil|Location2.Y=1187.736mil|Absolute=True">Un-Connected Pin Constraint: Pad U1-10(14.115mm,29.585mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=567.579mil|Location2.X=613.524mil|Location1.Y=1227.815mil|Location2.Y=1273.76mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=567.579mil|Location2.X=613.524mil|Location1.Y=1227.815mil|Location2.Y=1273.76mil|Absolute=True">Un-Connected Pin Constraint: Pad U1-7(15mm,31.77mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQ5CQ2N5X0TFBB0TMQUS2LBFREHVM3KK3CJKMH1IBQ4NJLIHMJQPH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.702mil|Location2.X=452.889mil|Location1.Y=863.548mil|Location2.Y=868.735mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.702mil|Location2.X=452.889mil|Location1.Y=863.548mil|Location2.Y=868.735mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Pad C3-2(11.7mm,22.3mm) on Top Layer And Pad C4-2(11mm,21.8mm) on Top Layer [Top Solder] Mask Sliver [0.075mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDTEN01MBTHMXYPLFUHEQVN1L43KHGCJXRL521IDJQL2TEUWT3JRHG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=572.663mil|Location2.X=578.912mil|Location1.Y=1287.014mil|Location2.Y=1293.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=572.663mil|Location2.X=578.912mil|Location1.Y=1287.014mil|Location2.Y=1293.263mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C1-1(14.4mm,33mm) on Top Layer And Text "R10" (11.453mm,31.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=592.44mil|Location2.X=601.564mil|Location1.Y=1282.4mil|Location2.Y=1291.524mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=592.44mil|Location2.X=601.564mil|Location1.Y=1282.4mil|Location2.Y=1291.524mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.032mm &lt; 0.2mm) Between Pad C1-2(15.4mm,33mm) on Top Layer And Text "R10" (11.453mm,31.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.032mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=446.359mil|Location2.X=455.483mil|Location1.Y=1287.411mil|Location2.Y=1296.535mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=446.359mil|Location2.X=455.483mil|Location1.Y=1287.411mil|Location2.Y=1296.535mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.093mm &lt; 0.2mm) Between Pad C2-1(11.55mm,33.513mm) on Top Layer And Text "R10" (11.453mm,31.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.093mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=434.414mil|Location2.X=443.538mil|Location1.Y=1287.356mil|Location2.Y=1296.48mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=434.414mil|Location2.X=443.538mil|Location1.Y=1287.356mil|Location2.Y=1296.48mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.096mm &lt; 0.2mm) Between Pad C2-1(11.55mm,33.513mm) on Top Layer And Text "R11" (10.647mm,31.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.096mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=453.596mil|Location2.X=462.721mil|Location1.Y=1287.041mil|Location2.Y=1296.165mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=453.596mil|Location2.X=462.721mil|Location1.Y=1287.041mil|Location2.Y=1296.165mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.112mm &lt; 0.2mm) Between Pad C2-1(11.55mm,33.513mm) on Top Layer And Text "R12" (9.86mm,31.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.112mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=516.337mil|Location2.X=525.461mil|Location1.Y=1287.411mil|Location2.Y=1296.535mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=516.337mil|Location2.X=525.461mil|Location1.Y=1287.411mil|Location2.Y=1296.535mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.093mm &lt; 0.2mm) Between Pad C2-2(13.45mm,33.513mm) on Top Layer And Text "R10" (11.453mm,31.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.093mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=539.076mil|Location2.X=548.207mil|Location1.Y=1286.904mil|Location2.Y=1296.028mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=539.076mil|Location2.X=548.207mil|Location1.Y=1286.904mil|Location2.Y=1296.028mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.145mm &lt; 0.2mm) Between Pad C2-2(13.45mm,33.513mm) on Top Layer And Text "R11" (10.647mm,31.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.145mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.574mil|Location2.X=532.698mil|Location1.Y=1287.041mil|Location2.Y=1296.165mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.574mil|Location2.X=532.698mil|Location1.Y=1287.041mil|Location2.Y=1296.165mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.112mm &lt; 0.2mm) Between Pad C2-2(13.45mm,33.513mm) on Top Layer And Text "R12" (9.86mm,31.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.112mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=530.789mil|Location2.X=537.038mil|Location1.Y=1341.863mil|Location2.Y=1348.113mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=530.789mil|Location2.X=537.038mil|Location1.Y=1341.863mil|Location2.Y=1348.113mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C2-2(13.45mm,33.513mm) on Top Layer And Text "U1" (13.561mm,34.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=501.736mil|Location2.X=507.986mil|Location1.Y=881.12mil|Location2.Y=887.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=501.736mil|Location2.X=507.986mil|Location1.Y=881.12mil|Location2.Y=887.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C3-1(12.7mm,22.3mm) on Top Layer And Text "L1" (11.808mm,22.46mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.749mil|Location2.X=467.998mil|Location1.Y=881.12mil|Location2.Y=887.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.749mil|Location2.X=467.998mil|Location1.Y=881.12mil|Location2.Y=887.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C3-2(11.7mm,22.3mm) on Top Layer And Text "L1" (11.808mm,22.46mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=411.692mil|Location2.X=420.816mil|Location1.Y=921.703mil|Location2.Y=930.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=411.692mil|Location2.X=420.816mil|Location1.Y=921.703mil|Location2.Y=930.827mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.077mm &lt; 0.2mm) Between Pad C4-1(11mm,23.2mm) on Top Layer And Track (10.475mm,23.625mm)(10.475mm,24.975mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.077mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=412.761mil|Location2.X=421.885mil|Location1.Y=921.127mil|Location2.Y=930.251mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=412.761mil|Location2.X=421.885mil|Location1.Y=921.127mil|Location2.Y=930.251mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.025mm &lt; 0.2mm) Between Pad C4-1(11mm,23.2mm) on Top Layer And Track (10.475mm,23.625mm)(13.324mm,23.625mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.025mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=558.717mil|Location2.X=564.966mil|Location1.Y=927.116mil|Location2.Y=933.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=558.717mil|Location2.X=564.966mil|Location1.Y=927.116mil|Location2.Y=933.365mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C5-1(13.85mm,23.3mm) on Top Layer And Text "C3" (11.732mm,23.374mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=531.727mil|Location2.X=537.976mil|Location1.Y=920.613mil|Location2.Y=926.863mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=531.727mil|Location2.X=537.976mil|Location1.Y=920.613mil|Location2.Y=926.863mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C5-1(13.85mm,23.3mm) on Top Layer And Text "L1" (11.808mm,22.46mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=521.442mil|Location2.X=527.692mil|Location1.Y=926.994mil|Location2.Y=933.243mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=521.442mil|Location2.X=527.692mil|Location1.Y=926.994mil|Location2.Y=933.243mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C5-1(13.85mm,23.3mm) on Top Layer And Track (10.475mm,23.625mm)(13.324mm,23.625mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.458mil|Location2.X=526.707mil|Location1.Y=929.946mil|Location2.Y=936.196mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.458mil|Location2.X=526.707mil|Location1.Y=929.946mil|Location2.Y=936.196mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad C5-1(13.85mm,23.3mm) on Top Layer And Track (13.299mm,23.777mm)(13.299mm,24.827mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5514.592mil|Location2.X=5520.841mil|Location1.Y=1312.333mil|Location2.Y=1318.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5514.592mil|Location2.X=5520.841mil|Location1.Y=1312.333mil|Location2.Y=1318.583mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad D1_LED12-1(139.9mm,33.125mm) on Top Layer And Text "R1_LED12" (139.46mm,32.905mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=427.425mil|Location2.X=436.549mil|Location1.Y=970.3mil|Location2.Y=979.424mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=427.425mil|Location2.X=436.549mil|Location1.Y=970.3mil|Location2.Y=979.424mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.023mm &lt; 0.2mm) Between Pad D9-1(11.05mm,24.3mm) on Top Layer And Text "R16" (9.957mm,24.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.023mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=414.237mil|Location2.X=423.361mil|Location1.Y=969.847mil|Location2.Y=978.971mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=414.237mil|Location2.X=423.361mil|Location1.Y=969.847mil|Location2.Y=978.971mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-1(11.05mm,24.3mm) on Top Layer And Track (10.475mm,23.625mm)(10.475mm,24.975mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=444.257mil|Location2.X=453.381mil|Location1.Y=931.954mil|Location2.Y=941.078mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=444.257mil|Location2.X=453.381mil|Location1.Y=931.954mil|Location2.Y=941.078mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-1(11.05mm,24.3mm) on Top Layer And Track (10.475mm,23.625mm)(13.324mm,23.625mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=416.698mil|Location2.X=425.822mil|Location1.Y=972.308mil|Location2.Y=981.432mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=416.698mil|Location2.X=425.822mil|Location1.Y=972.308mil|Location2.Y=981.432mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-1(11.05mm,24.3mm) on Top Layer And Track (10.475mm,24.975mm)(13.324mm,24.975mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=498.736mil|Location2.X=504.986mil|Location1.Y=967.103mil|Location2.Y=973.352mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=498.736mil|Location2.X=504.986mil|Location1.Y=967.103mil|Location2.Y=973.352mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad D9-2(12.55mm,24.3mm) on Top Layer And Text "C3" (11.732mm,23.374mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=503.933mil|Location2.X=513.068mil|Location1.Y=970.745mil|Location2.Y=979.869mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=503.933mil|Location2.X=513.068mil|Location1.Y=970.745mil|Location2.Y=979.869mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.055mm &lt; 0.2mm) Between Pad D9-2(12.55mm,24.3mm) on Top Layer And Text "R16" (9.957mm,24.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.055mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=491.74mil|Location2.X=497.989mil|Location1.Y=971.285mil|Location2.Y=977.534mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=491.74mil|Location2.X=497.989mil|Location1.Y=971.285mil|Location2.Y=977.534mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad D9-2(12.55mm,24.3mm) on Top Layer And Text "R17" (11.808mm,24.263mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=503.312mil|Location2.X=512.436mil|Location1.Y=931.954mil|Location2.Y=941.078mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=503.312mil|Location2.X=512.436mil|Location1.Y=931.954mil|Location2.Y=941.078mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-2(12.55mm,24.3mm) on Top Layer And Track (10.475mm,23.625mm)(13.324mm,23.625mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=475.753mil|Location2.X=484.877mil|Location1.Y=972.308mil|Location2.Y=981.432mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=475.753mil|Location2.X=484.877mil|Location1.Y=972.308mil|Location2.Y=981.432mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-2(12.55mm,24.3mm) on Top Layer And Track (10.475mm,24.975mm)(13.324mm,24.975mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=506.245mil|Location2.X=515.369mil|Location1.Y=934.414mil|Location2.Y=943.538mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=506.245mil|Location2.X=515.369mil|Location1.Y=934.414mil|Location2.Y=943.538mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.149mm &lt; 0.2mm) Between Pad D9-2(12.55mm,24.3mm) on Top Layer And Track (13.299mm,23.777mm)(13.299mm,24.827mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.149mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=593.245mil|Location2.X=599.495mil|Location1.Y=921.504mil|Location2.Y=927.754mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=593.245mil|Location2.X=599.495mil|Location1.Y=921.504mil|Location2.Y=927.754mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad J1-2(15.125mm,23.544mm) on Bottom Layer And Text "R20" (15.148mm,23.216mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=553.258mil|Location2.X=559.508mil|Location1.Y=959.245mil|Location2.Y=965.495mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=553.258mil|Location2.X=559.508mil|Location1.Y=959.245mil|Location2.Y=965.495mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad J1-3(13.875mm,23.544mm) on Bottom Layer And Text "R20" (15.148mm,23.216mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=498.954mil|Location2.X=505.203mil|Location1.Y=910.875mil|Location2.Y=917.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=498.954mil|Location2.X=505.203mil|Location1.Y=910.875mil|Location2.Y=917.125mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad J1-4(12.625mm,23.544mm) on Bottom Layer And Text "R20" (15.148mm,23.216mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.6mil|Location2.X=453.849mil|Location1.Y=1149.804mil|Location2.Y=1156.054mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.6mil|Location2.X=453.849mil|Location1.Y=1149.804mil|Location2.Y=1156.054mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-1(11.5mm,29.25mm) on Top Layer And Text "R13" (11.448mm,29.122mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=454.381mil|Location2.X=460.63mil|Location1.Y=1145.284mil|Location2.Y=1151.533mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=454.381mil|Location2.X=460.63mil|Location1.Y=1145.284mil|Location2.Y=1151.533mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-1(11.5mm,29.25mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=457.532mil|Location2.X=463.781mil|Location1.Y=1143.183mil|Location2.Y=1149.432mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=457.532mil|Location2.X=463.781mil|Location1.Y=1143.183mil|Location2.Y=1149.432mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-1(11.5mm,29.25mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.442mil|Location2.X=467.692mil|Location1.Y=1140.982mil|Location2.Y=1147.231mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.442mil|Location2.X=467.692mil|Location1.Y=1140.982mil|Location2.Y=1147.231mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-1(11.5mm,29.25mm) on Top Layer And Text "R9" (11.454mm,27.41mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.6mil|Location2.X=453.849mil|Location1.Y=1185.237mil|Location2.Y=1191.487mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.6mil|Location2.X=453.849mil|Location1.Y=1185.237mil|Location2.Y=1191.487mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-2(11.5mm,30.15mm) on Top Layer And Text "R13" (11.448mm,29.122mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=456.482mil|Location2.X=462.731mil|Location1.Y=1191.757mil|Location2.Y=1198.006mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=456.482mil|Location2.X=462.731mil|Location1.Y=1191.757mil|Location2.Y=1198.006mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-2(11.5mm,30.15mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=454.599mil|Location2.X=460.848mil|Location1.Y=1180.572mil|Location2.Y=1186.821mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=454.599mil|Location2.X=460.848mil|Location1.Y=1180.572mil|Location2.Y=1186.821mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R10-2(11.5mm,30.15mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=416.495mil|Location2.X=422.744mil|Location1.Y=1149.544mil|Location2.Y=1155.793mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=416.495mil|Location2.X=422.744mil|Location1.Y=1149.544mil|Location2.Y=1155.793mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R11-1(10.7mm,29.25mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.752mil|Location2.X=428.002mil|Location1.Y=1146.039mil|Location2.Y=1152.288mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.752mil|Location2.X=428.002mil|Location1.Y=1146.039mil|Location2.Y=1152.288mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R11-1(10.7mm,29.25mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=416.495mil|Location2.X=422.744mil|Location1.Y=1184.977mil|Location2.Y=1191.226mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=416.495mil|Location2.X=422.744mil|Location1.Y=1184.977mil|Location2.Y=1191.226mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R11-2(10.7mm,30.15mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=424.608mil|Location2.X=430.857mil|Location1.Y=1191.757mil|Location2.Y=1198.006mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=424.608mil|Location2.X=430.857mil|Location1.Y=1191.757mil|Location2.Y=1198.006mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R11-2(10.7mm,30.15mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=384.621mil|Location2.X=390.87mil|Location1.Y=1149.796mil|Location2.Y=1156.045mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=384.621mil|Location2.X=390.87mil|Location1.Y=1149.796mil|Location2.Y=1156.045mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R12-1(9.9mm,29.25mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=384.621mil|Location2.X=390.87mil|Location1.Y=1185.229mil|Location2.Y=1191.478mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=384.621mil|Location2.X=390.87mil|Location1.Y=1185.229mil|Location2.Y=1191.478mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R12-2(9.9mm,30.15mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=458.51mil|Location2.X=464.759mil|Location1.Y=1068.146mil|Location2.Y=1074.395mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=458.51mil|Location2.X=464.759mil|Location1.Y=1068.146mil|Location2.Y=1074.395mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R13-1(11.5mm,27.25mm) on Top Layer And Text "D9" (10.639mm,25.835mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.812mil|Location2.X=454.062mil|Location1.Y=1076.001mil|Location2.Y=1082.251mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.812mil|Location2.X=454.062mil|Location1.Y=1076.001mil|Location2.Y=1082.251mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R13-1(11.5mm,27.25mm) on Top Layer And Text "R9" (11.454mm,27.41mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.812mil|Location2.X=454.062mil|Location1.Y=1106.356mil|Location2.Y=1112.605mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=447.812mil|Location2.X=454.062mil|Location1.Y=1106.356mil|Location2.Y=1112.605mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R13-2(11.5mm,28.15mm) on Top Layer And Text "R9" (11.454mm,27.41mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=415.749mil|Location2.X=421.999mil|Location1.Y=1073.982mil|Location2.Y=1080.231mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=415.749mil|Location2.X=421.999mil|Location1.Y=1073.982mil|Location2.Y=1080.231mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R14-1(10.7mm,27.25mm) on Top Layer And Text "D9" (10.639mm,25.835mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=402.426mil|Location2.X=411.55mil|Location1.Y=930.477mil|Location2.Y=939.601mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=402.426mil|Location2.X=411.55mil|Location1.Y=930.477mil|Location2.Y=939.601mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.075mm &lt; 0.2mm) Between Pad R16-1(10mm,23.95mm) on Top Layer And Track (10.475mm,23.625mm)(10.475mm,24.975mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.075mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=402.793mil|Location2.X=411.917mil|Location1.Y=929.161mil|Location2.Y=938.285mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=402.793mil|Location2.X=411.917mil|Location1.Y=929.161mil|Location2.Y=938.285mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.115mm &lt; 0.2mm) Between Pad R16-1(10mm,23.95mm) on Top Layer And Track (10.475mm,23.625mm)(13.324mm,23.625mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.115mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=492.9mil|Location2.X=499.149mil|Location1.Y=919.893mil|Location2.Y=926.142mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=492.9mil|Location2.X=499.149mil|Location1.Y=919.893mil|Location2.Y=926.142mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R17-1(12.65mm,23.2mm) on Top Layer And Text "C3" (11.732mm,23.374mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=485.596mil|Location2.X=494.719mil|Location1.Y=921.127mil|Location2.Y=930.251mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=485.596mil|Location2.X=494.719mil|Location1.Y=921.127mil|Location2.Y=930.251mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.025mm &lt; 0.2mm) Between Pad R17-1(12.65mm,23.2mm) on Top Layer And Track (10.475mm,23.625mm)(13.324mm,23.625mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.025mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=467.348mil|Location2.X=473.597mil|Location1.Y=918.518mil|Location2.Y=924.767mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=467.348mil|Location2.X=473.597mil|Location1.Y=918.518mil|Location2.Y=924.767mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R17-2(11.75mm,23.2mm) on Top Layer And Text "C3" (11.732mm,23.374mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.749mil|Location2.X=467.998mil|Location1.Y=906.848mil|Location2.Y=913.097mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.749mil|Location2.X=467.998mil|Location1.Y=906.848mil|Location2.Y=913.097mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R17-2(11.75mm,23.2mm) on Top Layer And Text "L1" (11.808mm,22.46mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=450.163mil|Location2.X=459.286mil|Location1.Y=921.127mil|Location2.Y=930.251mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=450.163mil|Location2.X=459.286mil|Location1.Y=921.127mil|Location2.Y=930.251mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.025mm &lt; 0.2mm) Between Pad R17-2(11.75mm,23.2mm) on Top Layer And Track (10.475mm,23.625mm)(13.324mm,23.625mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.025mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=437.82mil|Location2.X=444.07mil|Location1.Y=1010.655mil|Location2.Y=1016.904mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=437.82mil|Location2.X=444.07mil|Location1.Y=1010.655mil|Location2.Y=1016.904mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R9-1(11.5mm,25.55mm) on Top Layer And Text "D9" (10.639mm,25.835mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=458.853mil|Location2.X=465.102mil|Location1.Y=996.633mil|Location2.Y=1002.882mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=458.853mil|Location2.X=465.102mil|Location1.Y=996.633mil|Location2.Y=1002.882mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R9-1(11.5mm,25.55mm) on Top Layer And Text "R16" (9.957mm,24.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.442mil|Location2.X=467.692mil|Location1.Y=994.907mil|Location2.Y=1001.156mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.442mil|Location2.X=467.692mil|Location1.Y=994.907mil|Location2.Y=1001.156mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R9-1(11.5mm,25.55mm) on Top Layer And Text "R17" (11.808mm,24.263mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=455.736mil|Location2.X=461.986mil|Location1.Y=1034.144mil|Location2.Y=1040.393mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=455.736mil|Location2.X=461.986mil|Location1.Y=1034.144mil|Location2.Y=1040.393mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R9-2(11.5mm,26.45mm) on Top Layer And Text "D9" (10.639mm,25.835mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=458.853mil|Location2.X=465.102mil|Location1.Y=1037.171mil|Location2.Y=1043.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=458.853mil|Location2.X=465.102mil|Location1.Y=1037.171mil|Location2.Y=1043.42mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad R9-2(11.5mm,26.45mm) on Top Layer And Text "R16" (9.957mm,24.9mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=748.42mil|Location2.X=757.544mil|Location1.Y=1252.722mil|Location2.Y=1261.845mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=748.42mil|Location2.X=757.544mil|Location1.Y=1252.722mil|Location2.Y=1261.845mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-1(18.9mm,31.77mm) on Top Layer And Track (19.25mm,31.935mm)(19.95mm,31.935mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=557.839mil|Location2.X=566.963mil|Location1.Y=1157.383mil|Location2.Y=1166.507mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=557.839mil|Location2.X=566.963mil|Location1.Y=1157.383mil|Location2.Y=1166.507mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.034mm &lt; 0.2mm) Between Pad U1-10(14.115mm,29.585mm) on Top Layer And Text "R13" (11.448mm,29.122mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.034mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.449mil|Location2.X=562.698mil|Location1.Y=1160.413mil|Location2.Y=1166.662mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.449mil|Location2.X=562.698mil|Location1.Y=1160.413mil|Location2.Y=1166.662mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-10(14.115mm,29.585mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=534.573mil|Location2.X=540.822mil|Location1.Y=1167.354mil|Location2.Y=1173.604mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=534.573mil|Location2.X=540.822mil|Location1.Y=1167.354mil|Location2.Y=1173.604mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-10(14.115mm,29.585mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.482mil|Location2.X=538.731mil|Location1.Y=1142.473mil|Location2.Y=1148.722mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.482mil|Location2.X=538.731mil|Location1.Y=1142.473mil|Location2.Y=1148.722mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-11(14.115mm,28.935mm) on Top Layer And Text "R13" (11.448mm,29.122mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.449mil|Location2.X=562.698mil|Location1.Y=1142.545mil|Location2.Y=1148.794mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.449mil|Location2.X=562.698mil|Location1.Y=1142.545mil|Location2.Y=1148.794mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-11(14.115mm,28.935mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=530.398mil|Location2.X=539.522mil|Location1.Y=1141.383mil|Location2.Y=1150.507mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=530.398mil|Location2.X=539.522mil|Location1.Y=1141.383mil|Location2.Y=1150.507mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.02mm &lt; 0.2mm) Between Pad U1-11(14.115mm,28.935mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.02mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=539.295mil|Location2.X=545.545mil|Location1.Y=1140.748mil|Location2.Y=1146.997mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=539.295mil|Location2.X=545.545mil|Location1.Y=1140.748mil|Location2.Y=1146.997mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-11(14.115mm,28.935mm) on Top Layer And Text "R9" (11.454mm,27.41mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=547.78mil|Location2.X=554.029mil|Location1.Y=1111.982mil|Location2.Y=1118.232mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=547.78mil|Location2.X=554.029mil|Location1.Y=1111.982mil|Location2.Y=1118.232mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-12(14.115mm,28.285mm) on Top Layer And Text "R9" (11.454mm,27.41mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1081.001mil|Location2.Y=1087.251mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1081.001mil|Location2.Y=1087.251mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-13(14.115mm,27.635mm) on Top Layer And Text "R9" (11.454mm,27.41mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=530.674mil|Location2.X=539.798mil|Location1.Y=1066.95mil|Location2.Y=1076.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=530.674mil|Location2.X=539.798mil|Location1.Y=1066.95mil|Location2.Y=1076.074mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.133mm &lt; 0.2mm) Between Pad U1-14(14.115mm,26.985mm) on Top Layer And Text "R9" (11.454mm,27.41mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.133mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=544.651mil|Location2.X=553.775mil|Location1.Y=1048.952mil|Location2.Y=1058.076mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=544.651mil|Location2.X=553.775mil|Location1.Y=1048.952mil|Location2.Y=1058.076mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-14(14.115mm,26.985mm) on Top Layer And Track (13.95mm,25.935mm)(13.95mm,26.635mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=591.34mil|Location2.X=597.59mil|Location1.Y=1012.1mil|Location2.Y=1018.349mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=591.34mil|Location2.X=597.59mil|Location1.Y=1012.1mil|Location2.Y=1018.349mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-15(15mm,26.1mm) on Top Layer And Text "R17" (11.808mm,24.263mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=577.101mil|Location2.X=586.225mil|Location1.Y=1016.501mil|Location2.Y=1025.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=577.101mil|Location2.X=586.225mil|Location1.Y=1016.501mil|Location2.Y=1025.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-15(15mm,26.1mm) on Top Layer And Track (13.95mm,25.935mm)(14.65mm,25.935mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=616.466mil|Location2.X=622.716mil|Location1.Y=1013.612mil|Location2.Y=1019.862mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=616.466mil|Location2.X=622.716mil|Location1.Y=1013.612mil|Location2.Y=1019.862mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-16(15.65mm,26.1mm) on Top Layer And Text "R17" (11.808mm,24.263mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=748.42mil|Location2.X=757.544mil|Location1.Y=1016.501mil|Location2.Y=1025.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=748.42mil|Location2.X=757.544mil|Location1.Y=1016.501mil|Location2.Y=1025.625mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-21(18.9mm,26.1mm) on Top Layer And Track (19.25mm,25.935mm)(19.95mm,25.935mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=780.871mil|Location2.X=789.995mil|Location1.Y=1048.952mil|Location2.Y=1058.076mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=780.871mil|Location2.X=789.995mil|Location1.Y=1048.952mil|Location2.Y=1058.076mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-22(19.785mm,26.985mm) on Top Layer And Track (19.95mm,25.935mm)(19.95mm,26.635mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=780.871mil|Location2.X=789.995mil|Location1.Y=1220.271mil|Location2.Y=1229.395mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=780.871mil|Location2.X=789.995mil|Location1.Y=1220.271mil|Location2.Y=1229.395mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-28(19.785mm,30.885mm) on Top Layer And Track (19.95mm,31.235mm)(19.95mm,31.935mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=597.551mil|Location2.X=603.801mil|Location1.Y=1183.414mil|Location2.Y=1189.663mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=597.551mil|Location2.X=603.801mil|Location1.Y=1183.414mil|Location2.Y=1189.663mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-29(16.95mm,28.935mm) on Top Layer And Text "R13" (11.448mm,29.122mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=603.197mil|Location2.X=612.321mil|Location1.Y=1266.698mil|Location2.Y=1275.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=603.197mil|Location2.X=612.321mil|Location1.Y=1266.698mil|Location2.Y=1275.822mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.096mm &lt; 0.2mm) Between Pad U1-6(15.65mm,31.77mm) on Top Layer And Text "R10" (11.453mm,31.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.096mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=593.923mil|Location2.X=600.172mil|Location1.Y=1232.03mil|Location2.Y=1238.279mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=593.923mil|Location2.X=600.172mil|Location1.Y=1232.03mil|Location2.Y=1238.279mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-7(15mm,31.77mm) on Top Layer And Text "R10" (11.453mm,31.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=577.101mil|Location2.X=586.225mil|Location1.Y=1252.722mil|Location2.Y=1261.845mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=577.101mil|Location2.X=586.225mil|Location1.Y=1252.722mil|Location2.Y=1261.845mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-7(15mm,31.77mm) on Top Layer And Track (13.95mm,31.935mm)(14.65mm,31.935mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=573.056mil|Location2.X=579.306mil|Location1.Y=1219.316mil|Location2.Y=1225.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=573.056mil|Location2.X=579.306mil|Location1.Y=1219.316mil|Location2.Y=1225.566mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-8(14.115mm,30.885mm) on Top Layer And Text "R10" (11.453mm,31.119mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1219.316mil|Location2.Y=1225.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1219.316mil|Location2.Y=1225.566mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-8(14.115mm,30.885mm) on Top Layer And Text "R11" (10.647mm,31.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1219.316mil|Location2.Y=1225.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1219.316mil|Location2.Y=1225.566mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-8(14.115mm,30.885mm) on Top Layer And Text "R12" (9.86mm,31.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=569.073mil|Location2.X=575.322mil|Location1.Y=1208.173mil|Location2.Y=1214.422mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=569.073mil|Location2.X=575.322mil|Location1.Y=1208.173mil|Location2.Y=1214.422mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-8(14.115mm,30.885mm) on Top Layer And Text "R13" (11.448mm,29.122mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.983mil|Location2.X=566.107mil|Location1.Y=1207.939mil|Location2.Y=1217.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.983mil|Location2.X=566.107mil|Location1.Y=1207.939mil|Location2.Y=1217.063mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.077mm &lt; 0.2mm) Between Pad U1-8(14.115mm,30.885mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.077mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1208.164mil|Location2.Y=1214.413mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=532.112mil|Location2.X=538.361mil|Location1.Y=1208.164mil|Location2.Y=1214.413mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-8(14.115mm,30.885mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=544.651mil|Location2.X=553.775mil|Location1.Y=1220.271mil|Location2.Y=1229.395mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=544.651mil|Location2.X=553.775mil|Location1.Y=1220.271mil|Location2.Y=1229.395mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-8(14.115mm,30.885mm) on Top Layer And Track (13.95mm,31.235mm)(13.95mm,31.935mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=557.564mil|Location2.X=563.813mil|Location1.Y=1193.41mil|Location2.Y=1199.66mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=557.564mil|Location2.X=563.813mil|Location1.Y=1193.41mil|Location2.Y=1199.66mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-9(14.115mm,30.235mm) on Top Layer And Text "R13" (11.448mm,29.122mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.449mil|Location2.X=562.698mil|Location1.Y=1186.003mil|Location2.Y=1192.253mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=556.449mil|Location2.X=562.698mil|Location1.Y=1186.003mil|Location2.Y=1192.253mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-9(14.115mm,30.235mm) on Top Layer And Text "R14" (10.658mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=533.097mil|Location2.X=539.346mil|Location1.Y=1181.719mil|Location2.Y=1187.969mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=533.097mil|Location2.X=539.346mil|Location1.Y=1181.719mil|Location2.Y=1187.969mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.2mm) Between Pad U1-9(14.115mm,30.235mm) on Top Layer And Text "R15" (9.849mm,29.116mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID13AIAYZB3XR5JEWNPR3S2MJR5O4M3OBGKYW44WM3IU0BBMQKONIJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=513.429mil|Location2.X=534.704mil|Location1.Y=1148.075mil|Location2.Y=1178.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=513.429mil|Location2.X=534.704mil|Location1.Y=1148.075mil|Location2.Y=1178.458mil|Absolute=True">Net Antennae: Track (11.7mm,29.35mm)(13.23mm,29.35mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=513.429mil|Location2.X=534.704mil|Location1.Y=1096.894mil|Location2.Y=1127.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=513.429mil|Location2.X=534.704mil|Location1.Y=1096.894mil|Location2.Y=1127.277mil|Absolute=True">Net Antennae: Track (12.4mm,28.05mm)(13.23mm,28.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=512.248mil|Location2.X=533.523mil|Location1.Y=1224.847mil|Location2.Y=1255.23mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=512.248mil|Location2.X=533.523mil|Location1.Y=1224.847mil|Location2.Y=1255.23mil|Absolute=True">Net Antennae: Track (12.4mm,31.3mm)(13.2mm,31.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=512.248mil|Location2.X=533.523mil|Location1.Y=1201.224mil|Location2.Y=1231.608mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=512.248mil|Location2.X=533.523mil|Location1.Y=1201.224mil|Location2.Y=1231.608mil|Absolute=True">Net Antennae: Track (12.5mm,30.7mm)(13.2mm,30.7mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=625.043mil|Location2.X=646.318mil|Location1.Y=1259.689mil|Location2.Y=1290.072mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=625.043mil|Location2.X=646.318mil|Location1.Y=1259.689mil|Location2.Y=1290.072mil|Absolute=True">Net Antennae: Track (16.065mm,32.185mm)(16.065mm,32.965mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=789.807mil|Location2.X=811.082mil|Location1.Y=1148.075mil|Location2.Y=1178.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=789.807mil|Location2.X=811.082mil|Location1.Y=1148.075mil|Location2.Y=1178.458mil|Absolute=True">Net Antennae: Track (20.25mm,29.35mm)(21.152mm,30.252mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=795.777mil|Location2.X=817.052mil|Location1.Y=1173.665mil|Location2.Y=1204.049mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=795.777mil|Location2.X=817.052mil|Location1.Y=1173.665mil|Location2.Y=1204.049mil|Absolute=True">Net Antennae: Track (20.402mm,30mm)(21.006mm,30.605mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=803.715mil|Location2.X=824.99mil|Location1.Y=1201.224mil|Location2.Y=1231.608mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=803.715mil|Location2.X=824.99mil|Location1.Y=1201.224mil|Location2.Y=1231.608mil|Absolute=True">Net Antennae: Track (20.603mm,30.7mm)(20.86mm,30.957mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=807.902mil|Location2.X=829.176mil|Location1.Y=1225.224mil|Location2.Y=1255.608mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=807.902mil|Location2.X=829.176mil|Location1.Y=1225.224mil|Location2.Y=1255.608mil|Absolute=True">Net Antennae: Track (20.71mm,31.31mm)(47.44mm,31.31mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=382.327mil|Location2.X=420.743mil|Location1.Y=827.209mil|Location2.Y=885.962mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=382.327mil|Location2.X=420.743mil|Location1.Y=827.209mil|Location2.Y=885.962mil|Absolute=True">Net Antennae: Via (10.1mm,21.4mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=462.725mil|Location2.X=501.141mil|Location1.Y=1116.671mil|Location2.Y=1175.424mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=462.725mil|Location2.X=501.141mil|Location1.Y=1116.671mil|Location2.Y=1175.424mil|Absolute=True">Net Antennae: Via (12.142mm,28.752mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBYKISDZ0R5WKEZ51VMK4NPV1COB55KGITAXDKXK5QKRZ2FKBV5MH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5560.399mil|Location2.X=5592.751mil|Location1.Y=1358.627mil|Location2.Y=1379.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5560.399mil|Location2.X=5592.751mil|Location1.Y=1358.627mil|Location2.Y=1379.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.45mm &lt; 0.5mm) Between Board Edge And Pad D1_LED12-(141.5mm,33.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=993.47mil|Location2.X=1025.822mil|Location1.Y=1358.627mil|Location2.Y=1379.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=993.47mil|Location2.X=1025.822mil|Location1.Y=1358.627mil|Location2.Y=1379.562mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.45mm &lt; 0.5mm) Between Board Edge And Pad D1_LED81-(25.5mm,33.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=353.213mil|Location2.X=374.148mil|Location1.Y=991.666mil|Location2.Y=1024.019mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=353.213mil|Location2.X=374.148mil|Location1.Y=991.666mil|Location2.Y=1024.019mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.475mm &lt; 0.5mm) Between Board Edge And Pad J1-(10.275mm,26.844mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=601.044mil|Location2.X=648.997mil|Location1.Y=1387.468mil|Location2.Y=1401.592mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=601.044mil|Location2.X=648.997mil|Location1.Y=1387.468mil|Location2.Y=1401.592mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "C1" (14.43mm,34.065mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=492.245mil|Location2.X=540.198mil|Location1.Y=1405.813mil|Location2.Y=1419.936mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=492.245mil|Location2.X=540.198mil|Location1.Y=1405.813mil|Location2.Y=1419.936mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "C2" (11.413mm,34.996mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=383.734mil|Location2.X=431.687mil|Location1.Y=779.373mil|Location2.Y=793.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=383.734mil|Location2.X=431.687mil|Location1.Y=779.373mil|Location2.Y=793.496mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "C4" (11.196mm,20.737mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=506.553mil|Location2.X=554.506mil|Location1.Y=750.239mil|Location2.Y=764.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=506.553mil|Location2.X=554.506mil|Location1.Y=750.239mil|Location2.Y=764.362mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "C5" (14.315mm,20.248mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5519.461mil|Location2.X=5567.414mil|Location1.Y=1413.393mil|Location2.Y=1427.516mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5519.461mil|Location2.X=5567.414mil|Location1.Y=1413.393mil|Location2.Y=1427.516mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "D1_LED12" (139.358mm,35.318mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=951.925mil|Location2.X=999.879mil|Location1.Y=1412.929mil|Location2.Y=1427.052mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=951.925mil|Location2.X=999.879mil|Location1.Y=1412.929mil|Location2.Y=1427.052mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "D1_LED81" (23.343mm,35.306mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5470.068mil|Location2.X=5502.42mil|Location1.Y=1361.232mil|Location2.Y=1382.167mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5470.068mil|Location2.X=5502.42mil|Location1.Y=1361.232mil|Location2.Y=1382.167mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.318mm &lt; 0.5mm) Between Board Edge And Text "R1_LED12" (139.46mm,32.905mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=913.295mil|Location2.X=961.249mil|Location1.Y=1405.901mil|Location2.Y=1420.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=913.295mil|Location2.X=961.249mil|Location1.Y=1405.901mil|Location2.Y=1420.024mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "R1_LED81" (22.361mm,35.001mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=693.102mil|Location2.X=741.056mil|Location1.Y=752.873mil|Location2.Y=766.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=693.102mil|Location2.X=741.056mil|Location1.Y=752.873mil|Location2.Y=766.996mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "R18" (15.88mm,20.382mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=728.016mil|Location2.X=775.97mil|Location1.Y=752.873mil|Location2.Y=766.996mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=728.016mil|Location2.X=775.97mil|Location1.Y=752.873mil|Location2.Y=766.996mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "R19" (16.767mm,20.382mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=758.427mil|Location2.X=806.381mil|Location1.Y=753.09mil|Location2.Y=767.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=758.427mil|Location2.X=806.381mil|Location1.Y=753.09mil|Location2.Y=767.213mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "R21" (17.666mm,20.393mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=566.839mil|Location2.X=614.792mil|Location1.Y=1386.858mil|Location2.Y=1400.981mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-1-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=566.839mil|Location2.X=614.792mil|Location1.Y=1386.858mil|Location2.Y=1400.981mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "U1" (13.561mm,34.034mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
