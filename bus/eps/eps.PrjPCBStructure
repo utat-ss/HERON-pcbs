@@ -1,5 +1,6 @@
 Record=TopLevelDocument|FileName=main.SchDoc
 Record=SheetSymbol|SourceDocument=main.SchDoc|Designator=MAIN|SchDesignator=MAIN|FileName=eps.SchDoc|SymbolType=Normal|RawFileName=eps.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=main.SchDoc|Designator=TRANSCEIVER|SchDesignator=TRANSCEIVER|FileName=transceiver.SchDoc|SymbolType=Normal|RawFileName=transceiver.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=eps.SchDoc|Designator=BATTERY|SchDesignator=BATTERY|FileName=batt.SchDoc|SymbolType=Normal|RawFileName=batt.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=eps.SchDoc|Designator=BOOST|SchDesignator=BOOST|FileName=boost.SchDoc|SymbolType=Normal|RawFileName=boost.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=eps.SchDoc|Designator=BUCK-BOOST|SchDesignator=BUCK-BOOST|FileName=buck_boost.SchDoc|SymbolType=Normal|RawFileName=buck_boost.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
