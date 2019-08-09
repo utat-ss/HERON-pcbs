@@ -190,6 +190,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RIIETUJU
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for syspcb\Design Rule Check - syspcb.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
