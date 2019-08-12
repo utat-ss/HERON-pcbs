@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for SolarPanel
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -71,13 +71,30 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JWQDRYWB
 
-[Parameter1]
-Name=PROJ_VERSION
-Value=2.1
+[Document3]
+DocumentPath=SolarPanel.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
-[Parameter2]
+[Parameter1]
 Name=PROJ_AUTHOR
 Value=Zeng, Dylan V.
+
+[Parameter2]
+Name=PROJ_VERSION
+Value=2.1
 
 [Configuration1]
 Name=Sources
@@ -126,7 +143,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for SolarPanel
 
 [OutputGroup1]
 Name=Netlist Outputs

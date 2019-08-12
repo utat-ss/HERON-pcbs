@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 8:31:42 PM On 2019-08-11
+
+Output: AutoCAD dwg/dxf File PCB
+Type  : AutoCAD PCB
+From  : PCB Document [SolarPanel_+X_v2.PcbDoc]
+   Generated File[SolarPanel_+X_v2.DWG]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 8:31:42 PM On 2019-08-11
