@@ -1,13 +1,28 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : PCB Document [eps.PcbDoc]
-   Generated File[eps-Plated.TXT]
-   Generated File[eps-NonPlated.TXT]
-   Generated File[eps.LDP]
-   Generated File[eps.DRR]
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 1:17:40 AM On 2019-08-15
+
+Output: Gerber Files
+Type  : Gerber
+From  : PCB Document [eps-flight.PcbDoc]
+   Generated File[eps-flight.GTO]
+   Generated File[eps-flight.GTP]
+   Generated File[eps-flight.GTS]
+   Generated File[eps-flight.GTL]
+   Generated File[eps-flight.G1]
+   Generated File[eps-flight.G2]
+   Generated File[eps-flight.GBL]
+   Generated File[eps-flight.GBS]
+   Generated File[eps-flight.GBP]
+   Generated File[eps-flight.GBO]
+   Generated File[eps-flight.GM2]
+   Generated File[eps-flight.GM15]
+   Generated File[eps-flight.RUL]
+   Generated File[eps-flight.EXTREP]
+   Generated File[eps-flight.REP]
 
 
-Files Generated   : 4
+Files Generated   : 15
 Documents Printed : 0
 
-Finished Output Generation At 12:30:36 PM On 2019-01-26
+Finished Output Generation At 1:17:43 AM On 2019-08-15
