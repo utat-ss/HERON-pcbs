@@ -1,0 +1,43 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: obc-comm.GBR   8/15/2019  3:35:59 PM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.G1                 GND                                     
+.G2                 +3V3                                    
+.GPB                Bottom Pad Master                       
+.GPT                Top Pad Master                          
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GTP1               Top Paste                               
+.GTP2               Top Paste                               
+.GBO                Bottom Overlay                          
+.GTP3               Top Paste                               
+.GTS1               Top Solder                              
+.GKO                Keep-Out Layer                          
+.GTP4               Top Paste                               
+.GM1                Mechanical 1                            
+.GTP5               Top Paste                               
+.GM2                Route Tool Path                         
+.GTS2               Top Solder                              
+.GM4                Mechanical 4                            
+.GTP6               Top Paste                               
+.GM15               Mechanical 15                           
+.GM13               Mechanical 13                           
+.GTS3               Top Solder                              
+.GTP7               Top Paste                               
+.GTS4               Top Solder                              
+.GTP8               Top Paste                               
+.GTS5               Top Solder                              
+.GTS6               Top Solder                              
+.GTS7               Top Solder                              
+.GTS8               Top Solder                              
+------------------------------------------------------------------------------------------
