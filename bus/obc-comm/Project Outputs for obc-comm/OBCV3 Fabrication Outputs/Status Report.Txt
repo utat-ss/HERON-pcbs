@@ -1,0 +1,46 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [obc-comm.PrjPCB]
+   Generated File[obc-comm.GTO]
+   Generated File[obc-comm.GTP3]
+   Generated File[obc-comm.GTP2]
+   Generated File[obc-comm.GTP1]
+   Generated File[obc-comm.GTP4]
+   Generated File[obc-comm.GTP7]
+   Generated File[obc-comm.GTP8]
+   Generated File[obc-comm.GTP5]
+   Generated File[obc-comm.GTP6]
+   Generated File[obc-comm.GTP]
+   Generated File[obc-comm.GTS3]
+   Generated File[obc-comm.GTS4]
+   Generated File[obc-comm.GTS1]
+   Generated File[obc-comm.GTS2]
+   Generated File[obc-comm.GTS6]
+   Generated File[obc-comm.GTS7]
+   Generated File[obc-comm.GTS8]
+   Generated File[obc-comm.GTS5]
+   Generated File[obc-comm.GTS]
+   Generated File[obc-comm.GTL]
+   Generated File[obc-comm.G1]
+   Generated File[obc-comm.G2]
+   Generated File[obc-comm.GBL]
+   Generated File[obc-comm.GBS]
+   Generated File[obc-comm.GBP]
+   Generated File[obc-comm.GBO]
+   Generated File[obc-comm.GM1]
+   Generated File[obc-comm.GM2]
+   Generated File[obc-comm.GM4]
+   Generated File[obc-comm.GM13]
+   Generated File[obc-comm.GM15]
+   Generated File[obc-comm.GKO]
+   Generated File[obc-comm.GPT]
+   Generated File[obc-comm.GPB]
+   Generated File[obc-comm.RUL]
+   Generated File[obc-comm.EXTREP]
+   Generated File[obc-comm.REP]
+
+
+Files Generated   : 37
+Documents Printed : 0
+
+Finished Output Generation At 12:54:24 AM On 8/15/2019
