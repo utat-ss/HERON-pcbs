@@ -182,6 +182,14 @@ DocumentUniqueId=RIIETUJU
 DocumentPath=Project Outputs for systems_pcb\Design Rule Check - systems_pcb.html
 DItemRevisionGUID=
 
+[Parameter1]
+Name=ProjectDrawnBy
+Value=Bruno Almeida
+
+[Parameter2]
+Name=ProjectRevision
+Value=v3.3
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
