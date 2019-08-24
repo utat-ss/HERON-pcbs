@@ -178,17 +178,34 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RIIETUJU
 
+[Document9]
+DocumentPath=can_comparators.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=5
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FBMIFITH
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for systems_pcb\Design Rule Check - systems_pcb.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=ProjectDrawnBy
-Value=Bruno Almeida
-
-[Parameter2]
 Name=ProjectRevision
 Value=v3.3
+
+[Parameter2]
+Name=ProjectDrawnBy
+Value=Bruno Almeida
 
 [Configuration1]
 Name=Sources
