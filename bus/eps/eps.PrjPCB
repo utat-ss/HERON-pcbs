@@ -332,23 +332,6 @@ GenerateClassCluster=0
 DocumentUniqueId=PWSPPUYQ
 
 [Document18]
-DocumentPath=eps-test.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=XQTOLCCT
-
-[Document19]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-ADS7953.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -365,7 +348,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JSXAMIYP
 
-[Document20]
+[Document19]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\heater-control-comparator.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -382,7 +365,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LWJAXOKY
 
-[Document21]
+[Document20]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\led-monitoring-SN74HC365PW.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -399,7 +382,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QTVDTBSU
 
-[Document22]
+[Document21]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-ATMEGA64M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -416,7 +399,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TUFLFTKC
 
-[Document23]
+[Document22]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\micro-circuit-ATMEGA64M1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -433,7 +416,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RSUPJEUS
 
-[Document24]
+[Document23]
 DocumentPath=dep-switches.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -450,7 +433,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CVIBLMKI
 
-[Document25]
+[Document24]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\adc-circuit-ADS7953.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -467,7 +450,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PDGOQCRF
 
-[Document26]
+[Document25]
 DocumentPath=dep-switch-TPS22959DNYT.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -484,7 +467,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HFFKOEHV
 
-[Document27]
+[Document26]
 DocumentPath=current-limiter.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -501,7 +484,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FIWUOGIT
 
-[Document28]
+[Document27]
 DocumentPath=..\..\pcbs-common\general-designs\schematics\curr-mon-INA214-Q1.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -518,7 +501,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NORYRURL
 
-[Document29]
+[Document28]
 DocumentPath=eps-flight.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -535,7 +518,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DJGBTXGI
 
-[Document30]
+[Document29]
 DocumentPath=eps-flight.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -552,7 +535,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document31]
+[Document30]
 DocumentPath=transceiver.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
