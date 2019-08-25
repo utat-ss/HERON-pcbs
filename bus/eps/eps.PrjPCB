@@ -61,7 +61,7 @@ DocumentUniqueId=QQTIYHKH
 
 [Document2]
 DocumentPath=main.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -78,7 +78,7 @@ DocumentUniqueId=TBYBBDDM
 
 [Document3]
 DocumentPath=eps.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -95,7 +95,7 @@ DocumentUniqueId=XILOEQRN
 
 [Document4]
 DocumentPath=boost.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -112,7 +112,7 @@ DocumentUniqueId=QMHSFLLX
 
 [Document5]
 DocumentPath=batt.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -129,7 +129,7 @@ DocumentUniqueId=UBASXLKW
 
 [Document6]
 DocumentPath=buck_boost.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -146,7 +146,7 @@ DocumentUniqueId=VKGCLILK
 
 [Document7]
 DocumentPath=solar.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -180,7 +180,7 @@ DocumentUniqueId=NKOKIXIE
 
 [Document9]
 DocumentPath=eps_digital.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -265,7 +265,7 @@ DocumentUniqueId=
 
 [Document14]
 DocumentPath=eps_imu.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -316,7 +316,7 @@ DocumentUniqueId=SMAGLYCI
 
 [Document17]
 DocumentPath=heaters-sensors.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -418,7 +418,7 @@ DocumentUniqueId=RSUPJEUS
 
 [Document23]
 DocumentPath=dep-switches.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -452,7 +452,7 @@ DocumentUniqueId=PDGOQCRF
 
 [Document25]
 DocumentPath=dep-switch-TPS22959DNYT.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -469,7 +469,7 @@ DocumentUniqueId=HFFKOEHV
 
 [Document26]
 DocumentPath=current-limiter.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -537,7 +537,7 @@ DocumentUniqueId=
 
 [Document30]
 DocumentPath=transceiver.SchDoc
-AnnotationEnabled=1
+AnnotationEnabled=0
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -822,7 +822,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=NPIDC6332 (HP LaserJet MFP M130nw)
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
