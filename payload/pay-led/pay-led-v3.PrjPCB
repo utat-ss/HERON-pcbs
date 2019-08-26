@@ -207,6 +207,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YBHIWSVR
 
+[Document11]
+DocumentPath=pay-led-2-v3.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YNUGNGNU
+
 [ProjectVariant1]
 UniqueID=255D5400-18A0-4C50-B4E6-5A64B84335F6
 Description=pay-led-2
@@ -233,6 +250,10 @@ Value=0b011
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for pay-led-v3\Design Rule Check - pay-led-1-v3.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for pay-led-v3\Design Rule Check - pay-led-2-v3.html
 DItemRevisionGUID=
 
 [Parameter1]

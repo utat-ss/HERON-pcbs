@@ -1,0 +1,89 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc
+Date     : 2019-08-25
+Time     : 8:24:53 PM
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (IsComponent),(IsComponent)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Un-Connected Pin Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=25.4mm) (Preferred=0.2mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.15mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "!" (121mm,26.6mm) on Top Overlay 
+Rule Violations :1
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Waived Violations Of Rule : Un-Connected Pin Constraint ( (All) )
+   Waived Violation between Un-Connected Pin Constraint: Pad J1-(148.25mm,26.844mm) on Bottom Layer Waived by Dylan Vogel at 2019-08-25 8:16:33 PMSupposed to be unconnected
+   Waived Violation between Un-Connected Pin Constraint: Pad J1-(156.7mm,26.844mm) on Bottom Layer Waived by Dylan Vogel at 2019-08-25 8:16:33 PMSupposed to be unconnected
+   Waived Violation between Un-Connected Pin Constraint: Pad U1-10(153.5mm,28.9mm) on Top Layer Waived by Dylan Vogel at 2019-08-25 8:16:33 PMSupposed to be unconnected
+   Waived Violation between Un-Connected Pin Constraint: Pad U1-7(152.615mm,26.715mm) on Top Layer Waived by Dylan Vogel at 2019-08-25 8:16:33 PMSupposed to be unconnected
+Waived Violations :4
+
+Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.075mm < 0.1mm) Between Pad C3-2(149.7mm,22.3mm) on Top Layer And Pad C4-2(149mm,21.8mm) on Top Layer [Top Solder] Mask Sliver [0.075mm]Waived by Dylan Vogel at 2019-08-25 8:19:24 PMNot important
+Waived Violations :1
+
+Waived Violations Of Rule : Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.125mm < 0.2mm) Between Pad D9-1(149.125mm,24.5mm) on Top Layer And Track (148.55mm,23.825mm)(148.55mm,25.175mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.125mm < 0.2mm) Between Pad D9-1(149.125mm,24.5mm) on Top Layer And Track (148.55mm,23.825mm)(151.399mm,23.825mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.125mm < 0.2mm) Between Pad D9-1(149.125mm,24.5mm) on Top Layer And Track (148.55mm,25.175mm)(151.399mm,25.175mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.125mm < 0.2mm) Between Pad D9-2(150.625mm,24.5mm) on Top Layer And Track (148.55mm,23.825mm)(151.399mm,23.825mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.125mm < 0.2mm) Between Pad D9-2(150.625mm,24.5mm) on Top Layer And Track (148.55mm,25.175mm)(151.399mm,25.175mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.149mm < 0.2mm) Between Pad D9-2(150.625mm,24.5mm) on Top Layer And Track (151.374mm,23.977mm)(151.374mm,25.027mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.149mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-1(148.715mm,26.715mm) on Top Layer And Track (147.665mm,26.55mm)(148.365mm,26.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-14(153.5mm,31.5mm) on Top Layer And Track (153.665mm,31.85mm)(153.665mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-15(152.615mm,32.385mm) on Top Layer And Track (152.965mm,32.55mm)(153.665mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-21(148.715mm,32.385mm) on Top Layer And Track (147.665mm,32.55mm)(148.365mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-22(147.83mm,31.5mm) on Top Layer And Track (147.665mm,31.85mm)(147.665mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-28(147.83mm,27.6mm) on Top Layer And Track (147.665mm,26.55mm)(147.665mm,27.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-7(152.615mm,26.715mm) on Top Layer And Track (152.965mm,26.55mm)(153.665mm,26.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (0.122mm < 0.2mm) Between Pad U1-8(153.5mm,27.6mm) on Top Layer And Track (153.665mm,26.55mm)(153.665mm,27.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]Waived by UTAT Space Systems at 2019-08-25 8:24:17 PMPart of footprint
+Waived Violations :14
+
+
+Violations Detected : 1
+Waived Violations : 19
+Time Elapsed        : 00:00:00

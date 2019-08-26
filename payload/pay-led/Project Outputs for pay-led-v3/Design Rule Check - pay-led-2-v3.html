@@ -1,0 +1,441 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2019-08-25</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">8:24:53 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc" class="file"><acronym title="C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc">C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">1</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">19</td></tr>
+</table>
+</td>
+</table><a name="IDHR23XOZHIIVZCFFBMOYKZFGMF5FSPH0EPALLLDXNCQMXQY3KXUP"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM11QPITI4RGQPTQJSZDOATK1LJKDPSWPKRBNMLDZUYPPSPSP2NWN">Clearance Constraint (Gap=0.152mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1KUBFU0TE4GWFSVOQ3C3ZAJSYMHBOF4CTC414CMWV3C1M2B1RYXC">Clearance Constraint (Gap=0.254mm) (IsComponent),(IsComponent)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOF32NB0EKT3NJ10CSQ5XABZ11JXWCHBQKLSZRPKNMBHOXAVSRTJO">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVXEPLNZVQOCHDNS0Z4YIYCV2QNODXIZYYVBEXAMNBMTDZRTZJLQE">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4ZLZ5FNTSZRYJGVUIE1OUWWZBDGSGMBAZ2B05OIFYPD1FWHX2IRC">Un-Connected Pin Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYHVYICKWRV23M5Z5R2ZDBEM3LKWM45OUADSWZUMKVA0D3WVIMGDE">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDANZU13VXAF0FLODK5OG5ZSV01BEH0PDUZZV5SHWCGD2MKCUOTPN">Width Constraint (Min=0.152mm) (Max=25.4mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDX2ST0Y3MSUT4M3DKLYXUC0XDRIN0AMEKI2Q3IHM1WVLWQO1PBUXM">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2HU5PKWEEGQ1CQ0J1YCGZCYEKE0GKR5TUDJEVKLLKU5C5KCOLNEG">Minimum Annular Ring (Minimum=0.15mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWUU14HHUIFUMI51N2ZXFI4DN4N1UJ1JXD5PFUZHWDFZGUDK3DO0K">Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFKHQCTHVDZUFCZBMPOPMXEFU5BNOBJ44SOTTMNNGO4JMF1HGKKGG">Hole To Hole Clearance (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNONPK2YEH0TIBIV12OMG05GCNEZ3Z0D4MUX31IG2X3FVURQNWHNH">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIYOQOKIEV0HMHLYIBANANG3WEPHXBBAQD4PBNZEPY0FHMBR1VRGM">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEEMSFMMTBF02F5UUZKSIM103WPEFT2SXPBYBRKIZO2W4PAOXRQ3B">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKYRY525N4FKTJWGECFXTHISYGN4T1ODLUNA1B4DGFIIKFKIAME1I">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDODQIO31XKOMTKAAJFXAQ04PASK3VEWQ1KIMB1QHTGUT2BGLWHXFM">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDAF5WBFIADLEPHJUKY5DW3KONPU2ESJKTGVO4RODI2T03UQ5ZRMP">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">1</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ1DECRC2103KEBBH3XTRVSG3BPBYWJJOLGXPDDO4OSXFOXAU1YMH">Un-Connected Pin Constraint ( (All) )</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDC5Z5XF4K0HJKL5VIYNT5YJ2ALFCYXHDXNVWPVYE4AN1WTCWYFOLJ">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGW0YMDMC021JJTN0UDZ1PDDOONEXLA02Y4JTBPLT0I5XZKJ1FPQL">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">19</td>
+</tr>
+</table><br><a name="ID2TBIW2SNI3WFMSOBMPUJI1R2HERNNN0GWTBP3LK4OSH4X0MIYW5"><h2>Rule Violations</h2></a><a name="IDODQIO31XKOMTKAAJFXAQ04PASK3VEWQ1KIMB1QHTGUT2BGLWHXFM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4996.875mil|Location2.X=5044.829mil|Location1.Y=1378.765mil|Location2.Y=1392.889mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4996.875mil|Location2.X=5044.829mil|Location1.Y=1378.765mil|Location2.Y=1392.889mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Text "!" (121mm,26.6mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDFHCCM3QQRO4HPUL2EM513UGDENIYBSVQCBISZDFMI2RVFSUCZEHB"><h2>Waived Violations</h2></a><a name="IDZ1DECRC2103KEBBH3XTRVSG3BPBYWJJOLGXPDDO4OSXFOXAU1YMH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Un-Connected Pin Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5790.807mil|Location2.X=5882.421mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5790.807mil|Location2.X=5882.421mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True">Un-Connected Pin Constraint: Pad J1-(148.25mm,26.844mm) on Bottom Layer </acronym></a><br>Waived by Dylan Vogel at 2019-08-25 8:16:33 PM<br>Supposed to be unconnected</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6123.484mil|Location2.X=6215.099mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6123.484mil|Location2.X=6215.099mil|Location1.Y=1011.051mil|Location2.Y=1102.665mil|Absolute=True">Un-Connected Pin Constraint: Pad J1-(156.7mm,26.844mm) on Bottom Layer </acronym></a><br>Waived by Dylan Vogel at 2019-08-25 8:16:33 PM<br>Supposed to be unconnected</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6020.335mil|Location2.X=6066.279mil|Location1.Y=1114.823mil|Location2.Y=1160.768mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6020.335mil|Location2.X=6066.279mil|Location1.Y=1114.823mil|Location2.Y=1160.768mil|Absolute=True">Un-Connected Pin Constraint: Pad U1-10(153.5mm,28.9mm) on Top Layer </acronym></a><br>Waived by Dylan Vogel at 2019-08-25 8:16:33 PM<br>Supposed to be unconnected</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5985.492mil|Location2.X=6031.437mil|Location1.Y=1028.799mil|Location2.Y=1074.744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5985.492mil|Location2.X=6031.437mil|Location1.Y=1028.799mil|Location2.Y=1074.744mil|Absolute=True">Un-Connected Pin Constraint: Pad U1-7(152.615mm,26.715mm) on Top Layer </acronym></a><br>Waived by Dylan Vogel at 2019-08-25 8:16:33 PM<br>Supposed to be unconnected</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDC5Z5XF4K0HJKL5VIYNT5YJ2ALFCYXHDXNVWPVYE4AN1WTCWYFOLJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5880.773mil|Location2.X=5885.96mil|Location1.Y=863.548mil|Location2.Y=868.735mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5880.773mil|Location2.X=5885.96mil|Location1.Y=863.548mil|Location2.Y=868.735mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.075mm &lt; 0.1mm) Between Pad C3-2(149.7mm,22.3mm) on Top Layer And Pad C4-2(149mm,21.8mm) on Top Layer [Top Solder] Mask Sliver [0.075mm]</acronym></a><br>Waived by Dylan Vogel at 2019-08-25 8:19:24 PM<br>Not important</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDGW0YMDMC021JJTN0UDZ1PDDOONEXLA02Y4JTBPLT0I5XZKJ1FPQL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5850.261mil|Location2.X=5859.385mil|Location1.Y=977.721mil|Location2.Y=986.846mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5850.261mil|Location2.X=5859.385mil|Location1.Y=977.721mil|Location2.Y=986.846mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-1(149.125mm,24.5mm) on Top Layer And Track (148.55mm,23.825mm)(148.55mm,25.175mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5880.281mil|Location2.X=5889.405mil|Location1.Y=939.828mil|Location2.Y=948.952mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5880.281mil|Location2.X=5889.405mil|Location1.Y=939.828mil|Location2.Y=948.952mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-1(149.125mm,24.5mm) on Top Layer And Track (148.55mm,23.825mm)(151.399mm,23.825mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5852.722mil|Location2.X=5861.846mil|Location1.Y=980.182mil|Location2.Y=989.306mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5852.722mil|Location2.X=5861.846mil|Location1.Y=980.182mil|Location2.Y=989.306mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-1(149.125mm,24.5mm) on Top Layer And Track (148.55mm,25.175mm)(151.399mm,25.175mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5939.336mil|Location2.X=5948.46mil|Location1.Y=939.828mil|Location2.Y=948.952mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5939.336mil|Location2.X=5948.46mil|Location1.Y=939.828mil|Location2.Y=948.952mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-2(150.625mm,24.5mm) on Top Layer And Track (148.55mm,23.825mm)(151.399mm,23.825mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5911.777mil|Location2.X=5920.901mil|Location1.Y=980.182mil|Location2.Y=989.306mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5911.777mil|Location2.X=5920.901mil|Location1.Y=980.182mil|Location2.Y=989.306mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.125mm &lt; 0.2mm) Between Pad D9-2(150.625mm,24.5mm) on Top Layer And Track (148.55mm,25.175mm)(151.399mm,25.175mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.125mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5942.269mil|Location2.X=5951.393mil|Location1.Y=942.288mil|Location2.Y=951.413mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5942.269mil|Location2.X=5951.393mil|Location1.Y=942.288mil|Location2.Y=951.413mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.149mm &lt; 0.2mm) Between Pad D9-2(150.625mm,24.5mm) on Top Layer And Track (151.374mm,23.977mm)(151.374mm,25.027mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.149mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5841.471mil|Location2.X=5850.595mil|Location1.Y=1040.714mil|Location2.Y=1049.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5841.471mil|Location2.X=5850.595mil|Location1.Y=1040.714mil|Location2.Y=1049.838mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-1(148.715mm,26.715mm) on Top Layer And Track (147.665mm,26.55mm)(148.365mm,26.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.241mil|Location2.X=6054.365mil|Location1.Y=1244.483mil|Location2.Y=1253.607mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.241mil|Location2.X=6054.365mil|Location1.Y=1244.483mil|Location2.Y=1253.607mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-14(153.5mm,31.5mm) on Top Layer And Track (153.665mm,31.85mm)(153.665mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6012.79mil|Location2.X=6021.914mil|Location1.Y=1276.934mil|Location2.Y=1286.058mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6012.79mil|Location2.X=6021.914mil|Location1.Y=1276.934mil|Location2.Y=1286.058mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-15(152.615mm,32.385mm) on Top Layer And Track (152.965mm,32.55mm)(153.665mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5841.471mil|Location2.X=5850.595mil|Location1.Y=1276.934mil|Location2.Y=1286.058mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5841.471mil|Location2.X=5850.595mil|Location1.Y=1276.934mil|Location2.Y=1286.058mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-21(148.715mm,32.385mm) on Top Layer And Track (147.665mm,32.55mm)(148.365mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5809.021mil|Location2.X=5818.145mil|Location1.Y=1244.483mil|Location2.Y=1253.607mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5809.021mil|Location2.X=5818.145mil|Location1.Y=1244.483mil|Location2.Y=1253.607mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-22(147.83mm,31.5mm) on Top Layer And Track (147.665mm,31.85mm)(147.665mm,32.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5809.021mil|Location2.X=5818.145mil|Location1.Y=1073.164mil|Location2.Y=1082.288mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5809.021mil|Location2.X=5818.145mil|Location1.Y=1073.164mil|Location2.Y=1082.288mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-28(147.83mm,27.6mm) on Top Layer And Track (147.665mm,26.55mm)(147.665mm,27.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6012.79mil|Location2.X=6021.914mil|Location1.Y=1040.714mil|Location2.Y=1049.838mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6012.79mil|Location2.X=6021.914mil|Location1.Y=1040.714mil|Location2.Y=1049.838mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-7(152.615mm,26.715mm) on Top Layer And Track (152.965mm,26.55mm)(153.665mm,26.55mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.241mil|Location2.X=6054.365mil|Location1.Y=1073.164mil|Location2.Y=1082.288mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\vogel\Files\Altium\pcbs\payload\pay-led\pay-led-2-v3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6045.241mil|Location2.X=6054.365mil|Location1.Y=1073.164mil|Location2.Y=1082.288mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.122mm &lt; 0.2mm) Between Pad U1-8(153.5mm,27.6mm) on Top Layer And Track (153.665mm,26.55mm)(153.665mm,27.25mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.122mm]</acronym></a><br>Waived by UTAT Space Systems at 2019-08-25 8:24:17 PM<br>Part of footprint</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
