@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
 Date     : 2019-08-26
-Time     : 1:09:19 AM
+Time     : 1:21:26 AM
 
 WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
    Polygon named: Bottom Layer-+PACK In net +PACK On Bottom Layer
@@ -17,22 +17,15 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net +2V5 Between Pad C55-2(39.105mm,53.837mm) on Top Layer And Pad R58-2(43.236mm,22.302mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R82-1(57.849mm,30.426mm) on Top Layer And Pad C61-1(58.572mm,30.473mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net RTC_VBATT Between Pad J2-17(30.59mm,59.44mm) on Top Layer [Unplated] And Pad RTC_BATT-1(48.385mm,57.099mm) on Bottom Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net +2V5 Between Pad U15-31(43.237mm,56.591mm) on Top Layer And Pad R59-2(51.365mm,51.287mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad R59-2(51.365mm,51.287mm) on Top Layer And Pad U23_PACK_IMON-1(63.243mm,46.878mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +2V5 Between Via (41.137mm,50.342mm) from Top Layer to Bottom Layer And Pad R59-2(51.365mm,51.287mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad R60-2(69.027mm,52.818mm) on Top Layer And Pad THM1-1(86.807mm,55.901mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad U23_PACK_IMON-1(63.243mm,46.878mm) on Top Layer And Pad R60-2(69.027mm,52.818mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net LED2 Between Pad R69-1(50.153mm,85.197mm) on Top Layer And Track (50.153mm,85.446mm)(50.153mm,86.639mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad THM2-1(86.807mm,47.877mm) on Top Layer And Pad THM1-1(86.807mm,55.901mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net IMON_5V Between Pad U15-12(48.107mm,57.591mm) on Top Layer And Track (48.549mm,57.591mm)(50.343mm,59.384mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net +PACK_RAW Between Pad U22_PAY LOAD SWITCH-3(64.343mm,30.868mm) on Top Layer And Pad U22_PAY LOAD SWITCH-2(64.993mm,30.868mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net +PACK_RAW Between Pad U22_PAY LOAD SWITCH-9(64.668mm,29.468mm) on Top Layer And Pad U22_PAY LOAD SWITCH-2(64.993mm,30.868mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net DRAIN Between Pad U6-3(64.175mm,13.208mm) on Bottom Layer And Pad U6-6(64.175mm,18.118mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net +5V Between Via (80.671mm,18.578mm) from Top Layer to Bottom Layer And Track (81.52mm,1.436mm)(81.52mm,18.62mm) on VCC 
+   Violation between Un-Routed Net Constraint: Net +5V Between Track (80.889mm,18.578mm)(81.504mm,18.578mm) on Bottom Layer And Track (81.52mm,1.436mm)(81.52mm,18.62mm) on VCC 
    Violation between Un-Routed Net Constraint: Net +3V3 Between Via (71.922mm,72.979mm) from Top Layer to Bottom Layer And Track (82.59mm,71.841mm)(82.711mm,71.72mm) on Bottom Layer 
-Rule Violations :15
+Rule Violations :8
 
 Processing Rule : Un-Connected Pin Constraint ( (All) )
 Rule Violations :0
@@ -299,6 +292,11 @@ Rule Violations :0
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
+Waived Violations Of Rule : Un-Routed Net Constraint ( (All) )
+   Waived Violation between Un-Routed Net Constraint: Net GND Between Pad R82-1(57.849mm,30.426mm) on Top Layer And Pad C61-1(58.572mm,30.473mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:19:29 AMGND connected via pour
+   Waived Violation between Un-Routed Net Constraint: Net DRAIN Between Pad U6-3(64.175mm,13.208mm) on Bottom Layer And Pad U6-6(64.175mm,18.118mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:19:50 AMDrain is shorted
+Waived Violations :2
+
 Waived Violations Of Rule : Un-Connected Pin Constraint ( (All) )
    Waived Violation between Un-Connected Pin Constraint: Pad *1-4(59.478mm,14.661mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 12:55:00 AMNC
    Waived Violation between Un-Connected Pin Constraint: Pad DEP--(85.344mm,15.748mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
@@ -359,6 +357,6 @@ Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
 Waived Violations :12
 
 
-Violations Detected : 152
-Waived Violations : 53
+Violations Detected : 145
+Waived Violations : 55
 Time Elapsed        : 00:00:03
