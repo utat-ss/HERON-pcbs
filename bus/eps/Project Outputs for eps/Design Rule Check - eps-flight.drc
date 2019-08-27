@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
 Date     : 2019-08-27
-Time     : 12:24:12 AM
+Time     : 1:36:11 AM
 
 WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
    Polygon named: Bottom Layer-+PACK In net +PACK On Bottom Layer
@@ -17,18 +17,46 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net -PACK_RAW Between Pad C63_RBF-1(58.12mm,11.469mm) on Top Layer And Pad C64_RBF-1(58.467mm,8.31mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_PRO Between Pad C63_RBF-2(59.52mm,11.469mm) on Top Layer And Track (61.558mm,13.462mm)(62.109mm,13.462mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad U22_RBF-9(62.749mm,10.731mm) on Top Layer And Pad C64_DEP--2(73.447mm,17.174mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RAW Between Pad C64_RBF-1(58.467mm,8.31mm) on Top Layer And Pad C65_RBF-1(59.831mm,8.304mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad C64_RBF-2(58.467mm,10.21mm) on Top Layer And Pad U22_RBF-2(61.349mm,11.056mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RAW Between Pad C65_RBF-1(59.831mm,8.304mm) on Top Layer And Pad R84_RBF-1(61.235mm,8.621mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_R Between Pad C65_RBF-2(59.831mm,9.704mm) on Top Layer And Pad U22_RBF-3(61.349mm,10.406mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C67-1(96.386mm,7.568mm) on Top Layer And Pad C68-1(102.507mm,6.962mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (83.426mm,23.38mm) from Top Layer to Bottom Layer And Pad C67-1(96.386mm,7.568mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_R Between Pad C67-2(96.386mm,8.968mm) on Top Layer And Pad L5-1(108.331mm,8.877mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_R Between Pad U22_RBF-3(61.349mm,10.406mm) on Top Layer And Pad C67-2(96.386mm,8.968mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_FILT Between Pad C68-2(102.507mm,8.862mm) on Top Layer And Pad L5-2(109.331mm,8.877mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_FILT Between Pad R3-2(60.437mm,18.034mm) on Bottom Layer And Pad C68-2(102.507mm,8.862mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net RTC_VBATT Between Track (29.061mm,66.547mm)(30.717mm,68.203mm) on Top Layer And Pad J2-17(30.59mm,59.44mm) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net NetJ6_1 Between Pad R84_RBF-2(62.135mm,8.621mm) on Top Layer And Pad J6-1(62.37mm,6.884mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RAW Between Pad J6-2(61.12mm,6.884mm) on Top Layer And Pad R84_RBF-1(61.235mm,8.621mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetL4_1 Between Pad R78-2(112.241mm,9.073mm) on Top Layer And Pad L4-1(118.497mm,8.877mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_FILT Between Pad L5-2(109.331mm,8.877mm) on Top Layer And Pad L4-2(119.497mm,8.877mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_R Between Pad L5-1(108.331mm,8.877mm) on Top Layer And Pad R78-1(112.241mm,8.173mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad R59-2(51.365mm,51.287mm) on Top Layer And Pad U23_PACK_IMON-1(63.243mm,46.878mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Via (41.137mm,50.342mm) from Top Layer to Bottom Layer And Pad R59-2(51.365mm,51.287mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad R60-2(69.027mm,52.818mm) on Top Layer And Pad THM1-1(86.807mm,55.901mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad U23_PACK_IMON-1(63.243mm,46.878mm) on Top Layer And Pad R60-2(69.027mm,52.818mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_R Between Pad R78-1(112.241mm,8.173mm) on Top Layer And Pad R8-2(123.207mm,8.979mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetJ6_1 Between Pad R84_RBF-2(62.135mm,8.621mm) on Top Layer And Pad R8-1(122.307mm,8.979mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RAW Between Pad R84_RBF-1(61.235mm,8.621mm) on Top Layer And Pad U22_RBF-5(64.149mm,9.756mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetJ6_1 Between Pad U22_RBF-4(61.349mm,9.756mm) on Top Layer And Pad R84_RBF-2(62.135mm,8.621mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad THM2-1(86.807mm,47.877mm) on Top Layer And Pad THM1-1(86.807mm,55.901mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad U22_RBF-2(61.349mm,11.056mm) on Top Layer And Pad U22_RBF-1(61.349mm,11.706mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad U22_RBF-2(61.349mm,11.056mm) on Top Layer And Pad U22_RBF-9(62.749mm,10.731mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +PACK_R Between Pad U22_RBF-3(61.349mm,10.406mm) on Top Layer And Track (65.716mm,45.578mm)(66.062mm,45.923mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_PRO Between Pad U22_RBF-8(64.149mm,11.056mm) on Top Layer And Via (67.462mm,12.863mm) from Top Layer to Bottom Layer 
    Violation between Un-Routed Net Constraint: Net +5V Between Track (80.889mm,18.578mm)(81.504mm,18.578mm) on Bottom Layer And Track (81.52mm,1.436mm)(81.52mm,18.62mm) on VCC 
    Violation between Un-Routed Net Constraint: Net +3V3 Between Via (71.922mm,72.979mm) from Top Layer to Bottom Layer And Track (82.59mm,71.712mm)(82.59mm,71.841mm) on Bottom Layer 
-Rule Violations :8
+Rule Violations :34
 
 Processing Rule : Un-Connected Pin Constraint ( (All) )
-Rule Violations :0
+   Violation between Un-Connected Pin Constraint: Pad J6-(58.77mm,3.584mm) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad J6-(64.72mm,3.584mm) on Top Layer 
+Rule Violations :2
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
    Violation between Modified Polygon: Polygon Shelved  (Bottom Layer-+PACK) on Bottom Layer 
@@ -53,27 +81,7 @@ Processing Rule : Hole To Hole Clearance (Gap=0.2mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-1(74.551mm,62.477mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-10(78.921mm,62.477mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-11(78.921mm,63.977mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-12(78.486mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-13(77.986mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-14(77.486mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-15(76.986mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-16(76.486mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-17(75.986mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-18(75.486mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-19(74.986mm,64.912mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-2(74.986mm,61.542mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-20(74.551mm,63.977mm) on Top Layer And Pad U12-21(76.736mm,63.227mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-21(76.736mm,63.227mm) on Top Layer And Pad U12-3(75.486mm,61.542mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-21(76.736mm,63.227mm) on Top Layer And Pad U12-4(75.986mm,61.542mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-21(76.736mm,63.227mm) on Top Layer And Pad U12-5(76.486mm,61.542mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-21(76.736mm,63.227mm) on Top Layer And Pad U12-6(76.986mm,61.542mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-21(76.736mm,63.227mm) on Top Layer And Pad U12-7(77.486mm,61.542mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-21(76.736mm,63.227mm) on Top Layer And Pad U12-8(77.986mm,61.542mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U12-21(76.736mm,63.227mm) on Top Layer And Pad U12-9(78.486mm,61.542mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
-Rule Violations :20
+Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
    Violation between Net Antennae: Track (29.061mm,66.547mm)(30.717mm,68.203mm) on Top Layer 
@@ -82,69 +90,75 @@ Rule Violations :1
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Cutout Edge): (0.462mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad Free-(45mm,68.67mm) on Multi-Layer 
    Violation between Board Outline Clearance(Cutout Edge): (0.496mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Text "C44" (53.34mm,80.772mm) on Top Overlay 
-Rule Violations :2
-
-Processing Rule : Room IMU (Bounding Region = (67.541mm, 66.946mm, 78.374mm, 76.175mm) (Disabled)(InComponentClass('IMU'))
-Rule Violations :0
-
-Processing Rule : Room LOAD SWITCHES (Bounding Region = (108.303mm, 40.551mm, 117.064mm, 68.523mm) (Disabled)(InComponentClass('LOAD SWITCHES'))
-Rule Violations :0
-
-Processing Rule : Room main (Bounding Region = (39.69mm, 17.929mm, 116.103mm, 107.874mm) (Disabled)(InComponentClass('main'))
-Rule Violations :0
-
-Processing Rule : Room X- IMON (Bounding Region = (107.168mm, 83.191mm, 110.608mm, 87.775mm) (Disabled)(InComponentClass('X- IMON'))
-Rule Violations :0
-
-Processing Rule : Room Y+ IMON (Bounding Region = (107.092mm, 72.441mm, 110.542mm, 77.025mm) (Disabled)(InComponentClass('Y+ IMON'))
-Rule Violations :0
-
-Processing Rule : Room Y- IMON (Bounding Region = (104.916mm, 61.473mm, 108.252mm, 66.057mm) (Disabled)(InComponentClass('Y- IMON'))
-Rule Violations :0
-
-Processing Rule : Room IMON_5V (Bounding Region = (95.515mm, 96.916mm, 100.098mm, 100.283mm) (Disabled)(InComponentClass('IMON_5V'))
-Rule Violations :0
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "J6" (65.149mm,0.038mm) on Top Overlay 
+Rule Violations :3
 
 Processing Rule : Room micro-circuit- (Bounding Region = (73.455mm, 105.831mm, 84.933mm, 114.569mm) (Disabled)(InComponentClass('micro-circuit-'))
-Rule Violations :0
-
-Processing Rule : Room PAY LOAD SWITCH (Bounding Region = (89.466mm, 51.832mm, 94.739mm, 59.399mm) (Disabled)(InComponentClass('PAY LOAD SWITCH'))
-Rule Violations :0
-
-Processing Rule : Room PEX (Bounding Region = (44.233mm, 82.083mm, 55.478mm, 93.155mm) (Disabled)(InComponentClass('PEX'))
-Rule Violations :0
-
-Processing Rule : Room SOLAR PANELS (Bounding Region = (83.306mm, 56.65mm, 119.05mm, 104.964mm) (Disabled)(InComponentClass('SOLAR PANELS'))
-Rule Violations :0
-
-Processing Rule : Room TRANSCEIVER (Bounding Region = (28.771mm, 37.351mm, 39.679mm, 104.909mm) (Disabled)(InComponentClass('TRANSCEIVER'))
 Rule Violations :0
 
 Processing Rule : Room MICROCONTROLLER (Bounding Region = (42.492mm, 108.15mm, 73.457mm, 115.697mm) (Disabled)(InComponentClass('MICROCONTROLLER'))
 Rule Violations :0
 
+Processing Rule : Room PAY LOAD SWITCH (Bounding Region = (89.466mm, 51.832mm, 94.739mm, 59.399mm) (Disabled)(InComponentClass('PAY LOAD SWITCH'))
+Rule Violations :0
+
 Processing Rule : Room PACK_IMON (Bounding Region = (86.146mm, 64.568mm, 90.73mm, 68.056mm) (Disabled)(InComponentClass('PACK_IMON'))
 Rule Violations :0
 
-Processing Rule : Room X+ IMON (Bounding Region = (106.696mm, 94.182mm, 110.282mm, 98.766mm) (Disabled)(InComponentClass('X+ IMON'))
+Processing Rule : Room main (Bounding Region = (39.69mm, 17.929mm, 116.103mm, 107.874mm) (Disabled)(InComponentClass('main'))
 Rule Violations :0
 
-Processing Rule : Room BUCK-BOOST (Bounding Region = (77.641mm, 72.394mm, 93.025mm, 92.288mm) (Disabled)(InComponentClass('BUCK-BOOST'))
+Processing Rule : Room LOAD SWITCHES (Bounding Region = (108.303mm, 40.551mm, 117.064mm, 68.523mm) (Disabled)(InComponentClass('LOAD SWITCHES'))
+Rule Violations :0
+
+Processing Rule : Room IMU (Bounding Region = (67.541mm, 66.946mm, 78.374mm, 76.175mm) (Disabled)(InComponentClass('IMU'))
 Rule Violations :0
 
 Processing Rule : Room BOOST (Bounding Region = (41.95mm, 27.21mm, 142.682mm, 108.208mm) (Disabled)(InComponentClass('BOOST'))
 Rule Violations :0
 
+Processing Rule : Room X+ IMON (Bounding Region = (106.696mm, 94.182mm, 110.282mm, 98.766mm) (Disabled)(InComponentClass('X+ IMON'))
+Rule Violations :0
+
+Processing Rule : Room TRANSCEIVER (Bounding Region = (28.771mm, 37.351mm, 39.679mm, 104.909mm) (Disabled)(InComponentClass('TRANSCEIVER'))
+Rule Violations :0
+
+Processing Rule : Room Y+ IMON (Bounding Region = (107.092mm, 72.441mm, 110.542mm, 77.025mm) (Disabled)(InComponentClass('Y+ IMON'))
+Rule Violations :0
+
+Processing Rule : Room X- IMON (Bounding Region = (107.168mm, 83.191mm, 110.608mm, 87.775mm) (Disabled)(InComponentClass('X- IMON'))
+Rule Violations :0
+
+Processing Rule : Room SOLAR PANELS (Bounding Region = (83.306mm, 56.65mm, 119.05mm, 104.964mm) (Disabled)(InComponentClass('SOLAR PANELS'))
+Rule Violations :0
+
+Processing Rule : Room PEX (Bounding Region = (44.233mm, 82.083mm, 55.478mm, 93.155mm) (Disabled)(InComponentClass('PEX'))
+Rule Violations :0
+
+Processing Rule : Room Y- IMON (Bounding Region = (104.916mm, 61.473mm, 108.252mm, 66.057mm) (Disabled)(InComponentClass('Y- IMON'))
+Rule Violations :0
+
+Processing Rule : Room RBF (Bounding Region = (121.692mm, 37.88mm, 154.931mm, 42.532mm) (InComponentClass('RBF'))
+   Violation between Room Definition: Between Room RBF (Bounding Region = (121.692mm, 37.88mm, 154.931mm, 42.532mm) (InComponentClass('RBF')) And SMT SIP Component U22_RBF-TPS22959DNYT (62.749mm,10.731mm) on Top Layer 
+   Violation between Room Definition: Between Room RBF (Bounding Region = (121.692mm, 37.88mm, 154.931mm, 42.532mm) (InComponentClass('RBF')) And SMT Small Component C63_RBF-0603 (58.82mm,11.469mm) on Top Layer 
+   Violation between Room Definition: Between Room RBF (Bounding Region = (121.692mm, 37.88mm, 154.931mm, 42.532mm) (InComponentClass('RBF')) And SMT Small Component C64_RBF-0805 (58.467mm,9.26mm) on Top Layer 
+   Violation between Room Definition: Between Room RBF (Bounding Region = (121.692mm, 37.88mm, 154.931mm, 42.532mm) (InComponentClass('RBF')) And SMT Small Component C65_RBF-0603 (59.831mm,9.004mm) on Top Layer 
+   Violation between Room Definition: Between Room RBF (Bounding Region = (121.692mm, 37.88mm, 154.931mm, 42.532mm) (InComponentClass('RBF')) And SMT Small Component R84_RBF-0402 (61.685mm,8.621mm) on Top Layer 
+Rule Violations :5
+
+Processing Rule : Room BATTERY (Bounding Region = (79.716mm, 21.419mm, 121.955mm, 70.108mm) (Disabled)(InComponentClass('BATTERY'))
+Rule Violations :0
+
+Processing Rule : Room DAC (Bounding Region = (102.343mm, 108.666mm, 112.918mm, 114.124mm) (Disabled)(InComponentClass('DAC'))
+Rule Violations :0
+
 Processing Rule : Room CURRENT LIMITER (Bounding Region = (78.176mm, 35.293mm, 140.758mm, 72.983mm) (Disabled)(InComponentClass('CURRENT LIMITER'))
 Rule Violations :0
 
-Processing Rule : Room CAN TRANSCEIVER (Bounding Region = (41.95mm, 27.21mm, 135.728mm, 47.935mm) (Disabled)(InComponentClass('CAN TRANSCEIVER'))
+Processing Rule : Room DEP- (Bounding Region = (98.036mm, 41.693mm, 103.764mm, 48.71mm) (Disabled)(InComponentClass('DEP-'))
 Rule Violations :0
 
-Processing Rule : Room ATMEGA64M1 (Bounding Region = (139.954mm, 30.226mm, 143.51mm, 34.29mm) (Disabled)(InComponentClass('ATMEGA64M1'))
-Rule Violations :0
-
-Processing Rule : Room BATTERY (Bounding Region = (79.716mm, 21.419mm, 121.955mm, 70.108mm) (Disabled)(InComponentClass('BATTERY'))
+Processing Rule : Room DEP+ (Bounding Region = (91.467mm, 59.126mm, 97.801mm, 66.236mm) (Disabled)(InComponentClass('DEP+'))
 Rule Violations :0
 
 Processing Rule : Room ADC (Bounding Region = (60.212mm, 83.681mm, 69.799mm, 94.969mm) (Disabled)(InComponentClass('ADC'))
@@ -153,28 +167,31 @@ Rule Violations :0
 Processing Rule : Room ADS7953 (Bounding Region = (67.391mm, 84.192mm, 77.45mm, 93.288mm) (Disabled)(InComponentClass('ADS7953'))
 Rule Violations :0
 
-Processing Rule : Room DAC (Bounding Region = (102.343mm, 108.666mm, 112.918mm, 114.124mm) (Disabled)(InComponentClass('DAC'))
+Processing Rule : Room CAN TRANSCEIVER (Bounding Region = (41.95mm, 27.21mm, 135.728mm, 47.935mm) (Disabled)(InComponentClass('CAN TRANSCEIVER'))
 Rule Violations :0
 
-Processing Rule : Room IMON_3V3 (Bounding Region = (81.481mm, 84.15mm, 86.065mm, 87.542mm) (Disabled)(InComponentClass('IMON_3V3'))
-Rule Violations :0
-
-Processing Rule : Room HEATER CONTROL 2 (Bounding Region = (105.164mm, 99.816mm, 112.314mm, 107.429mm) (Disabled)(InComponentClass('HEATER CONTROL 2'))
+Processing Rule : Room BUCK-BOOST (Bounding Region = (77.641mm, 72.394mm, 93.025mm, 92.288mm) (Disabled)(InComponentClass('BUCK-BOOST'))
 Rule Violations :0
 
 Processing Rule : Room HEATERS AND SENSORS (Bounding Region = (76.821mm, 68.572mm, 120.365mm, 100.877mm) (Disabled)(InComponentClass('HEATERS AND SENSORS'))
 Rule Violations :0
 
-Processing Rule : Room HEATER CONTROL 1 (Bounding Region = (112.266mm, 100.792mm, 120.663mm, 107.234mm) (Disabled)(InComponentClass('HEATER CONTROL 1'))
+Processing Rule : Room IMON_3V3 (Bounding Region = (81.481mm, 84.15mm, 86.065mm, 87.542mm) (Disabled)(InComponentClass('IMON_3V3'))
 Rule Violations :0
 
-Processing Rule : Room DEP+ (Bounding Region = (91.467mm, 59.126mm, 97.801mm, 66.236mm) (Disabled)(InComponentClass('DEP+'))
+Processing Rule : Room IMON_5V (Bounding Region = (95.515mm, 96.916mm, 100.098mm, 100.283mm) (Disabled)(InComponentClass('IMON_5V'))
 Rule Violations :0
 
-Processing Rule : Room DEP- (Bounding Region = (98.036mm, 41.693mm, 103.764mm, 48.71mm) (Disabled)(InComponentClass('DEP-'))
+Processing Rule : Room ATMEGA64M1 (Bounding Region = (139.954mm, 30.226mm, 143.51mm, 34.29mm) (Disabled)(InComponentClass('ATMEGA64M1'))
 Rule Violations :0
 
 Processing Rule : Room DIGITAL (Bounding Region = (50.789mm, 51.672mm, 61.066mm, 91.77mm) (Disabled)(InComponentClass('DIGITAL'))
+Rule Violations :0
+
+Processing Rule : Room HEATER CONTROL 1 (Bounding Region = (112.266mm, 100.792mm, 120.663mm, 107.234mm) (Disabled)(InComponentClass('HEATER CONTROL 1'))
+Rule Violations :0
+
+Processing Rule : Room HEATER CONTROL 2 (Bounding Region = (105.164mm, 99.816mm, 112.314mm, 107.429mm) (Disabled)(InComponentClass('HEATER CONTROL 2'))
 Rule Violations :0
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
@@ -326,20 +343,34 @@ Waived Violations :92
 
 Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
    Waived Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge Waived by UTAT Space Systems at 2019-08-26 11:36:55 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad C67-1(96.386mm,7.568mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad C67-2(96.386mm,8.968mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad C68-1(102.507mm,6.962mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad C68-2(102.507mm,8.862mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad L4-1(118.497mm,8.877mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad L4-2(119.497mm,8.877mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad L5-1(108.331mm,8.877mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad L5-2(109.331mm,8.877mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad R78-1(112.241mm,8.173mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad R78-2(112.241mm,9.073mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad R8-1(122.307mm,8.979mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Pad R8-2(123.207mm,8.979mm) on Top Layer Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "C67" (96.196mm,10.033mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "C68" (102.037mm,10.033mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "L4" (118.044mm,10.033mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "L5" (107.878mm,10.033mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "R78" (112.203mm,10.033mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Text "R8" (122.364mm,10.033mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (101.882mm,7.712mm)(101.882mm,8.112mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (103.132mm,7.712mm)(103.132mm,8.112mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (107.731mm,8.727mm)(107.731mm,9.027mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (117.897mm,8.727mm)(117.897mm,9.027mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-27 1:29:08 AMComponents are out of board - need to route
    Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
    Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
    Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (57.564mm,0.048mm)(57.564mm,11.548mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (57.564mm,0.048mm)(60.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,0.048mm)(66.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,-3.452mm)(60.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,-3.452mm)(66.564mm,-3.452mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (66.564mm,0.048mm)(69.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (66.564mm,-3.452mm)(66.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (69.564mm,0.048mm)(69.564mm,11.548mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
-Waived Violations :12
+Waived Violations :26
 
 
-Violations Detected : 33
-Waived Violations : 147
+Violations Detected : 47
+Waived Violations : 161
 Time Elapsed        : 00:00:02
