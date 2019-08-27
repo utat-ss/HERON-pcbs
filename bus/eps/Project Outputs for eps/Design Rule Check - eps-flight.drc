@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
 Date     : 2019-08-26
-Time     : 1:21:26 AM
+Time     : 11:41:26 PM
 
 WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
    Polygon named: Bottom Layer-+PACK In net +PACK On Bottom Layer
@@ -24,7 +24,7 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad U23_PACK_IMON-1(63.243mm,46.878mm) on Top Layer And Pad R60-2(69.027mm,52.818mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad THM2-1(86.807mm,47.877mm) on Top Layer And Pad THM1-1(86.807mm,55.901mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +5V Between Track (80.889mm,18.578mm)(81.504mm,18.578mm) on Bottom Layer And Track (81.52mm,1.436mm)(81.52mm,18.62mm) on VCC 
-   Violation between Un-Routed Net Constraint: Net +3V3 Between Via (71.922mm,72.979mm) from Top Layer to Bottom Layer And Track (82.59mm,71.841mm)(82.711mm,71.72mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net +3V3 Between Via (71.922mm,72.979mm) from Top Layer to Bottom Layer And Track (82.59mm,71.712mm)(82.59mm,71.841mm) on Bottom Layer 
 Rule Violations :8
 
 Processing Rule : Un-Connected Pin Constraint ( (All) )
@@ -53,7 +53,6 @@ Processing Rule : Hole To Hole Clearance (Gap=0.2mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0mm < 0.1mm) Between Pad C30-1(80.714mm,73.66mm) on Top Layer And Pad Free-6(80.206mm,74.168mm) on Top Layer [Top Solder] Mask Sliver [0mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad J2-1(30.59mm,55.44mm) on Top Layer And Pad J2-3(30.59mm,55.94mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad J2-10(35.19mm,57.44mm) on Top Layer And Pad J2-12(35.19mm,57.94mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad J2-10(35.19mm,57.44mm) on Top Layer And Pad J2-8(35.19mm,56.94mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
@@ -166,30 +165,10 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
-Rule Violations :113
+Rule Violations :112
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Track (17.909mm,63.449mm)(20.32mm,61.038mm) on Bottom Layer 
-   Violation between Net Antennae: Via (25.214mm,13.153mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (56.754mm,41.402mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (57.302mm,40.805mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (67.997mm,47.244mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (67.997mm,48.203mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (67.997mm,49.161mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (67.997mm,50.12mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (68.746mm,47.244mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (68.746mm,48.203mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (68.746mm,49.161mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (68.746mm,50.12mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (69.494mm,47.244mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (69.494mm,48.203mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (69.494mm,49.161mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (69.494mm,50.12mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (70.243mm,47.244mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (70.243mm,48.207mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (70.243mm,49.169mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (70.243mm,50.12mm) from Top Layer to Bottom Layer 
-Rule Violations :20
+Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Cutout Edge): (0.462mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad Free-(45mm,68.67mm) on Multi-Layer 
@@ -299,31 +278,31 @@ Waived Violations :2
 
 Waived Violations Of Rule : Un-Connected Pin Constraint ( (All) )
    Waived Violation between Un-Connected Pin Constraint: Pad *1-4(59.478mm,14.661mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 12:55:00 AMNC
-   Waived Violation between Un-Connected Pin Constraint: Pad DEP--(85.344mm,15.748mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad DEP--(85.344mm,21.698mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad DEP+-(86.798mm,36.068mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad DEP+-(86.798mm,42.018mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad HEAT1-(90.107mm,60.398mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad HEAT1-(90.107mm,66.348mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad HEAT2-(90.034mm,68.375mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad HEAT2-(90.034mm,74.325mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
+   Waived Violation between Un-Connected Pin Constraint: Pad DEP--(85.344mm,15.748mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad DEP--(85.344mm,21.698mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad DEP+-(86.798mm,36.068mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad DEP+-(86.798mm,42.018mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad HEAT1-(90.107mm,60.398mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad HEAT1-(90.107mm,66.348mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad HEAT2-(90.034mm,68.375mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad HEAT2-(90.034mm,74.325mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
    Waived Violation between Un-Connected Pin Constraint: Pad J3-(86.877mm,16.771mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-24 3:35:34 PMpad - no connection
-   Waived Violation between Un-Connected Pin Constraint: Pad J3-(86.877mm,29.481mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad J4-(20.586mm,25.7mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad J4-(42.786mm,25.7mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PX--(89.918mm,54.332mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PX--(89.918mm,62.782mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PX+-(89.381mm,64.98mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PX+-(89.381mm,73.43mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PY--(85.27mm,32.371mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PY--(85.27mm,40.821mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PY+-(89.664mm,43.136mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad PY+-(89.664mm,51.586mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad THM1-(90.107mm,52.301mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad THM1-(90.107mm,58.251mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad THM2-(90.107mm,44.277mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad THM2-(90.107mm,50.227mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
-   Waived Violation between Un-Connected Pin Constraint: Pad U1-1(77.237mm,28.262mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC 
+   Waived Violation between Un-Connected Pin Constraint: Pad J3-(86.877mm,29.481mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad J4-(20.586mm,25.7mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad J4-(42.786mm,25.7mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PX--(89.918mm,54.332mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PX--(89.918mm,62.782mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PX+-(89.381mm,64.98mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PX+-(89.381mm,73.43mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PY--(85.27mm,32.371mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PY--(85.27mm,40.821mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PY+-(89.664mm,43.136mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad PY+-(89.664mm,51.586mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad THM1-(90.107mm,52.301mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad THM1-(90.107mm,58.251mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad THM2-(90.107mm,44.277mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad THM2-(90.107mm,50.227mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
+   Waived Violation between Un-Connected Pin Constraint: Pad U1-1(77.237mm,28.262mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:00:28 AMConnector pad NC
    Waived Violation between Un-Connected Pin Constraint: Pad U13-1(45.09mm,46.79mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
    Waived Violation between Un-Connected Pin Constraint: Pad U13-12(48.09mm,43.39mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
    Waived Violation between Un-Connected Pin Constraint: Pad U13-13(48.59mm,43.39mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
@@ -342,21 +321,21 @@ Waived Violations Of Rule : Un-Connected Pin Constraint ( (All) )
 Waived Violations :41
 
 Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Waived Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge Waived by UTAT Space Systems at 2019-08-26 1:06:00 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (57.564mm,0.048mm)(57.564mm,11.548mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (57.564mm,0.048mm)(60.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,0.048mm)(66.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,-3.452mm)(60.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,-3.452mm)(66.564mm,-3.452mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (66.564mm,0.048mm)(69.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (66.564mm,-3.452mm)(66.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (69.564mm,0.048mm)(69.564mm,11.548mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 1:05:06 AMOut of bound top overlay - not an issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge Waived by UTAT Space Systems at 2019-08-26 11:36:55 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (57.564mm,0.048mm)(57.564mm,11.548mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (57.564mm,0.048mm)(60.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,0.048mm)(66.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,-3.452mm)(60.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (60.564mm,-3.452mm)(66.564mm,-3.452mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (66.564mm,0.048mm)(69.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (66.564mm,-3.452mm)(66.564mm,0.048mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (69.564mm,0.048mm)(69.564mm,11.548mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-26 11:28:18 PMTop overlay no issue
 Waived Violations :12
 
 
-Violations Detected : 145
+Violations Detected : 124
 Waived Violations : 55
-Time Elapsed        : 00:00:03
+Time Elapsed        : 00:00:02
