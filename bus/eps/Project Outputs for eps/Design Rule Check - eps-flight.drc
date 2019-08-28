@@ -1,39 +1,34 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
-Date     : 2019-08-27
-Time     : 11:07:34 PM
+Date     : 2019-08-28
+Time     : 12:57:27 AM
 
 WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
    Polygon named: Bottom Layer-+PACK In net +PACK On Bottom Layer
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
-   Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad C63_RBF-2(67.647mm,6.999mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer 
    Violation between Clearance Constraint: (0.11mm < 0.152mm) Between Pad C65_RBF-1(67.627mm,12.053mm) on Top Layer And Via (67.462mm,12.863mm) from Top Layer to Bottom Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad C65_RBF-2(66.227mm,12.053mm) on Top Layer And Track (66.15mm,11.933mm)(66.15mm,12.833mm) on Top Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad J6-1(62.553mm,7.738mm) on Top Layer And Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer And Track (61.932mm,8.359mm)(62.553mm,7.738mm) on Top Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer And Track (62.553mm,7.738mm)(62.556mm,7.741mm) on Top Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer And Track (62.556mm,7.741mm)(62.556mm,9.089mm) on Top Layer 
-   Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad U22_RBF-8(67.252mm,7.978mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad U22_RBF-9(66.927mm,9.378mm) on Top Layer And Track (66.15mm,9.133mm)(66.545mm,8.738mm) on Top Layer 
    Violation between Clearance Constraint: (Collision < 0.152mm) Between Pad U22_RBF-9(66.927mm,9.378mm) on Top Layer And Track (66.545mm,8.154mm)(66.545mm,8.738mm) on Top Layer 
-   Violation between Clearance Constraint: (0.137mm < 0.152mm) Between Track (35.345mm,81.585mm)(54.864mm,81.585mm) on Top Layer And Via (46.482mm,82.098mm) from Top Layer to Bottom Layer 
-Rule Violations :11
+Rule Violations :8
 
 Processing Rule : Clearance Constraint (Gap=0.254mm) (IsComponent),(IsComponent)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-   Violation between Short-Circuit Constraint: Between Pad C63_RBF-2(67.647mm,6.999mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer Location : [X = 93.823mm][Y = 32.399mm]
    Violation between Short-Circuit Constraint: Between Pad C65_RBF-2(66.227mm,12.053mm) on Top Layer And Track (66.15mm,11.933mm)(66.15mm,12.833mm) on Top Layer Location : [X = 92.16mm][Y = 37.554mm]
    Violation between Short-Circuit Constraint: Between Pad J6-1(62.553mm,7.738mm) on Top Layer And Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer Location : [X = 88.468mm][Y = 33.369mm]
    Violation between Short-Circuit Constraint: Between Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer And Track (61.932mm,8.359mm)(62.553mm,7.738mm) on Top Layer Location : [X = 88.379mm][Y = 33.369mm]
    Violation between Short-Circuit Constraint: Between Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer And Track (62.553mm,7.738mm)(62.556mm,7.741mm) on Top Layer Location : [X = 88.564mm][Y = 33.206mm]
    Violation between Short-Circuit Constraint: Between Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer And Track (62.556mm,7.741mm)(62.556mm,9.089mm) on Top Layer Location : [X = 88.566mm][Y = 33.369mm]
-   Violation between Short-Circuit Constraint: Between Pad U22_RBF-8(67.252mm,7.978mm) on Top Layer And Polygon Region (0 hole(s)) Top Layer Location : [X = 93.826mm][Y = 33.378mm]
    Violation between Short-Circuit Constraint: Between Pad U22_RBF-9(66.927mm,9.378mm) on Top Layer And Track (66.15mm,9.133mm)(66.545mm,8.738mm) on Top Layer Location : [X = 92.357mm][Y = 34.335mm]
    Violation between Short-Circuit Constraint: Between Pad U22_RBF-9(66.927mm,9.378mm) on Top Layer And Track (66.545mm,8.154mm)(66.545mm,8.738mm) on Top Layer Location : [X = 92.555mm][Y = 34.097mm]
-Rule Violations :9
+Rule Violations :7
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
    Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Track (64.85mm,8.449mm)(66.545mm,6.754mm) on Top Layer And Pad C63_RBF-1(67.647mm,5.599mm) on Top Layer 
@@ -41,30 +36,34 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
    Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Track (66.15mm,11.933mm)(66.15mm,12.833mm) on Top Layer And Pad C65_RBF-1(67.627mm,12.053mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +PACK_FILT Between Pad C65_RBF-2(66.227mm,12.053mm) on Top Layer And Pad U22_RBF-3(66.602mm,10.778mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +PACK_FILT Between Track (65.5mm,11.933mm)(65.5mm,12.833mm) on Top Layer And Pad C65_RBF-2(66.227mm,12.053mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net RTC_VBATT Between Track (29.061mm,66.547mm)(30.717mm,68.203mm) on Top Layer And Pad J2-17(30.59mm,59.44mm) on Top Layer [Unplated] 
+   Violation between Un-Routed Net Constraint: Net RTC_VBATT Between Pad J2-17(30.59mm,59.44mm) on Top Layer [Unplated] And Track (37.033mm,64.465mm)(39.102mm,64.465mm) on Bottom Layer 
    Violation between Un-Routed Net Constraint: Net +PACK_FILT Between Pad R3-2(60.437mm,18.034mm) on Bottom Layer And Pad R8-2(62.556mm,9.989mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad R59-2(51.365mm,51.287mm) on Top Layer And Pad U23_PACK_IMON-1(63.243mm,46.878mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Via (41.137mm,50.342mm) from Top Layer to Bottom Layer And Pad R59-2(51.365mm,51.287mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad R60-2(69.027mm,52.818mm) on Top Layer And Pad THM1-1(86.807mm,55.901mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad U23_PACK_IMON-1(63.243mm,46.878mm) on Top Layer And Pad R60-2(69.027mm,52.818mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net GND Between Pad R82-1(57.849mm,30.426mm) on Top Layer And Via (58.173mm,31.804mm) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer And Pad U22_RBF-5(65.952mm,7.978mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Track (61.303mm,7.738mm)(61.313mm,7.748mm) on Top Layer And Pad R84_RBF-1(62.415mm,7.969mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net +2V5 Between Pad THM2-1(86.807mm,47.877mm) on Top Layer And Pad THM1-1(86.807mm,55.901mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad U22_RBF-2(67.252mm,10.778mm) on Top Layer And Pad U22_RBF-1(67.902mm,10.778mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad U22_RBF-9(66.927mm,9.378mm) on Top Layer And Pad U22_RBF-2(67.252mm,10.778mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net NetJ6_1 Between Track (63.229mm,10.312mm)(64.85mm,11.933mm) on Top Layer And Pad U22_RBF-4(65.952mm,10.778mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Pad U22_RBF-5(65.952mm,7.978mm) on Top Layer And Track (64.85mm,8.449mm)(66.545mm,6.754mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Track (59.293mm,8.182mm)(59.296mm,8.179mm) on Bottom Layer And Track (61.303mm,7.738mm)(61.313mm,7.748mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net SCLK_R Between Track (42.628mm,60.991mm)(42.628mm,61.17mm) on Top Layer And Track (43.343mm,60.276mm)(43.922mm,60.276mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net -PACK_RBF Between Track (61.313mm,7.748mm)(61.313mm,9.124mm) on Top Layer And Track (64.85mm,8.449mm)(64.85mm,9.133mm) on Top Layer 
    Violation between Un-Routed Net Constraint: Net -PACK_PRO Between Track (66.15mm,9.133mm)(66.545mm,8.738mm) on Top Layer And Via (67.462mm,12.863mm) from Top Layer to Bottom Layer 
    Violation between Un-Routed Net Constraint: Net +5V Between Track (80.889mm,18.578mm)(81.504mm,18.578mm) on Bottom Layer And Track (81.52mm,1.436mm)(81.52mm,18.62mm) on VCC 
-   Violation between Un-Routed Net Constraint: Net +3V3 Between Via (71.922mm,72.979mm) from Top Layer to Bottom Layer And Track (82.59mm,71.841mm)(82.711mm,71.72mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net +3V3 Between Via (71.922mm,72.979mm) from Top Layer to Bottom Layer And Track (82.59mm,71.712mm)(82.59mm,71.841mm) on Bottom Layer 
 Rule Violations :23
 
 Processing Rule : Un-Connected Pin Constraint ( (All) )
    Violation between Un-Connected Pin Constraint: Pad J6-(58.953mm,4.438mm) on Top Layer 
    Violation between Un-Connected Pin Constraint: Pad J6-(64.903mm,4.438mm) on Top Layer 
-Rule Violations :2
+   Violation between Un-Connected Pin Constraint: Pad U20-1(39.9mm,61.214mm) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U20-3(38.6mm,61.214mm) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U20-7(39.25mm,57.264mm) on Top Layer 
+   Violation between Un-Connected Pin Constraint: Pad U20-8(39.9mm,57.264mm) on Top Layer 
+Rule Violations :6
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
    Violation between Modified Polygon: Polygon Shelved  (Bottom Layer-+PACK) on Bottom Layer 
@@ -89,12 +88,17 @@ Processing Rule : Hole To Hole Clearance (Gap=0.2mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
-Rule Violations :0
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-1(39.9mm,61.214mm) on Top Layer And Pad U20-2(39.25mm,61.214mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-2(39.25mm,61.214mm) on Top Layer And Pad U20-3(38.6mm,61.214mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-3(38.6mm,61.214mm) on Top Layer And Pad U20-4(37.95mm,61.214mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-5(37.95mm,57.264mm) on Top Layer And Pad U20-6(38.6mm,57.264mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-6(38.6mm,57.264mm) on Top Layer And Pad U20-7(39.25mm,57.264mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-7(39.25mm,57.264mm) on Top Layer And Pad U20-8(39.9mm,57.264mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]
+Rule Violations :6
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Track (29.061mm,66.547mm)(30.717mm,68.203mm) on Top Layer 
-   Violation between Net Antennae: Track (59.293mm,8.182mm)(59.296mm,8.179mm) on Bottom Layer 
-   Violation between Net Antennae: Track (59.293mm,8.182mm)(59.296mm,8.179mm) on Bottom Layer 
+   Violation between Net Antennae: Track (37.033mm,64.465mm)(39.102mm,64.465mm) on Bottom Layer 
+   Violation between Net Antennae: Track (43.343mm,60.276mm)(43.922mm,60.276mm) on Top Layer 
    Violation between Net Antennae: Track (61.313mm,10.024mm)(61.932mm,9.405mm) on Top Layer 
    Violation between Net Antennae: Track (61.313mm,7.748mm)(61.313mm,9.124mm) on Top Layer 
    Violation between Net Antennae: Track (63.229mm,10.312mm)(64.85mm,11.933mm) on Top Layer 
@@ -104,16 +108,11 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
    Violation between Net Antennae: Track (66.15mm,11.933mm)(66.15mm,12.833mm) on Top Layer 
    Violation between Net Antennae: Track (66.15mm,12.833mm)(66.525mm,13.208mm) on Top Layer 
    Violation between Net Antennae: Track (66.15mm,9.133mm)(66.545mm,8.738mm) on Top Layer 
-Rule Violations :12
+Rule Violations :11
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge 
-   Violation between Board Outline Clearance(Cutout Edge): (0.462mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Pad Free-(45mm,68.67mm) on Multi-Layer 
-   Violation between Board Outline Clearance(Cutout Edge): (0.496mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Text "C44" (53.34mm,80.772mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay 
-Rule Violations :6
+Rule Violations :1
 
 Processing Rule : Room micro-circuit- (Bounding Region = (73.455mm, 105.831mm, 84.933mm, 114.569mm) (Disabled)(InComponentClass('micro-circuit-'))
 Rule Violations :0
@@ -254,13 +253,9 @@ Waived Violations Of Rule : Un-Connected Pin Constraint ( (All) )
    Waived Violation between Un-Connected Pin Constraint: Pad U13-24(47.59mm,46.79mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
    Waived Violation between Un-Connected Pin Constraint: Pad U13-7(45.59mm,43.39mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
    Waived Violation between Un-Connected Pin Constraint: Pad U13-8(46.09mm,43.39mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
-   Waived Violation between Un-Connected Pin Constraint: Pad U20-1(39.772mm,61.245mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
-   Waived Violation between Un-Connected Pin Constraint: Pad U20-3(38.472mm,61.245mm) on Top Layer Waived by UTAT Space Systems at 2019-08-25 10:08:18 AMDon't need that pin
-   Waived Violation between Un-Connected Pin Constraint: Pad U20-7(39.122mm,57.295mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
-   Waived Violation between Un-Connected Pin Constraint: Pad U20-8(39.772mm,57.295mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
    Waived Violation between Un-Connected Pin Constraint: Pad U2-1(77.269mm,24.346mm) on Bottom Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
    Waived Violation between Un-Connected Pin Constraint: Pad U21-13(53.574mm,28.78mm) on Top Layer Waived by UTAT Space Systems at 2019-08-26 1:02:49 AMMore NC
-Waived Violations :41
+Waived Violations :37
 
 Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad J2-1(30.59mm,55.44mm) on Top Layer And Pad J2-3(30.59mm,55.94mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]Waived by UTAT Space Systems at 2019-08-26 11:59:55 PMJ2 Pads minimum solder mask constraint - not an issue as it is part of the footprint
@@ -325,12 +320,6 @@ Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.047mm < 0.1mm) Between Pad U15-8(47.422mm,55.406mm) on Top Layer And Pad U15-9(48.107mm,56.091mm) on Top Layer [Top Solder] Mask Sliver [0.047mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.078mm < 0.1mm) Between Pad U19-1(42.657mm,51.72mm) on Top Layer And Pad U19-2(42.657mm,52.37mm) on Top Layer [Top Solder] Mask Sliver [0.078mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.078mm < 0.1mm) Between Pad U19-2(42.657mm,52.37mm) on Top Layer And Pad U19-3(42.657mm,53.02mm) on Top Layer [Top Solder] Mask Sliver [0.078mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-1(39.772mm,61.245mm) on Top Layer And Pad U20-2(39.122mm,61.245mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-2(39.122mm,61.245mm) on Top Layer And Pad U20-3(38.472mm,61.245mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-3(38.472mm,61.245mm) on Top Layer And Pad U20-4(37.822mm,61.245mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-5(37.822mm,57.295mm) on Top Layer And Pad U20-6(38.472mm,57.295mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-6(38.472mm,57.295mm) on Top Layer And Pad U20-7(39.122mm,57.295mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.098mm < 0.1mm) Between Pad U20-7(39.122mm,57.295mm) on Top Layer And Pad U20-8(39.772mm,57.295mm) on Top Layer [Top Solder] Mask Sliver [0.098mm]Waived by UTAT Space Systems at 2019-08-27 12:06:59 AMU15, 19, 20 Pads minimum solder mask constraint - not an issue as it is part of the footprint
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-08-27 12:04:54 AMQ1-4 Pads minimum solder mask constraint - not an issue as it is part of the footprint
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-08-27 12:04:54 AMQ1-4 Pads minimum solder mask constraint - not an issue as it is part of the footprint
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-08-27 12:04:54 AMQ1-4 Pads minimum solder mask constraint - not an issue as it is part of the footprint
@@ -355,9 +344,18 @@ Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-08-27 12:04:54 AMQ1-4 Pads minimum solder mask constraint - not an issue as it is part of the footprint
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-08-27 12:04:54 AMQ1-4 Pads minimum solder mask constraint - not an issue as it is part of the footprint
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-08-27 12:04:54 AMQ1-4 Pads minimum solder mask constraint - not an issue as it is part of the footprint
-Waived Violations :92
+Waived Violations :86
+
+Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Waived Violation between Board Outline Clearance(Cutout Edge): (Collision < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (44.52mm,56.966mm)(44.52mm,68.466mm) on Bottom Overlay Waived by UTAT Space Systems at 2019-08-28 12:41:11 AMTop / Bottom overlay no issue
+   Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,53.35mm)(50.51mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 12:41:11 AMTop / Bottom overlay no issue
+   Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,65.38mm)(58.014mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 12:41:11 AMTop / Bottom overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 12:41:11 AMTop / Bottom overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 12:41:11 AMTop / Bottom overlay no issue
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 12:41:11 AMTop / Bottom overlay no issue
+Waived Violations :6
 
 
-Violations Detected : 64
-Waived Violations : 134
+Violations Detected : 63
+Waived Violations : 130
 Time Elapsed        : 00:00:02
