@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
 Date     : 2019-08-29
-Time     : 11:04:16 PM
+Time     : 11:57:11 PM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -47,7 +47,12 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-Rule Violations :0
+   Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (0.444mm < 0.5mm) Between Board Edge And Text "RST" (33.096mm,88.722mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay 
+Rule Violations :5
 
 Processing Rule : Room micro-circuit- (Bounding Region = (73.455mm, 105.831mm, 84.933mm, 114.569mm) (Disabled)(InComponentClass('micro-circuit-'))
 Rule Violations :0
@@ -294,21 +299,16 @@ Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Waived Violations :92
 
 Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Waived Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge Waived by UTAT Space Systems at 2019-08-29 11:01:52 PMTop overlay out of board
    Waived Violation between Board Outline Clearance(Cutout Edge): (Collision < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (44.52mm,56.966mm)(44.52mm,68.466mm) on Bottom Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
    Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,53.35mm)(50.51mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
    Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,65.38mm)(58.014mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
-   Waived Violation between Board Outline Clearance(Outline Edge): (0.444mm < 0.5mm) Between Board Edge And Text "RST" (33.096mm,88.722mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-29 11:01:52 PMTop overlay out of board
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-29 11:01:52 PMTop overlay out of board
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-29 11:01:52 PMTop overlay out of board
-   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-29 11:01:52 PMTop overlay out of board
-Waived Violations :8
+Waived Violations :3
 
 Waived Violations Of Rule : Room RBF (Bounding Region = (87.859mm, 30.429mm, 97.358mm, 38.176mm) (InComponentClass('RBF'))
    Waived Violation between Room Definition: Between Room RBF (Bounding Region = (87.859mm, 30.429mm, 97.358mm, 38.176mm) (InComponentClass('RBF')) And SMT Small Component R84_RBF-0402 (61.29mm,9.576mm) on Top Layer Waived by UTAT Space Systems at 2019-08-28 7:24:03 PMwho needs rooms
 Waived Violations :1
 
 
-Violations Detected : 1
-Waived Violations : 145
-Time Elapsed        : 00:00:02
+Violations Detected : 6
+Waived Violations : 140
+Time Elapsed        : 00:00:01
