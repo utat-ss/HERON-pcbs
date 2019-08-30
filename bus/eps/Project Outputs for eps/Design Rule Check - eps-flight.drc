@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
-Date     : 2019-08-29
-Time     : 11:57:11 PM
+Date     : 2019-08-30
+Time     : 12:44:12 AM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -311,4 +311,4 @@ Waived Violations :1
 
 Violations Detected : 6
 Waived Violations : 140
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02
