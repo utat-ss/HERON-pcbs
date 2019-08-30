@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Jaden Reimer\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
 Date     : 2019-08-30
-Time     : 9:58:02 AM
+Time     : 10:05:52 AM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -46,15 +46,7 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.444mm < 0.5mm) Between Board Edge And Text "RST" (33.096mm,88.722mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay 
-Rule Violations :8
+Rule Violations :0
 
 Processing Rule : Room micro-circuit- (Bounding Region = (73.455mm, 105.831mm, 84.933mm, 114.569mm) (Disabled)(InComponentClass('micro-circuit-'))
 Rule Violations :0
@@ -301,12 +293,15 @@ Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Waived Violations :92
 
 Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Waived Violation between Board Outline Clearance(Cutout Edge): (Collision < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (44.52mm,56.966mm)(44.52mm,68.466mm) on Bottom Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
+   Waived Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge Waived by UTAT Space Systems at 2019-08-30 9:58:58 AMDon't need to worry about it
    Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,53.35mm)(50.51mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
    Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,65.38mm)(58.014mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
-Waived Violations :3
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-30 10:05:33 AMDon't need to worry about it: just silkscreen hanging off
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-30 10:05:33 AMDon't need to worry about it: just silkscreen hanging off
+   Waived Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-30 10:05:33 AMDon't need to worry about it: just silkscreen hanging off
+Waived Violations :6
 
 
-Violations Detected : 8
-Waived Violations : 139
-Time Elapsed        : 00:00:04
+Violations Detected : 0
+Waived Violations : 142
+Time Elapsed        : 00:00:03
