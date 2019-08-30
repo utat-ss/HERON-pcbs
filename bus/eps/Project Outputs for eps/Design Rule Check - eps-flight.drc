@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Timothy\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
+PCB File : C:\Users\Jaden Reimer\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
 Date     : 2019-08-30
-Time     : 12:44:12 AM
+Time     : 9:58:02 AM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -13,8 +13,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net +PACK Between Pad D5-3(58.8mm,38.862mm) on Bottom Layer And Pad R6-2(60.452mm,46.754mm) on Top Layer 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Un-Connected Pin Constraint ( (All) )
 Rule Violations :0
@@ -48,11 +47,14 @@ Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Region (0 hole(s)) Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (0.444mm < 0.5mm) Between Board Edge And Text "RST" (33.096mm,88.722mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay 
-Rule Violations :5
+Rule Violations :8
 
 Processing Rule : Room micro-circuit- (Bounding Region = (73.455mm, 105.831mm, 84.933mm, 114.569mm) (Disabled)(InComponentClass('micro-circuit-'))
 Rule Violations :0
@@ -99,7 +101,7 @@ Rule Violations :0
 Processing Rule : Room Y- IMON (Bounding Region = (104.916mm, 61.473mm, 108.252mm, 66.057mm) (Disabled)(InComponentClass('Y- IMON'))
 Rule Violations :0
 
-Processing Rule : Room RBF (Bounding Region = (87.859mm, 30.429mm, 97.358mm, 38.176mm) (InComponentClass('RBF'))
+Processing Rule : Room RBF (Bounding Region = (87.859mm, 30.429mm, 97.358mm, 38.176mm) (Disabled)(InComponentClass('RBF'))
 Rule Violations :0
 
 Processing Rule : Room BATTERY (Bounding Region = (79.716mm, 21.419mm, 121.955mm, 70.108mm) (Disabled)(InComponentClass('BATTERY'))
@@ -304,11 +306,7 @@ Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
    Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,65.38mm)(58.014mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
 Waived Violations :3
 
-Waived Violations Of Rule : Room RBF (Bounding Region = (87.859mm, 30.429mm, 97.358mm, 38.176mm) (InComponentClass('RBF'))
-   Waived Violation between Room Definition: Between Room RBF (Bounding Region = (87.859mm, 30.429mm, 97.358mm, 38.176mm) (InComponentClass('RBF')) And SMT Small Component R84_RBF-0402 (61.29mm,9.576mm) on Top Layer Waived by UTAT Space Systems at 2019-08-28 7:24:03 PMwho needs rooms
-Waived Violations :1
 
-
-Violations Detected : 6
-Waived Violations : 140
-Time Elapsed        : 00:00:02
+Violations Detected : 8
+Waived Violations : 139
+Time Elapsed        : 00:00:04
