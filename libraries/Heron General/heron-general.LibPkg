@@ -4302,7 +4302,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LDENPKFS
+DocumentUniqueId=DWHVCFRC
 
 [Document252]
 DocumentPath=Symbols\SLW-115-01-G-S.SchLib
@@ -4356,23 +4356,6 @@ GenerateClassCluster=0
 DocumentUniqueId=JLNPVURO
 
 [Document255]
-DocumentPath=Symbols\KSU213WLFG.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document256]
 DocumentPath=Footprints\HDT0004.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4389,7 +4372,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OREUHSEY
 
-[Document257]
+[Document256]
 DocumentPath=Footprints\KSU213WLFG.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4404,7 +4387,24 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LNDIBYLT
+DocumentUniqueId=EAUVPNDB
+
+[Document257]
+DocumentPath=Symbols\KSU213WLFG.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YMATFCOE
 
 [Generic_EDE]
 OutputDir=..\..\libraries
