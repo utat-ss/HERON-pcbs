@@ -1,12 +1,13 @@
 Output: NC Drill Files
 Type  : NC Drill
 From  : PCB Document [eps-flight.PcbDoc]
-   Generated File[eps-flight.TXT]
+   Generated File[eps-flight-Plated.TXT]
+   Generated File[eps-flight-NonPlated.TXT]
    Generated File[eps-flight.LDP]
    Generated File[eps-flight.DRR]
 
 
-Files Generated   : 3
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 10:27:33 PM On 2019-08-31
+Finished Output Generation At 11:29:11 PM On 2019-08-31
