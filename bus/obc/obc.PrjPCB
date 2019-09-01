@@ -258,10 +258,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JBNGIHVU
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for obc\Design Rule Check - obc.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -420,7 +416,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=OneNote
+TargetPrinter=HP DJ 3630 series (Network)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -1053,11 +1049,6 @@ Type108=1
 Type109=1
 Type110=1
 Type111=1
-Type112=1
-Type113=1
-Type114=1
-Type115=1
-Type116=1
 
 [Difference Levels]
 Type1=1
@@ -1122,9 +1113,6 @@ Type59=1
 Type60=1
 Type61=1
 Type62=1
-Type63=1
-Type64=1
-Type65=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1248,7 +1236,6 @@ Type118=3
 Type119=3
 MultiChannelAlternate=2
 AlternateItemFail=3
-Type122=2
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
