@@ -2,225 +2,6 @@
 FileName = eps-flight.GBR
 AutoAperture = True
 *************************************************************
-Generating : Top Paste
-      File : eps-flight.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D16
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-    D77
-    D78
-*************************************************************
-
-*************************************************************
-Generating : Route Tool Path
-      File : eps-flight.GM2
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D16
-*************************************************************
-
-*************************************************************
-Generating : VCC
-      File : eps-flight.G2
-
-    Adding Layer      : VCC
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D14
-    D16
-    D19
-    D37
-    D149
-    D151
-    D152
-    D157
-    D158
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : eps-flight.GTO
-
-    Adding Layer      : Top Overlay
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
-    D17
-    D18
-    D19
-    D20
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 15
-      File : eps-flight.GM15
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D10
-    D11
-    D13
-    D14
-    D16
-    D18
-    D196
-    D197
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : eps-flight.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D16
-    D21
-    D24
-    D25
-    D31
-    D32
-    D33
-    D37
-    D40
-    D50
-    D67
-    D68
-    D69
-    D161
-    D162
-    D163
-    D164
-    D165
-    D166
-    D167
-    D168
-    D170
-    D172
-    D173
-    D174
-    D175
-    D176
-    D177
-    D195
-*************************************************************
-
-*************************************************************
-Generating : GND
-      File : eps-flight.G1
-
-    Adding Layer      : GND
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D16
-    D37
-    D149
-    D151
-    D157
-    D160
-*************************************************************
-
-*************************************************************
 Generating : Bottom Overlay
       File : eps-flight.GBO
 
@@ -238,65 +19,6 @@ Used DCodes :
     D17
     D18
     D142
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : eps-flight.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D16
-    D21
-    D24
-    D25
-    D31
-    D40
-    D50
-    D82
-    D83
-    D87
-    D110
-    D111
-    D112
-    D125
-    D126
-    D127
-    D128
-    D129
-    D130
-    D131
-    D132
-    D133
-    D134
-    D135
-    D136
-    D137
-    D178
-    D179
-    D180
-    D181
-    D182
-    D183
-    D184
-    D185
-    D186
-    D187
-    D188
-    D189
-    D190
-    D191
-    D192
-    D193
-    D194
 *************************************************************
 
 *************************************************************
@@ -401,6 +123,322 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Bottom Solder
+      File : eps-flight.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D21
+    D24
+    D25
+    D31
+    D40
+    D50
+    D82
+    D83
+    D87
+    D110
+    D111
+    D112
+    D125
+    D126
+    D127
+    D128
+    D129
+    D130
+    D131
+    D132
+    D133
+    D134
+    D135
+    D136
+    D137
+    D178
+    D179
+    D180
+    D181
+    D182
+    D183
+    D184
+    D185
+    D186
+    D187
+    D188
+    D189
+    D190
+    D191
+    D192
+    D193
+    D194
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : eps-flight.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+*************************************************************
+
+*************************************************************
+Generating : Route Tool Path
+      File : eps-flight.GM2
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : eps-flight.G1
+
+    Adding Layer      : GND
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D37
+    D149
+    D151
+    D157
+    D160
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : eps-flight.GM15
+
+    Adding Layer      : Mechanical 15
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+    D11
+    D13
+    D14
+    D16
+    D18
+    D196
+    D197
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : eps-flight.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : eps-flight.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D21
+    D24
+    D25
+    D31
+    D32
+    D33
+    D37
+    D40
+    D50
+    D67
+    D68
+    D69
+    D161
+    D162
+    D163
+    D164
+    D165
+    D166
+    D167
+    D168
+    D170
+    D172
+    D173
+    D174
+    D175
+    D176
+    D177
+    D195
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : eps-flight.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D14
+    D16
+    D18
+    D19
+    D21
+    D24
+    D25
+    D31
+    D32
+    D33
+    D37
+    D40
+    D50
+    D67
+    D68
+    D69
+    D146
+    D149
+    D150
+    D151
+    D152
+    D153
+    D154
+    D155
+    D156
+    D157
+    D158
+    D159
+    D160
+    D161
+    D162
+    D163
+    D164
+    D165
+    D166
+    D167
+    D168
+    D169
+    D170
+    D171
+    D172
+    D173
+    D174
+    D175
+    D176
+    D177
+*************************************************************
+
+*************************************************************
 Generating : Top Solder
       File : eps-flight.GTS
 
@@ -492,10 +530,10 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Layer
-      File : eps-flight.GBL
+Generating : VCC
+      File : eps-flight.G2
 
-    Adding Layer      : Bottom Layer
+    Adding Layer      : VCC
 
     Adding Layer      : Route Tool Path
 
@@ -503,52 +541,14 @@ Generating : Bottom Layer
 
 
 Used DCodes :
-    D11
     D14
     D16
-    D18
     D19
-    D21
-    D24
-    D25
-    D31
-    D32
-    D33
     D37
-    D40
-    D50
-    D67
-    D68
-    D69
-    D146
     D149
-    D150
     D151
     D152
-    D153
-    D154
-    D155
-    D156
     D157
     D158
-    D159
-    D160
-    D161
-    D162
-    D163
-    D164
-    D165
-    D166
-    D167
-    D168
-    D169
-    D170
-    D171
-    D172
-    D173
-    D174
-    D175
-    D176
-    D177
 *************************************************************
 
