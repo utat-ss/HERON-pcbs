@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Jaden Reimer\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
-Date     : 2019-09-01
-Time     : 6:10:08 PM
+Date     : 2019-09-02
+Time     : 12:30:02 AM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -13,7 +13,8 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
+   Violation between Un-Routed Net Constraint: Net RTC_VBATT Between Pad J2-17(30.59mm,59.44mm) on Top Layer [Unplated] And Pad RTC_BATT-1(48.385mm,57.099mm) on Bottom Layer [Unplated] 
+Rule Violations :1
 
 Processing Rule : Un-Connected Pin Constraint ( (All) )
 Rule Violations :0
@@ -43,7 +44,7 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Track (45.436mm,48.186mm)(45.558mm,48.064mm) on Top Layer 
+   Violation between Net Antennae: Track (45.658mm,48.068mm)(45.805mm,47.921mm) on Top Layer 
 Rule Violations :1
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
@@ -303,6 +304,6 @@ Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
 Waived Violations :2
 
 
-Violations Detected : 5
+Violations Detected : 6
 Waived Violations : 138
-Time Elapsed        : 00:00:05
+Time Elapsed        : 00:00:03
