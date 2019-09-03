@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: eps-flight.PcbDoc   2019-09-03  1:08:05 AM
+NCDrill File Report For: eps-flight.PcbDoc   2019-09-03  10:06:30 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -8,7 +8,7 @@ ASCII Non-Plated RoundHoles File : eps-flight-NonPlated.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             423       PTH        0.00mm (0.00inch)
+T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             433       PTH        0.00mm (0.00inch)
 T2      0.3mm (12mil)                                             Round             261       PTH        0.00mm (0.00inch)
 T3      0.711mm (28mil)                                           Round             25        PTH        0.00mm (0.00inch)
 T4      0.864mm (34mil)                                           Round             22        PTH        0.00mm (0.00inch)
@@ -21,6 +21,6 @@ T10     0.9mm (35mil)                                             Round         
 T11     2.794mm (110mil)        +/-0mm (0mil)                     Round             2         NPTH       0.00mm (0.00inch)
 T12     3.18mm (125mil)         +/-0mm (0mil)                     Round             6         NPTH       0.00mm (0.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              856
+Totals                                                                              866
 
 Total Processing Time (hh:mm:ss) : 00:00:00

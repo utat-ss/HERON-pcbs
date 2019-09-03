@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Jaden Reimer\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
 Date     : 2019-09-03
-Time     : 1:07:38 AM
+Time     : 10:06:08 AM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -47,11 +47,10 @@ Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge 
-   Violation between Board Outline Clearance(Outline Edge): (0.305mm < 0.5mm) Between Board Edge And Region (1 hole(s)) Bottom Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(24.987mm,13.611mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (24.987mm,-7.09mm)(55.34mm,-7.09mm) on Top Overlay 
    Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (55.34mm,-7.09mm)(55.34mm,13.611mm) on Top Overlay 
-Rule Violations :5
+Rule Violations :4
 
 Processing Rule : Room micro-circuit- (Bounding Region = (73.455mm, 105.831mm, 84.933mm, 114.569mm) (Disabled)(InComponentClass('micro-circuit-'))
 Rule Violations :0
@@ -308,6 +307,6 @@ Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
 Waived Violations :2
 
 
-Violations Detected : 5
+Violations Detected : 4
 Waived Violations : 140
-Time Elapsed        : 00:00:04
+Time Elapsed        : 00:00:03
