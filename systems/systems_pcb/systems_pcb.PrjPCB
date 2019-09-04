@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for systems_pcb
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -212,6 +212,150 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for systems_pcb\BOM Outputs\Bill of Materials-systems_pcb.xls
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for systems_pcb\Design Rule Check - systems_pcb.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb-NonPlated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb-Plated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.1
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.2
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.3
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.G1
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.G2
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GD1
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GG1
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM4
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM10
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM12
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GM16
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GML
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.REP
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for systems_pcb\Fabrication Outputs\systems_pcb.RUL
+DItemRevisionGUID=
+
 [Parameter1]
 Name=ProjectDrawnBy
 Value=Bruno Almeida
@@ -287,7 +431,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for systems_pcb
 
 [OutputGroup1]
 Name=Netlist Outputs
