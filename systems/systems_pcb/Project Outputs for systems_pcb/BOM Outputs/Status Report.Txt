@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 9:26:56 PM On 2019-09-03
+
+Output: Bill of Materials
+Type  : BOM
+From  : BOM Document [systems_pcb.BomDoc]
+   Generated File[Bill of Materials-systems_pcb.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 9:27:42 PM On 2019-09-03
