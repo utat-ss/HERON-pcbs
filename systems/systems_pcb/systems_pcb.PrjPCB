@@ -212,10 +212,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for systems_pcb\Design Rule Check - systems_pcb.html
-DItemRevisionGUID=
-
 [Parameter1]
 Name=ProjectDrawnBy
 Value=Bruno Almeida
