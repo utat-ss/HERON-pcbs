@@ -1,12 +1,31 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : PCB Document [pay-ssm-v4-2.PcbDoc]
-   Generated File[pay-ssm-v4-2.TXT]
-   Generated File[pay-ssm-v4-2.LDP]
-   Generated File[pay-ssm-v4-2.DRR]
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 9:03:39 PM On 9/3/2019
+
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [Default Population] of PCB Document [pay-ssm-v4-4.PcbDoc]
+   Generated File[pay-ssm-v4-4.GTO]
+   Generated File[pay-ssm-v4-4.GTP]
+   Generated File[pay-ssm-v4-4.GTS]
+   Generated File[pay-ssm-v4-4.GTL]
+   Generated File[pay-ssm-v4-4.G1]
+   Generated File[pay-ssm-v4-4.G2]
+   Generated File[pay-ssm-v4-4.G3]
+   Generated File[pay-ssm-v4-4.G4]
+   Generated File[pay-ssm-v4-4.GBL]
+   Generated File[pay-ssm-v4-4.GBS]
+   Generated File[pay-ssm-v4-4.GBP]
+   Generated File[pay-ssm-v4-4.GBO]
+   Generated File[pay-ssm-v4-4.GM2]
+   Generated File[pay-ssm-v4-4.GPT]
+   Generated File[pay-ssm-v4-4.GPB]
+   Generated File[pay-ssm-v4-4.RUL]
+   Generated File[pay-ssm-v4-4.EXTREP]
+   Generated File[pay-ssm-v4-4.REP]
 
 
-Files Generated   : 3
+Files Generated   : 18
 Documents Printed : 0
 
-Finished Output Generation At 1:14:49 PM On 2019-08-15
+Finished Output Generation At 9:03:40 PM On 9/3/2019
