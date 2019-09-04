@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Jaden Reimer\Documents\GitHub\pcbs\bus\eps\eps-flight.PcbDoc
-Date     : 2019-09-03
-Time     : 10:07:31 PM
+Date     : 2019-09-04
+Time     : 1:30:50 AM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -40,10 +40,20 @@ Processing Rule : Hole To Hole Clearance (Gap=0.2mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
-Rule Violations :0
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q3-1(77.118mm,48.841mm) on Bottom Layer And Pad Q3-4(78.418mm,48.841mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q3-1(77.118mm,48.841mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q3-4(78.418mm,48.841mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]
+Rule Violations :9
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-Rule Violations :0
+   Violation between Net Antennae: Track (45.573mm,48.153mm)(45.805mm,47.921mm) on Top Layer 
+Rule Violations :1
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
    Violation between Board Outline Clearance(Outline Edge): (0.127mm < 0.5mm) Between Arc (45.11mm,89.535mm) on Top Overlay And Board Edge 
@@ -239,9 +249,6 @@ Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q2-1(77.443mm,59.763mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q2-1(77.443mm,59.763mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q2-4(78.093mm,59.763mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q3-1(77.118mm,48.841mm) on Bottom Layer And Pad Q3-4(78.418mm,48.841mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q3-1(77.118mm,48.841mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q3-4(78.418mm,48.841mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q4-1(73.589mm,31.677mm) on Bottom Layer And Pad Q4-1(74.239mm,31.677mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q4-1(73.589mm,31.677mm) on Bottom Layer And Pad Q4-4(72.939mm,31.677mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Pad Q4-1(73.589mm,31.677mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
@@ -289,17 +296,7 @@ Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
    Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.01mm < 0.1mm) Between Region (0 hole(s)) Bottom Solder And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.01mm]Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-Waived Violations :92
-
-Waived Violations Of Rule : Net Antennae (Tolerance=0mm) (All)
-   Waived Violation between Net Antennae: Track (45.658mm,48.068mm)(45.805mm,47.921mm) on Top Layer Waived by UTAT Space Systems at 2019-09-03 12:53:48 AMAll are acceptable/ok
-Waived Violations :1
+Waived Violations :83
 
 Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
    Waived Violation between Board Outline Clearance(Cutout Edge): (0.445mm < 0.5mm) Between Board Cutout (Multi-Layer)Region (0 hole(s)) Multi-Layer And Track (50.51mm,53.35mm)(50.51mm,65.38mm) on Top Overlay Waived by UTAT Space Systems at 2019-08-28 7:23:02 PMTis okay, needed
@@ -307,6 +304,6 @@ Waived Violations Of Rule : Board Clearance Constraint (Gap=0mm) (All)
 Waived Violations :2
 
 
-Violations Detected : 4
-Waived Violations : 140
-Time Elapsed        : 00:00:04
+Violations Detected : 14
+Waived Violations : 130
+Time Elapsed        : 00:00:05
