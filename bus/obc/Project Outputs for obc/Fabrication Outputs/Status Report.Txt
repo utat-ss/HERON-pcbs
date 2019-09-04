@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Output: NC Drill Files
 Type  : NC Drill
 From  : PCB Document [obc.PcbDoc]
@@ -11,3 +12,14 @@ Files Generated   : 4
 Documents Printed : 0
 
 Finished Output Generation At 1:13:46 AM On 2019-09-04
+=======
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [obc.PrjPCB]
+
+
+Files Generated   : 0
+Documents Printed : 0
+
+Finished Output Generation At 11:52:26 PM On 9/3/2019
+>>>>>>> 02c24348773d97c60a59ee8520814400d10d29c3

@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: obc.GBR   9/2/2019  1:57:03 AM
+Gerber File Extension Report For: obc.GBR   9/3/2019  11:49:05 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -19,9 +19,9 @@ Layer Extension     Layer Description
 .GBP                Bottom Paste                            
 .GBO                Bottom Overlay                          
 .GKO                Keep-Out Layer                          
-.GM2                Route Tool Path                         
 .GM1                Mechanical 1                            
+.GM2                Route Tool Path                         
+.GM13               Mechanical 13                           
 .GM4                Mechanical 4                            
 .GM15               Mechanical 15                           
-.GM13               Mechanical 13                           
 ------------------------------------------------------------------------------------------

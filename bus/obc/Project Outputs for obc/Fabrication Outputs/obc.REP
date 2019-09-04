@@ -2,10 +2,10 @@
 FileName = obc.GBR
 AutoAperture = True
 *************************************************************
-Generating : Mechanical 15
-      File : obc.GM15
+Generating : Mechanical 13
+      File : obc.GM13
 
-    Adding Layer      : Mechanical 15
+    Adding Layer      : Mechanical 13
 
     Adding Layer      : Route Tool Path
 
@@ -14,7 +14,6 @@ Used DCodes :
     D10
     D20
     D66
-    D67
 *************************************************************
 
 *************************************************************
@@ -33,42 +32,14 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Pad Master
-      File : obc.GPB
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D20
-    D21
-    D22
-    D23
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D63
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : obc.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Route Tool Path
+Generating : Top Pad Master
+      File : obc.GPT
 
     Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
+
+    Adding Layer      : Route Tool Path
 
 
 Used DCodes :
@@ -89,13 +60,41 @@ Used DCodes :
     D34
     D35
     D36
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
 *************************************************************
 
 *************************************************************
-Generating : GND
-      File : obc.G1
+Generating : Bottom Paste
+      File : obc.GBP
 
-    Adding Layer      : GND
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D21
+    D22
+    D23
+    D63
+*************************************************************
+
+*************************************************************
+Generating : VCC
+      File : obc.G2
+
+    Adding Layer      : VCC
 
     Adding Layer      : Route Tool Path
 
@@ -154,6 +153,32 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Bottom Pad Master
+      File : obc.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D20
+    D21
+    D22
+    D23
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D63
+*************************************************************
+
+*************************************************************
 Generating : Top Overlay
       File : obc.GTO
 
@@ -177,10 +202,10 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Layer
-      File : obc.GBL
+Generating : GND
+      File : obc.G1
 
-    Adding Layer      : Bottom Layer
+    Adding Layer      : GND
 
     Adding Layer      : Route Tool Path
 
@@ -188,42 +213,17 @@ Generating : Bottom Layer
 
 
 Used DCodes :
-    D10
     D20
-    D21
-    D22
-    D23
     D55
-    D56
     D57
-    D58
-    D59
-    D60
-    D61
     D62
-    D63
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 13
-      File : obc.GM13
+Generating : Mechanical 4
+      File : obc.GM4
 
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D10
-    D20
-    D66
-*************************************************************
-
-*************************************************************
-Generating : Route Tool Path
-      File : obc.GM2
-
-    Adding Layer      : Route Tool Path
+    Adding Layer      : Mechanical 4
 
     Adding Layer      : Route Tool Path
 
@@ -314,10 +314,26 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 4
-      File : obc.GM4
+Generating : Mechanical 15
+      File : obc.GM15
 
-    Adding Layer      : Mechanical 4
+    Adding Layer      : Mechanical 15
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+    D20
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Route Tool Path
+      File : obc.GM2
+
+    Adding Layer      : Route Tool Path
 
     Adding Layer      : Route Tool Path
 
@@ -340,14 +356,16 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Pad Master
-      File : obc.GPT
+Generating : Top Paste
+      File : obc.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Route Tool Path
 
     Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
-
-    Adding Layer      : Route Tool Path
 
 
 Used DCodes :
@@ -368,6 +386,25 @@ Used DCodes :
     D34
     D35
     D36
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : obc.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D20
+    D21
+    D22
+    D23
     D55
     D56
     D57
@@ -375,44 +412,7 @@ Used DCodes :
     D59
     D60
     D61
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : obc.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D20
-    D21
-    D22
-    D23
-    D63
-*************************************************************
-
-*************************************************************
-Generating : VCC
-      File : obc.G2
-
-    Adding Layer      : VCC
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D20
-    D55
-    D57
     D62
+    D63
 *************************************************************
 
