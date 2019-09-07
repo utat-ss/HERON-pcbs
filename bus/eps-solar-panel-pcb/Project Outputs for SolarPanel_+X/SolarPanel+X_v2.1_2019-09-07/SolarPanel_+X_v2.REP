@@ -1,0 +1,195 @@
+*************************************************************
+FileName = SolarPanel_+X_v2.GBR
+AutoAperture = True
+*************************************************************
+Generating : Power 1
+      File : SolarPanel_+X_v2.G1
+
+    Adding Layer      : Power 1
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Route Tool Path
+      File : SolarPanel_+X_v2.GM2
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Power 2
+      File : SolarPanel_+X_v2.G2
+
+    Adding Layer      : Power 2
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : SolarPanel_+X_v2.GBO
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+    D24
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : SolarPanel_+X_v2.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : SolarPanel_+X_v2.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : SolarPanel_+X_v2.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : SolarPanel_+X_v2.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D15
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : SolarPanel_+X_v2.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : SolarPanel_+X_v2.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : SolarPanel_+X_v2.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D18
+    D19
+    D20
+*************************************************************
+

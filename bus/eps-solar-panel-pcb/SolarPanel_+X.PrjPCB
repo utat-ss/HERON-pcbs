@@ -105,6 +105,26 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for SolarPanel_+X\Fabrication Outputs\SolarPanel_+X_v2.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for SolarPanel_+X\Fabrication Outputs\SolarPanel_+X_v2.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for SolarPanel_+X\Fabrication Outputs\SolarPanel_+X_v2.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for SolarPanel_+X\Fabrication Outputs\SolarPanel_+X_v2.REP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for SolarPanel_+X\Fabrication Outputs\SolarPanel_+X_v2.RUL
+DItemRevisionGUID=
+
 [Parameter1]
 Name=PROJ_AUTHOR
 Value=Zeng, Dylan V.
@@ -235,7 +255,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF (redirected 4)
+TargetPrinter=Microsoft Print to PDF (redirected 11)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
