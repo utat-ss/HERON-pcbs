@@ -704,6 +704,90 @@ DItemRevisionGUID=
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-2.TXT
 DItemRevisionGUID=
 
+[GeneratedDocument22]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G1
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G2
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G3
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G4
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.REP
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.TXT
+DItemRevisionGUID=
+
 [Parameter1]
 Name=PROJ_ORG
 Value=UTAT SS

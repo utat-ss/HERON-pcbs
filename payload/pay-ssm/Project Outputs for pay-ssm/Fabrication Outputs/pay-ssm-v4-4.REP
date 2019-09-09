@@ -2,202 +2,6 @@
 FileName = pay-ssm-v4-4.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Pad Master
-      File : pay-ssm-v4-4.GPB
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D17
-    D19
-    D20
-    D23
-    D24
-    D25
-    D30
-    D33
-    D37
-    D63
-    D64
-    D65
-    D66
-    D67
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D83
-    D84
-    D85
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-    D93
-*************************************************************
-
-*************************************************************
-Generating : Route Tool Path
-      File : pay-ssm-v4-4.GM2
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D17
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : pay-ssm-v4-4.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D17
-    D19
-    D20
-    D23
-    D24
-    D25
-    D30
-    D33
-    D37
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D83
-    D84
-    D85
-    D86
-    D87
-    D88
-    D89
-    D90
-    D91
-    D92
-    D93
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : pay-ssm-v4-4.GBO
-
-    Adding Layer      : Bottom Overlay
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
-    D17
-    D117
-*************************************************************
-
-*************************************************************
-Generating : 3V3
-      File : pay-ssm-v4-4.G3
-
-    Adding Layer      : 3V3
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D63
-    D68
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : pay-ssm-v4-4.GTO
-
-    Adding Layer      : Top Overlay
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
-    D17
-*************************************************************
-
-*************************************************************
-Generating : GND1
-      File : pay-ssm-v4-4.G1
-
-    Adding Layer      : GND1
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D63
-    D68
-*************************************************************
-
-*************************************************************
 Generating : Top Paste
       File : pay-ssm-v4-4.GTP
 
@@ -241,10 +45,10 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : GND2
-      File : pay-ssm-v4-4.G4
+Generating : 3V3
+      File : pay-ssm-v4-4.G3
 
-    Adding Layer      : GND2
+    Adding Layer      : 3V3
 
     Adding Layer      : Route Tool Path
 
@@ -306,6 +110,98 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : GND2
+      File : pay-ssm-v4-4.G4
+
+    Adding Layer      : GND2
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D63
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : pay-ssm-v4-4.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D17
+    D19
+    D20
+    D23
+    D24
+    D25
+    D30
+    D33
+    D37
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : pay-ssm-v4-4.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
 Generating : VCC
       File : pay-ssm-v4-4.G2
 
@@ -326,10 +222,10 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : pay-ssm-v4-4.GBS
+Generating : Bottom Paste
+      File : pay-ssm-v4-4.GBP
 
-    Adding Layer      : Bottom Solder
+    Adding Layer      : Bottom Paste
 
     Adding Layer      : Route Tool Path
 
@@ -346,38 +242,63 @@ Used DCodes :
     D24
     D25
     D30
+    D33
     D37
-    D50
-    D57
-    D58
-    D59
-    D60
-    D61
     D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
     D76
-    D94
-    D95
-    D96
-    D97
-    D98
-    D99
-    D100
-    D101
-    D102
-    D103
-    D104
-    D105
-    D106
-    D107
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
-    D114
-    D115
-    D116
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+*************************************************************
+
+*************************************************************
+Generating : GND1
+      File : pay-ssm-v4-4.G1
+
+    Adding Layer      : GND1
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D63
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Route Tool Path
+      File : pay-ssm-v4-4.GM2
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D17
 *************************************************************
 
 *************************************************************
@@ -431,16 +352,35 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Paste
-      File : pay-ssm-v4-4.GBP
+Generating : Bottom Overlay
+      File : pay-ssm-v4-4.GBO
 
-    Adding Layer      : Bottom Paste
+    Adding Layer      : Bottom Overlay
 
     Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D117
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : pay-ssm-v4-4.GPB
 
     Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
+
+    Adding Layer      : Route Tool Path
 
 
 Used DCodes :
@@ -453,6 +393,11 @@ Used DCodes :
     D30
     D33
     D37
+    D63
+    D64
+    D65
+    D66
+    D67
     D69
     D70
     D71
@@ -478,6 +423,61 @@ Used DCodes :
     D91
     D92
     D93
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : pay-ssm-v4-4.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D19
+    D20
+    D23
+    D24
+    D25
+    D30
+    D37
+    D50
+    D57
+    D58
+    D59
+    D60
+    D61
+    D71
+    D78
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
 *************************************************************
 
 *************************************************************
