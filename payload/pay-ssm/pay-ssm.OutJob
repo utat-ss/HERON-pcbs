@@ -15,13 +15,13 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=pay-ssm.OutJob
+Name=
 Description=
 TargetOutputMedium=Folder Structure
 VariantName=Default Population
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Canon MX490 series Printer WS
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -70,7 +70,7 @@ OutputEnabled3_OutputMedium3=2
 OutputEnabled3_OutputMedium4=0
 OutputDefault3=0
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes
+Configuration3_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=True|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes
 
 [PublishSettings]
 OutputFilePath2=C:\Users\lorna.l\pcbs\payload\pay-ssm\.\pay-ssm.pdf
@@ -100,7 +100,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Users\Lorna\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
+OutputFilePath3=C:\Users\vogel\Files\Altium\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
 ReleaseManaged3=1
 OutputBasePath3=Project Outputs for pay-ssm
 OutputPathMedia3=Fabrication Outputs
@@ -154,7 +154,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\Users\lorna.l\pcbs\payload\pay-ssm\.\pay-ssm.pdf
 OpenOutputs2=1
-RelativeOutputPath3=C:\Users\Lorna\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
+RelativeOutputPath3=C:\Users\vogel\Files\Altium\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
