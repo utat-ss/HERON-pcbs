@@ -1,12 +1,13 @@
 Output: NC Drill Files
 Type  : NC Drill
 From  : PCB Document [pay-ssm-v4-4.PcbDoc]
-   Generated File[pay-ssm-v4-4.TXT]
+   Generated File[pay-ssm-v4-4-Plated.TXT]
+   Generated File[pay-ssm-v4-4-NonPlated.TXT]
    Generated File[pay-ssm-v4-4.LDP]
    Generated File[pay-ssm-v4-4.DRR]
 
 
-Files Generated   : 3
+Files Generated   : 4
 Documents Printed : 0
 
-Finished Output Generation At 8:22:59 PM On 9/8/2019
+Finished Output Generation At 1:04:55 AM On 2019-09-11

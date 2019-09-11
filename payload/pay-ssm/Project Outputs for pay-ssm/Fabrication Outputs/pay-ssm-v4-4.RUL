@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\Lorna\pcbs\payload\pay-ssm\pay-ssm-v4-4.PcbDoc
+DRC Rules Export File for PCB: C:\Users\vogel\Files\Altium\pcbs\payload\pay-ssm\pay-ssm-v4-4.PcbDoc
 RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.91
 RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.00

@@ -1,16 +1,17 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: pay-ssm-v4-4.PcbDoc   9/8/2019  8:22:58 PM
+NCDrill File Report For: pay-ssm-v4-4.PcbDoc   2019-09-11  1:04:54 AM
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
-ASCII RoundHoles File : pay-ssm-v4-4.TXT
+ASCII Plated RoundHoles File : pay-ssm-v4-4-Plated.TXT
+ASCII Non-Plated RoundHoles File : pay-ssm-v4-4-NonPlated.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      12mil (0.3mm)           +/-3mil (0.08mm)                  Round             681       PTH        0.00inch (0.00mm)
-T2      34mil (0.864mm)                                           Round             24        PTH        0.00inch (0.00mm)
-T3      35mil (0.889mm)                                           Round             6         PTH        0.00inch (0.00mm)
-T4      142mil (3.6mm)                                            Round             8         NPTH       0.00inch (0.00mm)
+T1      0.3mm (12mil)           +/-0.08mm (3mil)                  Round             681       PTH        0.00mm (0.00inch)
+T2      0.864mm (34mil)                                           Round             24        PTH        0.00mm (0.00inch)
+T3      0.889mm (35mil)                                           Round             6         PTH        0.00mm (0.00inch)
+T4      3.6mm (142mil)                                            Round             8         NPTH       0.00mm (0.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              719
 
