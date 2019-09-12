@@ -15,13 +15,13 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [OutputGroup1]
-Name=
+Name=pay-ssm.OutJob
 Description=
 TargetOutputMedium=Folder Structure
 VariantName=Default Population
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=\\DC01\Xerox WC-7855-S
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -45,7 +45,7 @@ OutputEnabled1_OutputMedium3=1
 OutputEnabled1_OutputMedium4=0
 OutputDefault1=0
 Configuration1_Name1=OutputConfigurationParameter1
-Configuration1_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16908290~1|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16777220~1,16777218~1,16777219~1,16777221~1,16842751~1,16973835~1,16973833~1,16973831~1,16908290~1,16973848~1,16973849~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False
+Configuration1_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean,16973830~1,16973832~1,16973834~1,16777217~1,16777220~1,16777218~1,16777219~1,16777221~1,16842751~1,16973835~1,16973833~1,16973831~1,16908290~1,16973848~1,16973849~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False
 OutputType2=Schematic Print
 OutputName2=Schematic Prints
 OutputCategory2=Documentation
@@ -100,7 +100,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Users\vogel\Files\Altium\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
+OutputFilePath3=C:\Users\lorna.l\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
 ReleaseManaged3=1
 OutputBasePath3=Project Outputs for pay-ssm
 OutputPathMedia3=Fabrication Outputs
@@ -154,7 +154,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\Users\lorna.l\pcbs\payload\pay-ssm\.\pay-ssm.pdf
 OpenOutputs2=1
-RelativeOutputPath3=C:\Users\vogel\Files\Altium\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
+RelativeOutputPath3=C:\Users\lorna.l\pcbs\payload\pay-ssm\Project Outputs for pay-ssm\Fabrication Outputs\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0

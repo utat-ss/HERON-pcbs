@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\Owner\Documents\GitHub\pcbs\bus\obc\obc.PcbDoc
+DRC Rules Export File for PCB: C:\Users\lorna.l\pcbs\bus\obc\obc.PcbDoc
 RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.91
 RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.00

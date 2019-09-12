@@ -5,15 +5,12 @@ AutoAperture = True
 Generating : Drill Drawing
       File : systems_pcb.GD1
 
-    Adding Layer      : Route Tool Path
-
     Adding Drill Pair : TOP-BOT
 
     Adding Layer      : Drill Drawing
 
 
 Used DCodes :
-    D11
     D60
     D61
 *************************************************************
@@ -22,65 +19,40 @@ Used DCodes :
 Generating : Drill Guide
       File : systems_pcb.GG1
 
-    Adding Layer      : Route Tool Path
-
     Adding Drill Pair : TOP-BOT
 
     Adding Layer      : Drill Guide
 
 
 Used DCodes :
-    D11
     D60
 *************************************************************
 
 *************************************************************
-Generating : Dielectric 2
-      File : systems_pcb.3
+Generating : Dielectric 3
+      File : systems_pcb.2
 
-    Adding Layer      : Dielectric 2
-
-    Adding Layer      : Route Tool Path
+    Adding Layer      : Dielectric 3
 
 
 Used DCodes :
-    D11
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 12
-      File : systems_pcb.GM12
+Generating : Mechanical 15
+      File : systems_pcb.GM15
 
-    Adding Layer      : Mechanical 12
-
-    Adding Layer      : Route Tool Path
+    Adding Layer      : Mechanical 15
 
 
 Used DCodes :
-    D11
+    D58
+    D59
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 1
-      File : systems_pcb.GM1
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D10
-    D11
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : systems_pcb.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Route Tool Path
+Generating : Top Pad Master
+      File : systems_pcb.GPT
 
     Adding Layer      : TOP
 
@@ -88,7 +60,6 @@ Generating : Top Paste
 
 
 Used DCodes :
-    D11
     D15
     D16
     D17
@@ -100,6 +71,120 @@ Used DCodes :
     D23
     D24
     D25
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : systems_pcb.GM4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : BOT
+      File : systems_pcb.GBL
+
+    Adding Layer      : BOT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : systems_pcb.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : systems_pcb.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : BOT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 10
+      File : systems_pcb.GM10
+
+    Adding Layer      : Mechanical 10
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : systems_pcb.G1
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D45
+    D50
+    D51
+    D53
+    D54
+    D55
+    D57
 *************************************************************
 
 *************************************************************
@@ -107,8 +192,6 @@ Generating : Top Overlay
       File : systems_pcb.GTO
 
     Adding Layer      : Top Overlay
-
-    Adding Layer      : Route Tool Path
 
 
 Used DCodes :
@@ -120,17 +203,79 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 13
-      File : systems_pcb.GM13
+Generating : Dielectric 2
+      File : systems_pcb.3
 
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Route Tool Path
+    Adding Layer      : Dielectric 2
 
 
 Used DCodes :
-    D11
-    D58
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : systems_pcb.GML
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 12
+      File : systems_pcb.GM12
+
+    Adding Layer      : Mechanical 12
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : systems_pcb.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : systems_pcb.GPB
+
+    Adding Layer      : BOT
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
 *************************************************************
 
 *************************************************************
@@ -139,15 +284,12 @@ Generating : Top Solder
 
     Adding Layer      : Top Solder
 
-    Adding Layer      : Route Tool Path
-
     Adding Layer      : TOP
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D11
     D15
     D17
     D18
@@ -174,154 +316,22 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Pad Master
-      File : systems_pcb.GPT
+Generating : VCC
+      File : systems_pcb.G2
 
-    Adding Layer      : TOP
+    Adding Layer      : VCC
 
     Adding Layer      : Multi-Layer
 
-    Adding Layer      : Route Tool Path
-
 
 Used DCodes :
-    D11
-    D15
-    D16
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
     D45
-    D46
-    D47
-    D48
     D49
     D50
     D51
     D52
     D53
-    D54
-    D55
-    D56
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 16
-      File : systems_pcb.GM16
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : systems_pcb.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : BOT
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
-Generating : Bottom Pad Master
-      File : systems_pcb.GPB
-
-    Adding Layer      : BOT
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 15
-      File : systems_pcb.GM15
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
-    D58
-    D59
-*************************************************************
-
-*************************************************************
-Generating : BOT
-      File : systems_pcb.GBL
-
-    Adding Layer      : BOT
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
     D57
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 4
-      File : systems_pcb.GM4
-
-    Adding Layer      : Mechanical 4
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
 *************************************************************
 
 *************************************************************
@@ -330,155 +340,34 @@ Generating : Dielectric 1
 
     Adding Layer      : Dielectric 1
 
-    Adding Layer      : Route Tool Path
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 16
+      File : systems_pcb.GM16
+
+    Adding Layer      : Mechanical 16
 
 
 Used DCodes :
-    D11
 *************************************************************
 
 *************************************************************
-Generating : VCC
-      File : systems_pcb.G2
+Generating : Mechanical 13
+      File : systems_pcb.GM13
 
-    Adding Layer      : VCC
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Mechanical 13
 
 
 Used DCodes :
-    D11
-    D45
-    D49
-    D50
-    D51
-    D52
-    D53
-    D57
-*************************************************************
-
-*************************************************************
-Generating : Multi-Layer
-      File : systems_pcb.GML
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : systems_pcb.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : BOT
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
+    D58
 *************************************************************
 
 *************************************************************
 Generating : Route Tool Path
       File : systems_pcb.GM2
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
-Generating : GND
-      File : systems_pcb.G1
-
-    Adding Layer      : GND
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D11
-    D45
-    D50
-    D51
-    D53
-    D54
-    D55
-    D57
-*************************************************************
-
-*************************************************************
-Generating : Dielectric 3
-      File : systems_pcb.2
-
-    Adding Layer      : Dielectric 3
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 10
-      File : systems_pcb.GM10
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
-Generating : Keep-Out Layer
-      File : systems_pcb.GKO
-
-    Adding Layer      : Keep-Out Layer
 
     Adding Layer      : Route Tool Path
 
@@ -493,11 +382,47 @@ Generating : Bottom Overlay
 
     Adding Layer      : Bottom Overlay
 
-    Adding Layer      : Route Tool Path
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : systems_pcb.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : BOT
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : systems_pcb.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
 *************************************************************
 
 *************************************************************
@@ -505,8 +430,6 @@ Generating : TOP
       File : systems_pcb.GTL
 
     Adding Layer      : TOP
-
-    Adding Layer      : Route Tool Path
 
     Adding Layer      : Multi-Layer
 
