@@ -2,31 +2,6 @@
 FileName = pay-led-1-v3.GBR
 AutoAperture = True
 *************************************************************
-Generating : Route Tool Path
-      File : pay-led-1-v3.GM2
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : pay-led-1-v3.GBO
-
-    Adding Layer      : Bottom Overlay
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D40
-*************************************************************
-
-*************************************************************
 Generating : Bottom Paste
       File : pay-led-1-v3.GBP
 
@@ -40,60 +15,23 @@ Generating : Bottom Paste
 
 
 Used DCodes :
-    D15
-    D36
+    D13
+    D16
     D37
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : pay-led-1-v3.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D15
-    D31
-    D32
     D38
-    D39
 *************************************************************
 
 *************************************************************
-Generating : Top Solder
-      File : pay-led-1-v3.GTS
-
-    Adding Layer      : Top Solder
+Generating : Route Tool Path
+      File : pay-led-1-v3.GM2
 
     Adding Layer      : Route Tool Path
 
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Route Tool Path
 
 
 Used DCodes :
     D13
-    D14
-    D15
-    D17
-    D18
-    D21
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
 *************************************************************
 
 *************************************************************
@@ -122,57 +60,7 @@ Used DCodes :
     D22
     D23
     D24
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : pay-led-1-v3.GTO
-
-    Adding Layer      : Top Overlay
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : pay-led-1-v3.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D15
-    D33
-    D34
-    D35
-    D36
-    D37
-*************************************************************
-
-*************************************************************
-Generating : PWR
-      File : pay-led-1-v3.G2
-
-    Adding Layer      : PWR
-
-    Adding Layer      : Route Tool Path
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D34
+    D25
 *************************************************************
 
 *************************************************************
@@ -187,7 +75,55 @@ Generating : GND
 
 
 Used DCodes :
-    D34
+    D13
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : pay-led-1-v3.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D16
+    D18
+    D19
+    D22
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+*************************************************************
+
+*************************************************************
+Generating : PWR
+      File : pay-led-1-v3.G2
+
+    Adding Layer      : PWR
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D35
 *************************************************************
 
 *************************************************************
@@ -215,8 +151,83 @@ Used DCodes :
     D22
     D23
     D24
-    D33
+    D25
     D34
     D35
+    D36
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : pay-led-1-v3.GBO
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D13
+    D41
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : pay-led-1-v3.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D16
+    D32
+    D33
+    D39
+    D40
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : pay-led-1-v3.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : pay-led-1-v3.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Route Tool Path
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D13
+    D16
+    D34
+    D35
+    D36
+    D37
+    D38
 *************************************************************
 
