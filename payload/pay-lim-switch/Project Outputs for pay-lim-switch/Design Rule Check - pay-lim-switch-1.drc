@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc
 Date     : 2019-09-26
-Time     : 1:45:58 AM
+Time     : 11:30:14 AM
 
 Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
 Rule Violations :0
@@ -16,9 +16,7 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
 Processing Rule : Un-Connected Pin Constraint ( (All) )
-   Violation between Un-Connected Pin Constraint: Pad J1-(12.975mm,4.3mm) on Top Layer 
-   Violation between Un-Connected Pin Constraint: Pad J1-(7.025mm,4.3mm) on Top Layer 
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -42,9 +40,7 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)
-   Violation between Silk To Solder Mask Clearance Constraint: (0.175mm < 0.2mm) Between Pad S1-2(9.175mm,1.9mm) on Bottom Layer And Track (9.825mm,1.575mm)(10.15mm,1.575mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.175mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.175mm < 0.2mm) Between Pad S1-2(9.175mm,5.1mm) on Bottom Layer And Track (9.825mm,5.425mm)(10.15mm,5.425mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.175mm]
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
 Rule Violations :0
@@ -53,23 +49,19 @@ Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
-   Violation between Board Outline Clearance(Outline Edge): (0.25mm < 0.5mm) Between Board Edge And Pad Free-(17mm,3.5mm) on Multi-Layer 
-   Violation between Board Outline Clearance(Outline Edge): (0.25mm < 0.5mm) Between Board Edge And Pad Free-(3mm,3.5mm) on Multi-Layer 
-   Violation between Board Outline Clearance(Outline Edge): (0.1mm < 0.5mm) Between Board Edge And Pad J1-1(9.375mm,1mm) on Top Layer 
-   Violation between Board Outline Clearance(Outline Edge): (0.1mm < 0.5mm) Between Board Edge And Pad J1-2(10.625mm,1mm) on Top Layer 
-   Violation between Board Outline Clearance(Outline Edge): (0.39mm < 0.5mm) Between Board Edge And Track (11.448mm,0.517mm)(13.575mm,0.517mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.39mm < 0.5mm) Between Board Edge And Track (13.575mm,0.517mm)(13.575mm,2.645mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (13.575mm,5.832mm)(13.575mm,7.017mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.39mm < 0.5mm) Between Board Edge And Track (6.425mm,0.517mm)(6.425mm,2.708mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (0.39mm < 0.5mm) Between Board Edge And Track (6.425mm,0.517mm)(8.603mm,0.517mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (6.425mm,5.794mm)(6.425mm,7.017mm) on Top Overlay 
-   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.5mm) Between Board Edge And Track (6.425mm,7.017mm)(13.575mm,7.017mm) on Top Overlay 
-Rule Violations :11
+   Violation between Board Outline Clearance(Outline Edge): (0.321mm < 0.5mm) Between Board Edge And Text "HERON MK II" (17.2mm,5.579mm) on Bottom Overlay 
+   Violation between Board Outline Clearance(Outline Edge): (0.3mm < 0.5mm) Between Board Edge And Text "PAY-LIM" (13.2mm,0.3mm) on Bottom Overlay 
+Rule Violations :2
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
+Waived Violations Of Rule : Un-Connected Pin Constraint ( (All) )
+   Waived Violation between Un-Connected Pin Constraint: Pad J1-(12.975mm,4.5mm) on Top Layer Waived by UTAT Space Systems at 2019-09-26 11:18:28 AMall good
+   Waived Violation between Un-Connected Pin Constraint: Pad J1-(7.025mm,4.5mm) on Top Layer Waived by UTAT Space Systems at 2019-09-26 11:18:28 AMall good
+Waived Violations :2
 
-Violations Detected : 15
-Waived Violations : 0
-Time Elapsed        : 00:00:00
+
+Violations Detected : 2
+Waived Violations : 2
+Time Elapsed        : 00:00:01
