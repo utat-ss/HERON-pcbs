@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [pay-lim-switch-1.PcbDoc]
+   Generated File[pay-lim-switch-1-Plated.TXT]
+   Generated File[pay-lim-switch-1-NonPlated.TXT]
+   Generated File[pay-lim-switch-1.LDP]
+   Generated File[pay-lim-switch-1.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 1:54:53 AM On 2019-09-26

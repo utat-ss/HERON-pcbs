@@ -1,0 +1,16 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: pay-lim-switch-1.PcbDoc   2019-09-26  1:54:53 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII Plated RoundHoles File : pay-lim-switch-1-Plated.TXT
+ASCII Non-Plated RoundHoles File : pay-lim-switch-1-NonPlated.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             2         PTH        0.00mm (0.00inch)
+T2      2.6mm (102mil)                                            Round             2         NPTH       0.00mm (0.00inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              4
+
+Total Processing Time (hh:mm:ss) : 00:00:00

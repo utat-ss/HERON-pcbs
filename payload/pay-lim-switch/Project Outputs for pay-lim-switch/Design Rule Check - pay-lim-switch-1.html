@@ -1,0 +1,397 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2019-09-26</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">1:45:58 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc" class="file"><acronym title="C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc">C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">15</td></tr>
+</table>
+</td>
+</table><a name="IDF3QPPXHMYB3NNYV1FREWVVGHJG00KBQLA0A5FTFSX4USQVHFXY3C"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDWARA1KNK0DIES1FGTVMVDTQ1D5BSYB0Y2NM3DOFLGRRRPPPHD0F">Clearance Constraint (Gap=0.152mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKRXLGPX1CLXKIAP0FIA1HI1J4L0HMAURFEQSNNCCVIDBWJYF2EVO">Clearance Constraint (Gap=0.254mm) (IsComponent),(IsComponent)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYU0BS3ZRVHJCCJAFIKEWCG4QTFPXHZTW2XZYWXHZE2V1PVONESFN">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHBB3L2IXV4C0CL4LSBBGDSRSSI31UMQ3DYTJDCIEZTE4UZKHPELP">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID11LB5BLENWMBLC03QEQXGDQFJI2K3ODXVTOOUHDJQYSIXUQPUEPN">Un-Connected Pin Constraint ( (All) )</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUNGZNSQJOZDRBM3JNNZCHKQ2MLEZVDRPGG5ETOEO02RN2YRHRNNE">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDW5FFDH2L4ERPEGF52RRBSGYUIN5CMBO25MUULKOF3H5BHAW1CDJH">Width Constraint (Min=0.152mm) (Max=25.4mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJBOZ2EGSCTSQG5LZHZX1X3BAEJ0RQZFY5QKBJ3P4B0HVDHFTYAJN">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3LX3PUIIUWDXQJU34DDGDFJMLD3ZM2IHIKUWAP4TFYOXQOKQFTC">Minimum Annular Ring (Minimum=0.15mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLMURF3Y4VZMUEM3UNKCN4QCI5BV45RTSLZ2UA5K4S1400W2W40JN">Hole Size Constraint (Min=0.3mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDY1MX4LLESH4JKEOVQO3I5MTXPMXENNNBIJOT5HF5LJQMWA2HDBEE">Hole To Hole Clearance (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJYDFKV5YFWINESFQ5JMMY0PQYCGD0QZLWLDQJHFUNVD3X354D0ML">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3Y50BWOLVMAHFPVE32WMEZRPGMTVGDJWNMQQLMPDZ1VTFNBUXIMG">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA3BPMWYDF4RNOJWFEMION22WQF4CFAHPTZX4PYLMYAZAV14XUCII">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEZVE43FD5PBAMDUXY1FWNCT34B2KU15MOKXOBQGAYPF2YRKQIUYG">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBIGIFIH0ZRCKJCZDHDMKFUBBRE0B5TLMUNCLETEETJNLPC2NDGPO">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCBOW4MIIGXWOK5WVNQLV43IUQEE04DB24NMMOOM2ZDHK0INFFOUD">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">15</td>
+</tr>
+</table><br><a name="ID11LB5BLENWMBLC03QEQXGDQFJI2K3ODXVTOOUHDJQYSIXUQPUEPN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Connected Pin Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=465.02mil|Location2.X=556.634mil|Location1.Y=123.484mil|Location2.Y=215.099mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=465.02mil|Location2.X=556.634mil|Location1.Y=123.484mil|Location2.Y=215.099mil|Absolute=True">Un-Connected Pin Constraint: Pad J1-(12.975mm,4.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=230.768mil|Location2.X=322.382mil|Location1.Y=123.484mil|Location2.Y=215.099mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=230.768mil|Location2.X=322.382mil|Location1.Y=123.484mil|Location2.Y=215.099mil|Absolute=True">Un-Connected Pin Constraint: Pad J1-(7.025mm,4.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID3Y50BWOLVMAHFPVE32WMEZRPGMTVGDJWNMQQLMPDZ1VTFNBUXIMG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.2mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=374.867mil|Location2.X=383.991mil|Location1.Y=57.446mil|Location2.Y=66.57mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=374.867mil|Location2.X=383.991mil|Location1.Y=57.446mil|Location2.Y=66.57mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad S1-2(9.175mm,1.9mm) on Bottom Layer And Track (9.825mm,1.575mm)(10.15mm,1.575mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=374.867mil|Location2.X=383.991mil|Location1.Y=209.021mil|Location2.Y=218.145mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=374.867mil|Location2.X=383.991mil|Location1.Y=209.021mil|Location2.Y=218.145mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.175mm &lt; 0.2mm) Between Pad S1-2(9.175mm,5.1mm) on Bottom Layer And Track (9.825mm,5.425mm)(10.15mm,5.425mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.175mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBIGIFIH0ZRCKJCZDHDMKFUBBRE0B5TLMUNCLETEETJNLPC2NDGPO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=772.013mil|Location2.X=792.948mil|Location1.Y=115.91mil|Location2.Y=148.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=772.013mil|Location2.X=792.948mil|Location1.Y=115.91mil|Location2.Y=148.263mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.25mm &lt; 0.5mm) Between Board Edge And Pad Free-(17mm,3.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-5.546mil|Location2.X=15.389mil|Location1.Y=115.91mil|Location2.Y=148.263mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-5.546mil|Location2.X=15.389mil|Location1.Y=115.91mil|Location2.Y=148.263mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.25mm &lt; 0.5mm) Between Board Edge And Pad Free-(3mm,3.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=344.848mil|Location2.X=377.2mil|Location1.Y=-8.499mil|Location2.Y=12.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=344.848mil|Location2.X=377.2mil|Location1.Y=-8.499mil|Location2.Y=12.436mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.1mm &lt; 0.5mm) Between Board Edge And Pad J1-1(9.375mm,1mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=394.06mil|Location2.X=426.413mil|Location1.Y=-8.499mil|Location2.Y=12.436mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=394.06mil|Location2.X=426.413mil|Location1.Y=-8.499mil|Location2.Y=12.436mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.1mm &lt; 0.5mm) Between Board Edge And Pad J1-2(10.625mm,1mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.233mil|Location2.X=472.586mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.233mil|Location2.X=472.586mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.39mm &lt; 0.5mm) Between Board Edge And Track (11.448mm,0.517mm)(13.575mm,0.517mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.982mil|Location2.X=556.335mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.982mil|Location2.X=556.335mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.39mm &lt; 0.5mm) Between Board Edge And Track (13.575mm,0.517mm)(13.575mm,2.645mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=527.388mil|Location2.X=575.341mil|Location1.Y=271.579mil|Location2.Y=285.702mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=527.388mil|Location2.X=575.341mil|Location1.Y=271.579mil|Location2.Y=285.702mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (13.575mm,5.832mm)(13.575mm,7.017mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=242.484mil|Location2.X=274.837mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=242.484mil|Location2.X=274.837mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.39mm &lt; 0.5mm) Between Board Edge And Track (6.425mm,0.517mm)(6.425mm,2.708mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=242.484mil|Location2.X=274.837mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=242.484mil|Location2.X=274.837mil|Location1.Y=-2.783mil|Location2.Y=18.152mil|Absolute=True">Board Outline Clearance(Outline Edge): (0.39mm &lt; 0.5mm) Between Board Edge And Track (6.425mm,0.517mm)(8.603mm,0.517mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=245.89mil|Location2.X=293.844mil|Location1.Y=271.579mil|Location2.Y=285.702mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=245.89mil|Location2.X=293.844mil|Location1.Y=271.579mil|Location2.Y=285.702mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (6.425mm,5.794mm)(6.425mm,7.017mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=386.639mil|Location2.X=434.592mil|Location1.Y=271.579mil|Location2.Y=285.702mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jaden Reimer\Documents\GitHub\pcbs\payload\pay-lim-switch\pay-lim-switch-1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=386.639mil|Location2.X=434.592mil|Location1.Y=271.579mil|Location2.Y=285.702mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.5mm) Between Board Edge And Track (6.425mm,7.017mm)(13.575mm,7.017mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
