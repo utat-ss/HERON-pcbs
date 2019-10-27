@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-10-27T22:08:48Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "tvac_systems_interface"
+        },
+        "Owner": "Dylan Vogel <vogel.sohei@gmail.com>",
+        "Size": {
+            "X": 87.61,
+            "Y": 80.95
+        }
+    }
+}

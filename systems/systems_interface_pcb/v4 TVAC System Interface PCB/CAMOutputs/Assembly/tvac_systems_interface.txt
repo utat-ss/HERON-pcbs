@@ -1,0 +1,7 @@
+Partlist exported from C:/Users/vogel/Files/Altium/pcbs/systems/systems_interface_pcb/v4 TVAC System Interface PCB/tvac_systems_interface.sch at 2019-10-27 6:08 PM
+
+Qty Value                                Device                               Package                              Parts  Description                      CREATEDBY     CREATED_BY    DIGIKEY_PART_NO DIGI_KEY_PART_NUMBER MANUFACTURER           MPN             
+1   171-025-213R001                      171-025-213R001                      171-025-213R001                      J1     CONN D-SUB RCPT 25P PNL MNT SLDR               PCBLayout.com 4225FE-ND                            NorComp Inc.           171-025-213R001 
+2   A-DS09A/KG-T2S                       A-DS09A/KG-T2S                       A-DS09A/KG-T2S                       J2, J3 CONN D-SUB PLUG 9POS R/A SOLDER  PCBLayout.com                               AE10968-ND           Assmann WSW Components A-DS 09 A/KG-T2S
+1   DF13-15P-1.25H                       DF13-15P-1.25H                       DF13A-15P-1.25H                      U$1    DF13-15P                                                                                                                                 
+1   TERMINAL-BLOCK-3.5MM-6-PIN-ROUND-PAD TERMINAL-BLOCK-3.5MM-6-PIN-ROUND-PAD TERMINAL-BLOCK-6-PIN-3.5MM-ROUND-PAD X1     Terminal Block 3.5mm                                                                                                                     
