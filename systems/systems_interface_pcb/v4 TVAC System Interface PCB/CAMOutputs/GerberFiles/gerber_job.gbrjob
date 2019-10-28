@@ -1,11 +1,11 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2019-10-27T22:08:48Z",
+        "CreationDate": "2019-10-28T01:01:46Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
-            "Version": "9.5.1"
+            "Version": "9.5.0"
         },
         "Part": "Single"
     },
@@ -15,10 +15,10 @@
         "Name": {
             "ProjectId": "tvac_systems_interface"
         },
-        "Owner": "Dylan Vogel <vogel.sohei@gmail.com>",
+        "Owner": "Yong Da Li <yongdali.li@mail.utoronto.ca>",
         "Size": {
             "X": 87.61,
-            "Y": 80.95
+            "Y": 83.49
         }
     }
 }
