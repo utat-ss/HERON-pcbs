@@ -36,7 +36,7 @@ OutputMedium4_Type=Multimedia
 OutputType1=Gerber
 OutputName1=Gerber Files
 OutputCategory1=Fabrication
-OutputDocumentPath1=pay-ssm-v4-4.PcbDoc
+OutputDocumentPath1=pay-ssm-v4-5.PcbDoc
 OutputVariantName1=Default Population
 OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
@@ -61,7 +61,7 @@ PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 OutputType3=NC Drill
 OutputName3=NC Drill Files
 OutputCategory3=Fabrication
-OutputDocumentPath3=pay-ssm-v4-4.PcbDoc
+OutputDocumentPath3=pay-ssm-v4-5.PcbDoc
 OutputVariantName3=
 OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
@@ -74,7 +74,7 @@ Configuration3_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|Ge
 OutputType4=PCB Print
 OutputName4=PCB Prints
 OutputCategory4=Documentation
-OutputDocumentPath4=pay-ssm-v4-4.PcbDoc
+OutputDocumentPath4=pay-ssm-v4-5.PcbDoc
 OutputVariantName4=
 OutputEnabled4=1
 OutputEnabled4_OutputMedium1=0
