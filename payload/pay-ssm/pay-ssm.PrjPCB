@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=
+OutputPath=Project Outputs for pay-ssm
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -693,27 +693,111 @@ DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument21]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument22]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument23]
+[GeneratedDocument22]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument24]
+[GeneratedDocument23]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.REP
 DItemRevisionGUID=
 
-[GeneratedDocument25]
+[GeneratedDocument24]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5-NonPlated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5-Plated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G1
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G2
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G3
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G4
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.REP
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.RUL
 DItemRevisionGUID=
 
 [Parameter1]
@@ -748,7 +832,7 @@ AddNetPorts=-1
 ShowComponentParameters=-1
 GlobalBookmarks=0
 ExportBOM=0
-TemplateFilename=
+TemplateFilename=Board Stack Report.XLT
 TemplateStoreRelative=-1
 PCB_PrintColor=0
 SCH_PrintColor=0
@@ -760,7 +844,7 @@ SCH_ShowBlankets=-1
 SCH_NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle
 SCH_ShowNote=-1
 SCH_ShowNoteCollapsed=-1
-SCH_ExpandLogicalToPhysical=-1
+SCH_ExpandLogicalToPhysical=0
 SCH_VariantName=Default Population
 SCH_ExpandComponentDesignators=-1
 SCH_ExpandNetlabels=-1
@@ -771,7 +855,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=0
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for pay-ssm
 
 [OutputGroup1]
 Name=Netlist Outputs
