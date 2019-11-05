@@ -28,7 +28,7 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
-OutputPath=Project Outputs for pay-ssm
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -629,174 +629,90 @@ DocumentPath=pay-ssm 2018-06-07 9-05-17 PM.WAS
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4-NonPlated.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4-Plated.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G1
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G2
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G3
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.G4
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GM2
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GPB
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GPT
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.REP
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-4.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument25]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5-NonPlated.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument26]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5-Plated.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument27]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument28]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument29]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G1
 DItemRevisionGUID=
 
-[GeneratedDocument30]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G2
 DItemRevisionGUID=
 
-[GeneratedDocument31]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G3
 DItemRevisionGUID=
 
-[GeneratedDocument32]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.G4
 DItemRevisionGUID=
 
-[GeneratedDocument33]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument34]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument35]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument36]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument37]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GM2
 DItemRevisionGUID=
 
-[GeneratedDocument38]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GPB
 DItemRevisionGUID=
 
-[GeneratedDocument39]
+[GeneratedDocument18]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GPT
 DItemRevisionGUID=
 
-[GeneratedDocument40]
+[GeneratedDocument19]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument41]
+[GeneratedDocument20]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument42]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument43]
+[GeneratedDocument22]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument44]
+[GeneratedDocument23]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument45]
+[GeneratedDocument24]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.REP
 DItemRevisionGUID=
 
-[GeneratedDocument46]
+[GeneratedDocument25]
 DocumentPath=Project Outputs for pay-ssm\Fabrication Outputs\pay-ssm-v4-5.RUL
 DItemRevisionGUID=
 
@@ -855,7 +771,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=0
 
 [Generic_EDE]
-OutputDir=Project Outputs for pay-ssm
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Lorna\pcbs\payload\pay-ssm\pay-ssm-v4-5.PcbDoc
-Date     : 11/3/2019
-Time     : 9:14:36 PM
+Date     : 11/4/2019
+Time     : 9:50:42 PM
 
 Processing Rule : Clearance Constraint (Gap=0.254mm) (IsComponent),(IsComponent)
 Rule Violations :0
@@ -364,4 +364,4 @@ Waived Violations :195
 
 Violations Detected : 0
 Waived Violations : 298
-Time Elapsed        : 00:00:03
+Time Elapsed        : 00:00:04
