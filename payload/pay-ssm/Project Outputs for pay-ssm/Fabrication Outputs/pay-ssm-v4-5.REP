@@ -2,10 +2,10 @@
 FileName = pay-ssm-v4-5.GBR
 AutoAperture = True
 *************************************************************
-Generating : Top Solder
-      File : pay-ssm-v4-5.GTS
+Generating : Top Paste
+      File : pay-ssm-v4-5.GTP
 
-    Adding Layer      : Top Solder
+    Adding Layer      : Top Paste
 
     Adding Layer      : Top Layer
 
@@ -17,54 +17,35 @@ Used DCodes :
     D18
     D19
     D20
+    D21
     D22
     D23
+    D24
     D25
+    D26
+    D27
+    D28
+    D29
     D30
     D31
+    D32
+    D33
+    D34
     D35
     D36
+    D37
+    D38
+    D39
     D40
     D41
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
+    D42
 *************************************************************
 
 *************************************************************
-Generating : GND1
-      File : pay-ssm-v4-5.G1
+Generating : GND2
+      File : pay-ssm-v4-5.G4
 
-    Adding Layer      : GND1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D62
-    D67
-*************************************************************
-
-*************************************************************
-Generating : 3V3
-      File : pay-ssm-v4-5.G3
-
-    Adding Layer      : 3V3
+    Adding Layer      : GND2
 
     Adding Layer      : Multi-Layer
 
@@ -121,31 +102,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : GND2
-      File : pay-ssm-v4-5.G4
-
-    Adding Layer      : GND2
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D62
-    D67
-*************************************************************
-
-*************************************************************
-Generating : Route Tool Path
-      File : pay-ssm-v4-5.GM2
-
-    Adding Layer      : Route Tool Path
-
-
-Used DCodes :
-    D115
-*************************************************************
-
-*************************************************************
 Generating : Bottom Pad Master
       File : pay-ssm-v4-5.GPB
 
@@ -195,20 +151,62 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : pay-ssm-v4-5.GTO
+Generating : 3V3
+      File : pay-ssm-v4-5.G3
 
-    Adding Layer      : Top Overlay
+    Adding Layer      : 3V3
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
+    D62
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : pay-ssm-v4-5.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D22
+    D23
+    D25
+    D30
+    D31
+    D35
+    D36
+    D40
+    D41
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
 *************************************************************
 
 *************************************************************
@@ -226,187 +224,6 @@ Used DCodes :
     D15
     D16
     D114
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : pay-ssm-v4-5.GPT
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D62
-    D63
-    D64
-    D65
-    D66
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : pay-ssm-v4-5.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D18
-    D19
-    D20
-    D22
-    D25
-    D36
-    D49
-    D56
-    D57
-    D58
-    D59
-    D60
-    D74
-    D81
-    D92
-    D93
-    D94
-    D95
-    D96
-    D97
-    D98
-    D99
-    D100
-    D101
-    D102
-    D103
-    D104
-    D105
-    D106
-    D107
-    D108
-    D109
-    D110
-    D111
-    D112
-    D113
-*************************************************************
-
-*************************************************************
-Generating : Top Layer
-      File : pay-ssm-v4-5.GTL
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D16
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D61
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : pay-ssm-v4-5.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
 *************************************************************
 
 *************************************************************
@@ -475,5 +292,188 @@ Used DCodes :
     D89
     D90
     D91
+*************************************************************
+
+*************************************************************
+Generating : Route Tool Path
+      File : pay-ssm-v4-5.GM2
+
+    Adding Layer      : Route Tool Path
+
+
+Used DCodes :
+    D115
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : pay-ssm-v4-5.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D62
+    D63
+    D64
+    D65
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : pay-ssm-v4-5.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : pay-ssm-v4-5.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D22
+    D25
+    D36
+    D49
+    D56
+    D57
+    D58
+    D59
+    D60
+    D74
+    D81
+    D92
+    D93
+    D94
+    D95
+    D96
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+*************************************************************
+
+*************************************************************
+Generating : GND1
+      File : pay-ssm-v4-5.G1
+
+    Adding Layer      : GND1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D62
+    D67
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : pay-ssm-v4-5.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
 *************************************************************
 
