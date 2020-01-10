@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [BattPro_InLine.PcbDoc]
+   Generated File[BattPro_InLine-Plated.TXT]
+   Generated File[BattPro_InLine.LDP]
+   Generated File[BattPro_InLine.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:59:25 PM On 2020-01-08
